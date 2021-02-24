@@ -58,7 +58,7 @@ const ZigZagContent_HangryGuardians =
             </p>
             </p >
 
-            
+
             <div className={styles.buttonHolderVertical}>
                 <p className={styles.buttonHolder}>
                     <ImageButton info={ImageButtonInfo_app} />

@@ -1,6 +1,7 @@
 import React from "react";
 import style from "./Card.module.css";
 import PageRouteData from "../../../Data/PageRouteData";
+import { Link } from "react-router-dom";
 
 export default function Card({ cardInfo, cardStyleInfo })
 {
@@ -58,7 +59,28 @@ export default function Card({ cardInfo, cardStyleInfo })
 
     imageStyle = customStyle === undefined ? imageStyle : { ...imageStyle, ...customStyle };
 
-
+    //#region ------------- Determining if Link Is Going Out ----------------------
+    let finalLinkJSX;
+    const isLinkGoingOutSite = link.includes("https://");
+    if (isLinkGoingOutSite)
+    {
+        finalLinkJSX =
+            <a href={link} className={style.overlay}>
+                <h1>{title}</h1>
+                <p>{description}</p>
+                <p>{date}</p>
+            </a>;
+    }
+    else
+    {
+        finalLinkJSX =
+            <Link to={link} className={style.overlay}>
+                <h1>{title}</h1>
+                <p>{description}</p>
+                <p>{date}</p>
+            </Link>;
+    }
+    //#endregion
 
     //#endregion
 
@@ -66,11 +88,7 @@ export default function Card({ cardInfo, cardStyleInfo })
         <div style={cardStyle} className={style.card}>
 
             {/* Overlay */}
-            <a href={link} className={style.overlay}>
-                <h1>{title}</h1>
-                <p>{description}</p>
-                <p>{date}</p>
-            </a>
+            {finalLinkJSX}
 
             {/* Render Icon */}
             <div className={style.top}>

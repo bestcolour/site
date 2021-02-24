@@ -2,6 +2,7 @@ import React from "react";
 import generalStyles from "../../../CommonStyles/GeneralStyles.module.css";
 import styles from "./TopNavBar.module.css";
 import columnClasses from "../../../CommonStyles/Columns.module.css";
+import {Link  } from "react-router-dom";
 
 //What is expected from props:
 //ThemeStyle:
@@ -33,15 +34,21 @@ export default function TopNavBarComponent({ linksData, styleData,selectedPageNa
         const finalJSX = linkData.linkName === selectedPageName
             ?
             <div className={styles.link} >
-                <a href={linkData.link} className={generalStyles.selectedLink} >
+                <Link to={linkData.link} className={generalStyles.selectedLink} >
                     {linkData.linkName}
-                </a>
+                </Link>
+                {/* <a href={linkData.link} className={generalStyles.selectedLink} > */}
+                    {/* {linkData.linkName} */}
+                {/* </a> */}
             </div>
             :
             <div className={styles.link}>
-                <a href={linkData.link}  >
+                <Link to={linkData.link}  >
                     {linkData.linkName}
-                </a>
+                </Link>
+                {/* <a href={linkData.link}  > */}
+                    {/* {linkData.linkName} */}
+                {/* </a> */}
             </div>;
 
 

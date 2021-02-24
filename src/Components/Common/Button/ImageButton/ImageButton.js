@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./ImageButton.module.css"
 import PageRouteData from "../../../../Data/PageRouteData";
+import { Link } from "react-router-dom";
 
 
 export default function ImageButton({ info })
@@ -32,10 +33,25 @@ export default function ImageButton({ info })
         height: height
     };
 
-    return (
-        <a href={buttonLink} target={target}  >
+    let finalJSX;
+    //linkToWithinSite checks if you want to direct the user to a webpage outside of urs
+    const linkToWithinSite = !buttonLink.includes("https://");
+    if (linkToWithinSite)
+    {
+        finalJSX = <Link to={finalJSX} target={target}  >
             <p style={buttonStyle} className={styles.image}></p>
-        </a>
+        </Link>;
+    }
+    else
+    {
+        finalJSX = <a href={buttonLink} target={target}  >
+            <p style={buttonStyle} className={styles.image}></p>
+        </a>;
+    }
+
+
+    return (
+        finalJSX 
     );
 
 }

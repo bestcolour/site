@@ -1,6 +1,6 @@
 //#region Import React dependencies
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import {  Route, Switch } from "react-router-dom";
 //#endregion
 
 //#region Import Styles
@@ -22,11 +22,11 @@ class App extends React.Component
   {
     return (
       <div>
-        <Switch>
-          <Route component={LandingPage} path={PageRouteData.LandingPagePath} exact />
-          <Route component={ProjectPage} path={PageRouteData.ProjectPagePath} />
-          <Route component={PortfolioPage} path={PageRouteData.PortfolioPagePath} />
-        </Switch>
+          <Switch>
+            <Route component={LandingPage} path={PageRouteData.LandingPagePath} exact />
+            <Route component={ProjectPage} path={PageRouteData.ProjectPagePath} />
+            <Route component={PortfolioPage} path={PageRouteData.PortfolioPagePath} />
+          </Switch>
       </div>
     );
   }

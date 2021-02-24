@@ -1,14 +1,16 @@
 const PageRouteData =
 {
-    LandingPagePath: "/site"
-    , ProjectPagePath: "/site/projectPage"
-    , PortfolioPagePath: "/site/portfolio"
+    //Please use <Link> instead of <a> if you are using these paths for links
+
+    LandingPagePath: "/"
+    , ProjectPagePath: "/projectPage"
+    , PortfolioPagePath: "/portfolio"
 
     //#region Project Pages
     //REMINDER TO SELF:
     //When you are appending projectpages, do not use "-" to separate words, instead use "/" or else ReactRouter will not work!
-    , HangryGuardiansPath: "/site/projectPage/hangryGuardians"
-    , SpaceRunnersPath: "/site/projectPage/spaceRunners"
+    , HangryGuardiansPath: "/projectPage/hangryGuardians"
+    , SpaceRunnersPath: "/projectPage/spaceRunners"
     //#endregion
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import {  Route, Switch } from "react-router-dom";
 
 //#region Import Common
 import StandardFooter from "../../Modules/StandardFooter";
@@ -25,12 +25,12 @@ export default function ProjectPage()
 {
     return (
         <div>
-            <TopNavBar topNavBarData={TopNavBarInfo} selectedPageName= "My Projects" />
-            <Switch>
-                <Route component={ProjectPageComponent} path={PageRouteData.ProjectPagePath} exact />
-                <Route component={Page_HangryGuardians} path={PageRouteData.HangryGuardiansPath} />
-                <Route component={Page_SpaceRunners} path={PageRouteData.SpaceRunnersPath} />
-            </Switch>
+            <TopNavBar topNavBarData={TopNavBarInfo} selectedPageName="My Projects" />
+                <Switch>
+                    <Route component={ProjectPageComponent} path={PageRouteData.ProjectPagePath} exact />
+                    <Route component={Page_HangryGuardians} path={PageRouteData.HangryGuardiansPath} />
+                    <Route component={Page_SpaceRunners} path={PageRouteData.SpaceRunnersPath} />
+                </Switch>
             <StandardFooter footerInfo={FooterInfo} />
         </div>
     )
