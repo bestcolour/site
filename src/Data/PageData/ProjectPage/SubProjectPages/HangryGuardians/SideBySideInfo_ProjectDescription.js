@@ -8,21 +8,21 @@ const imageSliderInfo =
 {
     imageDataArray: 
     [
-        `../..${PageRouteData.LandingPagePath}/Resources/HangryGuardians/SplashArt.jpg`
+        `../..${PageRouteData.ResourcePath}/Resources/HangryGuardians/SplashArt.jpg`
         ,
-        `../..${PageRouteData.LandingPagePath}/Resources/HangryGuardians/Ice.jpg`
+        `../..${PageRouteData.ResourcePath}/Resources/HangryGuardians/Ice.jpg`
         ,
-        `../..${PageRouteData.LandingPagePath}/Resources/HangryGuardians/Ice&Wind.jpg`
+        `../..${PageRouteData.ResourcePath}/Resources/HangryGuardians/Ice&Wind.jpg`
         ,
-        `../..${PageRouteData.LandingPagePath}/Resources/HangryGuardians/Star.jpg`
+        `../..${PageRouteData.ResourcePath}/Resources/HangryGuardians/Star.jpg`
         ,
-        `../..${PageRouteData.LandingPagePath}/Resources/HangryGuardians/Tunnel.jpg`
+        `../..${PageRouteData.ResourcePath}/Resources/HangryGuardians/Tunnel.jpg`
         ,
-        `../..${PageRouteData.LandingPagePath}/Resources/HangryGuardians/Tunel&Ice.jpg`
+        `../..${PageRouteData.ResourcePath}/Resources/HangryGuardians/Tunel&Ice.jpg`
         ,
-        `../..${PageRouteData.LandingPagePath}/Resources/HangryGuardians/Tutorial.jpg`
+        `../..${PageRouteData.ResourcePath}/Resources/HangryGuardians/Tutorial.jpg`
         ,
-        `../..${PageRouteData.LandingPagePath}/Resources/HangryGuardians/Wind&TUnnel.jpg`
+        `../..${PageRouteData.ResourcePath}/Resources/HangryGuardians/Wind&TUnnel.jpg`
     ]
 }
 //#endregion

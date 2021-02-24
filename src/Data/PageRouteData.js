@@ -12,6 +12,9 @@ const PageRouteData =
     , HangryGuardiansPath: "/projectPage/hangryGuardians"
     , SpaceRunnersPath: "/projectPage/spaceRunners"
     //#endregion
+
+    ,
+    ResourcePath: "/site"
 }
 
 export default PageRouteData;

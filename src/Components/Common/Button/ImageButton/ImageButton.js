@@ -9,7 +9,7 @@ export default function ImageButton({ info })
     //#region ---------------- Template --------------------
     // const ImageButtonInfo_example =
     // {
-    //     imageSrc: `../..${PageRouteData.LandingPagePath}/Resources/Images/Logos/google-play-badge.png`
+    //     imageSrc: `../..${PageRouteData.ResourcePath}/Resources/Images/Logos/google-play-badge.png`
     //     ,
     //     buttonLink: "https://play.google.com/store/apps/details?id=com.ET.HangryGods&hl=en"
     //     ,

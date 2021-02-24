@@ -13,7 +13,7 @@ import PageRouteData from "../../PageRouteData";
 
 const ImageButtonInfo_app =
 {
-    imageSrc: `../..${PageRouteData.LandingPagePath}/Resources/Images/Logos/google-play-badge.png`
+    imageSrc: `../..${PageRouteData.ResourcePath}/Resources/Images/Logos/google-play-badge.png`
     ,
     buttonLink: "https://play.google.com/store/apps/details?id=com.ET.HangryGods&hl=en"
     ,
@@ -36,7 +36,7 @@ const TextButtonInfo_app =
 
 const BackgroundImageInfo_hangryGuardiansSubject =
 {
-    bgImageSrc: `../..${PageRouteData.LandingPagePath}/Resources/HangryGuardians/SplashArt.jpg`
+    bgImageSrc: `../..${PageRouteData.ResourcePath}/Resources/HangryGuardians/SplashArt.jpg`
     , cssStyling: styles.subjectBgImageClassStyle
 }
 

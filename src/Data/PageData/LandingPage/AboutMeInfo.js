@@ -1,7 +1,7 @@
 import PageRouteData from "../../PageRouteData";
 const AboutMeInfo =
 {
-    profileImg: `../..${PageRouteData.LandingPagePath}/Resources/Images/Backgrounds/DayBackground.png`
+    profileImg: `../..${PageRouteData.ResourcePath}/Resources/Images/Backgrounds/DayBackground.png`
     ,
     backgroundColor: "#5A5A5A"
     ,

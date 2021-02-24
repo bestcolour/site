@@ -57,7 +57,7 @@ export default function Page_HangryGuardians()
 
     heroPageTitle =
     {
-        imageSrc: `../..${PageRouteData.LandingPagePath}/Resources/HangryGuardians/Ice.jpg`
+        imageSrc: `../..${PageRouteData.ResourcePath}/Resources/HangryGuardians/Ice.jpg`
         ,
         jsxContent: <PageStructure content={heroPageTitle} info={PageStruct_Transparent} />
     };
@@ -98,7 +98,7 @@ export default function Page_HangryGuardians()
 
     heroReflectionTitle =
     {
-        imageSrc: `../..${PageRouteData.LandingPagePath}/Resources/HangryGuardians/Tunel&Ice_edited.jpg`
+        imageSrc: `../..${PageRouteData.ResourcePath}/Resources/HangryGuardians/Tunel&Ice_edited.jpg`
         ,
         jsxContent: <PageStructure content={heroReflectionTitle} info={PageStruct_Transparent} />
     }

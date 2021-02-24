@@ -36,7 +36,7 @@ const SideBySideContent_HangryGuardians_GameDescription =
     subject:
         <div>
             <video controls width="100%" height="100%">
-                <source src={`../..${PageRouteData.LandingPagePath}/Resources/HangryGuardians/trailerVideoCompressed.mp4`} type="video/mp4" />
+                <source src={`../..${PageRouteData.ResourcePath}/Resources/HangryGuardians/trailerVideoCompressed.mp4`} type="video/mp4" />
             Your browser doesnt support the video player
         </video>
         </div>
