@@ -1,0 +1,53 @@
+#boxBg
+{
+    /* Margin & Paddings */
+    margin: 5% 5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+
+    /* Content Size */
+    height: 25em;
+}
+
+#aboutMeContentHolder
+{
+    /*===== Flex ===== */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#profileName
+{
+    /*===== Margin & Paddings ===== */
+    margin-bottom: 2.5%;
+}
+
+#profilePicture
+{
+    height: 10em;
+    width: 10em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+#aboutMeContentHolder h1 
+{
+    font-size:xx-large ;
+    text-transform: uppercase;
+}
+
+#aboutMeContentHolder p
+{
+    /*===== Sizing ===== */
+    width: 75%;
+    height:10em;
+
+    /*===== Margin & Paddings ===== */
+    margin: 2% 0%;
+   
+}

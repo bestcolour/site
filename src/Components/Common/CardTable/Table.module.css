@@ -1,0 +1,14 @@
+.table
+{
+    /* Flex */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    /* Looks */
+    border-radius: 1.5%;
+
+    /* Padding & Margin */
+    margin: 5% 5%;
+
+}

@@ -1,0 +1,58 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a
+{
+    font-family: Tahoma, sans-serif;
+    line-height: 1.175;
+}
+
+/* ============= Colours ================= */
+.white
+{
+    color: #EBE9E8;
+}
+
+/* ============ LINKS STYLE =========== */
+a 
+{
+    /*============ Link Looks =========== */
+    text-decoration: none;
+    color: #EBC35A;
+}
+
+.unselectedLink 
+{
+    color: #EBC35A;
+}
+
+.selectedLink 
+{
+    color: #00D4FE;
+}
+
+a:hover
+{
+    color: #00D4FE;
+}
+
+
+/* =================== Header =================== */
+/* .header */
+/* { */
+    /* Looks */
+    /* font-size: xx-large; */
+    /* Padding */
+    /* padding-bottom: 2.5%; */
+    /* padding-top: 2.5%; */
+/* } */
+
+/* ------- Title ----------- */
+h6
+{
+    font-size: xx-large;
+}

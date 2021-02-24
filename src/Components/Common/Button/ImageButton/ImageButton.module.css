@@ -1,0 +1,11 @@
+
+.image 
+{
+    /* Default */
+    width: 5em;
+    height: 5em;
+
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+

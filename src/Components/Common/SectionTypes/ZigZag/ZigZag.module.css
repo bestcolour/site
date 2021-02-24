@@ -1,0 +1,50 @@
+/* The parent div element that wraps all of the elements below */
+.zigZagSection
+{
+    /* Flex */
+    display: flex;
+    height:25em;
+
+    /* margin */
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+.leftContentShadow
+{
+    box-shadow:0.5em 0.5em 1em #00000075;
+}
+
+.rightContentShadow
+{
+    box-shadow:-0.5em 0.5em 1em #00000075;
+}
+
+.subject
+{
+    /* Size & Height */
+    width: 50%;
+
+    /* Background Look */
+    z-index: 1;
+}
+
+.textBackground
+{
+    /* Size */
+    width: 50%;
+
+    /* Position & Size */
+    position: relative;
+    bottom: -5%;
+
+    /* Looks */
+    z-index: 0;
+}
+
+/* Text holder */
+.textBackground h2
+{
+    padding: 5%;
+}

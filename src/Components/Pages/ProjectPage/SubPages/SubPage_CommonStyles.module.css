@@ -1,0 +1,10 @@
+.heroParent
+{
+    display: flex;
+}
+
+.topBotPadding
+{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}

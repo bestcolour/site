@@ -1,0 +1,21 @@
+.buttonHolder 
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.buttonHolderVertical
+{
+    margin-top: 10%;
+}
+
+/* ----------------- Subject Styling ----------------------- */
+.subjectBgImageClassStyle
+{
+    background-size:cover;
+    background-repeat:no-repeat;
+    /* Height & Width */
+    height:100%;
+    width:100%;
+}

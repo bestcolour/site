@@ -1,0 +1,24 @@
+.sideBySideRoot
+{
+    display: flex;
+}
+
+.sideBySideRoot span
+{
+    width: 50%;
+}
+
+.textDescription
+{
+    margin: 0% 2.5%;
+}
+
+.notFlipped
+{
+    flex-direction: row;
+}
+
+.flipped
+{
+    flex-direction: row-reverse;
+}

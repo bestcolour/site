@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+//#region Import React dependencies
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+//#endregion
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//#region Import Styles
+import ResetFormat from "./CommonStyles/ResetFormat.module.css";
+import GeneralStyles from "./CommonStyles/GeneralStyles.module.css";
+//#endregion
+//#region Import Main Pages
+//Import pages (this must be behind the reset format and GeneralStyles import allow LandingPage styles to override the above styles)
+import PageRouteData from "./Data/PageRouteData";
+import LandingPage from "./Components/Pages/LandingPage";
+import ProjectPage from "./Components/Pages/ProjectPage";
+import PortfolioPage from "./Components/Pages/PortfolioPage";
+//#endregion
+
+
+class App extends React.Component
+{
+  render()
+  {
+    return (
+      <div>
+        <Switch>
+          <Route component={LandingPage} path={PageRouteData.LandingPagePath} exact />
+          <Route component={ProjectPage} path={PageRouteData.ProjectPagePath} />
+          <Route component={PortfolioPage} path={PageRouteData.PortfolioPagePath} />
+        </Switch>
+      </div>
+    );
+  }
+
 }
+
 
 export default App;

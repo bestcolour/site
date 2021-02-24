@@ -1,0 +1,22 @@
+.pageDescriptionContentHolder
+{
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+
+    /* Margin & Paddings */
+    margin: 2.5% 15%;
+}
+
+.xAlignmentLeft
+{
+    align-items: flex-start;
+}
+.xAlignmentRight
+{
+    align-items: flex-end;
+}
+.xAlignmentCenter
+{
+    align-items: center;
+}
