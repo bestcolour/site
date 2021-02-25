@@ -27,9 +27,9 @@ const CardTableInfo_ProjectPage =
             //============ HANGRY GUARDIAN ===========
             {
                 link: PageRouteData.HangryGuardiansPath
-                , image: `../..${PageRouteData.ResourcePath}/Resources/HangryGuardians/AppIcon.png`
+                , image: `../..${PageRouteData.ResourcePath}HangryGuardians/AppIcon.png`
                 , tag: ""
-                , icon: `../..${PageRouteData.ResourcePath}/Resources/Images/Logos/Unity/unity-tab-square-black.png`
+                , icon: `../..${PageRouteData.ResourcePath}Images/Logos/Unity/unity-tab-square-black.png`
                 , title: "Hangry Guardians"
                 , description: "An android mobile game client project for GameStart Asia"
                 , date: "2019"

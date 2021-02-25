@@ -29,6 +29,10 @@ import SideBySideContent_HangryGuardians_GameDescription from "../../../../../Da
 import SideBySideContent_HangryGuardians_ProjectDescription from "../../../../../Data/PageData/ProjectPage/SubProjectPages/SpaceRunners/SideBySideInfo_ProjectDescription";
 //#endregion
 
+//#region *************** Static Background *********************
+import {staticBgContent_SpaceRunners} from "../../../../../Data/PageData/ProjectPage/SubProjectPages/SpaceRunners/StaticBackgroundContent";
+//#endregion
+
 //#endregion
 
 //#endregion
@@ -50,7 +54,8 @@ export default function Page_SpaceRunners()
 
     heroPageTitle =
     {
-        imageSrc: `../..${PageRouteData.ResourcePath}/Resources/HangryGuardians/Ice.jpg`
+        imageSrc: `${staticBgContent_SpaceRunners.titleHeroImageLink}`
+        // imageSrc: `../..${PageRouteData.ResourcePath}HangryGuardians/Ice.jpg`
         ,
         jsxContent: <PageStructure content={heroPageTitle} info={PageStruct_Transparent} />
     };
@@ -91,7 +96,8 @@ export default function Page_SpaceRunners()
 
     heroReflectionTitle =
     {
-        imageSrc: `../..${PageRouteData.ResourcePath}/Resources/HangryGuardians/Tunel&Ice_edited.jpg`
+        imageSrc: `${staticBgContent_SpaceRunners.downloadHeroImageLink}`
+        // imageSrc: `../..${PageRouteData.ResourcePath}HangryGuardians/Tunel&Ice_edited.jpg`
         ,
         jsxContent: <PageStructure content={heroReflectionTitle} info={PageStruct_Transparent} />
     }

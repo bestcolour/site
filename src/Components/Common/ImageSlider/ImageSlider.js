@@ -9,7 +9,7 @@ export default class ImageSlider extends React.Component
     // {
     //     imageDataArray: 
     //     [
-    //         `../..${PageRouteData.ResourcePath}/Resources/HangryGuardians/SplashArt.jpg`
+    //         `../..${PageRouteData.ResourcePath}HangryGuardians/SplashArt.jpg`
     //        
     //     ]
     // }

@@ -14,7 +14,9 @@ const PageRouteData =
     //#endregion
 
     ,
-    ResourcePath: "/site"
+    ResourcePath: "/site/Resources/"
+    ,
+    PublicPath: "/site/"
 }
 
 export default PageRouteData;

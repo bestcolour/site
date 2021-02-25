@@ -12,7 +12,7 @@ export default function Card({ cardInfo, cardStyleInfo })
     //     link: PageRouteData.ProjectPagePath
     //     , image: ""
     //     , tag: ""
-    //     , icon: `../..${PageRouteData.ResourcePath}/Resources/Images/Logos/Unity/unity-tab-square-black.png`
+    //     , icon: `../..${PageRouteData.ResourcePath}Images/Logos/Unity/unity-tab-square-black.png`
     //     , title: ""
     //     , description: ""
     //     , date: ""
