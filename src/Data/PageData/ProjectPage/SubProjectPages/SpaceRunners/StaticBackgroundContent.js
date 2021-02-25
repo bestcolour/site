@@ -6,7 +6,6 @@ const StaticBackgroundContent_SpaceRunners =
     downloadHeroImageLink : `../..${PageRouteData.ResourcePath}SpaceRunners/Lobby.png`
 };
 
-
 export 
 {
     StaticBackgroundContent_SpaceRunners as staticBgContent_SpaceRunners

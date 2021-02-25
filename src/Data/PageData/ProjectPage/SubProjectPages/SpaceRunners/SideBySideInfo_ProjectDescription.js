@@ -8,21 +8,11 @@ const imageSliderInfo =
 {
     imageDataArray: 
     [
-        `../..${PageRouteData.ResourcePath}HangryGuardians/SplashArt.jpg`
-        ,
-        `../..${PageRouteData.ResourcePath}HangryGuardians/Ice.jpg`
-        ,
-        `../..${PageRouteData.ResourcePath}HangryGuardians/Ice&Wind.jpg`
-        ,
-        `../..${PageRouteData.ResourcePath}HangryGuardians/Star.jpg`
-        ,
-        `../..${PageRouteData.ResourcePath}HangryGuardians/Tunnel.jpg`
-        ,
-        `../..${PageRouteData.ResourcePath}HangryGuardians/Tunel&Ice.jpg`
-        ,
-        `../..${PageRouteData.ResourcePath}HangryGuardians/Tutorial.jpg`
-        ,
-        `../..${PageRouteData.ResourcePath}HangryGuardians/Wind&TUnnel.jpg`
+        `../..${PageRouteData.ResourcePath}SpaceRunners/GodView.png`
+        ,`../..${PageRouteData.ResourcePath}SpaceRunners/Lobby.png`
+        ,`../..${PageRouteData.ResourcePath}SpaceRunners/Runnerview.png`
+        ,`../..${PageRouteData.ResourcePath}SpaceRunners/Runnerview2.png`
+
     ]
 }
 //#endregion
