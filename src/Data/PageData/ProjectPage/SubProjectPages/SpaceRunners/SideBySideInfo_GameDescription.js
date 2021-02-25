@@ -9,8 +9,7 @@ const gameDescription =
             </h6>
         <br />
         <p className={GeneralStyles.white}>
-            Hangry Guardians is a simple resource matching puzzle game about delivering offerings to mythical guardians. However, each Guardian has a different preference and you can only deliver the offerings to them within a limited number of moves! Every level has 3 Stars to be achieved, each being progressively challenging to obtain.
-            Can you obtain all the Stars?
+            Space Runners is a competitive 3D platformer multiplayer networking game which can have up to 6 players playing at one time. The host player takes the role of a space overlord while the others take the role of space runners. The overlord's goal is to destroy every runner using its laser ability which temporarily disables tiles while the runners' goal is to collect x number of objectives by parkouring around the map before all of them fall into the void below. 
             </p>
     </div>
 //#endregion
@@ -23,9 +22,10 @@ const gameFeatures =
             </h6>
         <br />
         <p className={GeneralStyles.white}>
-            <li>Casual Gameplay</li>
-            <li>Puzzle with increasingly complex levels</li>
-            <li>2D</li>
+            <li>Multiplayer Networking</li>
+            <li>Competitive Gameplay</li>
+            <li>Asymmetrical Gameplay</li>
+            <li>3D Parkour</li>
         </p>
     </div>
 //#endregion
