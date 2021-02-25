@@ -6,14 +6,14 @@ import PageRouteData from "../../../../PageRouteData";
 //#region ---------- Subject --------------
 const imageSliderInfo =
 {
-    imageDataArray: 
-    [
-        `../..${PageRouteData.ResourcePath}SpaceRunners/GodView.png`
-        ,`../..${PageRouteData.ResourcePath}SpaceRunners/Lobby.png`
-        ,`../..${PageRouteData.ResourcePath}SpaceRunners/Runnerview.png`
-        ,`../..${PageRouteData.ResourcePath}SpaceRunners/Runnerview2.png`
+    imageDataArray:
+        [
+            `../..${PageRouteData.ResourcePath}SpaceRunners/GodView.png`
+            , `../..${PageRouteData.ResourcePath}SpaceRunners/Lobby.png`
+            , `../..${PageRouteData.ResourcePath}SpaceRunners/Runnerview.png`
+            , `../..${PageRouteData.ResourcePath}SpaceRunners/Runnerview2.png`
 
-    ]
+        ]
 }
 //#endregion
 
@@ -25,8 +25,8 @@ const projectDescription =
             </h6>
         <br />
         <p className={GeneralStyles.white}>
-          Hangry Guardians is my first 2D mobile game client project I have ever done in my life. I worked together with 7 other people in my Polytechnic class to accomplish this game for the client, GameStartAsia. One of the most challenging aspect of this project was to provide information to the player about the rules of the game as there seems to be a lot of things happening on the screen. I designed the tutorial to hide certain UI elements in the early levels of each map. This allows me to slowly introduce the mechanics without overwhelming the player. This led to an idea for LEM (Linear Effect Manager) which allows me to sequence events in order to make Tutorial making a lot easier. Other notable things I have done are the visual effects which give the players feedback whenever they are doing something positive or negative.
-            </p>
+            Space Runners is my first multiplayer networking project and there were definitely challenges that I have faced while creating this game with my co-programmer {<a href="https://enriquecmarcelo.github.io/" target="blank">Enrique</a>}. As I was tasked to handle the lobby match making, I had quite a tough and interesting time understanding the lobby and room logic with the new perspective of multiple clients and master client. However, it was interesting enough for me to want to learn more multiplayer networking coding for making future multiplayer games.
+        </p>
     </div>
 //#endregion
 
@@ -38,9 +38,8 @@ const rolesAndResponsibilities =
             </h6>
         <br />
         <p className={GeneralStyles.white}>
-            <li>Gameplay Programmer</li>
+            <li>Matchmaking Lobby</li>
             <li>UI & UX Design</li>
-            <li>Tutorial Designer</li>
         </p>
     </div>
 //#endregion
