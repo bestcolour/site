@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./ContactPage.module.css";
 import generalStyles from "../../../CommonStyles/GeneralStyles.module.css";
-
+import emailjs from "emailjs-com";
 
 //#region Common
 import PageStructure from "../../Common/PageStructure";
@@ -22,6 +22,23 @@ import FooterInfo from "../../../Data/FooterData/FooterInfo";
 
 export default function ContactPage()
 {
+    function sendEmail(e)
+    {
+        e.preventDefault();
+
+        emailjs.sendForm('gmail', 'template_lsydnkh', e.target, 'user_7T5EAzwrgEXNbQHfIr6a9')
+            .then((result) =>
+            {
+                console.log(result.text);
+            }, (error) =>
+            {
+                console.log(error.text);
+            });
+
+        e.target.reset();
+    }
+
+
     const sideBySideContent =
     {
         subject:
@@ -33,30 +50,35 @@ export default function ContactPage()
             <div className={generalStyles.white}>
                 <h6 clas>Send Me A Message!</h6>
 
-                <form className={style.formRoot} >
+                <form className={style.formRoot} onSubmit={sendEmail}>
                     <div className={style.inputField}>
                         <h4 >Name: </h4>
                         <br></br>
-                        <input type="text" name="name" required ></input>
+                        <input type="text" placeholder="John Doe" name="name" required ></input>
                     </div>
-
 
                     <div className={style.inputField}>
                         <h4 >Email: </h4>
                         <br></br>
-                        <input type="email" name="email" required ></input>
+                        <input type="email" placeholder="example@gmail.com" name="email" required ></input>
+                    </div>
+
+                    <div className={style.inputField}>
+                        <h4 >Subject: </h4>
+                        <br></br>
+                        <input type="text" placeholder="Game Project Offer" name="subject"  ></input>
                     </div>
 
 
                     <div className={style.inputField}>
                         <h4 >Message: </h4>
                         <br></br>
-                        <textarea name="message" rows="5"></textarea>
+                        <textarea name="message" placeholder="Type your message here..." rows="5"></textarea>
                     </div>
 
 
                     <div className={style.inputField}>
-                        <input type="submit"></input>
+                        <input type="submit" value="Send Message"></input>
                     </div>
 
                 </form>
