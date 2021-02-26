@@ -45,7 +45,7 @@ export default function ContactPage()
         //You can wrap a <p></p> around this to make other arrangements
         imageJSX: <i class="far fa-file-pdf fa-2x"></i>
         ,
-        buttonLink: "https://drive.google.com/file/d/1U831vOGkTnZ7dcQEva0omYsZEco-PdH3/view?usp=sharing"
+        buttonLink: "https://drive.google.com/drive/folders/1RGgKZviYUfZ8bzhR-rvG-m1mabG8j0tU?usp=sharing"
         ,
         target: "blank"
     }
