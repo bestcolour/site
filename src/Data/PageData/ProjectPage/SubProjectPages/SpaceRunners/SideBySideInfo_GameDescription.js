@@ -30,7 +30,7 @@ const gameFeatures =
     </div>
 //#endregion
 
-const SideBySideContent_SpaceRunners_GameDescription =
+const SideBySideContent_GameDescription =
 {
     subject:
         <div>
@@ -51,4 +51,4 @@ const SideBySideContent_SpaceRunners_GameDescription =
     isFlipped: true
 
 }
-export default SideBySideContent_SpaceRunners_GameDescription;
+export default SideBySideContent_GameDescription;

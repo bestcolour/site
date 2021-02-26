@@ -55,7 +55,7 @@ const rolesAndResponsibilities =
     </div>
 //#endregion
 
-const SideBySideContent_HangryGuardians_ProjectDescription =
+const SideBySideContent_ProjectDescription =
 {
     subject:
         <div>
@@ -73,4 +73,4 @@ const SideBySideContent_HangryGuardians_ProjectDescription =
     isFlipped: true
 
 }
-export default SideBySideContent_HangryGuardians_ProjectDescription;
+export default SideBySideContent_ProjectDescription;

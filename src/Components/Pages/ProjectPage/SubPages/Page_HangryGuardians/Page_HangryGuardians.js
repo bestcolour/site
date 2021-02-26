@@ -14,7 +14,6 @@ import Overlay from "../../../../Common/Overlay";
 //#region ---------------- Import Common Info --------------
 import { PageDescriptionInfo_Default } from "../../../../../Data/CommonInfo/PageDescription/PageDescription_CommonInfo";
 import StaticBackgroundInfo_Default from "../../../../../Data/CommonInfo/StaticBackground/StaticBackground_CommonInfo";
-import PageRouteData from "../../../../../Data/PageRouteData";
 
 //#endregion
 
@@ -32,11 +31,11 @@ import { PageDescriptContent_pageTitle, PageDescriptContent_downloadSection } fr
 //#endregion
 
 //#region *************** Side By Side Info *****************
-import SideBySideContent_HangryGuardians_GameDescription from "../../../../../Data/PageData/ProjectPage/SubProjectPages/HangryGuardians/SideBySideInfo_GameDescription";
-import SideBySideContent_HangryGuardians_ProjectDescription from "../../../../../Data/PageData/ProjectPage/SubProjectPages/HangryGuardians/SideBySideInfo_ProjectDescription";
+import SideBySideContent_GameDescription from "../../../../../Data/PageData/ProjectPage/SubProjectPages/HangryGuardians/SideBySideInfo_GameDescription";
+import SideBySideContent_ProjectDescription from "../../../../../Data/PageData/ProjectPage/SubProjectPages/HangryGuardians/SideBySideInfo_ProjectDescription";
 //#endregion
 //#region ****************** Static Backgrund Content *****************
-import { staticBgContent_HangryGuardians } from "../../../../../Data/PageData/ProjectPage/SubProjectPages/HangryGuardians/StaticBackgroundContent";
+import { staticBgContent } from "../../../../../Data/PageData/ProjectPage/SubProjectPages/HangryGuardians/StaticBackgroundContent";
 //#endregion
 
 //#endregion
@@ -60,8 +59,7 @@ export default function Page_HangryGuardians()
 
     heroPageTitle =
     {
-        imageSrc: staticBgContent_HangryGuardians.titleHeroImageLink
-        // imageSrc: `../..${PageRouteData.ResourcePath}HangryGuardians/Ice.jpg`
+        imageSrc: staticBgContent.titleHeroImageLink
         ,
         jsxContent: <PageStructure content={heroPageTitle} info={PageStruct_Transparent} />
     };
@@ -73,10 +71,10 @@ export default function Page_HangryGuardians()
     let sideBySideContent =
         <>
             <div className={style.topBotPadding}>
-                <SideBySide content={SideBySideContent_HangryGuardians_GameDescription} />
+                <SideBySide content={SideBySideContent_GameDescription} />
                 <br />
                 <br />
-                <SideBySide content={SideBySideContent_HangryGuardians_ProjectDescription} />
+                <SideBySide content={SideBySideContent_ProjectDescription} />
             </div>
         </>
         ;
@@ -94,7 +92,6 @@ export default function Page_HangryGuardians()
             <div className={columnStyle.col3}></div>
             <div className={columnStyle.col6}>
                 <Overlay content={<PageDescription content={PageDescriptContent_downloadSection} info={PageDescriptionInfo_Default} />} info={OverlayInfo_default} />
-                {/* <PageDescription info={PageDescriptionInfo_Default} content={PageDescriptContent_reflectionTitle} /> */}
             </div>
             <div className={columnStyle.col3}></div>
         </div>
@@ -102,8 +99,7 @@ export default function Page_HangryGuardians()
 
     heroReflectionTitle =
     {
-        imageSrc: staticBgContent_HangryGuardians.downloadHeroImageLink
-        // imageSrc: `../..${PageRouteData.ResourcePath}HangryGuardians/Tunel&Ice_edited.jpg`
+        imageSrc: staticBgContent.downloadHeroImageLink
         ,
         jsxContent: <PageStructure content={heroReflectionTitle} info={PageStruct_Transparent} />
     }

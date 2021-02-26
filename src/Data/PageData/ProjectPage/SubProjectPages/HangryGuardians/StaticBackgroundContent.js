@@ -1,5 +1,5 @@
 import PageRouteData from "../../../../PageRouteData";
-const StaticBackgroundContent_HangryGuardians =
+const StaticBackgroundContent =
 {
     titleHeroImageLink: `../..${PageRouteData.ResourcePath}HangryGuardians/Ice.jpg`
     ,
@@ -9,5 +9,5 @@ const StaticBackgroundContent_HangryGuardians =
 
 export 
 {
-    StaticBackgroundContent_HangryGuardians as staticBgContent_HangryGuardians
+    StaticBackgroundContent as staticBgContent
 };

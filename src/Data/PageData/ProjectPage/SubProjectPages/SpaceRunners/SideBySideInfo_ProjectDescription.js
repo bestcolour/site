@@ -44,7 +44,7 @@ const rolesAndResponsibilities =
     </div>
 //#endregion
 
-const SideBySideContent_SpaceRunners_ProjectDescription =
+const SideBySideContent_ProjectDescription =
 {
     subject:
         <div>
@@ -62,4 +62,4 @@ const SideBySideContent_SpaceRunners_ProjectDescription =
     isFlipped: true
 
 }
-export default SideBySideContent_SpaceRunners_ProjectDescription;
+export default SideBySideContent_ProjectDescription;

@@ -1,5 +1,5 @@
 import PageRouteData from "../../../../PageRouteData";
-const StaticBackgroundContent_SpaceRunners =
+const StaticBackgroundContent =
 {
     titleHeroImageLink: `../..${PageRouteData.ResourcePath}SpaceRunners/Runnerview2.png`
     ,
@@ -8,5 +8,5 @@ const StaticBackgroundContent_SpaceRunners =
 
 export 
 {
-    StaticBackgroundContent_SpaceRunners as staticBgContent_SpaceRunners
+    StaticBackgroundContent as staticBgContent
 };

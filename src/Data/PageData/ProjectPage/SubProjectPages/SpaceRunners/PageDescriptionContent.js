@@ -2,14 +2,14 @@ import FAImageButton from "../../../../../Components/Common/Button/FAImageButton
 import { FAImgButton_DownloadLink } from "./FAImageButtonContent";
 
 //This file stores all the page description infos found on the Hangry Guardian project page
-const PageDescriptionContent_SpaceRunners_PageTitle =
+const PageDescriptionContent_PageTitle =
 {
   pageTitle: "Space Runners"
   ,
   description: null
 }
 
-const PageDescriptionContent_SpaceRunners_DownloadSection =
+const PageDescriptionContent_DownloadSection =
 {
   pageTitle: "Download Space Runners"
   ,
@@ -21,6 +21,6 @@ const PageDescriptionContent_SpaceRunners_DownloadSection =
 
 export
 {
-  PageDescriptionContent_SpaceRunners_PageTitle as PageDescriptContent_pageTitle
-  , PageDescriptionContent_SpaceRunners_DownloadSection as PageDescriptContent_downloadSection
+  PageDescriptionContent_PageTitle as PageDescriptContent_pageTitle
+  , PageDescriptionContent_DownloadSection as PageDescriptContent_downloadSection
 };

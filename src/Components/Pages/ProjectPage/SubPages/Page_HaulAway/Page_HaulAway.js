@@ -24,8 +24,8 @@ import { PageDescriptContent_pageTitle, PageDescriptContent_downloadSection } fr
 //#endregion
 
 //#region *************** Side By Side Info *****************
-import SideBySideContent_HangryGuardians_GameDescription from "../../../../../Data/PageData/ProjectPage/SubProjectPages/HaulAway/SideBySideInfo_GameDescription";
-import SideBySideContent_HangryGuardians_ProjectDescription from "../../../../../Data/PageData/ProjectPage/SubProjectPages/HaulAway/SideBySideInfo_ProjectDescription";
+import SideBySideContent_GameDescription from "../../../../../Data/PageData/ProjectPage/SubProjectPages/HaulAway/SideBySideInfo_GameDescription";
+import SideBySideContent_ProjectDescription from "../../../../../Data/PageData/ProjectPage/SubProjectPages/HaulAway/SideBySideInfo_ProjectDescription";
 //#endregion
 
 //#region *************** Static Background *********************
@@ -65,10 +65,10 @@ export default function Page_HaulAway()
     let sideBySideContent =
         <>
             <div className={styles.topBotPadding}>
-                <SideBySide content={SideBySideContent_HangryGuardians_GameDescription} />
+                <SideBySide content={SideBySideContent_GameDescription} />
                 <br />
                 <br />
-                <SideBySide content={SideBySideContent_HangryGuardians_ProjectDescription} />
+                <SideBySide content={SideBySideContent_ProjectDescription} />
             </div>
         </>
         ;
@@ -103,7 +103,6 @@ export default function Page_HaulAway()
         <>
             <StaticBackground info={StaticBackgroundInfo_Default} content={heroPageTitle} />
             {sideBySideContent}
-            {/* <StaticBackground info={StaticBackgroundInfo_Default} content={heroReflectionTitle} /> */}
         </>
     );
 }
