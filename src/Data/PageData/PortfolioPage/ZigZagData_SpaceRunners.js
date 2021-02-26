@@ -44,7 +44,7 @@ const ZigZagInfo_SpaceRunners =
                 SpaceRunners is a multiplayer PC network game project which was developed as a school project during my Polytechnic year 3 studies from October to December 2020.
             <br />
                 <br />
-            It is a 3D platformer where 1 player takes the role of a space overlord while the others take the role of space runners. The overlord's goal is to destroy every runner using its ability while the runners' goal is to collect x number of objectives on the map.
+            It is a 3D platformer where one player takes the role of a space overlord while the others take the role of space runners. The overlord's goal is to destroy every runner using its ability while the runners' goal is to collect x number of objectives on the map.
             <br />
             </p>
 
