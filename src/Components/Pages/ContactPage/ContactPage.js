@@ -91,8 +91,8 @@ export default function ContactPage()
 
     //#region ------------ Final Content -------------------
     const pageContent =
-        <div className={style.root}>
-            <div className={style.contactFormRoot}>
+        <div className={style.pageContentRoot}>
+            <div className={style.sideBySideContentRoot}>
                 <SideBySide content={sideBySideContent} />
             </div>
         </div>

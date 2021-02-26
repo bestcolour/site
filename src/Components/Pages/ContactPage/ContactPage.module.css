@@ -1,15 +1,15 @@
-.contactFormRoot
+.pageContentRoot
+{
+    height: 100vh;
+}
+
+.sideBySideContentRoot
 {
     margin-left: 5%;
     margin-right: 5%;
     background-color: #5A5A5A;
     padding: 5%;
 
-}
-
-.root
-{
-    height: 100vh;
 }
 
 .formRoot
