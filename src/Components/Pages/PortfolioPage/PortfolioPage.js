@@ -23,10 +23,10 @@ import PageDescriptionContent_PortfolioPage from "../../../Data/PageData/Portfol
 //#endregion
 
 //#region --------------- ZigZag Content ---------------------------
-import ZigZagContent_HangryGuardians from "../../../Data/PageData/PortfolioPage/ZigZagData_HangryGuardians";
-import ZigZagContent_SpaceRunners from "../../../Data/PageData/PortfolioPage/ZigZagData_SpaceRunners";
-import ZigZagInfo_Drag_and_Pull from "../../../Data/PageData/PortfolioPage/ZigZagData_Drag_and_Pull";
-import ZigZagInfo_HaulAway from "../../../Data/PageData/PortfolioPage/ZigZagData_HaulAway";
+import ZigZagContent_HangryGuardians from "../../../Data/PageData/PortfolioPage/HangryGuardians/ZigZagData";
+import ZigZagContent_SpaceRunners from "../../../Data/PageData/PortfolioPage/SpaceRunners/ZigZagData_SpaceRunners";
+import ZigZagContent_DragAndPull from "../../../Data/PageData/PortfolioPage/Drag_and_Pull/ZigZagData";
+import ZigZagInfo_HaulAway from "../../../Data/PageData/PortfolioPage/HaulAway/ZigZagData_HaulAway";
 //#endregion
 
 //#endregion
@@ -42,7 +42,7 @@ export default function PortfolioPage()
             <ZigZag content={ZigZagInfo_HaulAway} info={ZigZag_Default} />
             <ZigZag content={ZigZagContent_SpaceRunners} info={ZigZag_Default} />
             <ZigZag content={ZigZagContent_HangryGuardians} info={ZigZag_Default} />
-            <ZigZag content={ZigZagInfo_Drag_and_Pull} info={ZigZag_Default} />
+            <ZigZag content={ZigZagContent_DragAndPull} info={ZigZag_Default} />
         </div>
 
     return (

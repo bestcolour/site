@@ -1,14 +1,14 @@
-import styles from "./ZigZagData_CommonStyles.module.css";
-import GeneralStyles from "../../../CommonStyles/GeneralStyles.module.css";
+import styles from "../ZigZagData_CommonStyles.module.css";
+import GeneralStyles from "../../../../CommonStyles/GeneralStyles.module.css";
 
 //#region ---------- Import Commons -----------------
-import TextButton from "../../../Components/Common/Button/TextButton";
-import ImageButton from "../../../Components/Common/Button/ImageButton";
-import BackgroundImage from "../../../Components/Common/BackgroundImage";
+import TextButton from "../../../../Components/Common/Button/TextButton";
+import ImageButton from "../../../../Components/Common/Button/ImageButton";
+import BackgroundImage from "../../../../Components/Common/BackgroundImage";
 //#endregion
 
 //#region ----------- Import Data ---------------
-import PageRouteData from "../../PageRouteData";
+import PageRouteData from "../../../PageRouteData";
 //#endregion
 
 
@@ -21,15 +21,15 @@ const TextButtonInfo_app =
     , padding: "3.5% 3.5% 3.5% 3.5%"
 }
 
-const BackgroundImageInfo_hangryGuardiansSubject =
+const BackgroundImageInfo =
 {
     bgImageSrc: `../..${PageRouteData.ResourcePath}HaulAway/Poster.jpg`
     , cssStyling: styles.subjectBgImageClassStyle
 }
 
-const ZigZagContent_HangryGuardians =
+const ZigZagContent =
 {
-    subject: <BackgroundImage info={BackgroundImageInfo_hangryGuardiansSubject} />
+    subject: <BackgroundImage info={BackgroundImageInfo} />
     , titleJSX: <h6 className={`${GeneralStyles.white}`}>Haul Away</h6>
     , paragraphJSX:
         <div>
@@ -56,4 +56,4 @@ const ZigZagContent_HangryGuardians =
 
     , isLeft: true
 }
-export default ZigZagContent_HangryGuardians;
+export default ZigZagContent;

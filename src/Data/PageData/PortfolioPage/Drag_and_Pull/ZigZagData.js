@@ -1,14 +1,14 @@
 //#region ============== Imports ====================
-import styles from "./ZigZagData_CommonStyles.module.css";
-import GeneralStyles from "../../../CommonStyles/GeneralStyles.module.css";
+import styles from "../ZigZagData_CommonStyles.module.css";
+import GeneralStyles from "../../../../CommonStyles/GeneralStyles.module.css";
 
 //#region  --------------- Commons -----------------
-import BackgroundImage from "../../../Components/Common/BackgroundImage";
-import TextButton from "../../../Components/Common/Button/TextButton";
+import BackgroundImage from "../../../../Components/Common/BackgroundImage";
+import TextButton from "../../../../Components/Common/Button/TextButton";
 //#endregion
 
 //#region ------------- Data ----------------
-import PageRouteData from "../../PageRouteData";
+import PageRouteData from "../../../PageRouteData";
 //#endregion
 
 //#endregion
@@ -23,7 +23,7 @@ const TextButtonContent_app =
     , padding: "3.5% 3.5% 3.5% 3.5%"
 }
 
-const BackgroundImageInfo_Subject =
+const BackgroundImageInfo =
 {
     bgImageSrc: `../..${PageRouteData.ResourcePath}Drag&Pull/Menu.jpg`
     , cssStyling: styles.subjectBgImageClassStyle
@@ -31,9 +31,9 @@ const BackgroundImageInfo_Subject =
 //#endregion
 
 
-const ZigZagInfo_Drag_and_Pull =
+const ZigZagContent =
 {
-    subject: < BackgroundImage info={BackgroundImageInfo_Subject} />
+    subject: < BackgroundImage info={BackgroundImageInfo} />
     , titleJSX:
         <h6 className={`${GeneralStyles.white}`}>
             Drag and Pull
@@ -58,4 +58,4 @@ const ZigZagInfo_Drag_and_Pull =
     , isLeft: false
 }
 
-export default ZigZagInfo_Drag_and_Pull;
+export default ZigZagContent;

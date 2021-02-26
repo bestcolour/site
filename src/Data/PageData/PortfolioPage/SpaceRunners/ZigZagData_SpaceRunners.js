@@ -1,14 +1,14 @@
 //#region ============== Imports ====================
-import styles from "./ZigZagData_CommonStyles.module.css";
-import GeneralStyles from "../../../CommonStyles/GeneralStyles.module.css";
+import styles from "../ZigZagData_CommonStyles.module.css";
+import GeneralStyles from "../../../../CommonStyles/GeneralStyles.module.css";
 
 //#region  --------------- Commons -----------------
-import BackgroundImage from "../../../Components/Common/BackgroundImage";
-import TextButton from "../../../Components/Common/Button/TextButton";
+import BackgroundImage from "../../../../Components/Common/BackgroundImage";
+import TextButton from "../../../../Components/Common/Button/TextButton";
 //#endregion
 
 //#region ------------- Data ----------------
-import PageRouteData from "../../PageRouteData";
+import PageRouteData from "../../../PageRouteData";
 //#endregion
 
 //#endregion
@@ -23,7 +23,7 @@ const TextButtonContent_app =
     , padding: "3.5% 3.5% 3.5% 3.5%"
 }
 
-const BackgroundImageInfo_spaceRunnerSubject =
+const BackgroundImageInfo =
 {
     bgImageSrc: `../..${PageRouteData.ResourcePath}SpaceRunners/GodView.png`
     , cssStyling: styles.subjectBgImageClassStyle
@@ -31,9 +31,9 @@ const BackgroundImageInfo_spaceRunnerSubject =
 //#endregion
 
 
-const ZigZagInfo_SpaceRunners =
+const ZigZagContent =
 {
-    subject: < BackgroundImage info={BackgroundImageInfo_spaceRunnerSubject} />
+    subject: < BackgroundImage info={BackgroundImageInfo} />
     , titleJSX:
         <h6 className={`${GeneralStyles.white}`}>
             SpaceRunners
@@ -58,4 +58,4 @@ const ZigZagInfo_SpaceRunners =
     , isLeft: false
 }
 
-export default ZigZagInfo_SpaceRunners;
+export default ZigZagContent;
