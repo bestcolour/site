@@ -23,11 +23,20 @@ const PageStructureInfo_Transparent =
     centerBgColor: "transparent"
 }
 
+//Page structure with the bg as transparent
+const PageStructureInfo_Default =
+{
+    sideBgColor: "#909090"
+    ,
+    centerBgColor: "#5A5A5A"
+}
+
 
 export 
 {
     PageStructureInfo_Grey as PageStruct_Grey
     ,PageStructureInfo_Black1 as PageStruct_Black1
     ,PageStructureInfo_Transparent as PageStruct_Transparent
+    ,PageStructureInfo_Default as Pagestruct_Default
 }
 

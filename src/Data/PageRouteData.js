@@ -5,6 +5,7 @@ const PageRouteData =
     LandingPagePath: "/"
     , ProjectPagePath: "/projectPage"
     , PortfolioPagePath: "/portfolio"
+    , ContactPagePath  : "/contact"
 
     //#region Project Pages
     //REMINDER TO SELF:

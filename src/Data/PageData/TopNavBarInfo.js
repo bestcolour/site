@@ -25,7 +25,7 @@ const TopNavBarData =
             {
                 linkName: "Contact Me"
                 ,
-                link: "#"
+                link: PageRouteData.ContactPagePath
             }
         ]
     ,

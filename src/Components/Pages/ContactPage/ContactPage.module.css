@@ -1,0 +1,37 @@
+.contactFormRoot
+{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: #5A5A5A;
+    padding: 5%;
+
+}
+
+.root
+{
+    height: 100vh;
+}
+
+.formRoot
+{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+
+.inputField
+{
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+.inputField input
+{
+    width: 55%;
+}
+
+.inputField textarea
+{
+    width: 55%;
+}
