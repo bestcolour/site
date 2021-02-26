@@ -12,6 +12,7 @@ import ProjectPageComponent from "./ProjectPageComponent";
 //============= BEYOND HERE ARE PAGES =============
 import Page_HangryGuardians from "./SubPages/Page_HangryGuardians";
 import Page_SpaceRunners from "./SubPages/Page_SpaceRunners";
+import Page_HaulAway from "./SubPages/Page_HaulAway";
 //#endregion
 
 //#region ------------ Data ----------------
@@ -30,6 +31,7 @@ export default function ProjectPage()
                     <Route component={ProjectPageComponent} path={PageRouteData.ProjectPagePath} exact />
                     <Route component={Page_HangryGuardians} path={PageRouteData.HangryGuardiansPath} />
                     <Route component={Page_SpaceRunners} path={PageRouteData.SpaceRunnersPath} />
+                    <Route component={Page_HaulAway} path={PageRouteData.HaulAwayPath} />
                 </Switch>
             <StandardFooter footerInfo={FooterInfo} />
         </div>

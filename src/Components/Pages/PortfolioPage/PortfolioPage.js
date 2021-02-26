@@ -26,6 +26,7 @@ import PageDescriptionContent_PortfolioPage from "../../../Data/PageData/Portfol
 import ZigZagContent_HangryGuardians from "../../../Data/PageData/PortfolioPage/ZigZagData_HangryGuardians";
 import ZigZagContent_SpaceRunners from "../../../Data/PageData/PortfolioPage/ZigZagData_SpaceRunners";
 import ZigZagInfo_Drag_and_Pull from "../../../Data/PageData/PortfolioPage/ZigZagData_Drag_and_Pull";
+import ZigZagInfo_HaulAway from "../../../Data/PageData/PortfolioPage/ZigZagData_HaulAway";
 //#endregion
 
 //#endregion
@@ -38,8 +39,9 @@ export default function PortfolioPage()
     const content =
         <div>
             <PageDescription info={PageDescriptionInfo_Default} content={PageDescriptionContent_PortfolioPage} />
-            <ZigZag content={ZigZagContent_HangryGuardians} info={ZigZag_Default} />
+            <ZigZag content={ZigZagInfo_HaulAway} info={ZigZag_Default} />
             <ZigZag content={ZigZagContent_SpaceRunners} info={ZigZag_Default} />
+            <ZigZag content={ZigZagContent_HangryGuardians} info={ZigZag_Default} />
             <ZigZag content={ZigZagInfo_Drag_and_Pull} info={ZigZag_Default} />
         </div>
 

@@ -55,7 +55,7 @@ const ZigZagInfo_Drag_and_Pull =
             </div>
         </div>
 
-    , isLeft: true
+    , isLeft: false
 }
 
 export default ZigZagInfo_Drag_and_Pull;
