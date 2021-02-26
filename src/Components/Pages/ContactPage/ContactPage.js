@@ -5,6 +5,7 @@ import emailjs from "emailjs-com";
 
 //#region Common
 import PageStructure from "../../Common/PageStructure";
+import FAImageButton from "../../Common/Button/FAImageButton";
 //#endregion
 
 //#region Modules
@@ -38,15 +39,34 @@ export default function ContactPage()
         e.target.reset();
     }
 
+    //#region ----------------- FontAwesome Button Content ------------------
+    const FAImageButtonContent_DownloadResume =
+    {
+        //You can wrap a <p></p> around this to make other arrangements
+        imageJSX: <i class="far fa-file-pdf fa-2x"></i>
+        ,
+        buttonLink: "https://drive.google.com/file/d/1U831vOGkTnZ7dcQEva0omYsZEco-PdH3/view?usp=sharing"
+        ,
+        target: "blank"
+    }
+    //#endregion
 
+    //#region =============== Side by Side Content ==================
     const sideBySideContent =
     {
         subject:
+            //#region ------------- Subject ------------------
             <div className={generalStyles.white}>
                 <h6 >Download my Resume here!</h6>
+                <br></br>
+                <br></br>
+                <FAImageButton content={FAImageButtonContent_DownloadResume} />
+
             </div>
+        //#endregion
         ,
         description:
+            //#region ------------------ Description ----------------------
             <div className={generalStyles.white}>
                 <h6 clas>Send Me A Message!</h6>
 
@@ -83,10 +103,13 @@ export default function ContactPage()
 
                 </form>
             </div>
+        //#endregion
+
         ,
         //If is flipped is set to true, the subject's default position (left side on desktop, doenst affect mobile) will be on the opposite side
         isFlipped: false
     }
+    //#endregion
 
 
     //#region ------------ Final Content -------------------

@@ -1,21 +1,23 @@
 .pageContentRoot
 {
     height: 100vh;
+    
 }
 
 .sideBySideContentRoot
 {
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 5%;
     background-color: #5A5A5A;
-    padding: 5%;
-
+    padding-right: 5%;
+    padding-left: 5%;
 }
+
+/* ====================================== Form ========================================== */
 
 .formRoot
 {
-    margin-top: 10%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 
@@ -28,10 +30,14 @@
 
 .inputField input
 {
-    width: 55%;
+    width: 50%;
 }
 
 .inputField textarea
 {
-    width: 55%;
+    width: 50%;
 }
+
+
+/* ====================================== Resume ========================================== */
+
