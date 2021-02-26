@@ -16,16 +16,16 @@ import PageRouteData from "../../PageRouteData";
 //#region ================ Common Content ================
 const TextButtonContent_app =
 {
-    text: "Read More"
-    , buttonLink: PageRouteData.SpaceRunnersPath
-    , target: ""
+    text: "Play here"
+    , buttonLink: "https://bestcolour.itch.io/drag-and-pull"
+    , target: "blank"
     , backgroundColor: "#393939"
     , padding: "3.5% 3.5% 3.5% 3.5%"
 }
 
-const BackgroundImageInfo_spaceRunnerSubject =
+const BackgroundImageInfo_Subject =
 {
-    bgImageSrc: `../..${PageRouteData.ResourcePath}SpaceRunners/GodView.png`
+    bgImageSrc: `../..${PageRouteData.ResourcePath}Drag&Pull/Menu.jpg`
     , cssStyling: styles.subjectBgImageClassStyle
 }
 //#endregion
@@ -33,7 +33,7 @@ const BackgroundImageInfo_spaceRunnerSubject =
 
 const ZigZagInfo_Drag_and_Pull =
 {
-    subject: < BackgroundImage info={BackgroundImageInfo_spaceRunnerSubject} />
+    subject: < BackgroundImage info={BackgroundImageInfo_Subject} />
     , titleJSX:
         <h6 className={`${GeneralStyles.white}`}>
             Drag and Pull
@@ -41,10 +41,10 @@ const ZigZagInfo_Drag_and_Pull =
     , paragraphJSX:
         <div>
             <p className={GeneralStyles.white}>
-                SpaceRunners is a multiplayer PC network game project which was developed as a school project during my Polytechnic year 3 studies from October to December 2020.
+                Drag and Pull is a mobile game which was developed during my Year 2 studies. We had a project where the goal of it was to explore Unity's Physics systems and this was what I came up with.
             <br />
                 <br />
-            It is a 3D platformer where one player takes the role of a space overlord while the others take the role of space runners. The overlord's goal is to destroy every runner using its ability while the runners' goal is to collect x number of objectives on the map.
+            The game is relatively simple, reach the end goal at every level and you win! To move the player, as in the title, just drag and pull! 
             <br />
             </p>
 
