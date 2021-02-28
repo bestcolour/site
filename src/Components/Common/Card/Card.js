@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Card.module.css";
-import PageRouteData from "../../../Data/PageRouteData";
+import {PageRouteData} from "../../../Data/PageRouteData";
 import { Link } from "react-router-dom";
 
 export default function Card({ cardInfo, cardStyleInfo })

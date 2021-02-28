@@ -1,6 +1,6 @@
 import GeneralStyles from "../../../../../CommonStyles/GeneralStyles.module.css";
 import ImageSlider from "../../../../../Components/Common/ImageSlider";
-import PageRouteData from "../../../../PageRouteData";
+import {PageRouteData} from "../../../../PageRouteData";
 
 
 //#region ---------- Subject --------------

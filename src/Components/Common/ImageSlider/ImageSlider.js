@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./ImageSlider.module.css";
-import PageRouteData from "../../../Data/PageRouteData";
+import {PageRouteData} from "../../../Data/PageRouteData";
 
 export default class ImageSlider extends React.Component
 {

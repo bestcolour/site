@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./Table.module.css";
-import PageRouteData from "../../../Data/PageRouteData";
+import {PageRouteData} from "../../../Data/PageRouteData";
 
 //#region Import Commons
 import Card from "../Card";

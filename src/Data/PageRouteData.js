@@ -5,7 +5,7 @@ const PageRouteData =
     LandingPagePath: "/"
     , ProjectPagePath: "/projectPage"
     , PortfolioPagePath: "/portfolio"
-    , ContactPagePath  : "/contact"
+    , ContactPagePath: "/contact"
 
     //#region Project Pages
     //REMINDER TO SELF:
@@ -22,4 +22,15 @@ const PageRouteData =
     PublicPath: "/site/"
 }
 
-export default PageRouteData;
+function OnClickNewSite()
+{
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
+export  
+{
+    PageRouteData
+    , OnClickNewSite
+}
+;

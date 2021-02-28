@@ -8,7 +8,7 @@ import BackgroundImage from "../../../../Components/Common/BackgroundImage";
 //#endregion
 
 //#region ----------- Import Data ---------------
-import PageRouteData from "../../../PageRouteData";
+import {PageRouteData,OnClickNewSite} from "../../../PageRouteData";
 //#endregion
 
 const ImageButtonInfo_app =
@@ -62,7 +62,7 @@ const ZigZagContent =
             <div className={styles.buttonHolderVertical}>
                 <p className={styles.buttonHolder}>
                     <ImageButton content={ImageButtonInfo_app} />
-                    <TextButton content={TextButtonInfo_app} />
+                    <TextButton content={TextButtonInfo_app} onClickFunction={OnClickNewSite}/>
                 </p>
             </div>
         </div>

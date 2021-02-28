@@ -1,5 +1,5 @@
 // import LandingPage from "../../../Components/Pages/LandingPage/index";
-import PageRouteData from "../../PageRouteData";
+import {PageRouteData} from "../../PageRouteData";
 const CardTableInfo_ProjectPage =
 {
     //Stores the card width & height as well as the numeber of rows & columns you want in a table

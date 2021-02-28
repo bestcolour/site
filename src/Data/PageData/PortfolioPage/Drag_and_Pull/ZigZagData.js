@@ -9,7 +9,7 @@ import ImageButton from "../../../../Components/Common/Button/ImageButton";
 //#endregion
 
 //#region ------------- Data ----------------
-import PageRouteData from "../../../PageRouteData";
+import {PageRouteData,OnClickNewSite} from "../../../PageRouteData";
 //#endregion
 
 //#endregion
@@ -65,7 +65,7 @@ const ZigZagContent =
             <div className={styles.buttonHolderVertical}>
                 <p className={styles.buttonHolder}>
                     <ImageButton content={ImageButtonInfo_example} />
-                    <TextButton content={TextButtonContent_app} />
+                    <TextButton content={TextButtonContent_app} onClickFunction={OnClickNewSite} />
                 </p>
             </div>
         </div>

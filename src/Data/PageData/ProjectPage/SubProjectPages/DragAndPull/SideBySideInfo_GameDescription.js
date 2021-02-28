@@ -1,5 +1,5 @@
 import GeneralStyles from "../../../../../CommonStyles/GeneralStyles.module.css";
-import PageRouteData from "../../../../PageRouteData";
+import {PageRouteData} from "../../../../PageRouteData";
 
 //#region -------- Game Description --------------
 const gameDescription =

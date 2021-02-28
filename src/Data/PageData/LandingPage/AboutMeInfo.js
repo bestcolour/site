@@ -1,4 +1,4 @@
-import PageRouteData from "../../PageRouteData";
+import {PageRouteData} from "../../PageRouteData";
 const AboutMeInfo =
 {
     profileImg: `../..${PageRouteData.ResourcePath}Images/Backgrounds/DayBackground.png`

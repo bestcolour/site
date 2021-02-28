@@ -19,7 +19,7 @@ import Page_DragAndPull from "./SubPages/DragAndPull/PageContent";
 //#region ------------ Data ----------------
 import TopNavBarInfo from "../../../Data/PageData/TopNavBarInfo";
 import FooterInfo from "../../../Data/FooterData/FooterInfo";
-import PageRouteData from "../../../Data/PageRouteData";
+import {PageRouteData} from "../../../Data/PageRouteData";
 //#endregion
 
 //Handles the multiple kinds of project pages so that i dont hv to keep on reimporting Standard footer etc
