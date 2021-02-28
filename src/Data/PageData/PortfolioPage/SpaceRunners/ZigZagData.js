@@ -5,6 +5,7 @@ import GeneralStyles from "../../../../CommonStyles/GeneralStyles.module.css";
 //#region  --------------- Commons -----------------
 import BackgroundImage from "../../../../Components/Common/BackgroundImage";
 import TextButton from "../../../../Components/Common/Button/TextButton";
+import ImageButton from "../../../../Components/Common/Button/ImageButton";
 //#endregion
 
 //#region ------------- Data ----------------
@@ -28,6 +29,19 @@ const BackgroundImageInfo =
     bgImageSrc: `../..${PageRouteData.ResourcePath}SpaceRunners/GodView.png`
     , cssStyling: styles.subjectBgImageClassStyle
 }
+
+const ImageButtonInfo_app =
+{
+    imageSrc: `../..${PageRouteData.ResourcePath}Images/Logos/itch-io-badge.png`
+    ,
+    buttonLink: "https://bestcolour.itch.io/spacerunners"
+    ,
+    target: "_blank"
+    ,
+    width: "11.5em"
+    ,
+    height: "3.5em"
+}
 //#endregion
 
 
@@ -50,6 +64,7 @@ const ZigZagContent =
 
             <div className={styles.buttonHolderVertical}>
                 <p className={styles.buttonHolder}>
+                    <ImageButton info= {ImageButtonInfo_app}  />
                     <TextButton info={TextButtonContent_app} />
                 </p>
             </div>

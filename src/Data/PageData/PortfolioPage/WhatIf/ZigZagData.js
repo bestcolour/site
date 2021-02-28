@@ -27,6 +27,20 @@ const BackgroundImageInfo =
     , cssStyling: styles.subjectBgImageClassStyle
 }
 
+
+const ImageButtonInfo_example =
+{
+    imageSrc: `../..${PageRouteData.ResourcePath}Images/Logos/itch-io-badge.png`
+    ,
+    buttonLink: "https://fyp-whatif.itch.io/what-if"
+    ,
+    target: "_blank"
+    ,
+    width: "11.5em"
+    ,
+    height: "3.5em"
+}
+
 const ZigZagContent =
 {
     subject: <BackgroundImage info={BackgroundImageInfo} />
@@ -47,6 +61,7 @@ const ZigZagContent =
 
             <div className={styles.buttonHolderVertical}>
                 <p className={styles.buttonHolder}>
+                    <ImageButton info={ImageButtonInfo_example}/>
                     <TextButton info={TextButtonInfo_app} />
                 </p>
             </div>
