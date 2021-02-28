@@ -48,7 +48,7 @@ const ZigZagContent =
 
             <div className={styles.buttonHolderVertical}>
                 <p className={styles.buttonHolder}>
-                    <TextButton info={TextButtonInfo_app} />
+                    <TextButton content={TextButtonInfo_app} />
                 </p>
             </div>
         </div>

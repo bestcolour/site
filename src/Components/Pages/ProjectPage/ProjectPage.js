@@ -10,9 +10,10 @@ import TopNavBar from "../../Modules/TopNavBar";
 //This is the main page
 import ProjectPageComponent from "./ProjectPageComponent";
 //============= BEYOND HERE ARE PAGES =============
-import Page_HangryGuardians from "./SubPages/Page_HangryGuardians";
-import Page_SpaceRunners from "./SubPages/Page_SpaceRunners";
-import Page_HaulAway from "./SubPages/Page_HaulAway";
+import Page_HangryGuardians from "./SubPages/HangryGuardians/PageContent";
+import Page_SpaceRunners from "./SubPages/SpaceRunners/PageContent";
+import Page_HaulAway from "./SubPages/HaulAway/PageContent";
+import Page_DragAndPull from "./SubPages/DragAndPull/PageContent";
 //#endregion
 
 //#region ------------ Data ----------------
@@ -32,6 +33,7 @@ export default function ProjectPage()
                     <Route component={Page_HangryGuardians} path={PageRouteData.HangryGuardiansPath} />
                     <Route component={Page_SpaceRunners} path={PageRouteData.SpaceRunnersPath} />
                     <Route component={Page_HaulAway} path={PageRouteData.HaulAwayPath} />
+                    <Route component={Page_DragAndPull} path={PageRouteData.DragAndPull} />
                 </Switch>
             <StandardFooter footerInfo={FooterInfo} />
         </div>

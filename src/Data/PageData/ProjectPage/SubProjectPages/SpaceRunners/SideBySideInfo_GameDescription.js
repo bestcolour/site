@@ -22,7 +22,7 @@ const gameFeatures =
             </h6>
         <br />
         <p className={GeneralStyles.white}>
-            <li>Multiplayer Networking</li>
+            <li>PC Multiplayer Networking</li>
             <li>Competitive Gameplay</li>
             <li>Asymmetrical Gameplay</li>
             <li>3D Parkour</li>

@@ -61,8 +61,8 @@ const ZigZagContent =
 
             <div className={styles.buttonHolderVertical}>
                 <p className={styles.buttonHolder}>
-                    <ImageButton info={ImageButtonInfo_example}/>
-                    <TextButton info={TextButtonInfo_app} />
+                    <ImageButton content={ImageButtonInfo_example}/>
+                    <TextButton content={TextButtonInfo_app} />
                 </p>
             </div>
         </div>

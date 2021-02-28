@@ -17,9 +17,9 @@ import PageRouteData from "../../../PageRouteData";
 //#region ================ Common Content ================
 const TextButtonContent_app =
 {
-    text: "Play here"
-    , buttonLink: "https://bestcolour.itch.io/drag-and-pull"
-    , target: "blank"
+    text: "Read More"
+    , buttonLink: PageRouteData.DragAndPull
+    , target: ""
     , backgroundColor: "#393939"
     , padding: "3.5% 3.5% 3.5% 3.5%"
 }
@@ -64,8 +64,8 @@ const ZigZagContent =
 
             <div className={styles.buttonHolderVertical}>
                 <p className={styles.buttonHolder}>
-                    <ImageButton info={ImageButtonInfo_example} />
-                    <TextButton info={TextButtonContent_app} />
+                    <ImageButton content={ImageButtonInfo_example} />
+                    <TextButton content={TextButtonContent_app} />
                 </p>
             </div>
         </div>

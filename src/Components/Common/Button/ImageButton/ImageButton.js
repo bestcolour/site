@@ -1,10 +1,11 @@
 import React from "react";
 import styles from "./ImageButton.module.css"
-import PageRouteData from "../../../../Data/PageRouteData";
+// import PageRouteData from "../../../../Data/PageRouteData";
 import { Link } from "react-router-dom";
+import { GetButtonType, IsLinkToWithinSite } from "../ButtonFunctions";
 
 
-export default function ImageButton({ info })
+export default function ImageButton({ content, onClickFunction })
 {
     //#region ---------------- Template --------------------
     // const ImageButtonInfo_example =
@@ -19,9 +20,14 @@ export default function ImageButton({ info })
     //     ,
     //     height: "3.5em"
     // }
+
+    // const info = 
+    // {
+    //      onClickFunction : SomeMethod
+    // }
     //#endregion
 
-    const { imageSrc, buttonLink, target, width, height } = info;
+    const { imageSrc, buttonLink, target, width, height } = content;
 
     //Since react doesnt support background images in css modules
     const buttonStyle =
@@ -35,23 +41,56 @@ export default function ImageButton({ info })
 
     let finalJSX;
     //linkToWithinSite checks if you want to direct the user to a webpage outside of urs
-    const linkToWithinSite = !buttonLink.includes("https://");
-    if (linkToWithinSite)
+    const buttonType = GetButtonType(buttonLink, onClickFunction);
+    const isWithinSite = IsLinkToWithinSite(buttonLink);
+
+
+    switch (buttonType)
     {
-        finalJSX = <Link to={finalJSX} target={target}  >
-            <p style={buttonStyle} className={styles.image}></p>
-        </Link>;
+        case "FUNCTION_ONLY":
+            //#region -------------- FUNCTION_ONLY ------------------
+            finalJSX = <a   >
+                <p style={buttonStyle} className={styles.image} onClick={onClickFunction}></p>
+            </a>;
+            //#endregion
+            break;
+        case "LINK_ONLY":
+            //#region -------------- LINK_ONLY ------------------
+            finalJSX = isWithinSite ?
+                 <Link to={finalJSX} target={target} >
+                    <p style={buttonStyle} className={styles.image} ></p>
+                </Link>
+                :
+                  <a href={buttonLink} target={target} >
+                    <p style={buttonStyle} className={styles.image} ></p>
+                </a>;
+            //#endregion
+            break;
+
+        case "LINK_AND_FUNCTION":
+            //#region -------------- LINK_AND_FUNCTION ------------------
+            finalJSX = isWithinSite ?
+                 <Link to={finalJSX} target={target} onClick={onClickFunction} >
+                    <p style={buttonStyle} className={styles.image} ></p>
+                </Link>
+                :
+               <a href={buttonLink} target={target} onClick={onClickFunction} >
+                    <p style={buttonStyle} className={styles.image} ></p>
+                </a>;
+            //#endregion
+            break;
+
+        default:
+            break;
     }
-    else
-    {
-        finalJSX = <a href={buttonLink} target={target}  >
-            <p style={buttonStyle} className={styles.image}></p>
-        </a>;
-    }
+
+
+
+
 
 
     return (
-        finalJSX 
+        finalJSX
     );
 
 }
