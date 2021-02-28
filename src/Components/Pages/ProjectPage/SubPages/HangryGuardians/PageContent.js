@@ -42,7 +42,7 @@ import { staticBgContent } from "../../../../../Data/PageData/ProjectPage/SubPro
 
 //#endregion
 
-export default function Page_HangryGuardians()
+export default function PageContent()
 {
 
     //#region ---------- Hero Content ------------

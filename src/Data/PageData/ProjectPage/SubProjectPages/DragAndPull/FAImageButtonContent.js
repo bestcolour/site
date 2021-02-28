@@ -1,9 +1,9 @@
-const FAImageButtonContent_SpaceRunners_DownloadLink =
+const downloadLink =
 {
     //You can wrap a <p></p> around this to make other arrangements
     imageJSX: <i class="fas fa-download fa-2x"></i>
     ,
-    buttonLink: "https://bestcolour.itch.io/spacerunners"
+    buttonLink: "https://bestcolour.itch.io/drag-and-pull"
     ,
     target: "blank"
 };
@@ -11,5 +11,5 @@ const FAImageButtonContent_SpaceRunners_DownloadLink =
 
 export 
 {
-    FAImageButtonContent_SpaceRunners_DownloadLink as FAImgButton_DownloadLink
+    downloadLink as FAImgButton_DownloadLink
 }

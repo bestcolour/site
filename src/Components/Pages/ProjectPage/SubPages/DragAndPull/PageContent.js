@@ -36,7 +36,7 @@ import {staticBgContent} from "../../../../../Data/PageData/ProjectPage/SubProje
 
 //#endregion
 
-export default function Page_SpaceRunners()
+export default function PageContent()
 {
 
     //#region ---------- Hero Content ------------
