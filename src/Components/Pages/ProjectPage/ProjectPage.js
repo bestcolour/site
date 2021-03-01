@@ -14,6 +14,7 @@ import Page_HangryGuardians from "./SubPages/HangryGuardians/PageContent";
 import Page_SpaceRunners from "./SubPages/SpaceRunners/PageContent";
 import Page_HaulAway from "./SubPages/HaulAway/PageContent";
 import Page_DragAndPull from "./SubPages/DragAndPull/PageContent";
+import Page_WhatIf from "./SubPages/WhatIf/PageContent";
 //#endregion
 
 //#region ------------ Data ----------------
@@ -33,7 +34,8 @@ export default function ProjectPage()
                     <Route component={Page_HangryGuardians} path={PageRouteData.HangryGuardiansPath} />
                     <Route component={Page_SpaceRunners} path={PageRouteData.SpaceRunnersPath} />
                     <Route component={Page_HaulAway} path={PageRouteData.HaulAwayPath} />
-                    <Route component={Page_DragAndPull} path={PageRouteData.DragAndPull} />
+                    <Route component={Page_DragAndPull} path={PageRouteData.DragAndPullPath} />
+                    <Route component={Page_WhatIf} path={PageRouteData.WhatIfPath} />
                 </Switch>
             <StandardFooter footerInfo={FooterInfo} />
         </div>

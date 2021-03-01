@@ -18,7 +18,7 @@ import {PageRouteData,OnClickNewSite} from "../../../PageRouteData";
 const TextButtonContent_app =
 {
     text: "Read More"
-    , buttonLink: PageRouteData.DragAndPull
+    , buttonLink: PageRouteData.DragAndPullPath
     , target: ""
     , backgroundColor: "#393939"
     , padding: "3.5% 3.5% 3.5% 3.5%"

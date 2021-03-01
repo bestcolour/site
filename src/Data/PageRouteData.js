@@ -13,7 +13,8 @@ const PageRouteData =
     , HangryGuardiansPath: "/projectPage/hangryGuardians"
     , SpaceRunnersPath: "/projectPage/spaceRunners"
     , HaulAwayPath: "/projectPage/haulAway"
-    , DragAndPull: "/projectPage/dragAndPull"
+    , DragAndPullPath: "/projectPage/dragAndPull"
+    , WhatIfPath: "/projectPage/whatIf"
     //#endregion
 
     ,

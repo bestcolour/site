@@ -15,7 +15,7 @@ import { PageRouteData, OnClickNewSite } from "../../../PageRouteData";
 const TextButtonInfo_app =
 {
     text: "Read More"
-    , buttonLink: PageRouteData.HaulAwayPath
+    , buttonLink: PageRouteData.WhatIfPath
     , target: ""
     , backgroundColor: "#393939"
     , padding: "3.5% 3.5% 3.5% 3.5%"
