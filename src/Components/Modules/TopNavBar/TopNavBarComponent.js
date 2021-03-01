@@ -37,18 +37,12 @@ export default function TopNavBarComponent({ linksData, styleData,selectedPageNa
                 <Link to={linkData.link} className={generalStyles.selectedLink} >
                     {linkData.linkName}
                 </Link>
-                {/* <a href={linkData.link} className={generalStyles.selectedLink} > */}
-                    {/* {linkData.linkName} */}
-                {/* </a> */}
             </div>
             :
             <div className={styles.link}>
                 <Link to={linkData.link}  >
                     {linkData.linkName}
                 </Link>
-                {/* <a href={linkData.link}  > */}
-                    {/* {linkData.linkName} */}
-                {/* </a> */}
             </div>;
 
 
