@@ -43,8 +43,8 @@ export default function PortfolioPage()
             <ZigZag content={ZigZagInfo_HaulAway} info={ZigZag_Default} />
             <ZigZag content={ZigZagContent_SpaceRunners} info={ZigZag_Default} />
             <ZigZag content={ZigZagContent_HangryGuardians} info={ZigZag_Default} />
-            <ZigZag content={ZigZagContent_DragAndPull} info={ZigZag_Default} />
             <ZigZag content={ZigZagInfo_WhatIf} info={ZigZag_Default} />
+            <ZigZag content={ZigZagContent_DragAndPull} info={ZigZag_Default} />
         </div>
 
     return (
