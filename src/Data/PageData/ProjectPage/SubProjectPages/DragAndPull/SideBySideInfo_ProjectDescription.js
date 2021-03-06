@@ -9,10 +9,10 @@ const imageSliderInfo =
     imageDataArray:
         [
             `../..${PageRouteData.ResourcePath}Drag&Pull/Menu.jpg`
-            , `../..${PageRouteData.ResourcePath}Drag&Pull/unknown.png`
-            , `../..${PageRouteData.ResourcePath}Drag&Pull/unknown2.png`
-            , `../..${PageRouteData.ResourcePath}Drag&Pull/unknown3.png`
-            , `../..${PageRouteData.ResourcePath}Drag&Pull/unknown4.png`
+            , `../..${PageRouteData.ResourcePath}Drag&Pull/unknown.jpg`
+            , `../..${PageRouteData.ResourcePath}Drag&Pull/unknown2.jpg`
+            , `../..${PageRouteData.ResourcePath}Drag&Pull/unknown3.jpg`
+            , `../..${PageRouteData.ResourcePath}Drag&Pull/unknown4.jpg`
             , `../..${PageRouteData.ResourcePath}Drag&Pull/Win.jpg`
 
         ]

@@ -10,9 +10,9 @@ const imageSliderInfo =
         [
             `../..${PageRouteData.ResourcePath}WhatIf/Title.png`
             , `../..${PageRouteData.ResourcePath}WhatIf/unknown1.png`
-            , `../..${PageRouteData.ResourcePath}WhatIf/unknown2.png`
-            , `../..${PageRouteData.ResourcePath}WhatIf/unknown3.png`
-            , `../..${PageRouteData.ResourcePath}WhatIf/unknown.png`
+            , `../..${PageRouteData.ResourcePath}WhatIf/unknown2.jpg`
+            , `../..${PageRouteData.ResourcePath}WhatIf/unknown3.jpg`
+            , `../..${PageRouteData.ResourcePath}WhatIf/unknown.jpg`
         ]
 }
 //#endregion

@@ -3,7 +3,7 @@ const StaticBackgroundContent =
 {
     titleHeroImageLink: `../..${PageRouteData.ResourcePath}Drag&Pull/Menu.jpg`
     ,
-    downloadHeroImageLink : `../..${PageRouteData.ResourcePath}Drag&Pull/unknown2.png`
+    downloadHeroImageLink : `../..${PageRouteData.ResourcePath}Drag&Pull/unknown2.jpg`
 };
 
 export 
