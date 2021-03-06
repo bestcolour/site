@@ -8,8 +8,8 @@ const imageSliderInfo =
 {
     imageDataArray:
         [
-            `../..${PageRouteData.ResourcePath}HaulAway/Screenshot1.png`
-            , `../..${PageRouteData.ResourcePath}HaulAway/Screenshot2.png`
+            `../..${PageRouteData.ResourcePath}HaulAway/Screenshot1.jpg`
+            , `../..${PageRouteData.ResourcePath}HaulAway/Screenshot2.jpg`
 
         ]
 }
