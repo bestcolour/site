@@ -19,7 +19,7 @@ import Page_WhatIf from "./SubPages/WhatIf/PageContent";
 
 //#region ------------ Data ----------------
 // import TopNavBarInfo from "../../../Data/ModuleData/TopNavBarData";
-import FooterInfo from "../../../Data/FooterData/FooterInfo";
+//import FooterInfo from "../../../Data/FooterData/FooterInfo";
 import {PageRouteData} from "../../../Data/PageRouteData";
 //#endregion
 
@@ -37,7 +37,7 @@ export default function ProjectPage()
                     <Route component={Page_DragAndPull} path={PageRouteData.DragAndPullPath} />
                     <Route component={Page_WhatIf} path={PageRouteData.WhatIfPath} />
                 </Switch>
-            <StandardFooter footerInfo={FooterInfo} />
+            <StandardFooter  />
         </div>
     )
 }

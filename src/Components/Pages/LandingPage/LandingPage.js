@@ -14,7 +14,7 @@ import StandardFooter from "../../Modules/StandardFooter";
 import { PageStruct_Grey } from "../../../Data/CommonInfo/PageStructure/PageStructureInfo_CommonPageInfo";
 // import TopNavBarInfo from "../../../Data/ModuleData/TopNavBarData";
 // import AboutMeInfo from "../../../Data/PageData/LandingPage/AboutMeInfo";
-import FooterInfo from "../../../Data/FooterData/FooterInfo";
+//import FooterInfo from "../../../Data/FooterData/FooterInfo";
 //#endregion
 
 function LandingPage()
@@ -26,7 +26,7 @@ function LandingPage()
     <div>
       <TopNavBar selectedPageName={"About Me"} />
       <PageStructure content={pageContent} info={PageStruct_Grey} />
-      <StandardFooter footerInfo={FooterInfo} />
+      <StandardFooter  />
     </div>
   );
 }

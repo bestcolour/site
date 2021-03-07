@@ -1,9 +1,10 @@
 import React from "react";
 import styles from "./StandardFooter.module.css";
+import FooterData from "../../../Data/ModuleData/FooterData";
 
-export default function StandardFooter({ footerInfo })
+export default function StandardFooter()
 {
-    const { backgroundColor, color, creatorName } = footerInfo;
+    const { backgroundColor, color, creatorName } = FooterData;
 
     const bgColorStyle =
     {
