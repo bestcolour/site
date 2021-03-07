@@ -1,7 +1,7 @@
 import React from "react";
 import TopNavBarDesktop from "./TopNavBarDesktop";
-import styles from "./TopNavBar.module.css";
 import TopNavBarMobile from "./TopNavBarMobile";
+import styles from "./TopNavBar.module.css";
 
 //#region --------------- Data ------------------
 import TopNavBarData from "../../../Data/ModuleData/TopNavBarData";
