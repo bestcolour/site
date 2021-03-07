@@ -1,0 +1,26 @@
+#mobileRoot
+{
+   /* Flex box */
+   display: flex;
+   justify-content: flex-end;
+}
+
+#hamburgerButton
+{
+    /* Color */
+    background-color: #393939;
+
+    /* Position */
+    position: fixed;
+
+    /* Dimensions */
+    width: 3em;
+    height: 3em;
+
+
+    /* Flex box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+} 
