@@ -47,10 +47,10 @@
     height: 100vh;
 
     /* Animation */
-    transition:left 1s;
-    -webkit-transition: left 1s;;
-    -moz-transition:left 1s;;
-    -o-transition: left 1s;;
+    transition:left .5s;
+    -webkit-transition: left .5s;;
+    -moz-transition:left .5s;;
+    -o-transition: left .5s;;
 }
 
 .linkPanelInactive
