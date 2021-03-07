@@ -24,9 +24,9 @@ export default function PageStructure({ content, info })
 
     return (
         <div className={styles.content} style={sideStyle}>
-            <div className={columnStyles.col1} style={sideStyle}></div>
-            <div className={columnStyles.col10} style={centerStyle}>{content}</div>
-            <div className={columnStyles.col1} style={sideStyle}></div>
+            <div className={`${columnStyles.col1} ${columnStyles.cols1}`} style={sideStyle} />
+            <div className={`${columnStyles.col10} ${columnStyles.cols10}`} style={centerStyle}>{content}</div>
+            <div className={`${columnStyles.col1} ${columnStyles.cols1}`} style={sideStyle} />
         </div>
     )
 }

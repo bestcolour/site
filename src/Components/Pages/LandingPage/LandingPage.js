@@ -11,9 +11,9 @@ import StandardFooter from "../../Modules/StandardFooter";
 //#endregion
 
 //#region Data
-import {PageStruct_Grey} from "../../../Data/CommonInfo/PageStructure/PageStructureInfo_CommonPageInfo";
+import { PageStruct_Grey } from "../../../Data/CommonInfo/PageStructure/PageStructureInfo_CommonPageInfo";
 // import TopNavBarInfo from "../../../Data/ModuleData/TopNavBarData";
-import AboutMeInfo from "../../../Data/PageData/LandingPage/AboutMeInfo";
+// import AboutMeInfo from "../../../Data/PageData/LandingPage/AboutMeInfo";
 import FooterInfo from "../../../Data/FooterData/FooterInfo";
 //#endregion
 
@@ -22,14 +22,14 @@ function LandingPage()
 
   const pageContent =
     <div>
-      <AboutMe aboutMeInfo={AboutMeInfo} />
+      <AboutMe />
     </div>
 
   return (
     <div>
-      <TopNavBar  selectedPageName = {"About Me"}/>
+      <TopNavBar selectedPageName={"About Me"} />
       <PageStructure content={pageContent} info={PageStruct_Grey} />
-      <StandardFooter footerInfo = {FooterInfo}/>
+      <StandardFooter footerInfo={FooterInfo} />
     </div>
   );
 }

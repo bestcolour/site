@@ -1,10 +1,15 @@
 import React from "react";
 import styles from "./AboutMe.module.css";
+import GeneralStyles from "../../../CommonStyles/GeneralStyles.module.css";
 
-export default function AboutMe({ aboutMeInfo })
+//#region ------------- Data ----------------
+import AboutMeData from "../../../Data/PageData/LandingPage/AboutMeData";
+//#endregion
+
+export default function AboutMe()
 {
     //#region AboutMeInfo Desconstruction
-    const { textData, backgroundColor, color, profileImg } = aboutMeInfo;
+    const { textData, backgroundColor,  profileImg } = AboutMeData;
     //#endregion
 
     //#region BoxBg Style
@@ -14,10 +19,10 @@ export default function AboutMe({ aboutMeInfo })
     }
     //#endregion
 
-    const textColorStyle =
-    {
-        color: color
-    }
+    // const textColorStyle =
+    // {
+    //     color: color
+    // }
 
     //#region Profile Pic Style
     const profilePicStyle =
@@ -34,13 +39,13 @@ export default function AboutMe({ aboutMeInfo })
                 <div id={styles.aboutMeContentHolder}>
 
                     {/* Name */}
-                    <h1 id={styles.profileName} style={textColorStyle}>{textData.name}</h1>
+                    <h1 id={styles.profileName} className={GeneralStyles.white}>{textData.name}</h1>
 
                     {/* Profile Pic */}
                     <div style={profilePicStyle} id={styles.profilePicture}></div>
 
                     {/* About me description */}
-                    <p style={textColorStyle}>{textData.description}</p>
+                    <p className={GeneralStyles.white}>{textData.description}</p>
 
                 </div>
 

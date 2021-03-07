@@ -5,8 +5,8 @@ const AboutMeInfo =
     ,
     backgroundColor: "#5A5A5A"
     ,
-    color: "#EBE9E8"
-    ,
+    // color: "#EBE9E8"
+    // ,
     textData:
     {
         name: "Lee Kee Shen"
