@@ -56,18 +56,18 @@ export default function TopNavBarComponent({ linksData, selectedPageName })
         <div >
             {/* Empty spacing worth the navbar's height since navbar is blocking content */}
             <div id={styles.navbarEmptySpace}></div>
-            <div id={styles.navbarBg}  className={columnClasses.col12}>
+            <div id={styles.navbarBg}  className={columnClasses.col_desktop_12}>
 
                 {/*===== Spacing =====*/}
-                <div className={`${columnClasses.col1} ${columnClasses.cols1}`}></div>
+                <div className={`${columnClasses.col_desktop_1} ${columnClasses.col_tablet_1}`}></div>
 
                 {/*===== Link holder box =====*/}
-                <div id={styles.linksHolder} className={`${columnClasses.col10} ${columnClasses.cols10}`}>
+                <div id={styles.linksHolder} className={`${columnClasses.col_desktop_10} ${columnClasses.col_tablet_10}`}>
                     {linksJSX}
                 </div>
 
                 {/*===== Spacing =====*/}
-                <div className={`${columnClasses.col1} ${columnClasses.cols1}`}></div>
+                <div className={`${columnClasses.col_desktop_1} ${columnClasses.col_tablet_1}`}></div>
             </div>
 
         </div>

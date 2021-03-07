@@ -100,7 +100,7 @@ export default class CardTable extends React.Component
                     for (let index = 0; index < cardData.length; index++)
                     {
                         //Calculate which row this card belongs to
-                        const rowIndex = index % tableData.col;
+                        const rowIndex = index % tableData.col_desktop_;
                         const cardInfo = cardData[index];
 
 

@@ -42,12 +42,12 @@ export default function PageContent()
     //#region ---------- Hero Content ------------
     let heroPageTitle =
         <div className={styles.heroParent}>
-            <div className={columnStyle.col3}></div>
-            <div className={columnStyle.col6}>
+            <div className={columnStyle.col_desktop_3}></div>
+            <div className={columnStyle.col_desktop_6}>
                 {/* <Overlay content={<PageDescription content={PageDescriptContent_pageTitle} info={PageDescriptionInfo_Default} />} info={OverlayInfo_default} /> */}
             </div>
 
-            <div className={columnStyle.col3}></div>
+            <div className={columnStyle.col_desktop_3}></div>
         </div>
         ;
 
@@ -84,11 +84,11 @@ export default function PageContent()
    
     let heroReflectionTitle =
         <div className={styles.heroParent}>
-            <div className={columnStyle.col3}></div>
-            <div className={columnStyle.col6}>
+            <div className={columnStyle.col_desktop_3}></div>
+            <div className={columnStyle.col_desktop_6}>
                 <Overlay content={<PageDescription content={PageDescriptContent_downloadSection} info={PageDescriptionInfo_Default} />} info={OverlayInfo_default} />
             </div>
-            <div className={columnStyle.col3}></div>
+            <div className={columnStyle.col_desktop_3}></div>
         </div>
         ;
 
