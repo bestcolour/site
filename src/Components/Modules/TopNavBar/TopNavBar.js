@@ -1,12 +1,27 @@
 import React from "react";
-import TopNavBarComponent from "./TopNavBarComponent";
+import TopNavBarDesktop from "./TopNavBarDesktop";
+import styles from "./TopNavBar.module.css";
+import TopNavBarMobile from "./TopNavBarMobile";
 
-export default function TopNavBar({topNavBarData , selectedPageName})
+//#region --------------- Data ------------------
+import TopNavBarData from "../../../Data/ModuleData/TopNavBarData";
+//#endregion
+
+export default function TopNavBar({ selectedPageName })
 {
 
   //Keeping it as a component holder for now incase i want to switch between mobile & desktop versions?
   return (
-    <TopNavBarComponent linksData={topNavBarData.LinksData} styleData={topNavBarData.StyleData} selectedPageName = {selectedPageName}/>
+    <div>
+
+      <div id={styles.navBarDesktopRoot}>
+        <TopNavBarDesktop linksData={TopNavBarData.LinksData} selectedPageName={selectedPageName} />
+      </div>
+
+      <div id={styles.navBarMobileRoot}>
+        <TopNavBarMobile linksData={TopNavBarData.LinksData} selectedPageName={selectedPageName} />
+      </div>
+    </div>
   );
 
 }

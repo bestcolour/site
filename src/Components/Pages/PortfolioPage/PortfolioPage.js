@@ -17,7 +17,7 @@ import { PageDescriptionInfo_Default } from "../../../Data/CommonInfo/PageDescri
 //#region ==================== Import Content ==================================
 
 //#region --------------- Common Content ---------------------
-import TopNavBarInfo from "../../../Data/PageData/TopNavBarInfo";
+// import TopNavBarInfo from "../../../Data/ModuleData/TopNavBarData";
 import FooterInfo from "../../../Data/FooterData/FooterInfo";
 import PageDescriptionContent_PortfolioPage from "../../../Data/PageData/PortfolioPage/PageDescriptionContent_PortfolioPage";
 //#endregion
@@ -49,7 +49,7 @@ export default function PortfolioPage()
 
     return (
         <div>
-            <TopNavBar topNavBarData={TopNavBarInfo} selectedPageName="Portfolio" />
+            <TopNavBar  selectedPageName="Portfolio" />
             <PageStructure content={content} info={PageStruct_Grey} />
             <StandardFooter footerInfo={FooterInfo} />
         </div>

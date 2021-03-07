@@ -22,6 +22,12 @@ const TopNavBarData =
             //     link: PageRouteData.ProjectPagePath
             // }
             // , 
+            // {
+            //     linkName: "Blogs"
+            //     ,
+            //     link: PageRouteData.ProjectPagePath
+            // }
+            // , 
             {
                 linkName: "Contact Me"
                 ,
@@ -29,10 +35,10 @@ const TopNavBarData =
             }
         ]
     ,
-    StyleData:
-    {
-        backgroundColor : "#393939"
-    }
+    // StyleData:
+    // {
+    //     backgroundColor : "#393939"
+    // }
 
 }
 

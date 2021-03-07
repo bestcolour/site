@@ -18,7 +18,7 @@ import Page_WhatIf from "./SubPages/WhatIf/PageContent";
 //#endregion
 
 //#region ------------ Data ----------------
-import TopNavBarInfo from "../../../Data/PageData/TopNavBarInfo";
+// import TopNavBarInfo from "../../../Data/ModuleData/TopNavBarData";
 import FooterInfo from "../../../Data/FooterData/FooterInfo";
 import {PageRouteData} from "../../../Data/PageRouteData";
 //#endregion
@@ -28,7 +28,7 @@ export default function ProjectPage()
 {
     return (
         <div>
-            <TopNavBar topNavBarData={TopNavBarInfo} selectedPageName="My Projects" />
+            <TopNavBar selectedPageName="My Projects" />
                 <Switch>
                     <Route component={ProjectPageComponent} path={PageRouteData.ProjectPagePath} exact />
                     <Route component={Page_HangryGuardians} path={PageRouteData.HangryGuardiansPath} />

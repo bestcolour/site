@@ -16,7 +16,7 @@ import SideBySide from "../../Common/SectionTypes/SideBySide";
 
 //#region Data
 import { Pagestruct_Default } from "../../../Data/CommonInfo/PageStructure/PageStructureInfo_CommonPageInfo";
-import TopNavBarInfo from "../../../Data/PageData/TopNavBarInfo";
+// import TopNavBarInfo from "../../../Data/ModuleData/TopNavBarData";
 import FooterInfo from "../../../Data/FooterData/FooterInfo";
 // import SideBySideContent from "../../../Data/PageData/ContactPage/SideBySideContent";
 //#endregion
@@ -124,7 +124,7 @@ export default function ContactPage()
 
     return (
         <div>
-            <TopNavBar topNavBarData={TopNavBarInfo} selectedPageName={"Contact Me"} />
+            <TopNavBar  selectedPageName={"Contact Me"} />
             <PageStructure content={pageContent} info={Pagestruct_Default} />
             <StandardFooter footerInfo={FooterInfo} />
         </div>

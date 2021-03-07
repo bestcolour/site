@@ -16,10 +16,7 @@ export default function FAImageButton({ content, onClickFunction })
     //     target: ""
     // }
 
-    // const info = 
-    // {
-    //      onClickFunction : SomeMethod
-    // }
+    // const onClickFunction = SomeMethod;
     //#endregion
 
     const { imageJSX, buttonLink, target } = content;
@@ -76,6 +73,7 @@ export default function FAImageButton({ content, onClickFunction })
             break;
 
         default:
+            // finalJSX = <div></div>
             break;
     }
 

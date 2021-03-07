@@ -1,1 +1,1 @@
-The modules folder contains single use code (that means that it can only be used once in every page)
+The modules folder contains elements which will only be used in 1 unique way only.

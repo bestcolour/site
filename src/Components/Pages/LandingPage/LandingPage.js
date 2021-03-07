@@ -12,7 +12,7 @@ import StandardFooter from "../../Modules/StandardFooter";
 
 //#region Data
 import {PageStruct_Grey} from "../../../Data/CommonInfo/PageStructure/PageStructureInfo_CommonPageInfo";
-import TopNavBarInfo from "../../../Data/PageData/TopNavBarInfo";
+// import TopNavBarInfo from "../../../Data/ModuleData/TopNavBarData";
 import AboutMeInfo from "../../../Data/PageData/LandingPage/AboutMeInfo";
 import FooterInfo from "../../../Data/FooterData/FooterInfo";
 //#endregion
@@ -27,7 +27,7 @@ function LandingPage()
 
   return (
     <div>
-      <TopNavBar topNavBarData={TopNavBarInfo} selectedPageName = {"About Me"}/>
+      <TopNavBar  selectedPageName = {"About Me"}/>
       <PageStructure content={pageContent} info={PageStruct_Grey} />
       <StandardFooter footerInfo = {FooterInfo}/>
     </div>

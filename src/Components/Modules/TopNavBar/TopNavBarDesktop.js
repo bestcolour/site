@@ -1,8 +1,8 @@
 import React from "react";
 import generalStyles from "../../../CommonStyles/GeneralStyles.module.css";
-import styles from "./TopNavBar.module.css";
+import styles from "./TopNavBarDesktop.module.css";
 import columnClasses from "../../../CommonStyles/Columns.module.css";
-import {Link  } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 //What is expected from props:
 //ThemeStyle:
@@ -14,14 +14,14 @@ import {Link  } from "react-router-dom";
 //  - Link name
 //  - Link href
 //  - any additional click event handling
-export default function TopNavBarComponent({ linksData, styleData,selectedPageName })
+export default function TopNavBarComponent({ linksData, selectedPageName })
 {
     // Get the color values for bg and text according to light or dark theme from props
     // set the theme to the style property of the respective jsx element 
-    const navbarBgStyle =
-    {
-        backgroundColor: `${styleData.backgroundColor}`
-    }
+    // const navbarBgStyle =
+    // {
+    //     backgroundColor: `${styleData.backgroundColor}`
+    // }
 
 
 
@@ -53,21 +53,21 @@ export default function TopNavBarComponent({ linksData, styleData,selectedPageNa
 
     //#region Final Return
     return (
-        <div>
+        <div >
             {/* Empty spacing worth the navbar's height since navbar is blocking content */}
             <div id={styles.navbarEmptySpace}></div>
-            <div id={styles.navbarBg} style={navbarBgStyle} className={columnClasses.col12}>
+            <div id={styles.navbarBg}  className={columnClasses.col12}>
 
                 {/*===== Spacing =====*/}
-                <div className={columnClasses.col1}></div>
+                <div className={`${columnClasses.col1} ${columnClasses.cols1}`}></div>
 
                 {/*===== Link holder box =====*/}
-                <div id={styles.linksHolder} className={columnClasses.col10}>
+                <div id={styles.linksHolder} className={`${columnClasses.col10} ${columnClasses.cols10}`}>
                     {linksJSX}
                 </div>
 
                 {/*===== Spacing =====*/}
-                <div className={columnClasses.col1}></div>
+                <div className={`${columnClasses.col1} ${columnClasses.cols1}`}></div>
             </div>
 
         </div>
