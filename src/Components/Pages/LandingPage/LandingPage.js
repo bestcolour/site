@@ -20,10 +20,7 @@ import FooterInfo from "../../../Data/FooterData/FooterInfo";
 function LandingPage()
 {
 
-  const pageContent =
-    <div>
-      <AboutMe />
-    </div>
+  const pageContent =<AboutMe />
 
   return (
     <div>

@@ -9,7 +9,7 @@ import AboutMeData from "../../../Data/PageData/LandingPage/AboutMeData";
 export default function AboutMe()
 {
     //#region AboutMeInfo Desconstruction
-    const { textData, backgroundColor,  profileImg } = AboutMeData;
+    const { textData, backgroundColor, profileImg } = AboutMeData;
     //#endregion
 
     //#region BoxBg Style
@@ -32,7 +32,7 @@ export default function AboutMe()
     //#endregion
 
     return (
-        <div>
+        <div >
             {/* ===== About Me Box ===== */}
             <div id={styles.boxBg} style={boxBgStyle}>
 

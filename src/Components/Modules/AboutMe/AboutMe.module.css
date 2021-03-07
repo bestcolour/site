@@ -4,25 +4,92 @@
     margin: 5% 5%;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
-
-    /* Content Size */
-    height: 25em;
 }
 
+/* ===================== Begin Content Holder Media Query =================== */
+/* Constants */
 #aboutMeContentHolder
 {
     /*===== Flex ===== */
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     overflow: hidden;
 }
+
+/* ------------ Mobile --------------- */
+/* ***** Landscape ***** */
+@media only screen and (orientation: landscape)
+{
+    #aboutMeContentHolder
+    {
+        height: 30em;
+    } 
+}
+
+/* ***** Portrait ***** */
+@media only screen and (orientation: portrait)
+{
+    #aboutMeContentHolder
+    {
+        height: 90vh;
+    } 
+}
+
+
+/* ------------ Tablet --------------- */
+/* ***** Landscape ***** */
+@media only screen and (min-width: 600px) and (orientation: landscape)
+{
+    #aboutMeContentHolder
+    {
+       height: 30em;
+    }
+}
+
+/* ***** Portrait ***** */
+@media only screen and (min-width: 600px) and (orientation: portrait)
+{
+    #aboutMeContentHolder
+    {
+       height: 50em;
+    }
+}
+
+
+
+/* ------------ Desktop --------------- */
+/* ***** Landscape ***** */
+@media only screen and (min-width: 1024px) and (orientation: landscape)
+{
+    #aboutMeContentHolder
+    {
+       height: 40em;
+    }
+}
+
+
+/* ***** Portrait ***** */
+@media only screen and (min-width: 1024px) and (orientation: portrait)
+{
+    #aboutMeContentHolder
+    {
+       height: 70em;
+    }
+}
+
+
+
+
+/* ===================== End Content Holder Media Query =================== */
+
+
 
 #profileName
 {
     /*===== Margin & Paddings ===== */
     margin-bottom: 2.5%;
+    margin-top: 5%;
 }
 
 #profilePicture
