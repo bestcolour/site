@@ -26,7 +26,7 @@ const TextButtonContent_app =
 
 const BackgroundImageInfo =
 {
-    bgImageSrc: `../..${PageRouteData.ResourcePath}SpaceRunners/GodView.png`
+    bgImageSrc: `../..${PageRouteData.ResourcePath}SpaceRunners/GodView.jpg`
     , cssStyling: styles.subjectBgImageClassStyle
 }
 

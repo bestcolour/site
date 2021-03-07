@@ -3,7 +3,7 @@ const StaticBackgroundContent =
 {
     titleHeroImageLink: `../..${PageRouteData.ResourcePath}HaulAway/Screenshot1.jpg`
     ,
-    downloadHeroImageLink : `../..${PageRouteData.ResourcePath}SpaceRunners/Lobby.png`
+    // downloadHeroImageLink : `../..${PageRouteData.ResourcePath}SpaceRunners/Lobby.png`
 };
 
 export 

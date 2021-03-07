@@ -8,10 +8,10 @@ const imageSliderInfo =
 {
     imageDataArray:
         [
-            `../..${PageRouteData.ResourcePath}SpaceRunners/GodView.png`
-            , `../..${PageRouteData.ResourcePath}SpaceRunners/Lobby.png`
-            , `../..${PageRouteData.ResourcePath}SpaceRunners/Runnerview.png`
-            , `../..${PageRouteData.ResourcePath}SpaceRunners/Runnerview2.png`
+            `../..${PageRouteData.ResourcePath}SpaceRunners/GodView.jpg`
+            , `../..${PageRouteData.ResourcePath}SpaceRunners/Lobby.jpg`
+            , `../..${PageRouteData.ResourcePath}SpaceRunners/Runnerview.jpg`
+            , `../..${PageRouteData.ResourcePath}SpaceRunners/Runnerview2.jpg`
 
         ]
 }

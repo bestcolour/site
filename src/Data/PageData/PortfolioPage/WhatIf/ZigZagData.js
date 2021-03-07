@@ -23,7 +23,7 @@ const TextButtonInfo_app =
 
 const BackgroundImageInfo =
 {
-    bgImageSrc: `../..${PageRouteData.ResourcePath}WhatIf/Title.png`
+    bgImageSrc: `../..${PageRouteData.ResourcePath}WhatIf/Title.jpg`
     , cssStyling: styles.subjectBgImageClassStyle
 }
 
