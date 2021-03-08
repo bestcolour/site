@@ -60,12 +60,12 @@
 
 .inputField input
 {
-    width: 50%;
+    width: 100%;
 }
 
 .inputField textarea
 {
-    width: 50%;
+    width:  100%;
 }
 
 /* ====================================== End Form ========================================== */
