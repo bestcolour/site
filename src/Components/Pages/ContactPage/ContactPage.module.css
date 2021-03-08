@@ -1,6 +1,6 @@
 /* ====================================== Start Final Content ========================================== */
 
-/* -------------------------- Mobile -------------------------- */
+/* -------------------------- Mobile 600px X 480px -------------------------- */
 .pageContentRoot
 {
     height: 45em;
@@ -13,7 +13,8 @@
 {
     .pageContentRoot
     {
-        height: 92.5vh;
+        height: 60em;
+        /* height: 92.5vh; */
     }
 }
 
@@ -23,7 +24,8 @@
 {
     .pageContentRoot
     {
-        height: 100vh;
+        height: 50em;
+        /* height: 100vh; */
     }
 }
 
