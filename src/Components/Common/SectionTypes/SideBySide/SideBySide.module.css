@@ -3,10 +3,10 @@
     display: flex;
 }
 
-.textDescription
+/* .textDescription
 {
     margin: 0% 2.5%;
-}
+} */
 
 /* ============== Start Direction Media Query ================ */
 
@@ -21,7 +21,7 @@
     flex-direction: column-reverse;
 }
 
-.sideBySideRoot span
+.sideBySideElement
 {
     width: auto;
 }
@@ -40,7 +40,7 @@
         flex-direction: row-reverse;
     }
 
-    .sideBySideRoot span
+    .sideBySideElement
     {
         width: 50%;
     }

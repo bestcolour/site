@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./SideBySide.module.css";
 
-export default function SideBySide({ content, info })
+export default function SideBySide({ content, info, cssInfo })
 {
     //#region ---------- Template ----------
     // const content =
@@ -22,28 +22,34 @@ export default function SideBySide({ content, info })
     //     subjectBackgroundColor : "red"
     //     ,
     //     descriptionBackgroundColor:"blue"
-    //     ,
+    // };
+    // const cssInfo =
+    // {
     //     cssStyle_flipped: cssModule.flipped
     //     ,
     //     cssStyle_notFlipped: cssModule.notFlipped
-    // };
+    //      ,
+    //      cssStyle_SideBySideElement : cssModule.SideBySideElement
+    // }
+
     //#endregion
 
     const { subject, description, isFlipped } = content;
 
     //#region ------------- Root Style -----------------------
     let rootStyle;
-    //If there is no info added, then use default
-    if (info === undefined)
+    //If there is no cssInfo added, then use default
+    if (cssInfo === undefined)
     {
         rootStyle = isFlipped ? style.notFlipped : style.flipped;
     }
     else
     {
-        rootStyle = isFlipped ? info.cssStyle_flipped : info.cssStyle_notFlipped;
+        rootStyle = isFlipped ? cssInfo.cssStyle_flipped : cssInfo.cssStyle_notFlipped;
     }
     //#endregion
 
+    //#region -------------- Backgrounds Style ----------------------
     const descriptionBgStyle =
     {
         backgroundColor: info === undefined ? "transparent" : info.descriptionBackgroundColor
@@ -53,13 +59,20 @@ export default function SideBySide({ content, info })
     {
         backgroundColor: info === undefined ? "transparent" : info.subjectBackgroundColor
     }
+    //#endregion
+
+    //#region ----------------- SideBySide Element Style ------------------------
+    const sideBySideElementStyle = cssInfo === undefined? style.sideBySideElement : cssInfo.cssStyle_SideBySideElement;
+    //#endregion
+
+
 
     return (
         <div className={`${rootStyle} ${style.sideBySideRoot}`}>
-            <span style={subjectBgStyle}>
+            <span className={sideBySideElementStyle} style={subjectBgStyle}>
                 {subject}
             </span>
-            <span className={style.textDescription} style={descriptionBgStyle}>
+            <span className={sideBySideElementStyle} style={descriptionBgStyle}>
                 {description}
             </span>
         </div>

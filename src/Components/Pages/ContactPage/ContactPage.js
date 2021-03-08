@@ -14,12 +14,17 @@ import StandardFooter from "../../Modules/StandardFooter";
 import SideBySide from "../../Common/SectionTypes/SideBySide";
 //#endregion
 
+//#region --------------- Import Common Info --------------------
+import { SideBySide_CSSInfo_alwaysVertical } from "../../../Data/CommonInfo/SideBySide/SideBySide_CommonInfo";
+//#endregion
+
 //#region Data
 import { Pagestruct_Default } from "../../../Data/CommonInfo/PageStructure/PageStructureInfo_CommonPageInfo";
 //#endregion
 
 export default function ContactPage()
 {
+    //#region ------------ Functions ----------------
     function sendEmail(e)
     {
         e.preventDefault();
@@ -35,6 +40,7 @@ export default function ContactPage()
 
         e.target.reset();
     }
+    //#endregion
 
     //#region ----------------- FontAwesome Button Content ------------------
     const FAImageButtonContent_DownloadResume =
@@ -53,12 +59,11 @@ export default function ContactPage()
     {
         subject:
             //#region ------------- Subject ------------------
-            <div className={generalStyles.white}>
-                <h6 >Download my Resume here!</h6>
-                <br></br>
-                <br></br>
-                <FAImageButton content={FAImageButtonContent_DownloadResume} />
-
+            <div className={`${generalStyles.white} ${style.resumeRoot}`}>
+                <h4>Download my Resume here!</h4>
+                <div id={style.resumeDownload}>
+                    <FAImageButton content={FAImageButtonContent_DownloadResume} />
+                </div>
             </div>
         //#endregion
         ,
@@ -104,7 +109,7 @@ export default function ContactPage()
 
         ,
         //If is flipped is set to true, the subject's default position (left side on desktop, doenst affect mobile) will be on the opposite side
-        isFlipped: false
+        isFlipped: true
     }
     //#endregion
 
@@ -113,7 +118,7 @@ export default function ContactPage()
     const pageContent =
         <div className={style.pageContentRoot}>
             <div className={style.sideBySideContentRoot}>
-                <SideBySide content={sideBySideContent} />
+                <SideBySide content={sideBySideContent} cssInfo={SideBySide_CSSInfo_alwaysVertical} />
             </div>
         </div>
     //#endregion
@@ -121,9 +126,9 @@ export default function ContactPage()
 
     return (
         <div>
-            <TopNavBar  selectedPageName={"Contact Me"} />
+            <TopNavBar selectedPageName={"Contact Me"} />
             <PageStructure content={pageContent} info={Pagestruct_Default} />
-            <StandardFooter  />
+            <StandardFooter />
         </div>
     );
 }

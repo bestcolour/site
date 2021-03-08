@@ -1,18 +1,46 @@
+/* ====================================== Start Final Content ========================================== */
+
+/* -------------------------- Mobile -------------------------- */
 .pageContentRoot
 {
-    height: 100vh;
-    
+    height: 45em;
 }
+
+
+
+/* -------------------------- Tablet and Larger phones -------------------------- */
+@media only screen and (min-width: 600px) and (min-height: 480px)
+{
+    .pageContentRoot
+    {
+        height: 92.5vh;
+    }
+}
+
+
+/* -------------------------- Desktop -------------------------- */
+@media only screen and (min-width: 1024px)
+{
+    .pageContentRoot
+    {
+        height: 100vh;
+    }
+}
+
 
 .sideBySideContentRoot
 {
+    /* Debug */
+    /* background-color: red; */
     margin: 5%;
-    background-color: #5A5A5A;
     padding-right: 5%;
     padding-left: 5%;
 }
 
-/* ====================================== Form ========================================== */
+/* ====================================== End Final Content ========================================== */
+
+
+/* ====================================== Start Form ========================================== */
 
 .formRoot
 {
@@ -38,6 +66,56 @@
     width: 50%;
 }
 
+/* ====================================== End Form ========================================== */
 
-/* ====================================== Resume ========================================== */
 
+/* ====================================== Start Resume ========================================== */
+.resumeRoot
+{
+   display: flex;
+   flex-direction: column;
+
+  
+}
+
+.resumeRoot h4
+{
+    text-align: center;
+}
+
+/* For the Resume download button */
+/* --------------------- Mobile --------------------- */
+.resumeRoot
+{
+    align-items: center;
+
+    /* Margin */
+    margin-top: 20%;
+}
+
+#resumeDownload
+{
+    margin-top: 5%;
+}
+
+/* --------------------- Desktop & Tablet --------------------- */
+@media only screen and (min-width:1024px),(min-width:600px)
+{
+    #resumeDownload
+    {
+        margin-top: 0%;
+
+        margin-left: 5%;
+    }
+
+    .resumeRoot
+    {
+       flex-direction: row;
+       align-items: initial;
+
+       /* Margin */
+       margin-top: 0%;
+    }
+}
+
+/* ====================================== End Resume ========================================== */

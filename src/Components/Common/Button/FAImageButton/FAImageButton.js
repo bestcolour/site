@@ -15,7 +15,6 @@ export default function FAImageButton({ content, onClickFunction })
     //     ,
     //     target: ""
     // }
-
     // const onClickFunction = SomeMethod;
     //#endregion
 
