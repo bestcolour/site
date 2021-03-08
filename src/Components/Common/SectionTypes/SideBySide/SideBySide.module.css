@@ -13,12 +13,33 @@
     margin: 0% 2.5%;
 }
 
+/* ============== Start Direction Media Query ================ */
+
+/* ----------- Mobile ------------- */
 .notFlipped
 {
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .flipped
 {
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
 }
+
+
+/* ----------- Tablet & Desktop ------------- */
+@media only screen and (min-width: 600px),(min-width: 1024px) {
+
+    .notFlipped
+    {
+        flex-direction: row;
+    }
+    
+    .flipped
+    {
+        flex-direction: row-reverse;
+    }
+}
+
+
+/* ============== End Direction Media Query ================ */

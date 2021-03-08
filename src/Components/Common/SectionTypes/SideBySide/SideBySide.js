@@ -22,12 +22,27 @@ export default function SideBySide({ content, info })
     //     subjectBackgroundColor : "red"
     //     ,
     //     descriptionBackgroundColor:"blue"
+    //     ,
+    //     cssStyle_flipped: cssModule.flipped
+    //     ,
+    //     cssStyle_notFlipped: cssModule.notFlipped
     // };
     //#endregion
 
     const { subject, description, isFlipped } = content;
 
-    const rootStyle = isFlipped ? style.notFlipped : style.flipped;
+    //#region ------------- Root Style -----------------------
+    let rootStyle;
+    //If there is no info added, then use default
+    if (info === undefined)
+    {
+        rootStyle = isFlipped ? style.notFlipped : style.flipped;
+    }
+    else
+    {
+        rootStyle = isFlipped ? info.cssStyle_flipped : info.cssStyle_notFlipped;
+    }
+    //#endregion
 
     const descriptionBgStyle =
     {
