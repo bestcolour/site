@@ -20,8 +20,8 @@ export default function SideBySide({ content, info })
     // const info  = 
     // {
     //     subjectBackgroundColor : "red"
-    // ,
-    // descriptionBackgroundColor:"blue"
+    //     ,
+    //     descriptionBackgroundColor:"blue"
     // };
     //#endregion
 
