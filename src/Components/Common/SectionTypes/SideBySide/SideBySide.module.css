@@ -3,11 +3,6 @@
     display: flex;
 }
 
-.sideBySideRoot span
-{
-    width: 50%;
-}
-
 .textDescription
 {
     margin: 0% 2.5%;
@@ -26,6 +21,11 @@
     flex-direction: column-reverse;
 }
 
+.sideBySideRoot span
+{
+    width: auto;
+}
+
 
 /* ----------- Tablet & Desktop ------------- */
 @media only screen and (min-width: 600px),(min-width: 1024px) {
@@ -38,6 +38,11 @@
     .flipped
     {
         flex-direction: row-reverse;
+    }
+
+    .sideBySideRoot span
+    {
+        width: 50%;
     }
 }
 
