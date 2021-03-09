@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./PortfolioPage.module.css";
+import GeneralStyles from "../../../CommonStyles/GeneralStyles.module.css";
 
 //#region --------------- Import Common & Modules ----------------------
 import StandardFooter from "../../Modules/StandardFooter";
@@ -12,6 +13,7 @@ import SideBySide from "../../Common/SectionTypes/SideBySide";
 
 //#region ------------ Import Common's Info --------------
 import { ZigZag_Default } from "../../../Data/CommonInfo/ZigZag/ZigZagInfo_Default";
+import { SideBySide_CSSInfo_alwaysVertical } from "../../../Data/CommonInfo/SideBySide/SideBySide_CommonInfo";
 import { PageStruct_Grey } from "../../../Data/CommonInfo/PageStructure/PageStructureInfo_CommonPageInfo";
 import { PageDescriptionInfo_Default } from "../../../Data/CommonInfo/PageDescription/PageDescription_CommonInfo";
 //#endregion
@@ -19,8 +21,6 @@ import { PageDescriptionInfo_Default } from "../../../Data/CommonInfo/PageDescri
 //#region ==================== Import Content ==================================
 
 //#region --------------- Common Content ---------------------
-// import TopNavBarInfo from "../../../Data/ModuleData/TopNavBarData";
-//import FooterInfo from "../../../Data/FooterData/FooterInfo";
 import PageDescriptionContent_PortfolioPage from "../../../Data/PageData/PortfolioPage/PageDescriptionContent_PortfolioPage";
 //#endregion
 
@@ -33,7 +33,7 @@ import ZigZagInfo_WhatIf from "../../../Data/PageData/PortfolioPage/WhatIf/ZigZa
 //#endregion
 
 //#region --------------- SideBySide Content -------------------------
-
+import sideBySide_Content_HaulAway from "../../../Data/PageData/PortfolioPage/HaulAway/SideBySideContent";
 //#endregion
 
 //#endregion
@@ -67,9 +67,9 @@ export default function PortfolioPage()
 
 
             {/* =================== Mobile ====================== */}
-<div className = {styles.portfolioMobileElement}>
-<SideBySide />
-</div>
+            <div className={`${styles.portfolioMobileElement} ${GeneralStyles.white}`} >
+                <SideBySide cssInfo={SideBySide_CSSInfo_alwaysVertical} content={sideBySide_Content_HaulAway} />
+            </div>
 
 
 
