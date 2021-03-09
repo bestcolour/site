@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./PortfolioPage.module.css";
 
 //#region --------------- Import Common & Modules ----------------------
 import StandardFooter from "../../Modules/StandardFooter";
@@ -6,6 +7,7 @@ import TopNavBar from "../../Modules/TopNavBar";
 import ZigZag from "../../Common/SectionTypes/ZigZag";
 import PageStructure from "../../Common/PageStructure";
 import PageDescription from "../../Common/SectionTypes/PageDescription";
+import SideBySide from "../../Common/SectionTypes/SideBySide";
 //#endregion
 
 //#region ------------ Import Common's Info --------------
@@ -30,6 +32,10 @@ import ZigZagInfo_HaulAway from "../../../Data/PageData/PortfolioPage/HaulAway/Z
 import ZigZagInfo_WhatIf from "../../../Data/PageData/PortfolioPage/WhatIf/ZigZagData";
 //#endregion
 
+//#region --------------- SideBySide Content -------------------------
+
+//#endregion
+
 //#endregion
 
 
@@ -37,21 +43,45 @@ import ZigZagInfo_WhatIf from "../../../Data/PageData/PortfolioPage/WhatIf/ZigZa
 //The portfolio page will display all of the proudest work i have
 export default function PortfolioPage() 
 {
+    //#region ------------------------ Content ---------------------------------
     const content =
         <div>
             <PageDescription info={PageDescriptionInfo_Default} content={PageDescriptionContent_PortfolioPage} />
-            <ZigZag content={ZigZagInfo_HaulAway} info={ZigZag_Default} />
-            <ZigZag content={ZigZagContent_SpaceRunners} info={ZigZag_Default} />
-            <ZigZag content={ZigZagContent_HangryGuardians} info={ZigZag_Default} />
-            <ZigZag content={ZigZagInfo_WhatIf} info={ZigZag_Default} />
-            <ZigZag content={ZigZagContent_DragAndPull} info={ZigZag_Default} />
+
+            {/* =================== Desktop & Tablet ====================== */}
+            <div className={styles.portfolioDesktopElement}>
+                <ZigZag content={ZigZagInfo_HaulAway} info={ZigZag_Default} />
+            </div>
+            <div className={styles.portfolioDesktopElement}>
+                <ZigZag content={ZigZagContent_SpaceRunners} info={ZigZag_Default} />
+            </div>
+            <div className={styles.portfolioDesktopElement}>
+                <ZigZag content={ZigZagContent_HangryGuardians} info={ZigZag_Default} />
+            </div>
+            <div className={styles.portfolioDesktopElement}>
+                <ZigZag content={ZigZagInfo_WhatIf} info={ZigZag_Default} />
+            </div>
+            <div className={styles.portfolioDesktopElement}>
+                <ZigZag content={ZigZagContent_DragAndPull} info={ZigZag_Default} />
+            </div>
+
+
+            {/* =================== Mobile ====================== */}
+<div className = {styles.portfolioMobileElement}>
+<SideBySide />
+</div>
+
+
+
+
         </div>
+    //#endregion
 
     return (
         <div>
-            <TopNavBar  selectedPageName="Portfolio" />
+            <TopNavBar selectedPageName="Portfolio" />
             <PageStructure content={content} info={PageStruct_Grey} />
-            <StandardFooter  />
+            <StandardFooter />
         </div>
     );
 }

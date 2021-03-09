@@ -1,0 +1,34 @@
+/* ====================== Start Portfolio Element ================================*/
+/* ------------- Mobile --------------- */
+.portfolioDesktopElement
+{
+    display:  none;
+}
+
+.portfolioMobileElement
+{
+    display: initial;
+}
+
+
+/* ------------- Tablet & Desktop --------------- */
+@media only screen and (min-width: 600px),(min-width: 1024px)
+{
+    .portfolioDesktopElement
+    {
+        display:initial;
+    }
+
+    .portfolioMobileElement
+    {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+/* ====================== End Portfolio Element ================================*/
