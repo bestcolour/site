@@ -40,6 +40,9 @@ export default function ImageButton({ content, onClickFunction, cssClass_Backgro
     const buttonType = GetButtonType(buttonLink, onClickFunction);
     const isWithinSite = IsLinkToWithinSite(buttonLink);
 
+    console.log(isWithinSite, buttonLink);
+
+
     //#region ------------- CSS Styling ------------------
     const finalClass_BackgroundImageElement = cssClass_BackgroundImageElement !== undefined ? cssClass_BackgroundImageElement : styles.imageBackgroundRoot_Default;
 
@@ -58,7 +61,7 @@ export default function ImageButton({ content, onClickFunction, cssClass_Backgro
         case "LINK_ONLY":
             //#region -------------- LINK_ONLY ------------------
             finalJSX = isWithinSite ?
-                <Link to={finalJSX} target={target} >
+                <Link to={buttonLink} target={target} >
                     <p style={buttonStyle} className={`${styles.image} ${finalClass_BackgroundImageElement}`} ></p>
                 </Link>
                 :
@@ -71,7 +74,7 @@ export default function ImageButton({ content, onClickFunction, cssClass_Backgro
         case "LINK_AND_FUNCTION":
             //#region -------------- LINK_AND_FUNCTION ------------------
             finalJSX = isWithinSite ?
-                <Link to={finalJSX} target={target} onClick={onClickFunction} >
+                <Link to={buttonLink} target={target} onClick={onClickFunction} >
                     <p style={buttonStyle} className={`${styles.image} ${finalClass_BackgroundImageElement}`} ></p>
                 </Link>
                 :
