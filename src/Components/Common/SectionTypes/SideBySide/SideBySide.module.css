@@ -44,9 +44,17 @@
 
 /* ============== End Direction Media Query ================ */
 
-/* ============== Start Subject & Descriptio ================ */
+/* ============== Start Subject & Description ================ */
 
+.subjectBgColor_Default
+{
+    background-color: transparent;
+}
 
+.descriptionBgColor_Default
+{
+    background-color: transparent;
+}
 
-/* ============== End Subject & Descriptio ================ */
+/* ============== End Subject & Description ================ */
 
