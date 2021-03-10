@@ -1,6 +1,7 @@
 //#region ============== Imports ====================
-import styles from "../ZigZagData_CommonStyles.module.css";
+import styles from "../ZigZag_PortfolioStyles.module.css";
 import GeneralStyles from "../../../../CommonStyles/GeneralStyles.module.css";
+import bgImageStyles from "../BackgroundImage_PortfolioStyles.module.css";
 
 //#region  --------------- Commons -----------------
 import BackgroundImage from "../../../../Components/Common/BackgroundImage";
@@ -27,7 +28,7 @@ const TextButtonContent_app =
 const BackgroundImageInfo =
 {
     bgImageSrc: `../..${PageRouteData.ResourcePath}SpaceRunners/GodView.jpg`
-    , cssStyling: styles.subjectBgImageClassStyle
+    , cssStyling: bgImageStyles.subjectBgImageClassStyle
 }
 
 const ImageButtonInfo_app =

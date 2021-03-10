@@ -1,5 +1,9 @@
+
+//===================== Description ====================
+//This data file is for mobile support of the portfolio page
 import BackgroundImage from "../../../../Components/Common/BackgroundImage";
-import styles from "../ZigZagData_CommonStyles.module.css";
+import bgImageStyles from "../BackgroundImage_PortfolioStyles.module.css";
+
 
 import { PageRouteData, OnClickNewSite } from "../../../PageRouteData";
 
@@ -7,18 +11,17 @@ import { PageRouteData, OnClickNewSite } from "../../../PageRouteData";
 const BackgroundImageInfo =
 {
     bgImageSrc: `../..${PageRouteData.ResourcePath}HaulAway/Poster.jpg`
-    , cssStyling: styles.subjectBgImageClassStyle
+    , cssStyling: bgImageStyles.subjectBgImageClassStyle
 }
 
 
 
 const content =
 {
-    subject: 
-    <div>
-        <BackgroundImage info={BackgroundImageInfo} />
-        H
-    </div>
+    subject:
+        <div>
+            <BackgroundImage info={BackgroundImageInfo} />
+        </div>
     ,
     description:
         <div>
@@ -29,6 +32,9 @@ const content =
     //If is flipped is set to true, the subject's default position (left side on desktop, doenst affect mobile) will be on the opposite side
     isFlipped: false
 };
+
+
+
 
 
 export default content;

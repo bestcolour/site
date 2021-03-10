@@ -1,4 +1,5 @@
-import styles from "../ZigZagData_CommonStyles.module.css";
+import styles from "../ZigZag_PortfolioStyles.module.css";
+import bgImageStyles from "../BackgroundImage_PortfolioStyles.module.css";
 import GeneralStyles from "../../../../CommonStyles/GeneralStyles.module.css";
 
 //#region ---------- Import Commons -----------------
@@ -37,7 +38,7 @@ const TextButtonInfo_app =
 const BackgroundImageInfo_Subject =
 {
     bgImageSrc: `../..${PageRouteData.ResourcePath}HangryGuardians/SplashArt.jpg`
-    , cssStyling: styles.subjectBgImageClassStyle
+    , cssStyling: bgImageStyles.subjectBgImageClassStyle
 }
 
 const ZigZagContent =

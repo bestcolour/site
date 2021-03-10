@@ -1,5 +1,6 @@
 //#region ============== Imports ====================
-import styles from "../ZigZagData_CommonStyles.module.css";
+import styles from "../ZigZag_PortfolioStyles.module.css";
+import bgImageStyles from "../BackgroundImage_PortfolioStyles.module.css";
 import GeneralStyles from "../../../../CommonStyles/GeneralStyles.module.css";
 
 //#region  --------------- Commons -----------------
@@ -27,7 +28,7 @@ const TextButtonContent_app =
 const BackgroundImageInfo =
 {
     bgImageSrc: `../..${PageRouteData.ResourcePath}Drag&Pull/Menu.jpg`
-    , cssStyling: styles.subjectBgImageClassStyle
+    , cssStyling: bgImageStyles.subjectBgImageClassStyle
 }
 
 const ImageButtonInfo_example =

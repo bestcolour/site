@@ -1,0 +1,11 @@
+.subjectBgImageClassStyle
+{
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center center;
+    filter: drop-shadow( -.5em .5em .5em #00000075 );
+
+    /* Height & Width */
+    height:100%;
+    width:100%;
+}

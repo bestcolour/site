@@ -1,5 +1,6 @@
-import styles from "../ZigZagData_CommonStyles.module.css";
+import styles from "../ZigZag_PortfolioStyles.module.css";
 import GeneralStyles from "../../../../CommonStyles/GeneralStyles.module.css";
+import bgImageStyles from "../BackgroundImage_PortfolioStyles.module.css";
 
 //#region ---------- Import Commons -----------------
 import TextButton from "../../../../Components/Common/Button/TextButton";
@@ -24,7 +25,7 @@ const TextButtonInfo_app =
 const BackgroundImageInfo =
 {
     bgImageSrc: `../..${PageRouteData.ResourcePath}WhatIf/Title.jpg`
-    , cssStyling: styles.subjectBgImageClassStyle
+    , cssStyling: bgImageStyles.subjectBgImageClassStyle
 }
 
 

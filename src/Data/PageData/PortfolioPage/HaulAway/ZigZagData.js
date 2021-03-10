@@ -1,4 +1,5 @@
-import styles from "../ZigZagData_CommonStyles.module.css";
+import bgImageStyles from "../BackgroundImage_PortfolioStyles.module.css";
+import styles from "../ZigZag_PortfolioStyles.module.css";
 import GeneralStyles from "../../../../CommonStyles/GeneralStyles.module.css";
 
 //#region ---------- Import Commons -----------------
@@ -24,15 +25,13 @@ const TextButtonInfo_app =
 const BackgroundImageInfo =
 {
     bgImageSrc: `../..${PageRouteData.ResourcePath}HaulAway/Poster.jpg`
-    , cssStyling: styles.subjectBgImageClassStyle
+    , cssStyling: bgImageStyles.subjectBgImageClassStyle
 }
 
 const ZigZagContent =
 {
     subject:
-        <div className={styles.subjectWrapper}>
             <BackgroundImage info={BackgroundImageInfo} />
-        </div>
     ,
     description:
         <div className={`${GeneralStyles.white} ${styles.descriptionWrapper}`}>

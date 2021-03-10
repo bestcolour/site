@@ -50,15 +50,21 @@ export default function PortfolioPage()
 
             {/* =================== Desktop & Tablet ====================== */}
             <div className={styles.portfolioDesktopElements}>
+                {/* --------- Haul Away ---------- */}
                 <ZigZag content={ZigZagInfo_HaulAway} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
+                {/* --------- SpaceRunners ---------- */}
                 <ZigZag content={ZigZagContent_SpaceRunners} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
+                {/* --------- Hangry Guardians ---------- */}
                 <ZigZag content={ZigZagContent_HangryGuardians} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
+                {/* --------- What If ---------- */}
                 <ZigZag content={ZigZagInfo_WhatIf} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
+                {/* --------- Drag & Pull ---------- */}
                 <ZigZag content={ZigZagContent_DragAndPull} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
             </div>
 
             {/* =================== Mobile ====================== */}
             <div className={`${styles.portfolioMobileElements} ${GeneralStyles.white}`} >
+                {/* --------- Haul Away ---------- */}
                 <SideBySide content={sideBySide_Content_HaulAway} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot = {SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
             </div>
 
