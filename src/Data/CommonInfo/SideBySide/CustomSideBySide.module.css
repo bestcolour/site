@@ -8,7 +8,7 @@
     flex-direction: row;
 }
 
-.alwaysHorizontal_SideBySideElement
+.alwaysHorizontal_HalfWidth
 {
     width: 50%;
 }
@@ -23,7 +23,7 @@
     flex-direction: column;
 }
 
-.alwaysVertical_SideBySideElement
+.alwaysVertical_FullWidth
 {
     width: 100%;
 }

@@ -16,10 +16,20 @@
     flex-direction: column-reverse;
 }
 
-.sideBySideElement
+.subjectRoot_Default
 {
     width: auto;
 }
+
+.descriptionRoot_Default
+{
+    width: auto
+}
+
+/* .sideBySideElement
+{
+    width: auto;
+} */
 
 
 /* ----------- Tablet & Desktop ------------- */
@@ -35,7 +45,12 @@
         flex-direction: row-reverse;
     }
 
-    .sideBySideElement
+    .subjectRoot_Default
+    {
+        width: 50%;
+    }
+
+    .descriptionRoot_Default
     {
         width: 50%;
     }
@@ -46,12 +61,12 @@
 
 /* ============== Start Subject & Description ================ */
 
-.subjectBgColor_Default
+.subjectRoot_Default
 {
     background-color: transparent;
 }
 
-.descriptionBgColor_Default
+.descriptionRoot_Default
 {
     background-color: transparent;
 }

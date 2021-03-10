@@ -66,10 +66,10 @@ export default function PageContent()
     let sideBySideContent =
         <>
             <div className={styles.topBotPadding}>
-                <SideBySide content={SideBySideContent_GameDescription} />
+                <SideBySide content={SideBySideContent_GameDescription}  cssClass_descriptionRoot = {styles.sideBySideDescriptionRoot} />
                 <br />
                 <br />
-                <SideBySide content={SideBySideContent_ProjectDescription} />
+                <SideBySide content={SideBySideContent_ProjectDescription}  cssClass_descriptionRoot = {styles.sideBySideDescriptionRoot} />
             </div>
         </>
         ;

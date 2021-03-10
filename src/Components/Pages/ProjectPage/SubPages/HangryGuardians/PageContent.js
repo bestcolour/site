@@ -1,6 +1,6 @@
 //#region --------- Importing ------------
 import React from "react";
-import style from "../SubPage_CommonStyles.module.css";
+import styles from "../SubPage_CommonStyles.module.css";
 import columnStyle from "../../../../../CommonStyles/Columns.module.css";
 
 //#region --------- Import Common ---------------
@@ -47,7 +47,7 @@ export default function PageContent()
 
     //#region ---------- Hero Content ------------
     let heroPageTitle =
-        <div className={style.heroParent}>
+        <div className={styles.heroParent}>
             <div className={columnStyle.col_desktop_3}></div>
             <div className={columnStyle.col_desktop_6}>
                 <Overlay content={<PageDescription info={PageDescriptionInfo_Default} content={PageDescriptContent_pageTitle} />} info={OverlayInfo_default} />
@@ -70,11 +70,11 @@ export default function PageContent()
     //#region ---------- Main Content ------------
     let sideBySideContent =
         <>
-            <div className={style.topBotPadding}>
-                <SideBySide content={SideBySideContent_GameDescription} />
+            <div className={styles.topBotPadding}>
+                <SideBySide content={SideBySideContent_GameDescription}  cssClass_descriptionRoot = {styles.sideBySideDescriptionRoot} />
                 <br />
                 <br />
-                <SideBySide content={SideBySideContent_ProjectDescription} />
+                <SideBySide content={SideBySideContent_ProjectDescription}  cssClass_descriptionRoot = {styles.sideBySideDescriptionRoot} />
             </div>
         </>
         ;
@@ -88,7 +88,7 @@ export default function PageContent()
 
 
     let heroReflectionTitle =
-        <div className={style.heroParent}>
+        <div className={styles.heroParent}>
             <div className={columnStyle.col_desktop_3}></div>
             <div className={columnStyle.col_desktop_6}>
                 <Overlay content={<PageDescription content={PageDescriptContent_downloadSection} info={PageDescriptionInfo_Default} />} info={OverlayInfo_default} />

@@ -12,8 +12,8 @@ import SideBySide from "../../Common/SectionTypes/SideBySide";
 //#endregion
 
 //#region ------------ Import Common's Info --------------
-import { ZigZag_DescriptionBg_Black,ZigZag_SubjectRoot_OverwriteShadows } from "../../../Data/CommonInfo/ZigZag/ZigZagInfo";
-import { SideBySide_CommonInfo_AlwaysVertical_FlipClasses,SideBySide_CommonInfo_AlwaysVertical_cssClass_SideBySideElement } from "../../../Data/CommonInfo/SideBySide/SideBySide_CommonInfo";
+import { ZigZag_DescriptionBg_Black, ZigZag_SubjectRoot_OverwriteShadows } from "../../../Data/CommonInfo/ZigZag/ZigZagInfo";
+import { SideBySide_CommonInfo_AlwaysVertical_FlipClasses,SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot,SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot  } from "../../../Data/CommonInfo/SideBySide/SideBySide_CommonInfo";
 import { PageStruct_Grey } from "../../../Data/CommonInfo/PageStructure/PageStructureInfo_CommonPageInfo";
 import { PageDescriptionInfo_Default } from "../../../Data/CommonInfo/PageDescription/PageDescription_CommonInfo";
 //#endregion
@@ -50,7 +50,7 @@ export default function PortfolioPage()
 
             {/* =================== Desktop & Tablet ====================== */}
             <div className={styles.portfolioDesktopElements}>
-                <ZigZag content={ZigZagInfo_HaulAway} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows}/>
+                <ZigZag content={ZigZagInfo_HaulAway} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
                 <ZigZag content={ZigZagContent_SpaceRunners} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
                 <ZigZag content={ZigZagContent_HangryGuardians} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
                 <ZigZag content={ZigZagInfo_WhatIf} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
@@ -59,7 +59,7 @@ export default function PortfolioPage()
 
             {/* =================== Mobile ====================== */}
             <div className={`${styles.portfolioMobileElements} ${GeneralStyles.white}`} >
-                <SideBySide cssInfo_flipClasses ={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_SideBySideElement ={SideBySide_CommonInfo_AlwaysVertical_cssClass_SideBySideElement} content={sideBySide_Content_HaulAway} />
+                <SideBySide content={sideBySide_Content_HaulAway} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot = {SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
             </div>
 
 

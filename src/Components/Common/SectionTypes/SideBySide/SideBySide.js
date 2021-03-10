@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./SideBySide.module.css";
 
-export default function SideBySide({ content, cssInfo_flipClasses, cssClass_SideBySideElement, cssClass_descriptionBg, cssClass_subjectBg })
+export default function SideBySide({ content, cssInfo_flipClasses, cssClass_descriptionRoot, cssClass_subjectRoot })
 {
     //#region ---------- Template ----------
     // const content =
@@ -24,9 +24,8 @@ export default function SideBySide({ content, cssInfo_flipClasses, cssClass_Side
     // cssClass_notFlipped: cssModule.notFlipped
     // }
 
-    // cssClass_SideBySideElement = cssModule.SideBySideElement; //Can control the width of the elements here
-    // cssClass_descriptionBg = cssModule.descriptionBgStyle;
-    // cssClass_subjectBg = cssModule.subjectBgStyle;
+    // cssClass_descriptionRoot = cssModule.descriptionBgStyle;
+    // cssClass_subjectRoot = cssModule.subjectBgStyle;
 
     //#endregion
 
@@ -35,34 +34,30 @@ export default function SideBySide({ content, cssInfo_flipClasses, cssClass_Side
     //#region ------------- Root Style -----------------------
     let rootStyle;
     //If there is no cssClass of flipped/notflipped, then use default
-    if (cssInfo_flipClasses === undefined && cssInfo_flipClasses.cssClass_flipped === undefined || cssInfo_flipClasses.cssClass_notFlipped === undefined)
+    if (cssInfo_flipClasses !== undefined && cssInfo_flipClasses.cssClass_flipped !== undefined && cssInfo_flipClasses.cssClass_notFlipped !== undefined)
     {
-        rootStyle = isFlipped ? style.notFlipped : style.flipped;
+        rootStyle = isFlipped ? cssInfo_flipClasses.cssClass_flipped : cssInfo_flipClasses.cssClass_notFlipped;
     }
     else
     {
-        rootStyle = isFlipped ? cssInfo_flipClasses.cssClass_flipped : cssInfo_flipClasses.cssClass_notFlipped;
+        rootStyle = isFlipped ? style.notFlipped : style.flipped;
     }
     //#endregion
 
     //#region -------------- Backgrounds Style ----------------------
-    const descriptionBgClass = cssClass_descriptionBg !== undefined ? cssClass_descriptionBg : style.descriptionBgColor_Default;
+    const descriptionRootClass = cssClass_descriptionRoot !== undefined ? cssClass_descriptionRoot : style.descriptionRoot_Default;
 
-    const subjectBgClass = cssClass_subjectBg !== undefined ? cssClass_subjectBg : style.subjectBgColor_Default;
-    //#endregion
-
-    //#region ----------------- SideBySide Element Style ------------------------
-    const sideBySideElementStyle = cssClass_SideBySideElement !== undefined ? cssClass_SideBySideElement : style.sideBySideElement;
+    const subjectRootClass = cssClass_subjectRoot !== undefined ? cssClass_subjectRoot : style.subjectRoot_Default;
     //#endregion
 
 
 
     return (
         <div className={`${rootStyle} ${style.sideBySideRoot}`}>
-            <span className={`${sideBySideElementStyle} ${subjectBgClass}`} >
+            <span className={` ${subjectRootClass}`} >
                 {subject}
             </span>
-            <span className={`${sideBySideElementStyle} ${descriptionBgClass}`} >
+            <span className={` ${descriptionRootClass}`} >
                 {description}
             </span>
         </div>
