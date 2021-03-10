@@ -21,8 +21,6 @@ const TextButtonInfo_app =
     text: "Read More"
     , buttonLink: PageRouteData.WhatIfPath
     , target: ""
-    // , padding: "3.5% 3.5% 3.5% 3.5%"
-    // , backgroundColor: "#393939"
 }
 
 const BackgroundImageInfo =
@@ -39,10 +37,6 @@ const ImageButtonInfo_example =
     buttonLink: "https://fyp-whatif.itch.io/what-if"
     ,
     target: "_blank"
-    // ,
-    // width: "11.5em"
-    // ,
-    // height: "3.5em"
 }
 
 const ZigZagContent =

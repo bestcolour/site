@@ -13,7 +13,7 @@ import SideBySide from "../../Common/SectionTypes/SideBySide";
 
 //#region ------------ Import Common's Info --------------
 import { ZigZag_DescriptionBg_Black, ZigZag_SubjectRoot_OverwriteShadows } from "../../../Data/CommonInfo/ZigZag/ZigZagInfo";
-import { SideBySide_CommonInfo_AlwaysVertical_FlipClasses,SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot,SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot  } from "../../../Data/CommonInfo/SideBySide/SideBySide_CommonInfo";
+import { SideBySide_CommonInfo_AlwaysVertical_FlipClasses, SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot, SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot } from "../../../Data/CommonInfo/SideBySide/SideBySide_CommonInfo";
 import { PageStruct_Grey } from "../../../Data/CommonInfo/PageStructure/PageStructureInfo_CommonPageInfo";
 import { PageDescriptionInfo_Default } from "../../../Data/CommonInfo/PageDescription/PageDescription_CommonInfo";
 //#endregion
@@ -34,6 +34,10 @@ import ZigZagInfo_WhatIf from "../../../Data/PageData/PortfolioPage/WhatIf/ZigZa
 
 //#region --------------- SideBySide Content -------------------------
 import sideBySide_Content_HaulAway from "../../../Data/PageData/PortfolioPage/HaulAway/SideBySideContent";
+import sideBySide_Content_HangryGuardians from "../../../Data/PageData/PortfolioPage/HangryGuardians/SideBySideContent";
+import sideBySide_Content_Drag_and_Pull from "../../../Data/PageData/PortfolioPage/Drag_and_Pull/SideBySideContent";
+import sideBySide_Content_SpaceRunners from "../../../Data/PageData/PortfolioPage/SpaceRunners/SideBySideContent";
+import sideBySide_Content_WhatIf from "../../../Data/PageData/PortfolioPage/WhatIf/SideBySideContent";
 //#endregion
 
 //#endregion
@@ -65,7 +69,20 @@ export default function PortfolioPage()
             {/* =================== Mobile ====================== */}
             <div className={`${styles.portfolioMobileElements} ${GeneralStyles.white}`} >
                 {/* --------- Haul Away ---------- */}
-                <SideBySide content={sideBySide_Content_HaulAway} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot = {SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
+                <SideBySide content={sideBySide_Content_HaulAway} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
+
+                {/* --------- Hangry Guardians ---------- */}
+                <SideBySide content={sideBySide_Content_HangryGuardians} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
+
+                {/* --------- Drag & Pull ---------- */}
+                <SideBySide content={sideBySide_Content_Drag_and_Pull} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
+
+                {/* --------- SpaceRunners ---------- */}
+                <SideBySide content={sideBySide_Content_SpaceRunners} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
+
+                {/* --------- WhatIf ---------- */}
+                <SideBySide content={sideBySide_Content_WhatIf} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
+
             </div>
 
 

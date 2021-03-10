@@ -22,10 +22,6 @@ const ImageButtonInfo_app =
     buttonLink: "https://play.google.com/store/apps/details?id=com.ET.HangryGods&hl=en"
     ,
     target: "_blank"
-    // ,
-    // width: "11.5em"
-    // ,
-    // height: "3.5em"
 }
 
 
@@ -34,8 +30,6 @@ const TextButtonInfo_app =
     text: "Read More"
     , buttonLink: PageRouteData.HangryGuardiansPath
     , target: ""
-    // , backgroundColor: "#393939"
-    // , padding: "3.5% 3.5% 3.5% 3.5%"
 }
 
 const BackgroundImageInfo_Subject =

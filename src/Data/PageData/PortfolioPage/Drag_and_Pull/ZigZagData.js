@@ -24,8 +24,6 @@ const TextButtonContent_app =
     text: "Read More"
     , buttonLink: PageRouteData.DragAndPullPath
     , target: ""
-    // , backgroundColor: "#393939"
-    // , padding: "3.5% 3.5% 3.5% 3.5%"
 }
 
 const BackgroundImageInfo =
@@ -42,8 +40,6 @@ const ImageButtonInfo_example =
     ,
     target: "_blank"
 }
-
-// const ImageButton_CssClass_BgImageElement = imgButtonStyles.imageButtonDimensions;
 
 //#endregion
 

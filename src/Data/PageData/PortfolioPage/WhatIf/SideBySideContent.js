@@ -12,9 +12,9 @@ import { PageRouteData, OnClickNewSite } from "../../../PageRouteData";
 
 const ImageButtonContent_example =
 {
-    imageSrc: `../..${PageRouteData.ResourcePath}HaulAway/Poster.jpg`
+    imageSrc: `../..${PageRouteData.ResourcePath}WhatIf/Title.jpg`
     ,
-    buttonLink: PageRouteData.HaulAwayPath
+    buttonLink: PageRouteData.WhatIfPath
     ,
     target: ""
 }
@@ -25,12 +25,12 @@ const content =
 {
     subject:
         <div className={styles.subjectRoot}>
-            <ImageButton content={ImageButtonContent_example} onClickFunction = {OnClickNewSite} cssClass_BackgroundImageElement={`${imgButtonStyles.haulAwayImageElement} ${imgButtonStyles.backgroundImageElement}`}/>
+            <ImageButton content={ImageButtonContent_example} onClickFunction = {OnClickNewSite} cssClass_BackgroundImageElement={`${imgButtonStyles.backgroundImageElement}`}/>
         </div>
     ,
     description:
         <div className={styles.descriptionRoot}>
-            <h4>Haul Away</h4>
+            <h4>What If?</h4>
         </div>
     ,
     //If is flipped is set to true, the subject's default position (left side on desktop, doenst affect mobile) will be on the opposite side
