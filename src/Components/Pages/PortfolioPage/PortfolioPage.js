@@ -13,7 +13,7 @@ import SideBySide from "../../Common/SectionTypes/SideBySide";
 
 //#region ------------ Import Common's Info --------------
 import { ZigZag_Default } from "../../../Data/CommonInfo/ZigZag/ZigZagInfo_Default";
-import { SideBySide_CSSInfo_alwaysVertical } from "../../../Data/CommonInfo/SideBySide/SideBySide_CommonInfo";
+import { SideBySide_CommonInfo_AlwaysVertical_FlipClasses,SideBySide_CommonInfo_AlwaysVertical_cssClass_SideBySideElement } from "../../../Data/CommonInfo/SideBySide/SideBySide_CommonInfo";
 import { PageStruct_Grey } from "../../../Data/CommonInfo/PageStructure/PageStructureInfo_CommonPageInfo";
 import { PageDescriptionInfo_Default } from "../../../Data/CommonInfo/PageDescription/PageDescription_CommonInfo";
 //#endregion
@@ -59,7 +59,7 @@ export default function PortfolioPage()
 
             {/* =================== Mobile ====================== */}
             <div className={`${styles.portfolioMobileElements} ${GeneralStyles.white}`} >
-                <SideBySide cssInfo={SideBySide_CSSInfo_alwaysVertical} content={sideBySide_Content_HaulAway} />
+                <SideBySide cssInfo_flipClasses ={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_SideBySideElement ={SideBySide_CommonInfo_AlwaysVertical_cssClass_SideBySideElement} content={sideBySide_Content_HaulAway} />
             </div>
 
 

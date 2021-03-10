@@ -15,7 +15,7 @@ import StandardFooter from "../../Modules/StandardFooter";
 //#endregion
 
 //#region --------------- Import Common Info --------------------
-import { SideBySide_CSSInfo_alwaysVertical } from "../../../Data/CommonInfo/SideBySide/SideBySide_CommonInfo";
+import { SideBySide_CommonInfo_AlwaysVertical_cssClass_SideBySideElement, SideBySide_CommonInfo_AlwaysVertical_FlipClasses } from "../../../Data/CommonInfo/SideBySide/SideBySide_CommonInfo";
 //#endregion
 
 //#region Data
@@ -118,7 +118,7 @@ export default function ContactPage()
     const pageContent =
         <div className={style.pageContentRoot}>
             <div className={style.sideBySideContentRoot}>
-                <SideBySide content={sideBySideContent} cssInfo={SideBySide_CSSInfo_alwaysVertical} />
+                <SideBySide content={sideBySideContent} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_SideBySideElement={SideBySide_CommonInfo_AlwaysVertical_cssClass_SideBySideElement} />
             </div>
         </div>
     //#endregion

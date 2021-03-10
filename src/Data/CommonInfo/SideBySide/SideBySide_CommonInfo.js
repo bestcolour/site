@@ -1,27 +1,35 @@
 import customStyles from "./CustomSideBySide.module.css";
 
-const SideBySide_CSSInfo_alwaysHorizontal =
+//#region ------------- Horizontal ----------------
+const alwaysHorizontal_cssInfo_flipClasses = 
 {
-    cssStyle_flipped: customStyles.alwaysHorizontal_Flipped
+    cssClass_flipped : customStyles.alwaysHorizontal_Flipped
     ,
-    cssStyle_notFlipped: customStyles.alwaysHorizontal_NotFlipped
-    ,
-    cssStyle_SideBySideElement: customStyles.alwaysHorizontal_SideBySideElement
+    cssClass_notFlipped: customStyles.alwaysHorizontal_NotFlipped
 }
 
-const SideBySide_CSSInfo_alwaysVertical =
-{
-    cssStyle_flipped: customStyles.alwaysVertical_Flipped
-    ,
-    cssStyle_notFlipped: customStyles.alwaysVertical_NotFlipped
-    ,
-    cssStyle_SideBySideElement: customStyles.alwaysVertical_SideBySideElement
-}
+const alwaysHorizontal_cssClass_SideBySideElement = customStyles.alwaysHorizontal_SideBySideElement;
+//#endregion
 
+
+//#region ---------------- Vertical -----------------
+const alwaysVertical_cssInfo_flipClasses = 
+{
+    cssClass_flipped : customStyles.alwaysVertical_Flipped
+    ,
+    cssClass_notFlipped: customStyles.alwaysVertical_NotFlipped
+}
+const alwaysVertical_cssClass_SideBySideElement = customStyles.alwaysVertical_SideBySideElement;
+//#endregion
 
 export 
 {
-    SideBySide_CSSInfo_alwaysHorizontal
+    alwaysHorizontal_cssInfo_flipClasses as SideBySide_CommonInfo_AlwaysHorizontal_FlipClasses
     ,
-    SideBySide_CSSInfo_alwaysVertical
+    alwaysHorizontal_cssClass_SideBySideElement as SideBySide_CommonInfo_AlwaysHorizontal_cssClass_SideBySideElement
+    ,
+    alwaysVertical_cssInfo_flipClasses as SideBySide_CommonInfo_AlwaysVertical_FlipClasses
+    ,
+    alwaysVertical_cssClass_SideBySideElement as SideBySide_CommonInfo_AlwaysVertical_cssClass_SideBySideElement
+
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./SideBySide.module.css";
 
-export default function SideBySide({ content, cssInfo })
+export default function SideBySide({ content, cssInfo_flipClasses, cssClass_SideBySideElement, cssClass_descriptionBg, cssClass_subjectBg })
 {
     //#region ---------- Template ----------
     // const content =
@@ -18,18 +18,15 @@ export default function SideBySide({ content, cssInfo })
     //     isFlipped: false
     // };
 
-    // const cssInfo =
+    // const cssInfo_flipClasses = 
     // {
-    //     cssStyle_flipped: cssModule.flipped
-    //     ,
-    //     cssStyle_notFlipped: cssModule.notFlipped
-    //      ,
-    //      cssStyle_SideBySideElement : cssModule.SideBySideElement
-    // ,
-    // cssStyle_descriptionBg : cssModule.descriptionBgStyle
-    // ,
-    // cssStyle_subjectBg : cssModule.subjectBgStyle
+    // cssClass_flipped: cssModule.flipped,
+    // cssClass_notFlipped: cssModule.notFlipped
     // }
+
+    // cssClass_SideBySideElement = cssModule.SideBySideElement; //Can control the width of the elements here
+    // cssClass_descriptionBg = cssModule.descriptionBgStyle;
+    // cssClass_subjectBg = cssModule.subjectBgStyle;
 
     //#endregion
 
@@ -37,25 +34,25 @@ export default function SideBySide({ content, cssInfo })
 
     //#region ------------- Root Style -----------------------
     let rootStyle;
-    //If there is no cssInfo added or no cssStyle of flipped/notflipped, then use default
-    if (cssInfo === undefined || cssInfo.cssStyle_flipped === undefined || cssInfo.cssStyle_notFlipped === undefined)
+    //If there is no cssClass of flipped/notflipped, then use default
+    if (cssInfo_flipClasses === undefined && cssInfo_flipClasses.cssClass_flipped === undefined || cssInfo_flipClasses.cssClass_notFlipped === undefined)
     {
         rootStyle = isFlipped ? style.notFlipped : style.flipped;
     }
     else
     {
-        rootStyle = isFlipped ? cssInfo.cssStyle_flipped : cssInfo.cssStyle_notFlipped;
+        rootStyle = isFlipped ? cssInfo_flipClasses.cssClass_flipped : cssInfo_flipClasses.cssClass_notFlipped;
     }
     //#endregion
 
     //#region -------------- Backgrounds Style ----------------------
-    const descriptionBgClass = cssInfo !== undefined && cssInfo.cssStyle_descriptionBg !== undefined ? cssInfo.cssStyle_descriptionBg : style.descriptionBgColor_Default;
+    const descriptionBgClass = cssClass_descriptionBg !== undefined ? cssClass_descriptionBg : style.descriptionBgColor_Default;
 
-    const subjectBgClass = cssInfo !== undefined && cssInfo.cssStyle_subjectBg !== undefined ? cssInfo.cssStyle_subjectBg : style.subjectBgColor_Default;
+    const subjectBgClass = cssClass_subjectBg !== undefined ? cssClass_subjectBg : style.subjectBgColor_Default;
     //#endregion
 
     //#region ----------------- SideBySide Element Style ------------------------
-    const sideBySideElementStyle = cssInfo !== undefined && cssInfo.cssStyle_SideBySideElement !== undefined ? cssInfo.cssStyle_SideBySideElement : style.sideBySideElement;
+    const sideBySideElementStyle = cssClass_SideBySideElement !== undefined ? cssClass_SideBySideElement : style.sideBySideElement;
     //#endregion
 
 
