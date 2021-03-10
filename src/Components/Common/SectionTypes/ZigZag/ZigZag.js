@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./ZigZag.module.css";
 
-export default function ZigZag({ content, cssInfo }) 
+export default function ZigZag({ content, cssClass_ZigZagSizeStyle, cssClass_DescriptionBgStyle }) 
 {
     //#region -------------------------- Template -------------------------------
     ////Content will hold:
@@ -12,11 +12,8 @@ export default function ZigZag({ content, cssInfo })
     // , isLeft: true //Boolean to determine if subject ought to be placed on the left or the right. Is left does not have a mobile support
     //};
 
-    // const cssInfo =
-    // {
-    //     zigZagSizeStyle: cssStyle
-    //     descriptionBgStyle: cssStyleWith_BackgroundColorProperty
-    // };
+    //   const  cssClass_ZigZagSizeStyle = cssModule.class;
+    //    const cssClass_DescriptionBgStyle: cssModule.class;
 
     //#endregion
 
@@ -40,14 +37,14 @@ export default function ZigZag({ content, cssInfo })
     //#region ====================== Unpacking CSSInfo ==================
 
     //#region --------------- Description background Colour -------------------
-    //If cssinfo is defined and has that cssStyle defined, use the inputed css style else use the default class 
-    const descriptionBgClass = cssInfo !== undefined && cssInfo.descriptionBgStyle !== undefined ? cssInfo.descriptionBgStyle : style.descriptionRoot_BgColor_Default;
+    //If that cssStyle defined, use the inputed css style else use the default class 
+    const descriptionBgClass =cssClass_DescriptionBgStyle !== undefined ? cssClass_DescriptionBgStyle : style.descriptionRoot_BgColor_Default;
 
     //#endregion
 
     //#region -------------- ZigZag Section Sizing Styles ---------------------
-    //If cssinfo is defined and has that zigZagSizeStyle defined, use the inputed css style else use the default class 
-    const zigZagSizeClass = cssInfo !== undefined && cssInfo.zigZagSizeStyle !== undefined ? cssInfo.zigZagSizeStyle : style.zigZagRoot_Size_Default;
+    //Ifthat cssClass_ZigZagSizeStyle defined, use the inputed css style else use the default class 
+    const zigZagSizeClass = cssClass_ZigZagSizeStyle !== undefined ?cssClass_ZigZagSizeStyle : style.zigZagRoot_Size_Default;
     //#endregion
 
     //#endregion

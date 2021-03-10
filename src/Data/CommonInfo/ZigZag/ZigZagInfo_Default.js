@@ -1,9 +1,8 @@
-const ZigZagInfo_Default =
-{
-    textBgColor: "#5A5A5A"
-}
+import style from "./ZigZagCommon_CSSInfo.module.css";
+
+const description_BlackBg_Class = style.description_blackBg;
 
 export
 {
-    ZigZagInfo_Default as ZigZag_Default
+    description_BlackBg_Class as ZigZag_Default
 };

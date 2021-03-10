@@ -29,32 +29,34 @@ const BackgroundImageInfo =
 
 const ZigZagContent =
 {
-    subject: 
-    <BackgroundImage info={BackgroundImageInfo} />
-    , titleJSX: <h6 className={`${GeneralStyles.white}`}>Haul Away</h6>
-    , paragraphJSX:
-        <div>
-            <p className={GeneralStyles.white} >
-                <p>
-                    Haul Away is an on-going project which I have worked on with five other team members for my Polytechnic's final year project. The development time was from October 2020 to present time.
+    subject:
+        <BackgroundImage info={BackgroundImageInfo} />
+    ,
+    description:
+        <div className={GeneralStyles.white}>
+            <h6 className={`${GeneralStyles.white}`}>Haul Away</h6>
+            <div>
+                <p className={GeneralStyles.white} >
+                    <p>
+                        Haul Away is an on-going project which I have worked on with five other team members for my Polytechnic's final year project. The development time was from October 2020 to present time.
                 </p>
 
-                <br />
+                    <br />
 
-                <p>
-                    As a local co-op game, players have to work together and manage a ship to traverse the dangerous seas in order to complete tasks set out by Shady Steve, the boss of the shady courier company which you and your fellow crewmates intern in.
+                    <p>
+                        As a local co-op game, players have to work together and manage a ship to traverse the dangerous seas in order to complete tasks set out by Shady Steve, the boss of the shady courier company which you and your fellow crewmates intern in.
             </p>
-            </p >
+                </p >
 
 
-            <div className={styles.buttonHolderVertical}>
-                <p className={styles.buttonHolder}>
-                    <TextButton content={TextButtonInfo_app} onClickFunction={OnClickNewSite} />
-                </p>
+                <div className={styles.buttonHolderVertical}>
+                    <p className={styles.buttonHolder}>
+                        <TextButton content={TextButtonInfo_app} onClickFunction={OnClickNewSite} />
+                    </p>
+                </div>
             </div>
+
         </div>
-
-
     , isLeft: true
 }
 export default ZigZagContent;
