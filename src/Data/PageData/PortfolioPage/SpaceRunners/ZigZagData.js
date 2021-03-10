@@ -23,8 +23,8 @@ const TextButtonContent_app =
     text: "Read More"
     , buttonLink: PageRouteData.SpaceRunnersPath
     , target: ""
-    , backgroundColor: "#393939"
-    , padding: "3.5% 3.5% 3.5% 3.5%"
+    // , backgroundColor: "#393939"
+    // , padding: "3.5% 3.5% 3.5% 3.5%"
 }
 
 const BackgroundImageInfo =

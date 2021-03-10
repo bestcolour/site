@@ -33,8 +33,8 @@ const TextButtonInfo_app =
     text: "Read More"
     , buttonLink: PageRouteData.HangryGuardiansPath
     , target: ""
-    , backgroundColor: "#393939"
-    , padding: "3.5% 3.5% 3.5% 3.5%"
+    // , backgroundColor: "#393939"
+    // , padding: "3.5% 3.5% 3.5% 3.5%"
 }
 
 const BackgroundImageInfo_Subject =

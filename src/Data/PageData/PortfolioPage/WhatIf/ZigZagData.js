@@ -20,8 +20,8 @@ const TextButtonInfo_app =
     text: "Read More"
     , buttonLink: PageRouteData.WhatIfPath
     , target: ""
-    , backgroundColor: "#393939"
-    , padding: "3.5% 3.5% 3.5% 3.5%"
+    // , padding: "3.5% 3.5% 3.5% 3.5%"
+    // , backgroundColor: "#393939"
 }
 
 const BackgroundImageInfo =

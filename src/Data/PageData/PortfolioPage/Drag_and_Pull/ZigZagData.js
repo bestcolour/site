@@ -22,8 +22,8 @@ const TextButtonContent_app =
     text: "Read More"
     , buttonLink: PageRouteData.DragAndPullPath
     , target: ""
-    , backgroundColor: "#393939"
-    , padding: "3.5% 3.5% 3.5% 3.5%"
+    // , backgroundColor: "#393939"
+    // , padding: "3.5% 3.5% 3.5% 3.5%"
 }
 
 const BackgroundImageInfo =
