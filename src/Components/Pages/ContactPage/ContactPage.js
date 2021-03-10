@@ -6,12 +6,12 @@ import emailjs from "emailjs-com";
 //#region Common
 import PageStructure from "../../Common/PageStructure";
 import FAImageButton from "../../Common/Button/FAImageButton";
+import SideBySide from "../../Common/SectionTypes/SideBySide";
 //#endregion
 
 //#region Modules
 import TopNavBar from "../../Modules/TopNavBar";
 import StandardFooter from "../../Modules/StandardFooter";
-import SideBySide from "../../Common/SectionTypes/SideBySide";
 //#endregion
 
 //#region --------------- Import Common Info --------------------
