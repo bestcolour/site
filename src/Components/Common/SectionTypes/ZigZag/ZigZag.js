@@ -1,75 +1,71 @@
 import React from "react";
 import style from "./ZigZag.module.css";
 
-export default function ZigZag({ content, info, cssInfo }) 
+export default function ZigZag({ content, cssInfo }) 
 {
     //#region -------------------------- Template -------------------------------
     ////Content will hold:
-    ////1) A <div> wrapper that wrap the subject content (that means you can style it from here too) 
-    ////2) A <h1> wrapper that wrap the title text about the subject content (that means you can style it from here too)
-    ////3) A <p> wrapper that wrap the descriptiontext about the subject content (that means you can style it from here too)
-    ////4) Boolean to determine if subject ought to be placed on the left or the right
-    ////5) Text bg color
     //const content =
     //{
-    // subject : <div></div>
-    // , titleJSX: <h1 ></h1>
-    // , paragraphJSX:<p ></p>
-    // , isLeft: true
+    // subject : <div></div> //A <div> wrapper that wrap the subject content (that means you can style it from here too) 
+    // , description: <div></div> //A <div> wrapper that wrap the descriptiontext about the subject content (that means you can style it from here too)
+    // , isLeft: true //Boolean to determine if subject ought to be placed on the left or the right. Is left does not have a mobile support
     //};
-
-    ////Info will hold:
-    // const info =
-    // {
-    //     textBgColor: "#5A5A5A"
-    // };
 
     // const cssInfo =
     // {
     //     zigZagSizeStyle: cssStyle
+    //     descriptionBgStyle: cssStyleWith_BackgroundColorProperty
     // };
 
     //#endregion
 
-    const { subject, titleJSX, paragraphJSX, isLeft } = content;
-    const { textBgColor } = info;
+    //#region =================== Unpacking Content =========================
+    const { subject, description, isLeft } = content;
 
-    //#region ------------ ZigZag Styles ------------------
-    const zigZagStyle =
-    {
-        flexDirection: isLeft ? "row-reverse" : "row"
-    }
+    //#region ------------ Root ZigZag Styles ------------------
+
+    const zigZagRoot_FlexDirection = isLeft ? style.zigZagRoot_IsLeft_FlexDir_Default : style.zigZagRoot_IsNotLeft_FlexDir_Default;
 
     //Applying shadow styles to each sections
-    const subjectClass = isLeft ? style.rightContentShadow : style.leftContentShadow;
+    const subjectShadowClass = isLeft ? style.rightContentShadow : style.leftContentShadow;
 
-    const textBgClass = !isLeft ? style.rightContentShadow : style.leftContentShadow;
-
-    const textBgStyle =
-    {
-        backgroundColor: textBgColor
-    }
+    const descriptionShadowClass = !isLeft ? style.rightContentShadow : style.leftContentShadow;
     //#endregion
 
-    let zigZagSizeStyle;
+
+    //#endregion
+
+
+    //#region ====================== Unpacking CSSInfo ==================
+
+    //#region --------------- Description background Colour -------------------
+    //If cssinfo is defined and has that cssStyle defined, use the inputed css style else use the default class 
+    const descriptionBgClass = cssInfo !== undefined && cssInfo.descriptionBgStyle !== undefined ? cssInfo.descriptionBgStyle : style.descriptionRoot_BgColor_Default;
+
+    //#endregion
+
     //#region -------------- ZigZag Section Sizing Styles ---------------------
-    zigZagSizeStyle = cssInfo === undefined ? style.zigZagSectionDefault : cssInfo.zigZagSizeStyle;
-
+    //If cssinfo is defined and has that zigZagSizeStyle defined, use the inputed css style else use the default class 
+    const zigZagSizeClass = cssInfo !== undefined && cssInfo.zigZagSizeStyle !== undefined ? cssInfo.zigZagSizeStyle : style.zigZagRoot_Size_Default;
+    //#endregion
 
     //#endregion
+
+
+
 
     return (
-        <div className={`${zigZagSizeStyle} ${style.zigZagSection}`} style={zigZagStyle}>
-            {/* Render subject */}
-            <div className={`${style.subject} ${subjectClass}`}>{subject}</div>
+        <div className={`${zigZagSizeClass} ${style.zigZagRoot} ${zigZagRoot_FlexDirection}`} >
 
-            {/* Render Text */}
-            <div className={`${style.textBackground} ${textBgClass}`} style={textBgStyle}>
-                <h2>
-                    {titleJSX}
-                    <br />
-                    {paragraphJSX}
-                </h2>
+            {/* ================= Render subject =================*/}
+            <div className={`${style.subjectRoot} ${subjectShadowClass}`}>
+                {subject}
+            </div>
+
+            {/*================== Render Description ================*/}
+            <div className={`${style.descriptionRoot} ${descriptionShadowClass} ${descriptionBgClass}`} >
+                {description}
             </div>
 
         </div>

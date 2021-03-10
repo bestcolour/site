@@ -62,7 +62,7 @@ export default function SideBySide({ content, info, cssInfo })
     //#endregion
 
     //#region ----------------- SideBySide Element Style ------------------------
-    const sideBySideElementStyle = cssInfo === undefined? style.sideBySideElement : cssInfo.cssStyle_SideBySideElement;
+    const sideBySideElementStyle = cssInfo !== undefined && cssInfo.cssStyle_SideBySideElement !== undefined? cssInfo.cssStyle_SideBySideElement : style.sideBySideElement;
     //#endregion
 
 

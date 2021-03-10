@@ -1,5 +1,6 @@
+/* ========================== Start Zig Zag Root Section ============================ */
 /* The parent div element that wraps all of the elements below */
-.zigZagSection
+.zigZagRoot
 {
     /* Flex */
     display: flex;
@@ -9,9 +10,19 @@
     margin-bottom: 5%;
 }
 
-.zigZagSectionDefault
+.zigZagRoot_Size_Default
 {
     height:25em;
+}
+
+.zigZagRoot_IsLeft_FlexDir_Default
+{
+    flex-direction: row-reverse;
+}
+
+.zigZagRoot_IsNotLeft_FlexDir_Default
+{
+    flex-direction: reverse;
 }
 
 
@@ -25,7 +36,12 @@
     box-shadow:-0.5em 0.5em 1em #00000075;
 }
 
-.subject
+
+
+/* ========================== End Zig Zag Root Section ============================ */
+
+
+.subjectRoot
 {
     /* Size & Height */
     width: 50%;
@@ -34,7 +50,7 @@
     z-index: 1;
 }
 
-.textBackground
+.descriptionRoot
 {
     /* Size */
     width: 50%;
@@ -47,8 +63,7 @@
     z-index: 0;
 }
 
-/* Text holder */
-.textBackground h2
+.descriptionRoot_BgColor_Default
 {
-    padding: 5%;
+    background-color: transparent;
 }
