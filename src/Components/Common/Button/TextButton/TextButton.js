@@ -11,8 +11,6 @@ export default function TextButton({ content, onClickFunction, CssClass_TextButt
     //     text: "lalalala"
     //     , buttonLink: "#"
     //     , target : ""
-    //     , backgroundColor : "red"
-    //     , padding : "2% 2% 2% 2%"
     // }
 
     // const CssClass_TextButtonElement = cssModule.class;
@@ -20,14 +18,6 @@ export default function TextButton({ content, onClickFunction, CssClass_TextButt
     //#endregion
 
     const { text, buttonLink, target } = content;
-    // const { text, buttonLink, target, backgroundColor, padding } = content;
-
-    // const bgStyle =
-    // {
-    //     backgroundColor: backgroundColor
-    //     , padding: padding
-    // }
-
 
     //#region --------------- CSS Styling -------------
     const finalClass_TextButtonElement = CssClass_TextButtonElement !== undefined ? CssClass_TextButtonElement : styles.textButtonElement_Default;

@@ -3,6 +3,7 @@ import styles from "../ZigZag_PortfolioStyles.module.css";
 import GeneralStyles from "../../../../CommonStyles/GeneralStyles.module.css";
 import bgImageStyles from "../BackgroundImage_PortfolioStyles.module.css";
 import imgButtonStyles from "../ImageButton_PortfolioStyles.module.css";
+import textButtonStyles from "../TextButton_PortfolioStyles.module.css";
 
 
 //#region  --------------- Commons -----------------
@@ -70,7 +71,7 @@ const ZigZagContent =
                 <div className={styles.buttonHolderVertical}>
                     <p className={styles.buttonHolder}>
                         <ImageButton cssClass_BackgroundImageElement={imgButtonStyles.imageButtonDimensions}  content={ImageButtonInfo_app} />
-                        <TextButton content={TextButtonContent_app} onClickFunction={OnClickNewSite} />
+                        <TextButton CssClass_TextButtonElement={textButtonStyles.readMoreTextButton } content={TextButtonContent_app} onClickFunction={OnClickNewSite} />
                     </p>
                 </div>
             </div>
