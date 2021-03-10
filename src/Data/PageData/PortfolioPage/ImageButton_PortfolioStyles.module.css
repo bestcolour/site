@@ -1,0 +1,37 @@
+/* ================== Start Image Button for Portfolio Page ===================== */
+
+/* ------------ Mobile ----------- */
+
+
+
+
+
+/* ------------- Tablet -------------- */
+@media only screen and (min-width:600px)
+{
+    .imageButtonDimensions
+    {
+       width: 7.5em;
+       height: 2.5em;
+    }
+    
+}
+
+/* ------------- Desktop -------------- */
+
+@media only screen and (min-width:1024px)
+{
+    .imageButtonDimensions
+    {
+       width: 11.5em;
+       height: 3.5em;
+    }
+    
+}
+
+
+
+
+
+
+/* ================== End Image Button for Portfolio Page ===================== */

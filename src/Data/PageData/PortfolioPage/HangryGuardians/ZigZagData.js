@@ -1,6 +1,8 @@
 import styles from "../ZigZag_PortfolioStyles.module.css";
 import bgImageStyles from "../BackgroundImage_PortfolioStyles.module.css";
 import GeneralStyles from "../../../../CommonStyles/GeneralStyles.module.css";
+import imgButtonStyles from "../ImageButton_PortfolioStyles.module.css";
+
 
 //#region ---------- Import Commons -----------------
 import TextButton from "../../../../Components/Common/Button/TextButton";
@@ -19,10 +21,10 @@ const ImageButtonInfo_app =
     buttonLink: "https://play.google.com/store/apps/details?id=com.ET.HangryGods&hl=en"
     ,
     target: "_blank"
-    ,
-    width: "11.5em"
-    ,
-    height: "3.5em"
+    // ,
+    // width: "11.5em"
+    // ,
+    // height: "3.5em"
 }
 
 
@@ -63,7 +65,7 @@ const ZigZagContent =
 
                 <div className={styles.buttonHolderVertical}>
                     <p className={styles.buttonHolder}>
-                        <ImageButton content={ImageButtonInfo_app} />
+                        <ImageButton cssClass_BackgroundImageElement={imgButtonStyles.imageButtonDimensions}  content={ImageButtonInfo_app} />
                         <TextButton content={TextButtonInfo_app} onClickFunction={OnClickNewSite} />
                     </p>
                 </div>

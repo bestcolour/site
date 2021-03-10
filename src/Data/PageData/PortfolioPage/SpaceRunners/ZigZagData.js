@@ -2,6 +2,8 @@
 import styles from "../ZigZag_PortfolioStyles.module.css";
 import GeneralStyles from "../../../../CommonStyles/GeneralStyles.module.css";
 import bgImageStyles from "../BackgroundImage_PortfolioStyles.module.css";
+import imgButtonStyles from "../ImageButton_PortfolioStyles.module.css";
+
 
 //#region  --------------- Commons -----------------
 import BackgroundImage from "../../../../Components/Common/BackgroundImage";
@@ -38,10 +40,10 @@ const ImageButtonInfo_app =
     buttonLink: "https://bestcolour.itch.io/spacerunners"
     ,
     target: "_blank"
-    ,
-    width: "11.5em"
-    ,
-    height: "3.5em"
+    // ,
+    // width: "11.5em"
+    // ,
+    // height: "3.5em"
 }
 //#endregion
 
@@ -67,7 +69,7 @@ const ZigZagContent =
 
                 <div className={styles.buttonHolderVertical}>
                     <p className={styles.buttonHolder}>
-                        <ImageButton content={ImageButtonInfo_app} />
+                        <ImageButton cssClass_BackgroundImageElement={imgButtonStyles.imageButtonDimensions}  content={ImageButtonInfo_app} />
                         <TextButton content={TextButtonContent_app} onClickFunction={OnClickNewSite} />
                     </p>
                 </div>

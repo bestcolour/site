@@ -1,11 +1,10 @@
 import React from "react";
 import styles from "./ImageButton.module.css"
-// import {PageRouteData} from "../../../../Data/PageRouteData";
 import { Link } from "react-router-dom";
 import { GetButtonType, IsLinkToWithinSite } from "../ButtonFunctions";
 
 
-export default function ImageButton({ content, onClickFunction })
+export default function ImageButton({ content, onClickFunction, cssClass_BackgroundImageElement })
 {
     //#region ---------------- Template --------------------
     // const ImageButtonInfo_example =
@@ -15,28 +14,28 @@ export default function ImageButton({ content, onClickFunction })
     //     buttonLink: "https://play.google.com/store/apps/details?id=com.ET.HangryGods&hl=en"
     //     ,
     //     target: "_blank"
-    //     ,
-    //     width: "11.5em"
-    //     ,
-    //     height: "3.5em"
     // }
 
     // const info = 
     // {
     //      onClickFunction : SomeMethod
     // }
+
+    // const cssClass_BackgroundImageElement = cssModule.class;
+
     //#endregion
 
-    const { imageSrc, buttonLink, target, width, height } = content;
+    const { imageSrc, buttonLink, target } = content;
+    // const { imageSrc, buttonLink, target, width, height } = content;
 
     //Since react doesnt support background images in css modules
     const buttonStyle =
     {
         backgroundImage: `url(${imageSrc})`
-        ,
-        width: width
-        ,
-        height: height
+        // ,
+        // width: width
+        // ,
+        // height: height
     };
 
     let finalJSX;
@@ -44,25 +43,31 @@ export default function ImageButton({ content, onClickFunction })
     const buttonType = GetButtonType(buttonLink, onClickFunction);
     const isWithinSite = IsLinkToWithinSite(buttonLink);
 
+    //#region ------------- CSS Styling ------------------
+    console.log(cssClass_BackgroundImageElement=== undefined);
+    const finalClass_BackgroundImageElement = cssClass_BackgroundImageElement !== undefined ? cssClass_BackgroundImageElement : styles.imageBackgroundRoot_Default;
+
+    //#endregion
+
 
     switch (buttonType)
     {
         case "FUNCTION_ONLY":
             //#region -------------- FUNCTION_ONLY ------------------
-            finalJSX = <a   >
-                <p style={buttonStyle} className={styles.image} onClick={onClickFunction}></p>
+            finalJSX = <a>
+                <p style={buttonStyle} className={`${styles.image} ${finalClass_BackgroundImageElement}`} onClick={onClickFunction}></p>
             </a>;
             //#endregion
             break;
         case "LINK_ONLY":
             //#region -------------- LINK_ONLY ------------------
             finalJSX = isWithinSite ?
-                 <Link to={finalJSX} target={target} >
-                    <p style={buttonStyle} className={styles.image} ></p>
+                <Link to={finalJSX} target={target} >
+                    <p style={buttonStyle} className={`${styles.image} ${finalClass_BackgroundImageElement}`} ></p>
                 </Link>
                 :
-                  <a href={buttonLink} target={target} >
-                    <p style={buttonStyle} className={styles.image} ></p>
+                <a href={buttonLink} target={target} >
+                    <p style={buttonStyle} className={`${styles.image} ${finalClass_BackgroundImageElement}`} ></p>
                 </a>;
             //#endregion
             break;
@@ -70,12 +75,12 @@ export default function ImageButton({ content, onClickFunction })
         case "LINK_AND_FUNCTION":
             //#region -------------- LINK_AND_FUNCTION ------------------
             finalJSX = isWithinSite ?
-                 <Link to={finalJSX} target={target} onClick={onClickFunction} >
-                    <p style={buttonStyle} className={styles.image} ></p>
+                <Link to={finalJSX} target={target} onClick={onClickFunction} >
+                    <p style={buttonStyle} className={`${styles.image} ${finalClass_BackgroundImageElement}`} ></p>
                 </Link>
                 :
-               <a href={buttonLink} target={target} onClick={onClickFunction} >
-                    <p style={buttonStyle} className={styles.image} ></p>
+                <a href={buttonLink} target={target} onClick={onClickFunction} >
+                    <p style={buttonStyle} className={`${styles.image} ${finalClass_BackgroundImageElement}`} ></p>
                 </a>;
             //#endregion
             break;

@@ -1,6 +1,8 @@
 import styles from "../ZigZag_PortfolioStyles.module.css";
 import GeneralStyles from "../../../../CommonStyles/GeneralStyles.module.css";
 import bgImageStyles from "../BackgroundImage_PortfolioStyles.module.css";
+import imgButtonStyles from "../ImageButton_PortfolioStyles.module.css";
+
 
 //#region ---------- Import Commons -----------------
 import TextButton from "../../../../Components/Common/Button/TextButton";
@@ -36,10 +38,10 @@ const ImageButtonInfo_example =
     buttonLink: "https://fyp-whatif.itch.io/what-if"
     ,
     target: "_blank"
-    ,
-    width: "11.5em"
-    ,
-    height: "3.5em"
+    // ,
+    // width: "11.5em"
+    // ,
+    // height: "3.5em"
 }
 
 const ZigZagContent =
@@ -64,7 +66,7 @@ const ZigZagContent =
 
                 <div className={styles.buttonHolderVertical}>
                     <p className={styles.buttonHolder}>
-                        <ImageButton content={ImageButtonInfo_example} />
+                        <ImageButton cssClass_BackgroundImageElement={imgButtonStyles.imageButtonDimensions}  content={ImageButtonInfo_example} />
                         <TextButton content={TextButtonInfo_app} onClickFunction={OnClickNewSite} />
                     </p>
                 </div>

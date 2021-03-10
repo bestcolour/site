@@ -2,6 +2,7 @@
 import styles from "../ZigZag_PortfolioStyles.module.css";
 import bgImageStyles from "../BackgroundImage_PortfolioStyles.module.css";
 import GeneralStyles from "../../../../CommonStyles/GeneralStyles.module.css";
+import imgButtonStyles from "../ImageButton_PortfolioStyles.module.css";
 
 //#region  --------------- Commons -----------------
 import BackgroundImage from "../../../../Components/Common/BackgroundImage";
@@ -38,11 +39,10 @@ const ImageButtonInfo_example =
     buttonLink: "https://bestcolour.itch.io/drag-and-pull"
     ,
     target: "_blank"
-    ,
-    width: "11.5em"
-    ,
-    height: "3.5em"
 }
+
+// const ImageButton_CssClass_BgImageElement = imgButtonStyles.imageButtonDimensions;
+
 //#endregion
 
 
@@ -60,7 +60,7 @@ const ZigZagContent =
                 <p>
                     Drag and Pull is a mobile game which was developed during my Year 2 studies. We had a project where the goal of it was to explore Unity's Physics systems and this was what I came up with.
                 <br />
-                <br />
+                    <br />
 
                     The game is relatively simple, reach the end goal at every level and you win! To move the player, as in the title, just drag and pull!
                 <br />
@@ -68,7 +68,7 @@ const ZigZagContent =
 
                 <div className={styles.buttonHolderVertical}>
                     <p className={styles.buttonHolder}>
-                        <ImageButton content={ImageButtonInfo_example} />
+                        <ImageButton content={ImageButtonInfo_example} cssClass_BackgroundImageElement={imgButtonStyles.imageButtonDimensions} />
                         <TextButton content={TextButtonContent_app} onClickFunction={OnClickNewSite} />
                     </p>
                 </div>

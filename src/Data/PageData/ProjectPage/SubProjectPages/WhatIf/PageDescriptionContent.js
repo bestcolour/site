@@ -2,6 +2,8 @@
 import ImageButton from "../../../../../Components/Common/Button/ImageButton";
 import { PageRouteData } from "../../../../PageRouteData";
 
+
+
 //This file stores all the page description infos found on the Hangry Guardian project page
 const PageDescriptionContent_PageTitle =
 {
@@ -19,10 +21,10 @@ const ImageButton_Content =
   buttonLink: "https://fyp-whatif.itch.io/what-if"
   ,
   target: "_blank"
-  ,
-  width: "11.5em"
-  ,
-  height: "3.5em"
+  // ,
+  // width: "11.5em"
+  // ,
+  // height: "3.5em"
 }
 
 
@@ -33,7 +35,7 @@ const PageDescriptionContent_DownloadSection =
   ,
   description:
     <div >
-      <ImageButton content={ImageButton_Content} />
+      <ImageButton  content={ImageButton_Content} />
     </div>
 }
 
