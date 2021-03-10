@@ -1,17 +1,28 @@
 
 //===================== Description ====================
 //This data file is for mobile support of the portfolio page
-import BackgroundImage from "../../../../Components/Common/BackgroundImage";
-import bgImageStyles from "../BackgroundImage_PortfolioStyles.module.css";
+// import BackgroundImage from "../../../../Components/Common/BackgroundImage";
+import ImageButton from "../../../../Components/Common/Button/ImageButton"
+import styles from "../Mobile_CSS_Modules/SideBySide_PortfolioStyle.module.css";
 
 
 import { PageRouteData, OnClickNewSite } from "../../../PageRouteData";
 
 
-const BackgroundImageInfo =
+// const BackgroundImageInfo =
+// {
+//     bgImageSrc: `../..${PageRouteData.ResourcePath}HaulAway/Poster.jpg`
+//     , cssStyling: bgImageStyles.sideBySide_Subject
+// }
+
+
+const ImageButtonContent_example =
 {
-    bgImageSrc: `../..${PageRouteData.ResourcePath}HaulAway/Poster.jpg`
-    , cssStyling: bgImageStyles.subjectBgImageClassStyle
+    imageSrc: `../..${PageRouteData.ResourcePath}HaulAway/Poster.jpg`
+    ,
+    buttonLink: PageRouteData.HaulAwayPath
+    ,
+    target: ""
 }
 
 
@@ -19,14 +30,13 @@ const BackgroundImageInfo =
 const content =
 {
     subject:
-        <div>
-            <BackgroundImage info={BackgroundImageInfo} />
+        <div className={styles.subjectRoot}>
+            <ImageButton content={ImageButtonContent_example} onClickFunction = {OnClickNewSite} />
         </div>
     ,
     description:
-        <div>
-            <h6>Title</h6>
-            <p>Text</p>
+        <div className={styles.descriptionRoot}>
+            <h6>Haul Away</h6>
         </div>
     ,
     //If is flipped is set to true, the subject's default position (left side on desktop, doenst affect mobile) will be on the opposite side

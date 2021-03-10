@@ -1,7 +1,7 @@
-import bgImageStyles from "../BackgroundImage_PortfolioStyles.module.css";
-import styles from "../ZigZag_PortfolioStyles.module.css";
+import styles from "../Desktop_CSS_Modules/ZigZagData_PortfolioStyles.module.css";
+import bgImageStyles from "../Desktop_CSS_Modules/BackgroundImage_PortfolioStyles.module.css";
 import GeneralStyles from "../../../../CommonStyles/GeneralStyles.module.css";
-import textButtonStyles from "../TextButton_PortfolioStyles.module.css";
+import textButtonStyles from "../Desktop_CSS_Modules/TextButton_PortfolioStyles.module.css";
 
 
 //#region ---------- Import Commons -----------------
@@ -19,14 +19,12 @@ const TextButtonInfo_app =
     text: "Read More"
     , buttonLink: PageRouteData.HaulAwayPath
     , target: ""
-    // , backgroundColor: "#393939"
-    // , padding: "3.5% 3.5% 3.5% 3.5%"
 }
 
 const BackgroundImageInfo =
 {
     bgImageSrc: `../..${PageRouteData.ResourcePath}HaulAway/Poster.jpg`
-    , cssStyling: bgImageStyles.subjectBgImageClassStyle
+    , cssStyling: bgImageStyles.zigZag_Subject
 }
 
 const ZigZagContent =

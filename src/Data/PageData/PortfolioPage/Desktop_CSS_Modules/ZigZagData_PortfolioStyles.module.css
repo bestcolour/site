@@ -1,3 +1,4 @@
+/* This file holds all the classes shared by the zig zag datas in the portfolio pages */
 .buttonHolder 
 {
     display: flex;
@@ -10,7 +11,9 @@
     margin-top: 10%;
 }
 
-/* -------------- Description Styling ----------------------*/
+/* =============================== Start Zig Zag Component  =================================*/
+
+/* -------------- Description Styling --------------------- */
 .descriptionWrapper
 {
     /* Flex */
@@ -28,3 +31,4 @@
     padding-bottom: 2.5%;
 }
 
+/* =============================== End Zig Zag Component  =================================*/

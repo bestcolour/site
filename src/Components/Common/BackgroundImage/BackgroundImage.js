@@ -6,7 +6,7 @@ export default function BackgroundImage({ info })
     // const BackgroundImageInfo_hangryGuardiansSubject =
     // {
     // bgImageSrc : `../..${PageRouteData.ResourcePath}HangryGuardians/SplashArt.jpg`
-    // ,cssStyling: styles.subjectBgImageClassStyle
+    // ,cssStyling: styles.zigZag_Subject
     // }
     //#endregion
 

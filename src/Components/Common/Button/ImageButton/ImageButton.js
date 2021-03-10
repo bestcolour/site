@@ -7,7 +7,7 @@ import { GetButtonType, IsLinkToWithinSite } from "../ButtonFunctions";
 export default function ImageButton({ content, onClickFunction, cssClass_BackgroundImageElement })
 {
     //#region ---------------- Template --------------------
-    // const ImageButtonInfo_example =
+    // const ImageButtonContent_example =
     // {
     //     imageSrc: `../..${PageRouteData.ResourcePath}Images/Logos/google-play-badge.png`
     //     ,
@@ -16,10 +16,7 @@ export default function ImageButton({ content, onClickFunction, cssClass_Backgro
     //     target: "_blank"
     // }
 
-    // const info = 
-    // {
-    //      onClickFunction : SomeMethod
-    // }
+    //onClickFunction = SomeMethod
 
     // const cssClass_BackgroundImageElement = cssModule.class;
 
