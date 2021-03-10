@@ -40,8 +40,6 @@ export default function ImageButton({ content, onClickFunction, cssClass_Backgro
     const buttonType = GetButtonType(buttonLink, onClickFunction);
     const isWithinSite = IsLinkToWithinSite(buttonLink);
 
-    console.log(isWithinSite, buttonLink);
-
 
     //#region ------------- CSS Styling ------------------
     const finalClass_BackgroundImageElement = cssClass_BackgroundImageElement !== undefined ? cssClass_BackgroundImageElement : styles.imageBackgroundRoot_Default;

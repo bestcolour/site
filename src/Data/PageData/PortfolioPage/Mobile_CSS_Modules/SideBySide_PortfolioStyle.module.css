@@ -1,15 +1,15 @@
 .descriptionRoot
 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+
+    /* Colours */
+    background-color: #393939;
 
     margin-top: 2.5%;
-    margin-bottom: 2.5%;
 }
 
 .subjectRoot
 {
-    margin-top: 2.5%;
     margin-bottom: 2.5%;
 }
+
