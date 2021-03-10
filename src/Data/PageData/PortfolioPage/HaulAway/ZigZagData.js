@@ -3,7 +3,7 @@ import GeneralStyles from "../../../../CommonStyles/GeneralStyles.module.css";
 
 //#region ---------- Import Commons -----------------
 import TextButton from "../../../../Components/Common/Button/TextButton";
-import ImageButton from "../../../../Components/Common/Button/ImageButton";
+// import ImageButton from "../../../../Components/Common/Button/ImageButton";
 import BackgroundImage from "../../../../Components/Common/BackgroundImage";
 //#endregion
 
@@ -29,14 +29,15 @@ const BackgroundImageInfo =
 
 const ZigZagContent =
 {
-    subject: <BackgroundImage info={BackgroundImageInfo} />
+    subject: 
+    <BackgroundImage info={BackgroundImageInfo} />
     , titleJSX: <h6 className={`${GeneralStyles.white}`}>Haul Away</h6>
     , paragraphJSX:
         <div>
-            < p className={GeneralStyles.white} >
+            <p className={GeneralStyles.white} >
                 <p>
                     Haul Away is an on-going project which I have worked on with five other team members for my Polytechnic's final year project. The development time was from October 2020 to present time.
-            </p>
+                </p>
 
                 <br />
 

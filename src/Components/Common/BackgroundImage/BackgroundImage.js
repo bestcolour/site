@@ -1,4 +1,3 @@
-import {PageRouteData} from "../../../Data/PageRouteData";
 import React from "react";
 
 export default function BackgroundImage({ info })

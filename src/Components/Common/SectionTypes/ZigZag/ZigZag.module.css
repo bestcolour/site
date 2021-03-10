@@ -3,11 +3,15 @@
 {
     /* Flex */
     display: flex;
-    height:25em;
 
     /* margin */
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+.zigZagSectionDefault
+{
+    height:25em;
 }
 
 

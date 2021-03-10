@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./ZigZag.module.css";
 
-export default function ZigZag({ content, info }) 
+export default function ZigZag({ content, info, cssInfo }) 
 {
     //#region -------------------------- Template -------------------------------
     ////Content will hold:
@@ -16,24 +16,31 @@ export default function ZigZag({ content, info })
     // , titleJSX: <h1 ></h1>
     // , paragraphJSX:<p ></p>
     // , isLeft: true
-    //}
-    
+    //};
+
     ////Info will hold:
     // const info =
     // {
     //     textBgColor: "#5A5A5A"
-    // }
+    // };
+
+    // const cssInfo =
+    // {
+    //     zigZagSizeStyle: cssStyle
+    // };
+
     //#endregion
 
     const { subject, titleJSX, paragraphJSX, isLeft } = content;
     const { textBgColor } = info;
 
-    //#region Styles
+    //#region ------------ ZigZag Styles ------------------
     const zigZagStyle =
     {
         flexDirection: isLeft ? "row-reverse" : "row"
     }
 
+    //Applying shadow styles to each sections
     const subjectClass = isLeft ? style.rightContentShadow : style.leftContentShadow;
 
     const textBgClass = !isLeft ? style.rightContentShadow : style.leftContentShadow;
@@ -44,10 +51,15 @@ export default function ZigZag({ content, info })
     }
     //#endregion
 
+    let zigZagSizeStyle;
+    //#region -------------- ZigZag Section Sizing Styles ---------------------
+    zigZagSizeStyle = cssInfo === undefined ? style.zigZagSectionDefault : cssInfo.zigZagSizeStyle;
 
+
+    //#endregion
 
     return (
-        <div className={style.zigZagSection} style={zigZagStyle}>
+        <div className={`${zigZagSizeStyle} ${style.zigZagSection}`} style={zigZagStyle}>
             {/* Render subject */}
             <div className={`${style.subject} ${subjectClass}`}>{subject}</div>
 

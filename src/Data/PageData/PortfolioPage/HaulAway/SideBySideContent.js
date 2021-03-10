@@ -14,8 +14,10 @@ const BackgroundImageInfo =
 
 const content =
 {
-    subject: <div>
-<BackgroundImage info={BackgroundImageInfo}/>
+    subject: 
+    <div>
+        <BackgroundImage info={BackgroundImageInfo} />
+        H
     </div>
     ,
     description:

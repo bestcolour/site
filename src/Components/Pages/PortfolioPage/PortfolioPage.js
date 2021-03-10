@@ -49,25 +49,16 @@ export default function PortfolioPage()
             <PageDescription info={PageDescriptionInfo_Default} content={PageDescriptionContent_PortfolioPage} />
 
             {/* =================== Desktop & Tablet ====================== */}
-            <div className={styles.portfolioDesktopElement}>
+            <div className={styles.portfolioDesktopElements}>
                 <ZigZag content={ZigZagInfo_HaulAway} info={ZigZag_Default} />
-            </div>
-            <div className={styles.portfolioDesktopElement}>
                 <ZigZag content={ZigZagContent_SpaceRunners} info={ZigZag_Default} />
-            </div>
-            <div className={styles.portfolioDesktopElement}>
                 <ZigZag content={ZigZagContent_HangryGuardians} info={ZigZag_Default} />
-            </div>
-            <div className={styles.portfolioDesktopElement}>
                 <ZigZag content={ZigZagInfo_WhatIf} info={ZigZag_Default} />
-            </div>
-            <div className={styles.portfolioDesktopElement}>
                 <ZigZag content={ZigZagContent_DragAndPull} info={ZigZag_Default} />
             </div>
 
-
             {/* =================== Mobile ====================== */}
-            <div className={`${styles.portfolioMobileElement} ${GeneralStyles.white}`} >
+            <div className={`${styles.portfolioMobileElements} ${GeneralStyles.white}`} >
                 <SideBySide cssInfo={SideBySide_CSSInfo_alwaysVertical} content={sideBySide_Content_HaulAway} />
             </div>
 
