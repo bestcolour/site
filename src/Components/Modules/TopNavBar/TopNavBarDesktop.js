@@ -1,6 +1,8 @@
 import React from "react";
 import generalStyles from "../../../CommonStyles/GeneralStyles.module.css";
 import styles from "./TopNavBarDesktop.module.css";
+import {OnClickNewSite} from "../../../Data/PageRouteData";
+
 import columnClasses from "../../../CommonStyles/Columns.module.css";
 import { Link } from "react-router-dom";
 
@@ -33,13 +35,13 @@ export default function TopNavBarComponent({ linksData, selectedPageName })
         //Add a different jsx with a selectedlink class attached to it if this linkData's linkName == selectedPageName
         const finalJSX = linkData.linkName === selectedPageName
             ?
-            <div className={styles.link} >
+            <div className={styles.link}  onClick={OnClickNewSite} >
                 <Link to={linkData.link} className={generalStyles.selectedLink} >
                     {linkData.linkName}
                 </Link>
             </div>
             :
-            <div className={styles.link}>
+            <div className={styles.link}  onClick={OnClickNewSite} >
                 <Link to={linkData.link}  >
                     {linkData.linkName}
                 </Link>

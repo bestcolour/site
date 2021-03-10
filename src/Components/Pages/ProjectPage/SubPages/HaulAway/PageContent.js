@@ -80,22 +80,22 @@ export default function PageContent()
     //#region ---------- Reflection Title ------------
 
    
-    let heroReflectionTitle =
-        <div className={styles.heroParent}>
-            <div className={columnStyle.col_desktop_3}></div>
-            <div className={columnStyle.col_desktop_6}>
-                <Overlay content={<PageDescription content={PageDescriptContent_downloadSection} info={PageDescriptionInfo_Default} />} info={OverlayInfo_default} />
-            </div>
-            <div className={columnStyle.col_desktop_3}></div>
-        </div>
-        ;
+    // let heroReflectionTitle =
+    //     <div className={styles.heroParent}>
+    //         <div className={columnStyle.col_desktop_3}></div>
+    //         <div className={`${columnStyle.col_desktop_6} ${columnStyle.col_tablet_6} ${columnStyle.col_mobile_10}`}>
+    //             <Overlay content={<PageDescription content={PageDescriptContent_downloadSection} info={PageDescriptionInfo_Default} />} info={OverlayInfo_default} />
+    //         </div>
+    //         <div className={columnStyle.col_desktop_3}></div>
+    //     </div>
+    //     ;
 
-    heroReflectionTitle =
-    {
-        imageSrc: `${staticBgContent.downloadHeroImageLink}`
-        ,
-        jsxContent: <PageStructure content={heroReflectionTitle} info={PageStruct_Transparent} />
-    }
+    // heroReflectionTitle =
+    // {
+    //     imageSrc: `${staticBgContent.downloadHeroImageLink}`
+    //     ,
+    //     jsxContent: <PageStructure content={heroReflectionTitle} info={PageStruct_Transparent} />
+    // }
     //#endregion
 
     return (

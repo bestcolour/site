@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import {OnClickNewSite} from "../../../Data/PageRouteData";
 
 import FAImageButton from "../../Common/Button/FAImageButton";
 import styles from "./TopNavBarMobile.module.css";
@@ -39,13 +40,13 @@ export default function TopNavBarMobile({ linksData, selectedPageName })
         //Add a different jsx with a selectedlink class attached to it if this linkData's linkName == selectedPageName
         const finalJSX = linkData.linkName === selectedPageName
             ?
-            <div className={styles.linkElement} >
+            <div className={styles.linkElement} onClick={OnClickNewSite} >
                 <Link to={linkData.link} className={generalStyles.selectedLink} >
                     {linkData.linkName}
                 </Link>
             </div>
             :
-            <div className={styles.linkElement}>
+            <div className={styles.linkElement} onClick={OnClickNewSite}>
                 <Link to={linkData.link}  >
                     {linkData.linkName}
                 </Link>
