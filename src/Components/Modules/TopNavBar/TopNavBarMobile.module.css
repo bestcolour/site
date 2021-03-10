@@ -16,7 +16,7 @@
     /* Dimensions */
     width: 3em;
     height: 3em;
-
+    z-index: 9;
 
     /* Flex box */
     display: flex;

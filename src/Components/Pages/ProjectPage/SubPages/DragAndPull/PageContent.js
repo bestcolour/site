@@ -43,9 +43,7 @@ export default function PageContent()
     let heroPageTitle =
         <div className={styles.heroParent}>
             <div className={columnStyle.col_desktop_3}></div>
-            <div className={columnStyle.col_desktop_6}>
-            </div>
-
+            <div className={columnStyle.col_desktop_6}></div>
             <div className={columnStyle.col_desktop_3}></div>
         </div>
         ;
@@ -53,7 +51,6 @@ export default function PageContent()
     heroPageTitle =
     {
         imageSrc: `${staticBgContent.titleHeroImageLink}`
-        // imageSrc: `../..${PageRouteData.ResourcePath}HangryGuardians/Ice.jpg`
         ,
         jsxContent: <PageStructure content={heroPageTitle} info={PageStruct_Transparent} />
     };
