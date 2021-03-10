@@ -44,29 +44,31 @@ const ImageButtonInfo_example =
 const ZigZagContent =
 {
     subject: <BackgroundImage info={BackgroundImageInfo} />
-    , titleJSX: <h6 className={`${GeneralStyles.white}`}>What If?</h6>
-    , paragraphJSX:
-        <div>
-            < p className={GeneralStyles.white} >
+    , description:
+        <div className={`${GeneralStyles.white} ${styles.descriptionWrapper}`}>
+            <h6 className={styles.descriptionTitle}>What If?</h6>
+
+            <div>
                 <p>
-                    What If? is a side project which I have collaborated with 2 other students from another course on. This game was done during Year 3 of my Polytechnic studies from October 2020 to March 2021.
-                </p>
+                    <p>
+                        What If? is a side project which I have collaborated with 2 other students from another course on. This game was done during Year 3 of my Polytechnic studies from October 2020 to March 2021.
+                    </p>
 
-                <br />
-                <p>
-                    The game is basically an interactive video player where the player choose their own ending depending on how they make choices.
-                </p>
-            </p >
+                    <br />
+                    <p>
+                        The game is basically an interactive video player where the player choose their own ending depending on how they make choices.
+                    </p>
+                </p >
 
 
-            <div className={styles.buttonHolderVertical}>
-                <p className={styles.buttonHolder}>
-                    <ImageButton content={ImageButtonInfo_example} />
-                    <TextButton content={TextButtonInfo_app} onClickFunction={OnClickNewSite} />
-                </p>
+                <div className={styles.buttonHolderVertical}>
+                    <p className={styles.buttonHolder}>
+                        <ImageButton content={ImageButtonInfo_example} />
+                        <TextButton content={TextButtonInfo_app} onClickFunction={OnClickNewSite} />
+                    </p>
+                </div>
             </div>
         </div>
-
 
     , isLeft: false
 }

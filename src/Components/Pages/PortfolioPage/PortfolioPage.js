@@ -12,7 +12,7 @@ import SideBySide from "../../Common/SectionTypes/SideBySide";
 //#endregion
 
 //#region ------------ Import Common's Info --------------
-import { ZigZag_Default } from "../../../Data/CommonInfo/ZigZag/ZigZagInfo_Default";
+import { ZigZag_DescriptionBg_Black,ZigZag_SubjectRoot_OverwriteShadows } from "../../../Data/CommonInfo/ZigZag/ZigZagInfo";
 import { SideBySide_CommonInfo_AlwaysVertical_FlipClasses,SideBySide_CommonInfo_AlwaysVertical_cssClass_SideBySideElement } from "../../../Data/CommonInfo/SideBySide/SideBySide_CommonInfo";
 import { PageStruct_Grey } from "../../../Data/CommonInfo/PageStructure/PageStructureInfo_CommonPageInfo";
 import { PageDescriptionInfo_Default } from "../../../Data/CommonInfo/PageDescription/PageDescription_CommonInfo";
@@ -50,11 +50,11 @@ export default function PortfolioPage()
 
             {/* =================== Desktop & Tablet ====================== */}
             <div className={styles.portfolioDesktopElements}>
-                <ZigZag content={ZigZagInfo_HaulAway} info={ZigZag_Default} />
-                <ZigZag content={ZigZagContent_SpaceRunners} info={ZigZag_Default} />
-                <ZigZag content={ZigZagContent_HangryGuardians} info={ZigZag_Default} />
-                <ZigZag content={ZigZagInfo_WhatIf} info={ZigZag_Default} />
-                <ZigZag content={ZigZagContent_DragAndPull} info={ZigZag_Default} />
+                <ZigZag content={ZigZagInfo_HaulAway} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows}/>
+                <ZigZag content={ZigZagContent_SpaceRunners} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
+                <ZigZag content={ZigZagContent_HangryGuardians} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
+                <ZigZag content={ZigZagInfo_WhatIf} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
+                <ZigZag content={ZigZagContent_DragAndPull} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
             </div>
 
             {/* =================== Mobile ====================== */}

@@ -1,7 +1,7 @@
 import React from "react";
 import style from "./ZigZag.module.css";
 
-export default function ZigZag({ content, cssClass_ZigZagSizeStyle, cssClass_DescriptionBgStyle }) 
+export default function ZigZag({ content, cssClass_ZigZagSizeStyle, cssClass_DescriptionRoot, cssClass_SubjectRoot }) 
 {
     //#region -------------------------- Template -------------------------------
     ////Content will hold:
@@ -13,7 +13,8 @@ export default function ZigZag({ content, cssClass_ZigZagSizeStyle, cssClass_Des
     //};
 
     //   const  cssClass_ZigZagSizeStyle = cssModule.class;
-    //    const cssClass_DescriptionBgStyle: cssModule.class;
+    //    const cssClass_DescriptionRoot: cssModule.class;
+    //    const cssClass_SubjectRoot: cssModule.class;
 
     //#endregion
 
@@ -24,10 +25,11 @@ export default function ZigZag({ content, cssClass_ZigZagSizeStyle, cssClass_Des
 
     const zigZagRoot_FlexDirection = isLeft ? style.zigZagRoot_IsLeft_FlexDir_Default : style.zigZagRoot_IsNotLeft_FlexDir_Default;
 
+    const descriptionShadowClass = !isLeft ? style.rightContentShadow : style.leftContentShadow;
     //Applying shadow styles to each sections
     const subjectShadowClass = isLeft ? style.rightContentShadow : style.leftContentShadow;
 
-    const descriptionShadowClass = !isLeft ? style.rightContentShadow : style.leftContentShadow;
+
     //#endregion
 
 
@@ -36,15 +38,16 @@ export default function ZigZag({ content, cssClass_ZigZagSizeStyle, cssClass_Des
 
     //#region ====================== Unpacking CSSInfo ==================
 
-    //#region --------------- Description background Colour -------------------
+    //#region --------------- Root Styles -------------------
     //If that cssStyle defined, use the inputed css style else use the default class 
-    const descriptionBgClass =cssClass_DescriptionBgStyle !== undefined ? cssClass_DescriptionBgStyle : style.descriptionRoot_BgColor_Default;
+    const descriptionRootClass = cssClass_DescriptionRoot !== undefined ? cssClass_DescriptionRoot : style.descriptionRoot_BgColor_Default;
 
+    const subjectRootClass = cssClass_SubjectRoot !== undefined ? cssClass_SubjectRoot : style.descriptionRoot_BgColor_Default;
     //#endregion
 
     //#region -------------- ZigZag Section Sizing Styles ---------------------
     //Ifthat cssClass_ZigZagSizeStyle defined, use the inputed css style else use the default class 
-    const zigZagSizeClass = cssClass_ZigZagSizeStyle !== undefined ?cssClass_ZigZagSizeStyle : style.zigZagRoot_Size_Default;
+    const zigZagSizeClass = cssClass_ZigZagSizeStyle !== undefined ? cssClass_ZigZagSizeStyle : style.zigZagRoot_Size_Default;
     //#endregion
 
     //#endregion
@@ -56,12 +59,12 @@ export default function ZigZag({ content, cssClass_ZigZagSizeStyle, cssClass_Des
         <div className={`${zigZagSizeClass} ${style.zigZagRoot} ${zigZagRoot_FlexDirection}`} >
 
             {/* ================= Render subject =================*/}
-            <div className={`${style.subjectRoot} ${subjectShadowClass}`}>
+            <div className={`${style.subjectRoot} ${subjectShadowClass} ${subjectRootClass}`}>
                 {subject}
             </div>
 
             {/*================== Render Description ================*/}
-            <div className={`${style.descriptionRoot} ${descriptionShadowClass} ${descriptionBgClass}`} >
+            <div className={`${style.descriptionRoot} ${descriptionShadowClass} ${descriptionRootClass}`} >
                 {description}
             </div>
 

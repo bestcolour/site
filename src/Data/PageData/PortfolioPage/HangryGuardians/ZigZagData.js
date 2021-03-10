@@ -8,7 +8,7 @@ import BackgroundImage from "../../../../Components/Common/BackgroundImage";
 //#endregion
 
 //#region ----------- Import Data ---------------
-import {PageRouteData,OnClickNewSite} from "../../../PageRouteData";
+import { PageRouteData, OnClickNewSite } from "../../../PageRouteData";
 //#endregion
 
 const ImageButtonInfo_app =
@@ -43,30 +43,32 @@ const BackgroundImageInfo_Subject =
 const ZigZagContent =
 {
     subject: <BackgroundImage info={BackgroundImageInfo_Subject} />
-    , titleJSX: <h6 className={`${GeneralStyles.white}`}>Hangry Guardians</h6>
-    , paragraphJSX:
-        <div>
-            < p className={GeneralStyles.white} >
+    , description:
+        <div className={`${GeneralStyles.white} ${styles.descriptionWrapper}`}>
+            <h6 className={styles.descriptionTitle}>Hangry Guardians</h6>
+            <div>
                 <p>
-                    Hangry Guardians was in development from April 2019 to September 2019 with its release on the Google PlayStore on 16 September 2019.
-            </p>
+                    <p>
+                        Hangry Guardians was in development from April 2019 to September 2019 with its release on the Google PlayStore on 16 September 2019.
+                    </p>
 
-                <br />
+                    <br />
 
-                <p>
-                    Being successful in its simplicity of game design, GameStartAsia, which was also the client, chose Hangry Guardians as one of the games to be showcased there.
-            </p>
-            </p >
+                    <p>
+                        Being successful in its simplicity of game design, GameStartAsia, which was also the client, chose Hangry Guardians as one of the games to be showcased there.
+                    </p>
+                </p >
 
 
-            <div className={styles.buttonHolderVertical}>
-                <p className={styles.buttonHolder}>
-                    <ImageButton content={ImageButtonInfo_app} />
-                    <TextButton content={TextButtonInfo_app} onClickFunction={OnClickNewSite}/>
-                </p>
+                <div className={styles.buttonHolderVertical}>
+                    <p className={styles.buttonHolder}>
+                        <ImageButton content={ImageButtonInfo_app} />
+                        <TextButton content={TextButtonInfo_app} onClickFunction={OnClickNewSite} />
+                    </p>
+                </div>
             </div>
-        </div>
 
+        </div>
 
     , isLeft: true
 }

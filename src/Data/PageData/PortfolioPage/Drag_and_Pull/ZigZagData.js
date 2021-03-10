@@ -9,7 +9,7 @@ import ImageButton from "../../../../Components/Common/Button/ImageButton";
 //#endregion
 
 //#region ------------- Data ----------------
-import {PageRouteData,OnClickNewSite} from "../../../PageRouteData";
+import { PageRouteData, OnClickNewSite } from "../../../PageRouteData";
 //#endregion
 
 //#endregion
@@ -48,27 +48,31 @@ const ImageButtonInfo_example =
 const ZigZagContent =
 {
     subject: < BackgroundImage info={BackgroundImageInfo} />
-    , titleJSX:
-        <h6 className={`${GeneralStyles.white}`}>
-            Drag and Pull
-        </h6 >
-    , paragraphJSX:
-        <div>
-            <p className={GeneralStyles.white}>
-                Drag and Pull is a mobile game which was developed during my Year 2 studies. We had a project where the goal of it was to explore Unity's Physics systems and this was what I came up with.
-            <br />
-                <br />
-            The game is relatively simple, reach the end goal at every level and you win! To move the player, as in the title, just drag and pull!
-            <br />
-            </p>
+    ,
+    description:
+        <div className={`${GeneralStyles.white} ${styles.descriptionWrapper}`} >
+            <h6 className={styles.descriptionTitle} >
+                Drag and Pull
+            </h6 >
 
-            <div className={styles.buttonHolderVertical}>
-                <p className={styles.buttonHolder}>
-                    <ImageButton content={ImageButtonInfo_example} />
-                    <TextButton content={TextButtonContent_app} onClickFunction={OnClickNewSite} />
+            <div>
+                <p>
+                    Drag and Pull is a mobile game which was developed during my Year 2 studies. We had a project where the goal of it was to explore Unity's Physics systems and this was what I came up with.
+                <br />
+                <br />
+
+                    The game is relatively simple, reach the end goal at every level and you win! To move the player, as in the title, just drag and pull!
+                <br />
                 </p>
+
+                <div className={styles.buttonHolderVertical}>
+                    <p className={styles.buttonHolder}>
+                        <ImageButton content={ImageButtonInfo_example} />
+                        <TextButton content={TextButtonContent_app} onClickFunction={OnClickNewSite} />
+                    </p>
+                </div>
             </div>
-        </div>
+        </div >
 
     , isLeft: true
 }

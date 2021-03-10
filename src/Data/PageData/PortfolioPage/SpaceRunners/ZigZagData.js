@@ -48,26 +48,30 @@ const ImageButtonInfo_app =
 const ZigZagContent =
 {
     subject: < BackgroundImage info={BackgroundImageInfo} />
-    , titleJSX:
-        <h6 className={`${GeneralStyles.white}`}>
-            SpaceRunners
-        </h6 >
-    , paragraphJSX:
-        <div>
-            <p className={GeneralStyles.white}>
-                SpaceRunners is a multiplayer PC network game project which was developed as a school project during my Polytechnic year 3 studies from October to December 2020.
-            <br />
-                <br />
-            It is a 3D platformer where one player takes the role of a space overlord while the others take the role of space runners. The overlord's goal is to destroy every runner using its ability while the runners' goal is to collect x number of objectives on the map.
-            <br />
-            </p>
+    , description:
+        <div className={`${GeneralStyles.white} ${styles.descriptionWrapper}`}>
+            <h6 className={styles.descriptionTitle} >
+                SpaceRunners
+            </h6 >
 
-            <div className={styles.buttonHolderVertical}>
-                <p className={styles.buttonHolder}>
-                    <ImageButton content={ImageButtonInfo_app} />
-                    <TextButton content={TextButtonContent_app} onClickFunction={OnClickNewSite} />
+
+            <div>
+                <p>
+                    SpaceRunners is a multiplayer PC network game project which was developed as a school project during my Polytechnic year 3 studies from October to December 2020.
+                    <br />
+                    <br />
+                    It is a 3D platformer where one player takes the role of a space overlord while the others take the role of space runners. The overlord's goal is to destroy every runner using its ability while the runners' goal is to collect x number of objectives on the map.
+                    <br />
                 </p>
+
+                <div className={styles.buttonHolderVertical}>
+                    <p className={styles.buttonHolder}>
+                        <ImageButton content={ImageButtonInfo_app} />
+                        <TextButton content={TextButtonContent_app} onClickFunction={OnClickNewSite} />
+                    </p>
+                </div>
             </div>
+
         </div>
 
     , isLeft: false

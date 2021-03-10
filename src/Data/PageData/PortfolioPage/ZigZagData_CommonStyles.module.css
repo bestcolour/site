@@ -11,13 +11,40 @@
 }
 
 /* ----------------- Subject Styling ----------------------- */
+.subjectWrapper
+{
+    height: 100%;
+}
+
 .subjectBgImageClassStyle
 {
-    background-size:cover;
+    background-size:contain;
     background-repeat:no-repeat;
+    background-position: center center;
+    filter: drop-shadow( -.5em .5em .5em #00000075 );
+
     /* Height & Width */
     height:100%;
     width:100%;
 }
 
-/* -------------- */
+/* -------------- Description Styling ----------------------*/
+.descriptionWrapper
+{
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+
+    /* Padding */
+    padding: 5%;
+}
+
+
+.descriptionTitle
+{
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+}
+
+
+
