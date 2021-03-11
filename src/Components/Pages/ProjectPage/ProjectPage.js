@@ -15,11 +15,10 @@ import Page_SpaceRunners from "./SubPages/SpaceRunners/PageContent";
 import Page_HaulAway from "./SubPages/HaulAway/PageContent";
 import Page_DragAndPull from "./SubPages/DragAndPull/PageContent";
 import Page_WhatIf from "./SubPages/WhatIf/PageContent";
+import Page_LEM from "./SubPages/LEM/PageContent";
 //#endregion
 
 //#region ------------ Data ----------------
-// import TopNavBarInfo from "../../../Data/ModuleData/TopNavBarData";
-//import FooterInfo from "../../../Data/FooterData/FooterInfo";
 import {PageRouteData} from "../../../Data/PageRouteData";
 //#endregion
 
@@ -36,6 +35,7 @@ export default function ProjectPage()
                     <Route component={Page_HaulAway} path={PageRouteData.HaulAwayPath} />
                     <Route component={Page_DragAndPull} path={PageRouteData.DragAndPullPath} />
                     <Route component={Page_WhatIf} path={PageRouteData.WhatIfPath} />
+                    <Route component={Page_LEM} path={PageRouteData.LEMPath} />
                 </Switch>
             <StandardFooter  />
         </div>
