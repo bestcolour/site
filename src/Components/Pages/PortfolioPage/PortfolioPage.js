@@ -30,6 +30,7 @@ import ZigZagContent_SpaceRunners from "../../../Data/PageData/PortfolioPage/Spa
 import ZigZagContent_DragAndPull from "../../../Data/PageData/PortfolioPage/Drag_and_Pull/ZigZagData";
 import ZigZagInfo_HaulAway from "../../../Data/PageData/PortfolioPage/HaulAway/ZigZagData";
 import ZigZagInfo_WhatIf from "../../../Data/PageData/PortfolioPage/WhatIf/ZigZagData";
+import ZigZagInfo_LEM from "../../../Data/PageData/PortfolioPage/LEM/ZigZagData";
 //#endregion
 
 //#region --------------- SideBySide Content -------------------------
@@ -38,6 +39,7 @@ import sideBySide_Content_HangryGuardians from "../../../Data/PageData/Portfolio
 import sideBySide_Content_Drag_and_Pull from "../../../Data/PageData/PortfolioPage/Drag_and_Pull/SideBySideContent";
 import sideBySide_Content_SpaceRunners from "../../../Data/PageData/PortfolioPage/SpaceRunners/SideBySideContent";
 import sideBySide_Content_WhatIf from "../../../Data/PageData/PortfolioPage/WhatIf/SideBySideContent";
+import sideBySide_Content_LEM from "../../../Data/PageData/PortfolioPage/LEM/SideBySideContent";
 //#endregion
 
 //#endregion
@@ -64,6 +66,8 @@ export default function PortfolioPage()
                 <ZigZag content={ZigZagInfo_WhatIf} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
                 {/* --------- Drag & Pull ---------- */}
                 <ZigZag content={ZigZagContent_DragAndPull} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
+                {/* --------- LEM ---------- */}
+                <ZigZag content={ZigZagInfo_LEM} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
             </div>
 
             {/* =================== Mobile ====================== */}
@@ -83,6 +87,9 @@ export default function PortfolioPage()
 
                 {/* --------- Drag & Pull ---------- */}
                 <SideBySide content={sideBySide_Content_Drag_and_Pull} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
+
+                {/* --------- LEM ---------- */}
+                <SideBySide content={sideBySide_Content_LEM} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
 
             </div>
 

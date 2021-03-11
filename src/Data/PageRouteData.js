@@ -15,6 +15,7 @@ const PageRouteData =
     , HaulAwayPath: "/projectPage/haulAway"
     , DragAndPullPath: "/projectPage/dragAndPull"
     , WhatIfPath: "/projectPage/whatIf"
+    , LEMPath: "/projectPage/lem"
     //#endregion
 
     ,

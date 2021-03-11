@@ -5,26 +5,37 @@
 
 
 
-
 /* ------------- Tablet -------------- */
 @media only screen and (min-width:600px)
 {
-    .imageButtonDimensions
+    .rectangleButtonDimension
     {
        width: 7.5em;
        height: 2.5em;
     }
     
+    .squareButtonDimension
+    {
+        width: 3em;
+        height: 3em;
+    }
+
 }
 
 /* ------------- Desktop -------------- */
 
 @media only screen and (min-width:1024px)
 {
-    .imageButtonDimensions
+    .rectangleButtonDimension
     {
        width: 11.5em;
        height: 3.5em;
+    }
+
+    .squareButtonDimension
+    {
+        width: 3.5em;
+        height: 3.5em;
     }
     
 }

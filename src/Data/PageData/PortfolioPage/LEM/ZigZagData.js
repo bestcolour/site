@@ -22,19 +22,19 @@ import { PageRouteData, OnClickNewSite } from "../../../PageRouteData";
 const TextButtonContent_app =
 {
     text: "Read More"
-    , buttonLink: PageRouteData.DragAndPullPath
+    , buttonLink: PageRouteData.LEMPath
     , target: ""
 }
 
 const BackgroundImageInfo =
 {
-    bgImageSrc: `../..${PageRouteData.ResourcePath}Drag&Pull/Menu.jpg`
+    bgImageSrc: `../..${PageRouteData.ResourcePath}LEM/Title.jpg`
     , cssStyling: bgImageStyles.zigZag_Subject
 }
 
 const ImageButtonInfo_example =
 {
-    imageSrc: `../..${PageRouteData.ResourcePath}Images/Logos/itch-io-badge.png`
+    imageSrc: `../..${PageRouteData.ResourcePath}Images/Logos/GitHubLogo.png`
     ,
     buttonLink: "https://bestcolour.itch.io/drag-and-pull"
     ,
@@ -51,29 +51,28 @@ const ZigZagContent =
     description:
         <div className={`${GeneralStyles.white} ${styles.descriptionWrapper}`} >
             <h6 className={styles.descriptionTitle} >
-                Drag and Pull
+                Linear Effect Manager 2
             </h6 >
 
             <div>
                 <p>
-                    Drag and Pull is a mobile game which was developed during my Year 2 studies. We had a project where the goal of it was to explore Unity's Physics systems and this was what I came up with.
+                    Linear Effect Manager 2 or LEM 2 is a Unity Editor tool I created during my holidays of year 3 Polytechnic studies. (Iterated version 1 to 2 from 03/2020 - 10/2020)
                 <br />
-                    <br />
-
-                    The game is relatively simple, reach the end goal at every level and you win! To move the player, as in the title, just drag and pull!
+                <br />
+                LEM is basically my custom visual programming tool which I can use when I feel sick of coding UI transition events or tutorial events manually.
                 <br />
                 </p>
 
                 <div className={styles.buttonHolderVertical}>
                     <p className={styles.buttonHolder}>
-                        <ImageButton content={ImageButtonInfo_example} cssClass_BackgroundImageElement={imgButtonStyles.rectangleButtonDimension} />
-                        <TextButton CssClass_TextButtonElement={textButtonStyles.readMoreTextButton } content={TextButtonContent_app} onClickFunction={OnClickNewSite}  />
+                        <ImageButton content={ImageButtonInfo_example} cssClass_BackgroundImageElement={imgButtonStyles.squareButtonDimension} />
+                        <TextButton CssClass_TextButtonElement={textButtonStyles.readMoreTextButton} content={TextButtonContent_app} onClickFunction={OnClickNewSite} />
                     </p>
                 </div>
             </div>
         </div >
 
-    , isLeft: true
+    , isLeft: false
 }
 
 export default ZigZagContent;

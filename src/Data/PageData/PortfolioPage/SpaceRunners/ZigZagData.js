@@ -70,7 +70,7 @@ const ZigZagContent =
 
                 <div className={styles.buttonHolderVertical}>
                     <p className={styles.buttonHolder}>
-                        <ImageButton cssClass_BackgroundImageElement={imgButtonStyles.imageButtonDimensions}  content={ImageButtonInfo_app} />
+                        <ImageButton cssClass_BackgroundImageElement={imgButtonStyles.rectangleButtonDimension}  content={ImageButtonInfo_app} />
                         <TextButton CssClass_TextButtonElement={textButtonStyles.readMoreTextButton } content={TextButtonContent_app} onClickFunction={OnClickNewSite} />
                     </p>
                 </div>
