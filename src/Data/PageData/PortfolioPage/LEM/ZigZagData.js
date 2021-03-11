@@ -36,7 +36,7 @@ const ImageButtonInfo_example =
 {
     imageSrc: `../..${PageRouteData.ResourcePath}Images/Logos/GitHubLogo.png`
     ,
-    buttonLink: "https://bestcolour.itch.io/drag-and-pull"
+    buttonLink: "https://github.com/bestcolour-Completed-Projects/Linear-Effect-Manager-2"
     ,
     target: "_blank"
 }
