@@ -10,6 +10,8 @@ const imageSliderInfo =
         [
             `../..${PageRouteData.ResourcePath}HaulAway/Screenshot1.jpg`
             , `../..${PageRouteData.ResourcePath}HaulAway/Screenshot2.jpg`
+            , `../..${PageRouteData.ResourcePath}HaulAway/Screenshot3.jpg`
+            , `../..${PageRouteData.ResourcePath}HaulAway/Screenshot4.jpg`
 
         ]
 }
