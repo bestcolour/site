@@ -8,12 +8,15 @@ const imageSliderInfo =
 {
     imageDataArray:
         [
-            `../..${PageRouteData.ResourcePath}Drag&Pull/Menu.jpg`
-            , `../..${PageRouteData.ResourcePath}Drag&Pull/unknown.jpg`
-            , `../..${PageRouteData.ResourcePath}Drag&Pull/unknown2.jpg`
-            , `../..${PageRouteData.ResourcePath}Drag&Pull/unknown3.jpg`
-            , `../..${PageRouteData.ResourcePath}Drag&Pull/unknown4.jpg`
-            , `../..${PageRouteData.ResourcePath}Drag&Pull/Win.jpg`
+            `../..${PageRouteData.ResourcePath}LEM/Title.jpg`
+            , `../..${PageRouteData.ResourcePath}LEM/BlockColor.gif`
+            , `../..${PageRouteData.ResourcePath}LEM/HideExecutors.gif`
+            , `../..${PageRouteData.ResourcePath}LEM/CreatingNewBlock.gif`
+            , `../..${PageRouteData.ResourcePath}LEM/CopyPastingEffect.gif`
+            , `../..${PageRouteData.ResourcePath}LEM/DeletingEffects.gif`
+            , `../..${PageRouteData.ResourcePath}LEM/DuplicatingBlocks.gif`
+            , `../..${PageRouteData.ResourcePath}LEM/DeletingBlocks.gif`
+            , `../..${PageRouteData.ResourcePath}LEM/ArrowMode.gif`
 
         ]
 }
