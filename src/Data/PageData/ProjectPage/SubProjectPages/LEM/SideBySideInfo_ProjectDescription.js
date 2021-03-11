@@ -30,16 +30,23 @@ const projectDescription =
             </h6>
         <br />
         <p >
-            This was a geniunely enjoyable physics phone game project to do as I took care of creating some assets in the game. The most challenging part of this project was finding the core mechanic for this game. 
+            Back in Year 2's Hangry Guardians project, I was coding the tutorial for the beginner levels and I hesitated at the idea of coding each tutorial levels manually. There, I made a prototype Tutorial Event Manager script which allowed me to modularize certain blocks of code which did certain things in a linear order.
         </p>
         <br />
         <p>
-        I was initially thinking of doing a player controller which allowed you to change states (from solid to liquid to gas). However, I realised that I had little knowledge on creating fluid shaders and that designing levels for such a complex mechanic would be too difficult.
+            Seeing how unoptimized and ugly it was, I took it upon myself to learn to make it into a node editor and wanted to use it in my next project.
         </p>
-
         <br />
         <p>
-        After experiencing some phone games (like Angry Birds), I have learnt that the main mechanic of a game does not need to be complex. It can be simple but yet create a complex puzzle.
+            LEM 1 was more or less completed on June of 2020 where I learnt design patterns like the Command Pattern and how to write a custom Unity's EditorWindow class.
+        </p>
+        <br />
+        <p>
+            However, that was not enough, LEM 1 was still unoptimized and hard to add custom code thus making it hard for me to use in a project where I may need to write custom effects.
+        </p>
+        <br />
+        <p>
+            Thus, I started my second iteration of LEM on September 2020 and completed it more or less on October 2020 where I made the node blocks more organized and simple to reuse and customize its code.
         </p>
     </div>
 //#endregion
@@ -52,11 +59,7 @@ const rolesAndResponsibilities =
             </h6>
         <br />
         <p className={GeneralStyles.white}>
-            <li>Level Design</li>
-            <li>Doodled the Sprites</li>
-            <li>Designed the core mechanics</li>
-            <li>InGame UI & UX feedback</li>
-            <li>Deployed to Web & Android Platforms</li>
+            <li>Code Architecture</li>
         </p>
     </div>
 //#endregion

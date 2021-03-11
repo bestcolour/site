@@ -1,6 +1,7 @@
 import GeneralStyles from "../../../../../CommonStyles/GeneralStyles.module.css";
 import ImageSlider from "../../../../../Components/Common/ImageSlider";
-import {PageRouteData} from "../../../../PageRouteData";
+import {PageRouteData,OnClickNewSite} from "../../../../PageRouteData";
+import {Link} from "react-router-dom";
 
 
 //#region ---------- Subject --------------
@@ -35,7 +36,7 @@ const projectDescription =
             </h6>
         <br />
         <p className={GeneralStyles.white}>
-          Hangry Guardians is my first 2D mobile game client project I have ever done in my life. I worked together with 7 other people in my Polytechnic class to accomplish this game for the client, GameStartAsia. One of the most challenging aspect of this project was to provide information to the player about the rules of the game as there seems to be a lot of things happening on the screen. I designed the tutorial to hide certain UI elements in the early levels of each map. This allows me to slowly introduce the mechanics without overwhelming the player. This led to an idea for LEM (Linear Effect Manager) which allows me to sequence events in order to make Tutorial making a lot easier. Other notable things I have done are the visual effects which give the players feedback whenever they are doing something positive or negative.
+          Hangry Guardians is my first 2D mobile game client project I have ever done in my life. I worked together with 7 other people in my Polytechnic class to accomplish this game for the client, GameStartAsia. One of the most challenging aspect of this project was to provide information to the player about the rules of the game as there seems to be a lot of things happening on the screen. I designed the tutorial to hide certain UI elements in the early levels of each map. This allows me to slowly introduce the mechanics without overwhelming the player. This led to an idea for <Link to={PageRouteData.LEMPath} onClick= {OnClickNewSite}>LEM</Link> (Linear Effect Manager) which allows me to sequence events in order to make Tutorial making a lot easier. Other notable things I have done are the visual effects which give the players feedback whenever they are doing something positive or negative.
             </p>
     </div>
 //#endregion

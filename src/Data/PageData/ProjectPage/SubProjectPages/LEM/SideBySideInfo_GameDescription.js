@@ -1,15 +1,15 @@
 import GeneralStyles from "../../../../../CommonStyles/GeneralStyles.module.css";
-import {PageRouteData} from "../../../../PageRouteData";
+import { PageRouteData } from "../../../../PageRouteData";
 
 //#region -------- Game Description --------------
 const gameDescription =
     <div>
         <h6 className={`${GeneralStyles.white}`}>
-            Game Description
+            Tool Description
             </h6>
         <br />
         <p className={GeneralStyles.white}>
-            Drag and Pull is a small 2D physics platform game where your only goal in the game is to get to the flag of each level! The controls are simple! Just drag and pull! Each level poses different challenges, can you complete them all?
+            Linear Effect Manager 2 (LEM 2) is the second iteration of <a href={"https://bestcolour.itch.io/linear-event-manager"} target="_blank">LEM 1</a>. LEM 2 is a node editor tool created in Unity and C# that makes blocks of code ,which executes an effect, easy to plan and reuse. This is specially useful for Tutorial events or UI transition events.
             </p>
     </div>
 //#endregion
@@ -18,15 +18,15 @@ const gameDescription =
 const gameFeatures =
     <div>
         <h6 className={`${GeneralStyles.white}`}>
-            Game Features
+            Tool Features
             </h6>
         <br />
         <p className={GeneralStyles.white}>
-            <li>2D Platformer</li>
-            <li>Physics</li>
-            <li>Casual</li>
-            <li>Simple Mechanics</li>
-            <li>Android & Web</li>
+            <li>Modular and Reusable Code</li>
+            <li>Effects are highly customisable</li>
+            <li>Effects code can be self-optimized</li>
+            <li>Visual Programming</li>
+            <li>Open Source</li>
         </p>
     </div>
 //#endregion
