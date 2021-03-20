@@ -31,6 +31,7 @@ import ZigZagContent_DragAndPull from "../../../Data/PageData/PortfolioPage/Drag
 import ZigZagInfo_HaulAway from "../../../Data/PageData/PortfolioPage/HaulAway/ZigZagData";
 import ZigZagInfo_WhatIf from "../../../Data/PageData/PortfolioPage/WhatIf/ZigZagData";
 import ZigZagInfo_LEM from "../../../Data/PageData/PortfolioPage/LEM/ZigZagData";
+import ZigZagInfo_WonderValley from "../../../Data/PageData/PortfolioPage/WonderValley/ZigZagData";
 //#endregion
 
 //#region --------------- SideBySide Content -------------------------
@@ -68,6 +69,9 @@ export default function PortfolioPage()
                 <ZigZag content={ZigZagContent_DragAndPull} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
                 {/* --------- LEM ---------- */}
                 <ZigZag content={ZigZagInfo_LEM} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
+                {/* --------- Wonder Valley ---------- */}
+                <ZigZag content={ZigZagInfo_WonderValley} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
+
             </div>
 
             {/* =================== Mobile ====================== */}
