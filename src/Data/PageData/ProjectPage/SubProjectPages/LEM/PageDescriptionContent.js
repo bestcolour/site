@@ -8,7 +8,7 @@ const ImageButtonContent_example =
 {
   imageSrc: `../..${PageRouteData.ResourcePath}Images/Logos/GitHubLogo.png`
   ,
-  buttonLink: "https://github.com/bestcolour-Completed-Projects/Linear-Effect-Manager-2"
+  buttonLink: "https://github.com/bestcolour/Linear-Effect-Manager-2"
   ,
   target: "_blank"
 }
