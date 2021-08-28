@@ -70,7 +70,7 @@ export default function PortfolioPage()
                 {/* --------- LEM ---------- */}
                 <ZigZag content={ZigZagInfo_LEM} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
                 {/* --------- Wonder Valley ---------- */}
-                <ZigZag content={ZigZagInfo_WonderValley} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
+                {/* <ZigZag content={ZigZagInfo_WonderValley} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} /> */}
 
             </div>
 
