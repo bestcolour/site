@@ -34,7 +34,7 @@ const ImageButtonInfo_example =
 {
     imageSrc: `../..${PageRouteData.ResourcePath}Images/Logos/itch-io-badge.png`
     ,
-    buttonLink: "https://fyp-whatif.itch.io/what-if"
+    buttonLink: "http://whatif.madgdd.com/index.html"
     ,
     target: "_blank"
 }
