@@ -38,8 +38,11 @@ function GetButtonType(buttonLink, onClickFunction)
 //Returns boolean to determine whether a url link is pointing to a site within my website or a site outside of my website
 function IsLinkToWithinSite(link)
 {
-
-    return link === null ? false : !link.includes("https://");
+    return link === null
+        ?
+        false
+        :
+        (!link.includes("https://") && !link.includes("http://"));
 }
 
 
