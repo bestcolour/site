@@ -78,7 +78,7 @@ const ZigZagContent =
 
         </div>
 
-    , isLeft: false
+    , isLeft: true
 }
 
 export default ZigZagContent;
