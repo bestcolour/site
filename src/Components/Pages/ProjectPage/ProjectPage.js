@@ -16,6 +16,7 @@ import Page_HaulAway from "./SubPages/HaulAway/PageContent";
 import Page_DragAndPull from "./SubPages/DragAndPull/PageContent";
 import Page_WhatIf from "./SubPages/WhatIf/PageContent";
 import Page_LEM from "./SubPages/LEM/PageContent";
+import Page_PythonAutomation from "./SubPages/PythonAutomation/PageContent";
 //#endregion
 
 //#region ------------ Data ----------------
@@ -36,6 +37,7 @@ export default function ProjectPage()
                     <Route component={Page_DragAndPull} path={PageRouteData.DragAndPullPath} />
                     <Route component={Page_WhatIf} path={PageRouteData.WhatIfPath} />
                     <Route component={Page_LEM} path={PageRouteData.LEMPath} />
+                    <Route component={Page_PythonAutomation} path={PageRouteData.PythonMacroPath} />
                 </Switch>
             <StandardFooter  />
         </div>

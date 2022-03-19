@@ -16,6 +16,7 @@ const PageRouteData =
     , DragAndPullPath: "/projectPage/dragAndPull"
     , WhatIfPath: "/projectPage/whatIf"
     , LEMPath: "/projectPage/lem"
+    , PythonMacroPath: "/projectPage/pythonMacro"
     //#endregion
 
     ,
