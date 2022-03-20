@@ -38,7 +38,7 @@ const ZigZagContent =
             <div>
                 <p>
                     <p>
-                        Haul Away is an on-going project which I have worked on with five other team members for my Polytechnic's final year project. The development time was from October 2020 to present time.
+                    Being awarded Bronze in the Crowbar Awards 2021, Haul Away is an project which I have worked on with five other team members for my Polytechnic's final year project. The development time was from October 2020 to March 2021. 
                     </p>
                     <br />
                     <p>

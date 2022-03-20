@@ -25,7 +25,7 @@ const projectDescription =
             </h6>
         <br />
         <p className={GeneralStyles.white}>
-          This project was accomplished with 5 other people whom includes {<a href="https://enriquecmarcelo.github.io/" target="blank">Enrique</a> } and {<a href="https://kaixingnicholas.wixsite.com/gdportfolio" target="blank">Nicholas</a> }. The main challenge I have faced with developing this game was the sheer amount of conditions and physics related bugs which arises when making a physics game. Although the realism of physics is really nice viusally to look at, the work needed to ensure it goes well is astounding. From this experience, I have learnt how to prototype quickly when making a game as well as to plan ahead for future additions and implementation of new mechanics.
+          This project was accomplished with 5 other people whom includes {<a href="https://enriquecmarcelo.github.io/" target="blank">Enrique</a> } and {<a href="https://kaixingnicholas.wixsite.com/gdportfolio" target="blank">Nicholas</a> }. The main challenge I have faced with developing this game was the sheer amount of conditions and physics related bugs which arises when making a physics game. Although the realism of physics is really nice viusally to look at, the work needed to ensure it goes well is astounding. However, it was all worth it when this game managed to be awarded Bronze for the Crowbar Awards in 2021. From this experience, I have learnt how to prototype quickly when making a game as well as to plan ahead for future additions and implementation of new mechanics.
         </p>
     </div>
 //#endregion
@@ -42,7 +42,7 @@ const rolesAndResponsibilities =
             <li>Gameplay Mechanics</li>
             <li>Player Controller</li>
             <li>Bouyancy Physics</li>
-            <li>UI & UX Design</li>
+            <li>UI & UX {<a href="https://drive.google.com/file/d/1-p-gqGlf4XtEd06wrDVFLHS3w9wq36Pd/view?usp=sharing" target={"blank"}>Design</a>}</li>
         </p>
     </div>
 //#endregion
