@@ -16,12 +16,12 @@ const TopNavBarData =
                 link: PageRouteData.PortfolioPagePath
             }
             ,
-            // {
-            //     linkName: "My Projects"
-            //     ,
-            //     link: PageRouteData.ProjectPagePath
-            // }
-            // , 
+            {
+                linkName: "My Projects"
+                ,
+                link: PageRouteData.ProjectPagePath
+            }
+            , 
             // {
             //     linkName: "Blogs"
             //     ,

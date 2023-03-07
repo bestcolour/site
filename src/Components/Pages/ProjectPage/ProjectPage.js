@@ -9,6 +9,7 @@ import TopNavBar from "../../Modules/TopNavBar";
 //#region ---------------- Import Modules -----------------------
 //This is the main page
 import ProjectPageComponent from "./ProjectPageComponent";
+import GamePage from "./CatergorizedPages/Games/GamePage";
 //============= BEYOND HERE ARE PAGES =============
 import Page_HangryGuardians from "./SubPages/HangryGuardians/PageContent";
 import Page_SpaceRunners from "./SubPages/SpaceRunners/PageContent";
@@ -31,6 +32,7 @@ export default function ProjectPage()
             <TopNavBar selectedPageName="My Projects" />
                 <Switch>
                     <Route component={ProjectPageComponent} path={PageRouteData.ProjectPagePath} exact />
+                    <Route component={GamePage} path={PageRouteData.GamesPagePath}  />
                     <Route component={Page_HangryGuardians} path={PageRouteData.HangryGuardiansPath} />
                     <Route component={Page_SpaceRunners} path={PageRouteData.SpaceRunnersPath} />
                     <Route component={Page_HaulAway} path={PageRouteData.HaulAwayPath} />

@@ -17,6 +17,7 @@ const PageRouteData =
     , WhatIfPath: "/projectPage/whatIf"
     , LEMPath: "/projectPage/lem"
     , PythonMacroPath: "/projectPage/pythonMacro"
+    , GamesPagePath: "/projectPage/games"
     //#endregion
 
     ,
