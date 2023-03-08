@@ -18,6 +18,7 @@ const PageRouteData =
     , LEMPath: "/projectPage/lem"
     , PythonMacroPath: "/projectPage/pythonMacro"
     , GamesPagePath: "/projectPage/games"
+    , ScriptsAndToolsPath: "/projectPage/scriptsAndTools"
     //#endregion
 
     ,

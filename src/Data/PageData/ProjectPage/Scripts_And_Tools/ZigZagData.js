@@ -17,7 +17,7 @@ import { PageRouteData, OnClickNewSite } from "../../../PageRouteData";
 const TextButtonInfo_app =
 {
     text: "See More"
-    , buttonLink: PageRouteData.GamesPagePath
+    , buttonLink: PageRouteData.ScriptsAndToolsPath
     , target: ""
 }
 
