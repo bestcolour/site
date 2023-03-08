@@ -19,6 +19,7 @@ const imageSliderInfo =
 }
 //#endregion
 
+
 //#region -------- Project Description --------------
 const projectDescription =
     <div className={`${GeneralStyles.white}`}>
