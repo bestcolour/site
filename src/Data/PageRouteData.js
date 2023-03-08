@@ -8,6 +8,8 @@ const PageRouteData =
     , ContactPagePath: "/contact"
 
     //#region Project Pages
+    , GamesPagePath: "/projectPage/games"
+    , ScriptsAndToolsPath: "/projectPage/scriptsAndTools"
     //REMINDER TO SELF:
     //When you are appending projectpages, do not use "-" to separate words, instead use "/" or else ReactRouter will not work!
     , HangryGuardiansPath: "/projectPage/hangryGuardians"
@@ -17,8 +19,7 @@ const PageRouteData =
     , WhatIfPath: "/projectPage/whatIf"
     , LEMPath: "/projectPage/lem"
     , PythonMacroPath: "/projectPage/pythonMacro"
-    , GamesPagePath: "/projectPage/games"
-    , ScriptsAndToolsPath: "/projectPage/scriptsAndTools"
+    , WhatsAppBotPath: "/projectPage/whatsAppBot"
     //#endregion
 
     ,

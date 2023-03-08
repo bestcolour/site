@@ -19,6 +19,7 @@ import Page_DragAndPull from "./SubPages/DragAndPull/PageContent";
 import Page_WhatIf from "./SubPages/WhatIf/PageContent";
 import Page_LEM from "./SubPages/LEM/PageContent";
 import Page_PythonAutomation from "./SubPages/PythonAutomation/PageContent";
+import Page_WhatsAppBot from "./SubPages/WhatsAppBot/PageContent";
 //#endregion
 
 //#region ------------ Data ----------------
@@ -42,6 +43,7 @@ export default function ProjectPage()
                     <Route component={Page_WhatIf} path={PageRouteData.WhatIfPath} />
                     <Route component={Page_LEM} path={PageRouteData.LEMPath} />
                     <Route component={Page_PythonAutomation} path={PageRouteData.PythonMacroPath} />
+                    <Route component={Page_WhatsAppBot} path={PageRouteData.WhatsAppBotPath} />
                 </Switch>
             <StandardFooter  />
         </div>
