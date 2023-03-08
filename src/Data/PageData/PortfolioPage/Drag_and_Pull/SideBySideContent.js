@@ -12,7 +12,7 @@ import { PageRouteData, OnClickNewSite } from "../../../PageRouteData";
 
 const ImageButtonContent_example =
 {
-    imageSrc: `../..${PageRouteData.ResourcePath}Drag&Pull/Menu.jpg`
+    imageSrc: `../..${PageRouteData.ResourcePath}Drag&Pull/Menu.JPG`
     ,
     buttonLink: PageRouteData.DragAndPullPath
     ,

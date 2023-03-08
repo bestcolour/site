@@ -28,7 +28,7 @@ const TextButtonContent_app =
 
 const BackgroundImageInfo =
 {
-    bgImageSrc: `../..${PageRouteData.ResourcePath}Drag&Pull/Menu.jpg`
+    bgImageSrc: `../..${PageRouteData.ResourcePath}Drag&Pull/Menu.JPG`
     , cssStyling: bgImageStyles.zigZag_Subject
 }
 

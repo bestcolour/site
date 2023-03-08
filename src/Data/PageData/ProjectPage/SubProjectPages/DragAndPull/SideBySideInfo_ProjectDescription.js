@@ -8,7 +8,7 @@ const imageSliderInfo =
 {
     imageDataArray:
         [
-            `../..${PageRouteData.ResourcePath}Drag&Pull/Menu.jpg`
+            `../..${PageRouteData.ResourcePath}Drag&Pull/Menu.JPG`
             , `../..${PageRouteData.ResourcePath}Drag&Pull/unknown.jpg`
             , `../..${PageRouteData.ResourcePath}Drag&Pull/unknown2.jpg`
             , `../..${PageRouteData.ResourcePath}Drag&Pull/unknown3.jpg`

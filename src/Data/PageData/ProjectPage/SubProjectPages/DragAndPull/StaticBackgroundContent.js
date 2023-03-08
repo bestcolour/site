@@ -1,7 +1,7 @@
 import {PageRouteData} from "../../../../PageRouteData";
 const StaticBackgroundContent =
 {
-    titleHeroImageLink: `../..${PageRouteData.ResourcePath}Drag&Pull/Menu.jpg`
+    titleHeroImageLink: `../..${PageRouteData.ResourcePath}Drag&Pull/Menu.JPG`
     ,
     downloadHeroImageLink : `../..${PageRouteData.ResourcePath}Drag&Pull/unknown2.jpg`
 };
