@@ -29,9 +29,9 @@ import ZigZagContent_SpaceRunners from "../../../../../Data/PageData/PortfolioPa
 import ZigZagContent_DragAndPull from "../../../../../Data/PageData/PortfolioPage/Drag_and_Pull/ZigZagData";
 import ZigZagInfo_HaulAway from "../../../../../Data/PageData/PortfolioPage/HaulAway/ZigZagData";
 import ZigZagInfo_WhatIf from "../../../../../Data/PageData/PortfolioPage/WhatIf/ZigZagData";
-import ZigZagInfo_LEM from "../../../../../Data/PageData/PortfolioPage/LEM/ZigZagData";
+// import ZigZagInfo_LEM from "../../../../../Data/PageData/PortfolioPage/LEM/ZigZagData";
 // import ZigZagInfo_WonderValley from "../../../Data/PageData/PortfolioPage/WonderValley/ZigZagData";
-import ZigZagInfo_PythonMacro from "../../../../../Data/PageData/PortfolioPage/PythonMacro/ZigZagData";
+// import ZigZagInfo_PythonMacro from "../../../../../Data/PageData/PortfolioPage/PythonMacro/ZigZagData";
 //#endregion
 
 //#region --------------- SideBySide Content -------------------------
@@ -40,8 +40,8 @@ import sideBySide_Content_HangryGuardians from "../../../../../Data/PageData/Por
 import sideBySide_Content_Drag_and_Pull from "../../../../../Data/PageData/PortfolioPage/Drag_and_Pull/SideBySideContent";
 import sideBySide_Content_SpaceRunners from "../../../../../Data/PageData/PortfolioPage/SpaceRunners/SideBySideContent";
 import sideBySide_Content_WhatIf from "../../../../../Data/PageData/PortfolioPage/WhatIf/SideBySideContent";
-import sideBySide_Content_LEM from "../../../../../Data/PageData/PortfolioPage/LEM/SideBySideContent";
-import sideBySide_PythonMacro from "../../../../../Data/PageData/PortfolioPage/PythonMacro/SideBySideContent";
+// import sideBySide_Content_LEM from "../../../../../Data/PageData/PortfolioPage/LEM/SideBySideContent";
+// import sideBySide_PythonMacro from "../../../../../Data/PageData/PortfolioPage/PythonMacro/SideBySideContent";
 //#endregion
 
 //#endregion
@@ -55,14 +55,10 @@ export default function GamePage()
     const content =
         <div>
             <PageDescription info={PageDescriptionInfo_Default} content={PageDescriptionContent_GamesPage} />
-
             {/* =================== Desktop & Tablet ====================== */}
             <div className={styles.portfolioDesktopElements}>
                 {/* --------- Haul Away ---------- */}
                 <ZigZag content={ZigZagInfo_HaulAway} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
-
-                {/* Python Macro */}
-                <ZigZag content={ZigZagInfo_PythonMacro} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
 
                 {/* --------- SpaceRunners ---------- */}
                 <ZigZag content={ZigZagContent_SpaceRunners} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
@@ -76,8 +72,6 @@ export default function GamePage()
                 {/* --------- Drag & Pull ---------- */}
                 <ZigZag content={ZigZagContent_DragAndPull} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
                 
-                {/* --------- LEM ---------- */}
-                <ZigZag content={ZigZagInfo_LEM} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
                 {/* --------- Wonder Valley ---------- */}
                 {/* <ZigZag content={ZigZagInfo_WonderValley} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} /> */}
 
@@ -88,10 +82,6 @@ export default function GamePage()
             <div className={`${styles.portfolioMobileElements} ${GeneralStyles.white}`} >
                 {/* --------- Haul Away ---------- */}
                 <SideBySide content={sideBySide_Content_HaulAway} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
-
-                {/* --------- Python Macro ---------- */}
-                <SideBySide content={sideBySide_PythonMacro} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
-
 
                 {/* --------- SpaceRunners ---------- */}
                 <SideBySide content={sideBySide_Content_SpaceRunners} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
@@ -105,9 +95,6 @@ export default function GamePage()
 
                 {/* --------- Drag & Pull ---------- */}
                 <SideBySide content={sideBySide_Content_Drag_and_Pull} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
-
-                {/* --------- LEM ---------- */}
-                <SideBySide content={sideBySide_Content_LEM} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
 
 
             </div>
