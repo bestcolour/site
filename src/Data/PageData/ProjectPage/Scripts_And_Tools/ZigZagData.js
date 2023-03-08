@@ -35,9 +35,9 @@ const ZigZagContent =
     description:
         <div className={`${GeneralStyles.white} ${styles.descriptionWrapper}`}>
             <h6 className={styles.descriptionTitle} >Tools, Scripts and more</h6>
+            <br/>
+            <p>Tools and scripts written in different programming languages like C, C# and Python.</p>
             <div>
-
-
                 <div className={styles.buttonHolderVertical}>
                     <p className={styles.buttonHolder}>
                         <TextButton CssClass_TextButtonElement={textButtonStyles.readMoreTextButton} content={TextButtonInfo_app} onClickFunction={OnClickNewSite} />

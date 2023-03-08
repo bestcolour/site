@@ -35,6 +35,8 @@ const ZigZagContent =
     description:
         <div className={`${GeneralStyles.white} ${styles.descriptionWrapper}`}>
             <h6 className={styles.descriptionTitle} >Games</h6>
+            <br/>
+            <p>Different types of game ranging from online/local multiplayer to mobile or interactive storytelling games.</p>
             <div>
                 <div className={styles.buttonHolderVertical}>
                     <p className={styles.buttonHolder}>
