@@ -14,7 +14,7 @@ const gameDescription =
         </p>
 
         <a href="https://github.com/bestcolour/Python-Whatsappbot" target={'_blank'}>
-            Click here to learn more about the bot
+            Learn More
         </a>
 
         <br />
