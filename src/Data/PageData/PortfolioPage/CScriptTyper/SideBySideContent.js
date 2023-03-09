@@ -14,7 +14,7 @@ const ImageButtonContent_example =
 {
     imageSrc: `../..${PageRouteData.ResourcePath}CScriptTyper/Title-Filtered.png`
     ,
-    buttonLink: PageRouteData.LEMPath
+    buttonLink: PageRouteData.CScriptTyperPath
     ,
     target: ""
 }
