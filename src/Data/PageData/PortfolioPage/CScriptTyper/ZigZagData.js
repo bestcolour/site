@@ -28,7 +28,7 @@ const TextButtonContent_app =
 
 const BackgroundImageInfo =
 {
-    bgImageSrc: `../..${PageRouteData.ResourcePath}LEM/Title.jpg`
+    bgImageSrc: `../..${PageRouteData.ResourcePath}CScriptTyper/Title-Filtered.png`
     , cssStyling: bgImageStyles.zigZag_Subject
 }
 

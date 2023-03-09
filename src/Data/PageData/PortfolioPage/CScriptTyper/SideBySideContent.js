@@ -12,7 +12,7 @@ import { PageRouteData, OnClickNewSite } from "../../../PageRouteData";
 
 const ImageButtonContent_example =
 {
-    imageSrc: `../..${PageRouteData.ResourcePath}LEM/Title.jpg`
+    imageSrc: `../..${PageRouteData.ResourcePath}CScriptTyper/Title-Filtered.png`
     ,
     buttonLink: PageRouteData.LEMPath
     ,
