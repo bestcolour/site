@@ -31,6 +31,7 @@ import PageDescriptionContent_ScriptsToolsPage from "../../../../../Data/PageDat
 // import ZigZagInfo_WhatIf from "../../../../../Data/PageData/PortfolioPage/WhatIf/ZigZagData";
 import ZigZagInfo_LEM from "../../../../../Data/PageData/PortfolioPage/LEM/ZigZagData";
 import ZigZagInfo_WhatsappBot from "../../../../../Data/PageData/PortfolioPage/WhatsAppBot/ZigZagData";
+import ZigZagInfo_CScriptTyper from "../../../../../Data/PageData/PortfolioPage/CScriptTyper/ZigZagData";
 // import ZigZagInfo_WonderValley from "../../../Data/PageData/PortfolioPage/WonderValley/ZigZagData";
 import ZigZagInfo_PythonMacro from "../../../../../Data/PageData/PortfolioPage/PythonMacro/ZigZagData";
 //#endregion
@@ -42,6 +43,7 @@ import ZigZagInfo_PythonMacro from "../../../../../Data/PageData/PortfolioPage/P
 // import sideBySide_Content_SpaceRunners from "../../../../../Data/PageData/PortfolioPage/SpaceRunners/SideBySideContent";
 // import sideBySide_Content_WhatIf from "../../../../../Data/PageData/PortfolioPage/WhatIf/SideBySideContent";
 import sideBySide_Content_LEM from "../../../../../Data/PageData/PortfolioPage/LEM/SideBySideContent";
+import sideBySide_Content_CScriptTyper from "../../../../../Data/PageData/PortfolioPage/CScriptTyper/SideBySideContent";
 import sideBySide_PythonMacro from "../../../../../Data/PageData/PortfolioPage/PythonMacro/SideBySideContent";
 import sideBySide_Whatsappbot from "../../../../../Data/PageData/PortfolioPage/WhatsAppBot/SideBySideContent";
 //#endregion
@@ -63,7 +65,10 @@ export default function ScriptsToolsPage()
 
                 {/* --------- Whatsapp bot ---------- */}
                 <ZigZag content={ZigZagInfo_WhatsappBot} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
-                
+
+                {/* --------- CScriptType ---------- */}
+                <ZigZag content={ZigZagInfo_CScriptTyper} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
+
                 {/* Python Macro */}
                 <ZigZag content={ZigZagInfo_PythonMacro} cssClass_DescriptionRoot={ZigZag_DescriptionBg_Black} cssClass_SubjectRoot={ZigZag_SubjectRoot_OverwriteShadows} />
 
@@ -80,6 +85,11 @@ export default function ScriptsToolsPage()
                 {/* --------- Whatsapp bot ---------- */}
                 <SideBySide content={sideBySide_Whatsappbot} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
                 
+
+                {/* --------- CScriptType ---------- */}
+                <SideBySide content={sideBySide_Content_CScriptTyper} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
+
+
                 {/* --------- Python Macro ---------- */}
                 <SideBySide content={sideBySide_PythonMacro} cssInfo_flipClasses={SideBySide_CommonInfo_AlwaysVertical_FlipClasses} cssClass_descriptionRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_DescriptionRoot} cssClass_subjectRoot={SideBySide_CommonInfo_AlwaysVertical_cssClass_SubjectRoot} />
 

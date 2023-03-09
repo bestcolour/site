@@ -20,6 +20,7 @@ const PageRouteData =
     , LEMPath: "/projectPage/lem"
     , PythonMacroPath: "/projectPage/pythonMacro"
     , WhatsAppBotPath: "/projectPage/whatsAppBot"
+    , CScriptTyperPath: "/projectPage/csharpGenericListInClanguage"
     //#endregion
 
     ,
