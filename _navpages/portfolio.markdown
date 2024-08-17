@@ -1,9 +1,9 @@
 ---
 layout: post-categorypage
 # title: "Projects"
-permalink: "projects/polytechnic-games/"
+permalink: "portfolios"
 
-title:  "Polytechnic Game Projects"
+title:  "Portfolio"
 date:   2024-04-24
 # categories: jekyll update
 
@@ -12,7 +12,7 @@ alt-text: "unity-logo"
 
 content_before_table: "
 <div> 
-Here are some of the games I have made during my time in Singapore Polytechnic
+In here I organise my various portfolios for different roles
 <br>
 <br>
 <br>
@@ -21,6 +21,6 @@ Here are some of the games I have made during my time in Singapore Polytechnic
 
 
 table_col: 3
-table_datapath: "polytechnic-games"
+table_datapath: "portfolios"
 
 ---
