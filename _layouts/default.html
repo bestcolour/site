@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>lks</title>
-    <link rel="stylesheet" href=/site/assets/css/main.css>
+    <title>{{site.title}}</title>
+    <link rel="stylesheet" href={{"assets/css/main.css" | relative_url }}>
   </head>
   <body>
     <div>
@@ -19,19 +19,11 @@
 
         <div id="nav-mobile-list">
           <ul>
-            
-            <li class="">
-              <a href="/site/"> About </a>
+            {% for item in site.data.navbar %}
+            <li class="{% if page.url == item.link %} nav-active {% endif %}">
+              <a href="{{site.baseurl}}{{item.link}}"> {{item.title}} </a>
             </li>
-            
-            <li class="">
-              <a href="/site/projects/"> Projects </a>
-            </li>
-            
-            <li class="">
-              <a href="/site/portfolio/"> Portfolio </a>
-            </li>
-            
+            {% endfor %}
           </ul>
         </div>
 
@@ -41,43 +33,15 @@
       <!-- Dekstop version of navbar -->
       <nav class="col-12 col-s-12 nav-desktop">
         <ul>
-          
-          <li class="">
-            <a href="/site/"> About </a>
+          {% for item in site.data.navbar %}
+          <li class="{% if page.url == item.link %} nav-active {% endif %}">
+            <a href="{{site.baseurl}}{{item.link}}"> {{item.title}} </a>
           </li>
-          
-          <li class="">
-            <a href="/site/projects/"> Projects </a>
-          </li>
-          
-          <li class="">
-            <a href="/site/portfolio/"> Portfolio </a>
-          </li>
-          
+          {% endfor %}
         </ul>
       </nav>
 
-      <div  id="content-wrapper"><style type="text/css" media="screen">
-  .container {
-    margin: 10px auto;
-    max-width: 600px;
-    text-align: center;
-  }
-  h1 {
-    margin: 30px 0;
-    font-size: 4em;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-</style>
-
-<div class="container">
-  <h1>404</h1>
-
-  <p><strong>Page not found :(</strong></p>
-  <p>The requested page could not be found.</p>
-</div>
-</div>
+      <div  id="content-wrapper">{{content}}</div>
 
       <!-- Add footerhere -->
       <footer>
@@ -93,7 +57,7 @@
       var year = currentDate.getFullYear();
       document.getElementById(
         "copyright"
-      ).textContent = `©${year} by ${"Lee Kee Shen"}`;
+      ).textContent = `©${year} by ${"{{site.name}}"}`;
 
       //Assign onclick event for menu button for mobile
       var openNavBar = document.getElementById("nav-mobile-menu-button");
