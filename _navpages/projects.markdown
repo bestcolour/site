@@ -1,7 +1,7 @@
 ---
 layout: post-mainpage
 # title: "Projects"
-permalink: "projects"
+permalink: "/projects"
 
 content_before_table: "
 <div> 

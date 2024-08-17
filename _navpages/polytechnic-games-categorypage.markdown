@@ -1,7 +1,7 @@
 ---
 layout: post-categorypage
 # title: "Projects"
-permalink: "projects/polytechnic-games/"
+permalink: "projects/polytechnic-games"
 
 title:  "Polytechnic Game Projects"
 date:   2024-04-24
