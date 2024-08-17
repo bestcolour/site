@@ -3,12 +3,9 @@ layout: post-categorypage
 # title: "Projects"
 permalink: "portfolios"
 
-title:  "Portfolio"
+title:  "Portfolios"
 date:   2024-04-24
 # categories: jekyll update
-
-thumbnail: "https://raw.githubusercontent.com/bestcolour/site/assets/image/unity-tab-square-white.png"
-alt-text: "unity-logo"
 
 content_before_table: "
 <div> 
