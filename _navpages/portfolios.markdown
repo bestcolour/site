@@ -1,7 +1,7 @@
 ---
 layout: post-categorypage
 # title: "Projects"
-permalink: "portfolios"
+permalink: "/portfolios"
 
 title:  "Portfolio"
 date:   2024-04-24
