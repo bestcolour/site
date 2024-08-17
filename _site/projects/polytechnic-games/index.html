@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lks</title>
+    <link rel="stylesheet" href=/site/assets/css/main.css>
+  </head>
+  <body>
+    <div>
+      <!-- Mobile version of navbar -->
+      <nav class="nav-mobile">
+        <button id="nav-mobile-menu-button">
+          <!-- THese are the three bars that makes the 'hamburgers' -->
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+
+        <div id="nav-mobile-list">
+          <ul>
+            
+            <li class="">
+              <a href="/site/"> About </a>
+            </li>
+            
+            <li class="">
+              <a href="/site/projects/"> Projects </a>
+            </li>
+            
+            <li class="">
+              <a href="/site/portfolio/"> Portfolio </a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <button id="nav-mobile-close-menu-button"></button>
+      </nav>
+
+      <!-- Dekstop version of navbar -->
+      <nav class="col-12 col-s-12 nav-desktop">
+        <ul>
+          
+          <li class="">
+            <a href="/site/"> About </a>
+          </li>
+          
+          <li class="">
+            <a href="/site/projects/"> Projects </a>
+          </li>
+          
+          <li class="">
+            <a href="/site/portfolio/"> Portfolio </a>
+          </li>
+          
+        </ul>
+      </nav>
+
+      <div  id="content-wrapper"><div class="post-categorypage-basic-page-wrapper" style="text-align:;">
+  <h1>Polytechnic Game Projects</h1>
+
+  <div class="post-categorypage-before-table-content">
+   <div> Here are some of the games I have made during my time in Singapore Polytechnic <br> <br> <br> </div> 
+  </div>
+
+  <div class="post-mainpage-mobile">
+ 
+    <div class="post-categorypage-table">
+      <!-- Make sure that the post is not a date that has yet to occur yet else it wont show -->
+    
+      
+        <!-- IF (we are starting a new row) -->
+        <div class="post-categorypage-tablerow">
+          <div class="post-categorypage-table-cell">
+            <a href="/site/projects/polytechnic-games/haulaway-post">
+              <img src="https://raw.githubusercontent.com/bestcolour/Website/main/assets/image/HaulAway/Poster.jpg" alt="image of github" style="object-position:50% 0%"/>
+            </a>
+            <p>Haul Away!</p>
+            <br>
+          </div>
+        </div>
+        
+        <!-- IF (we are starting a new row) -->
+        <div class="post-categorypage-tablerow">
+          <div class="post-categorypage-table-cell">
+            <a href="/sitehttps://www.google.co.uk/">
+              <img src="/assets/image/github-logo copy.png" alt="image of github" style="object-position:"/>
+            </a>
+            <p>Go to github</p>
+            <br>
+          </div>
+        </div>
+        
+        <!-- IF (we are starting a new row) -->
+        <div class="post-categorypage-tablerow">
+          <div class="post-categorypage-table-cell">
+            <a href="/sitehttps://www.google.co.uk/">
+              <img src="/assets/image/github-logo copy.png" alt="image of github" style="object-position:"/>
+            </a>
+            <p>Go to github</p>
+            <br>
+          </div>
+        </div>
+        
+    
+      </div>
+  </div>
+    
+
+  <div class="post-categorypage-desktop">
+
+  <div class="post-categorypage-table">
+  <!-- Make sure that the post is not a date that has yet to occur yet else it wont show -->
+    <!-- IF (we are starting a new row) --><div class="post-categorypage-tablerow"><!-- IF (one row is completed, reset colIndex) --><!-- ENDIF -->
+
+    <div class="post-categorypage-table-cell">
+      <a href="/site/projects/polytechnic-games/haulaway-post">
+        <img src="https://raw.githubusercontent.com/bestcolour/Website/main/assets/image/HaulAway/Poster.jpg" alt="image of github" style="object-position:50% 0%"/>
+      </a>
+      <p>Haul Away!</p>
+      <br>
+    </div>
+    <!-- IF (we are starting a new row) --><!-- IF (one row is completed, reset colIndex) --><!-- ENDIF -->
+
+    <div class="post-categorypage-table-cell">
+      <a href="/sitehttps://www.google.co.uk/">
+        <img src="/assets/image/github-logo copy.png" alt="image of github" style="object-position:"/>
+      </a>
+      <p>Go to github</p>
+      <br>
+    </div>
+    <!-- IF (we are starting a new row) --><!-- IF (one row is completed, reset colIndex) --><!-- ENDIF -->
+
+    <div class="post-categorypage-table-cell">
+      <a href="/sitehttps://www.google.co.uk/">
+        <img src="/assets/image/github-logo copy.png" alt="image of github" style="object-position:"/>
+      </a>
+      <p>Go to github</p>
+      <br>
+    </div>
+
+    <!-- close the div if the page table col--></div>
+  </div>
+
+  </div>
+
+
+  
+
+</div>
+</div>
+
+      <!-- Add footerhere -->
+      <footer>
+        <div>
+          <p id="copyright"></p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      //Set copyright date
+      var currentDate = new Date();
+      var year = currentDate.getFullYear();
+      document.getElementById(
+        "copyright"
+      ).textContent = `©${year} by ${"Lee Kee Shen"}`;
+
+      //Assign onclick event for menu button for mobile
+      var openNavBar = document.getElementById("nav-mobile-menu-button");
+      openNavBar.addEventListener("click", openNavBar_TransitionStart);
+
+      function openNavBar_TransitionStart() {
+        //show mobile list panel
+        var element = document.getElementById("nav-mobile-list");
+        element.style.right = "0%"; // new position cause the mobile list is fat and pushes the element to the right
+        element.style.width = "50vw";
+
+        //show the hidden close menu button
+        var closeMenuButton = document.getElementById("nav-mobile-close-menu-button");
+        closeMenuButton.style.opacity = "0.5"; 
+        closeMenuButton.style.zIndex = "1";//Put infront of all the other uis (but not infront of the menu list since its zindex = 2)
+      }
+
+
+      //Assign onclick event for close menu button for mobile
+      var closeNavMenuButton = document.getElementById("nav-mobile-close-menu-button");
+      closeNavMenuButton.addEventListener("click", closeNavBar_TransitionStart);
+
+      function closeNavBar_TransitionStart() {
+        //hide mobile list panel
+        var element = document.getElementById("nav-mobile-list");
+        element.style.right = "-50%";
+
+        //hide menu button
+        var closeMenuButton = document.getElementById("nav-mobile-close-menu-button");
+        closeMenuButton.style.opacity = "0";
+
+        closeMenuButton.addEventListener('transitionend',closeNavBar_TransitionEnd,{once:true})
+      }
+      
+      function closeNavBar_TransitionEnd() {
+        var closeMenuButton = document.getElementById("nav-mobile-close-menu-button");
+        closeMenuButton.style.zIndex = "-10";//Put behind of all the other uis 
+      }
+
+
+
+    </script>
+  </body>
+</html>

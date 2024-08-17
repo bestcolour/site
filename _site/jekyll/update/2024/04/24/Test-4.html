@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lks</title>
+    <link rel="stylesheet" href=/site/assets/css/main.css>
+  </head>
+  <body>
+    <div>
+      <!-- Mobile version of navbar -->
+      <nav class="nav-mobile">
+        <button id="nav-mobile-menu-button">
+          <!-- THese are the three bars that makes the 'hamburgers' -->
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+
+        <div id="nav-mobile-list">
+          <ul>
+            
+            <li class="">
+              <a href="/site/"> About </a>
+            </li>
+            
+            <li class="">
+              <a href="/site/projects/"> Projects </a>
+            </li>
+            
+            <li class="">
+              <a href="/site/portfolio/"> Portfolio </a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <button id="nav-mobile-close-menu-button"></button>
+      </nav>
+
+      <!-- Dekstop version of navbar -->
+      <nav class="col-12 col-s-12 nav-desktop">
+        <ul>
+          
+          <li class="">
+            <a href="/site/"> About </a>
+          </li>
+          
+          <li class="">
+            <a href="/site/projects/"> Projects </a>
+          </li>
+          
+          <li class="">
+            <a href="/site/portfolio/"> Portfolio </a>
+          </li>
+          
+        </ul>
+      </nav>
+
+      <div  id="content-wrapper"><style>
+  h1 {
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+  .basic-page-wrapper
+  {
+    background-color: azure;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    padding-left: 2.5vw;
+    padding-right: 2.5vw;
+  }
+</style>
+<div class="basic-page-wrapper" style="text-align:;">
+    <h1>Test 4</h1>
+    <div>
+      <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run <code class="language-plaintext highlighter-rouge">jekyll serve</code>, which launches a web server and auto-regenerates your site when a file is updated.</p>
+
+<p>Jekyll requires blog post files to be named according to the following format:</p>
+
+<p><code class="language-plaintext highlighter-rouge">YEAR-MONTH-DAY-title.MARKUP</code></p>
+
+<p>Where <code class="language-plaintext highlighter-rouge">YEAR</code> is a four-digit number, <code class="language-plaintext highlighter-rouge">MONTH</code> and <code class="language-plaintext highlighter-rouge">DAY</code> are both two-digit numbers, and <code class="language-plaintext highlighter-rouge">MARKUP</code> is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+
+<p>Jekyll also offers powerful support for code snippets:</p>
+
+<figure class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="k">def</span> <span class="nf">print_hi</span><span class="p">(</span><span class="nb">name</span><span class="p">)</span>
+  <span class="nb">puts</span> <span class="s2">"Hi, </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">"</span>
+<span class="k">end</span>
+<span class="n">print_hi</span><span class="p">(</span><span class="s1">'Tom'</span><span class="p">)</span>
+<span class="c1">#=&gt; prints 'Hi, Tom' to STDOUT.</span></code></pre></figure>
+
+<p>Check out the <a href="https://jekyllrb.com/docs/home">Jekyll docs</a> for more info on how to get the most out of Jekyll. File all bugs/feature requests at <a href="https://github.com/jekyll/jekyll">Jekyll’s GitHub repo</a>. If you have questions, you can ask them on <a href="https://talk.jekyllrb.com/">Jekyll Talk</a>.</p>
+
+
+    </div>
+</div>
+</div>
+
+      <!-- Add footerhere -->
+      <footer>
+        <div>
+          <p id="copyright"></p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      //Set copyright date
+      var currentDate = new Date();
+      var year = currentDate.getFullYear();
+      document.getElementById(
+        "copyright"
+      ).textContent = `©${year} by ${"Lee Kee Shen"}`;
+
+      //Assign onclick event for menu button for mobile
+      var openNavBar = document.getElementById("nav-mobile-menu-button");
+      openNavBar.addEventListener("click", openNavBar_TransitionStart);
+
+      function openNavBar_TransitionStart() {
+        //show mobile list panel
+        var element = document.getElementById("nav-mobile-list");
+        element.style.right = "0%"; // new position cause the mobile list is fat and pushes the element to the right
+        element.style.width = "50vw";
+
+        //show the hidden close menu button
+        var closeMenuButton = document.getElementById("nav-mobile-close-menu-button");
+        closeMenuButton.style.opacity = "0.5"; 
+        closeMenuButton.style.zIndex = "1";//Put infront of all the other uis (but not infront of the menu list since its zindex = 2)
+      }
+
+
+      //Assign onclick event for close menu button for mobile
+      var closeNavMenuButton = document.getElementById("nav-mobile-close-menu-button");
+      closeNavMenuButton.addEventListener("click", closeNavBar_TransitionStart);
+
+      function closeNavBar_TransitionStart() {
+        //hide mobile list panel
+        var element = document.getElementById("nav-mobile-list");
+        element.style.right = "-50%";
+
+        //hide menu button
+        var closeMenuButton = document.getElementById("nav-mobile-close-menu-button");
+        closeMenuButton.style.opacity = "0";
+
+        closeMenuButton.addEventListener('transitionend',closeNavBar_TransitionEnd,{once:true})
+      }
+      
+      function closeNavBar_TransitionEnd() {
+        var closeMenuButton = document.getElementById("nav-mobile-close-menu-button");
+        closeMenuButton.style.zIndex = "-10";//Put behind of all the other uis 
+      }
+
+
+
+    </script>
+  </body>
+</html>

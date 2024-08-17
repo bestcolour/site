@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lks</title>
+    <link rel="stylesheet" href=/site/assets/css/main.css>
+  </head>
+  <body>
+    <div>
+      <!-- Mobile version of navbar -->
+      <nav class="nav-mobile">
+        <button id="nav-mobile-menu-button">
+          <!-- THese are the three bars that makes the 'hamburgers' -->
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+
+        <div id="nav-mobile-list">
+          <ul>
+            
+            <li class="">
+              <a href="/site/"> About </a>
+            </li>
+            
+            <li class=" nav-active ">
+              <a href="/site/projects/"> Projects </a>
+            </li>
+            
+            <li class="">
+              <a href="/site/portfolio/"> Portfolio </a>
+            </li>
+            
+          </ul>
+        </div>
+
+        <button id="nav-mobile-close-menu-button"></button>
+      </nav>
+
+      <!-- Dekstop version of navbar -->
+      <nav class="col-12 col-s-12 nav-desktop">
+        <ul>
+          
+          <li class="">
+            <a href="/site/"> About </a>
+          </li>
+          
+          <li class=" nav-active ">
+            <a href="/site/projects/"> Projects </a>
+          </li>
+          
+          <li class="">
+            <a href="/site/portfolio/"> Portfolio </a>
+          </li>
+          
+        </ul>
+      </nav>
+
+      <div  id="content-wrapper"><!-- This is the page which displays the a table of recent posts -->
+
+<div
+  class="post-mainpage-basic-page-wrapper"
+  style="text-align:;"
+>
+  <h1>Projects</h1>
+
+  <div> <div> The place where I document my experiences/thoughts behind my projects. <br> <br> <br>
+<h3>Latest projects</h3> <hr> <br> <br> </div> </div>
+
+  <div class="post-mainpage-mobile">
+
+    <!-- Doing only one cell for mobile -->
+    
+    <div class="post-mainpage-table-cell">
+      <a href="/site/projects/polytechnic-games/haulaway-post">
+        <img src="https://raw.githubusercontent.com/bestcolour/Website/main/assets/image/HaulAway/Screenshot3.jpg" alt="Haul Away Poster" />
+      </a>
+      <p>Haul Away!</p>
+      <br />
+    </div>
+    
+
+  </div>
+
+  <div class="post-mainpage-desktop">
+    <!-- IF Number of latest post is set > 0 --><div class="post-mainpage-table">
+      <!-- Make sure that the post is not a date that has yet to occur yet else it wont show --><!-- Open the row div for the very first index -->
+      
+
+        <!-- IF (the number of posts to be displayed in the table exceeds) --><!-- ENDIF -->
+
+        <!-- IF (we are starting a new row) --><div class="post-mainpage-tablerow"><!-- IF (one row is completed, reset colIndex and increment rowIndex) --><!-- ENDIF -->
+
+
+        <!-- Add a post url and thumbnail -->
+        <div class="post-mainpage-table-cell">
+          <a href="/site/projects/polytechnic-games/haulaway-post">
+            <img src="https://raw.githubusercontent.com/bestcolour/Website/main/assets/image/HaulAway/Screenshot3.jpg" alt="Haul Away Poster" />
+          </a>
+          <p>Haul Away!</p>
+          <br />
+        </div>
+
+        <!-- IF (the number of posts to be displayed in the table exceeds) --><!-- ENDIF -->
+
+        <!-- IF (we are starting a new row) --><!-- IF (one row is completed, reset colIndex and increment rowIndex) --><!-- ENDIF -->
+
+
+        <!-- Add a post url and thumbnail -->
+        <div class="post-mainpage-table-cell">
+          <a href="/site/jekyll/update/2024/04/24/Test-4.html">
+            <img src="/assets/image/unity-tab-square-white.png" alt="unity-logo" />
+          </a>
+          <p>Test 4</p>
+          <br />
+        </div>
+
+        <!-- IF (the number of posts to be displayed in the table exceeds) --><!-- ENDIF -->
+
+        <!-- IF (we are starting a new row) --><!-- IF (one row is completed, reset colIndex and increment rowIndex) --><!-- ENDIF -->
+
+
+        <!-- Add a post url and thumbnail -->
+        <div class="post-mainpage-table-cell">
+          <a href="/site/jekyll/update/2024/04/24/Test-3.html">
+            <img src="/assets/image/unity-tab-square-white.png" alt="unity-logo" />
+          </a>
+          <p>Test 3</p>
+          <br />
+        </div>
+
+        <!-- IF (the number of posts to be displayed in the table exceeds) --><!-- ENDIF -->
+
+        <!-- IF (we are starting a new row) --><!-- IF (one row is completed, reset colIndex and increment rowIndex) --></div>
+
+          <!-- Close the div tag and start a new row tag --><!-- If the table size (row x col) is exceeded, break --><!-- ENDIF -->
+
+        <!-- Else, we open the new table row div to start a new row -->
+        <div class="post-mainpage-tablerow"><!-- ENDIF -->
+
+
+        <!-- Add a post url and thumbnail -->
+        <div class="post-mainpage-table-cell">
+          <a href="/site/jekyll/update/2024/04/24/Test-2.html">
+            <img src="/assets/image/unity-tab-square-white.png" alt="unity-logo" />
+          </a>
+          <p>Test 2</p>
+          <br />
+        </div>
+
+        <!-- IF (the number of posts to be displayed in the table exceeds) --><!-- ENDIF -->
+
+        <!-- IF (we are starting a new row) --><!-- IF (one row is completed, reset colIndex and increment rowIndex) --><!-- ENDIF -->
+
+
+        <!-- Add a post url and thumbnail -->
+        <div class="post-mainpage-table-cell">
+          <a href="/site/jekyll/update/2024/04/23/Test-to-enter-a-postpage.html">
+            <img src="/assets/image/unity-tab-square-white.png" alt="unity-logo" />
+          </a>
+          <p>Test to enter a post page</p>
+          <br />
+        </div>
+    </div></div>
+
+  <!-- I need this extra div to make sure that the div with post-mainpage-desktop class closes properly and leave the <p><br />
+<br /></p>
+
+<hr />
+<p><br /></p>
+<h3 id="polytechnic-games">Polytechnic Games</h3>
+
+<p><a href="/site/projects/polytechnic-games/">
+<img src="https://raw.githubusercontent.com/bestcolour/Website/main/assets/image/HaulAway/Screenshot3.jpg" alt-text="Polytechnic Final Year Project" width="100%" />
+</a></p>
+
+ out of it -->
+</div>
+  <p><br />
+<br /></p>
+
+<hr />
+<p><br /></p>
+<h3 id="polytechnic-games">Polytechnic Games</h3>
+
+<p><a href="/site/projects/polytechnic-games/">
+<img src="https://raw.githubusercontent.com/bestcolour/Website/main/assets/image/HaulAway/Screenshot3.jpg" alt-text="Polytechnic Final Year Project" width="100%" />
+</a></p>
+
+
+</div>
+</div>
+
+      <!-- Add footerhere -->
+      <footer>
+        <div>
+          <p id="copyright"></p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      //Set copyright date
+      var currentDate = new Date();
+      var year = currentDate.getFullYear();
+      document.getElementById(
+        "copyright"
+      ).textContent = `©${year} by ${"Lee Kee Shen"}`;
+
+      //Assign onclick event for menu button for mobile
+      var openNavBar = document.getElementById("nav-mobile-menu-button");
+      openNavBar.addEventListener("click", openNavBar_TransitionStart);
+
+      function openNavBar_TransitionStart() {
+        //show mobile list panel
+        var element = document.getElementById("nav-mobile-list");
+        element.style.right = "0%"; // new position cause the mobile list is fat and pushes the element to the right
+        element.style.width = "50vw";
+
+        //show the hidden close menu button
+        var closeMenuButton = document.getElementById("nav-mobile-close-menu-button");
+        closeMenuButton.style.opacity = "0.5"; 
+        closeMenuButton.style.zIndex = "1";//Put infront of all the other uis (but not infront of the menu list since its zindex = 2)
+      }
+
+
+      //Assign onclick event for close menu button for mobile
+      var closeNavMenuButton = document.getElementById("nav-mobile-close-menu-button");
+      closeNavMenuButton.addEventListener("click", closeNavBar_TransitionStart);
+
+      function closeNavBar_TransitionStart() {
+        //hide mobile list panel
+        var element = document.getElementById("nav-mobile-list");
+        element.style.right = "-50%";
+
+        //hide menu button
+        var closeMenuButton = document.getElementById("nav-mobile-close-menu-button");
+        closeMenuButton.style.opacity = "0";
+
+        closeMenuButton.addEventListener('transitionend',closeNavBar_TransitionEnd,{once:true})
+      }
+      
+      function closeNavBar_TransitionEnd() {
+        var closeMenuButton = document.getElementById("nav-mobile-close-menu-button");
+        closeMenuButton.style.zIndex = "-10";//Put behind of all the other uis 
+      }
+
+
+
+    </script>
+  </body>
+</html>

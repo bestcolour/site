@@ -1,1 +1,0 @@
-The Pages folder contains all the jsx rendering for rendering pages. Each page usually more than one modules
