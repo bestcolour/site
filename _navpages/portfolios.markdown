@@ -7,9 +7,6 @@ title:  "Portfolio"
 date:   2024-04-24
 # categories: jekyll update
 
-thumbnail: "https://raw.githubusercontent.com/bestcolour/site/assets/image/unity-tab-square-white.png"
-alt-text: "unity-logo"
-
 content_before_table: "
 <div> 
 In here I organise my various portfolios for different roles
