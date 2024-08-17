@@ -5,7 +5,7 @@ date:   2024-04-29
 permalink: "/projects/polytechnic-games/haulaway-post"
 # categories: jekyll update
 
-thumbnail: "https://raw.githubusercontent.com/bestcolour/site/new-site/assets/image/HaulAway/Screenshot3.jpg"
+thumbnail: "https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Screenshot3.jpg"
 alt-text: "Haul Away Poster"
 ---
 

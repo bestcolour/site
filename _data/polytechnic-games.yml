@@ -1,18 +1,18 @@
 - url: "/projects/polytechnic-games/haulaway-post"
-  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/new-site/assets/image/HaulAway/Poster.jpg"
+  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Poster.jpg"
   alt-text: "image of github"
   title: "Haul Away!"
   image-offset: 50% 0%
 
 
 - url: "https://www.google.co.uk/"
-  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/new-site/assets/image/github-logo.png"
+  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/master/assets/image/github-logo.png"
   alt-text: "image of github"
   title: "Go to github"
 
   
 - url: "https://www.google.co.uk/"
-  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/new-site/assets/image/github-logo.png"
+  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/master/assets/image/github-logo.png"
   alt-text: "image of github"
   title: "Go to github"
 

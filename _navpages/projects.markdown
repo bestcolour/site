@@ -32,7 +32,7 @@ table_col: 3
 ### Polytechnic Games
 
 <a href="{{site.baseurl}}/projects/polytechnic-games/">
-<img src="https://raw.githubusercontent.com/bestcolour/site/new-site/assets/image/HaulAway/Screenshot3.jpg" alt-text="Polytechnic Final Year Project" width="100%"/>
+<img src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Screenshot3.jpg" alt-text="Polytechnic Final Year Project" width="100%"/>
 </a>
 
 
