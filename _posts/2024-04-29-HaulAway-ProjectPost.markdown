@@ -12,6 +12,8 @@ alt-text: "Haul Away Poster"
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/xUZIs_LsrbQ?si=5WPy49XN0inDt9e1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<br>
+<br>
 ## Game Description
 ----
 <br>
@@ -20,18 +22,30 @@ Haul Away is a local co-op game, of up to 4 players, where the players have to w
 <br>
 <br>
 
-## Game Description
+## Game Features
 ----
 <br>
-- *PC*
+<ul>
+<li>
+ PC
+</li>
+<li>
+ Casual Party Game
+</li>
+<li>
+ Local Multiplayer
+</li>
+<li>
+ Ship Management
+</li>
+<li>
+ Cooperative Gameplay
+</li>
 
-- *Casual Party Game*
 
-- *Local Multiplayer*
 
-- *Ship Management*
 
-- *Co-operative Gameplay*
+</ul>
 
 
 
@@ -61,3 +75,16 @@ From this experience, I have learnt how to prototype quickly when making a game 
 - *Player Controller*
 - *Bouyancy Physics*
 - *UI & UX Design*
+
+
+<br>
+<br>
+## Game Images
+----
+<br>
+
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Poster.jpg"/>
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Screenshot1.jpg"/>
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Screenshot2.jpg"/>
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Screenshot3.jpg"/>
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Screenshot4.jpg"/>
