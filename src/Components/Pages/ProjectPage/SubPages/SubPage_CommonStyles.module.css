@@ -1,0 +1,32 @@
+.heroParent
+{
+    display: flex;
+}
+
+.topBotPadding
+{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+/* =============== Begin Side By Side Classes ====================== */
+
+/* ----------- Mobile ------------ */
+.sideBySideDescriptionRoot
+{
+    width: 100%;
+}
+
+/* ----------- Tablet & Desktop ---------------- */
+
+@media only screen and (min-width:600px)
+{
+    .sideBySideDescriptionRoot
+    {
+        width: 50%;
+        padding-left: 5%;
+    }
+}
+
+
+/* =============== End Side By Side Classes ====================== */

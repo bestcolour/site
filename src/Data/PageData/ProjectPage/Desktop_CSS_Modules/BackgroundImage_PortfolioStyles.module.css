@@ -1,0 +1,23 @@
+/* This is for desktop/tablet version of the portfolio page */
+.zigZag_Subject
+{
+    background-size:contain;
+    background-repeat:no-repeat;
+    background-position: center center;
+    filter: drop-shadow( -.5em .5em .5em #00000075 );
+
+    /* Height & Width */
+    height:100%;
+    width:100%;
+}
+
+/* This is for mobile version of portfolio page */
+.sideBySide_Subject
+{
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: top center;
+
+    height:10em;
+    width:100%;
+}

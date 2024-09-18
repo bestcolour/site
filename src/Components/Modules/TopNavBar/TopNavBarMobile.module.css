@@ -1,0 +1,107 @@
+#mobileRoot
+{
+   /* Flex box */
+   display: flex;
+   justify-content: flex-end;
+}
+
+#hamburgerButton
+{
+    /* Color */
+    background-color: #393939;
+
+    /* Position */
+    position: fixed;
+
+    /* Dimensions */
+    width: 3em;
+    height: 3em;
+    z-index: 9;
+
+    /* Flex box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+} 
+
+/* ====================== Link Panel ============================ */
+/* Link panel is essentially the black colour panel which holds all of the links to the site's other pages. I toggle the panel by changing the className of the div which has the linkPanel id */
+#linkPanel
+{
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Color */
+    background-color: #393939;
+    z-index: 10;
+
+    /* Position */
+    position: fixed;
+
+    /* Dimension */
+    width: 50%;
+    height: 100vh;
+
+    /* Animation */
+    transition:left .5s;
+    -webkit-transition: left .5s;;
+    -moz-transition:left .5s;;
+    -o-transition: left .5s;;
+}
+
+.linkPanelInactive
+{
+    left: 100%;
+}
+
+.linkPanelActive
+{
+    left: 50%;
+}
+
+.linkElement
+{
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+    font-size: larger;
+}
+
+
+/* ====================== Return Panel ============================ */
+/* Return panel is essentially a transparent panel which is underneath the LinkPanel but over the other contents so that when pressed, you can hide the links panel */
+
+#returnPanel
+{
+    background-color: black;
+
+    /* Position */
+    position: fixed;
+
+
+    /* Dimension */
+    width: 100vw;
+    height: 100vh;
+
+   /* Animation */
+   transition:all .5s ease-in-out;
+   -webkit-transition:all .5s ease-in-out;
+   -moz-transition:all .5s ease-in-out;
+   -o-transition:all .5s ease-in-out;
+}
+
+.returnPanelInactive
+{
+    opacity: 0;
+    z-index: -1;
+}
+
+.returnPanelActive
+{
+    opacity: .5;
+    z-index: 9;
+}

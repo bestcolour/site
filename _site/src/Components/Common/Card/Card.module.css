@@ -1,0 +1,109 @@
+.card
+{
+    /* Flex */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+
+    /* Shape */
+    border-radius : 5%;
+
+    /* Drop Shadow */
+    box-shadow: 2px 5px 18px #00000075;
+
+}
+
+/* Top holder holds the icon and Title of the card */
+.top
+{
+    /* Flex */
+    display: flex;
+    justify-content: flex-end;
+
+    margin: 0.5em;
+
+}
+
+.icon
+{
+   /* Size */
+   width: 2.5em;
+   height: 2.5em;
+
+    /* Padding & Margin */
+    background-size:  contain;
+
+    /* Looks */
+    border-radius: 50%;
+    z-index: 2;
+}
+
+
+.middle
+{
+    /* Position */
+    /* The position of the middle holder must be the same position as the top so offset the position of middle to whatever the height of the top holder has */
+    position: relative;
+    bottom: 3.5em;
+}
+
+.cardImage
+{
+    /* SHape must be the same as the card's shape */
+    border-radius : 5%;
+}
+
+/* Overlay renders over the top & middle elements to show the descriptions and title of the card when hovered over*/
+.overlay
+{
+    /* Flex */
+    display:flex;
+    flex-direction: column;
+
+    /* Position & Size */
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    
+    /* Looks */
+    z-index:3;
+    background-color: black;
+    -webkit-filter: opacity(0);
+    filter: opacity(0);
+}
+
+.overlay:hover
+{
+    /* Looks */
+    z-index: 3;
+    -webkit-filter: opacity(0.75);
+    filter: opacity(0.75);
+    /* SHape must be the same as the card's shape */
+    border-radius : 5%;
+
+    /* Cursor Looks */
+    cursor:pointer;
+}
+
+.overlay *
+{
+    /* Looks */
+    color: whitesmoke !important;
+}
+
+.overlay h1
+{
+    /* Margin */
+    margin-left: 10%;
+    margin-top: 10%;
+
+    /* Font */
+    font-size: x-large;
+}
+
+.overlay p
+{
+     /* Margin */
+     margin-left: 10%;
+     margin-top: 15%;
+}

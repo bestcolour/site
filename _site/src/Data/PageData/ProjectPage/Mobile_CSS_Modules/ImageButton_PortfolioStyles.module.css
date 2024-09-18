@@ -1,0 +1,22 @@
+/* This file will hold the styling css for the mobile image buttons on the portfolio page */
+
+.backgroundImageElement
+{
+    width: 100%;
+    height: 10em;
+
+    /* Bg Image styling*/
+    background-position: center center;
+    background-size: cover;
+
+    /* Rounding corners (bottom corners only) */
+    border-radius: 0 0 7.5% 7.5%;
+}
+
+
+/* Special case for portraits :P */
+.haulAwayImageElement
+{
+    background-position: center top !important;
+}
+

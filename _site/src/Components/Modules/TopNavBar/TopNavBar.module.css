@@ -1,0 +1,28 @@
+#navBarDesktopRoot
+{
+    display:none;
+}
+
+/* Only show desktop navbar when the screen is desktop px wide */
+@media only screen and (min-width: 1024px)
+{
+   #navBarDesktopRoot
+   {
+       display:initial;
+   }
+}
+
+
+#navBarMobileRoot
+{
+    display:initial;
+}
+
+/* Only hide mobile navbar when the desktop px wide */
+@media only screen and (min-width: 1024px)
+{
+   #navBarMobileRoot
+   {
+       display:none;
+   }
+}

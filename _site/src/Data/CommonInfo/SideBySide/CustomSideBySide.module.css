@@ -1,0 +1,30 @@
+.alwaysHorizontal_Flipped
+{
+    flex-direction: row-reverse;
+}
+
+.alwaysHorizontal_NotFlipped
+{
+    flex-direction: row;
+}
+
+.alwaysHorizontal_HalfWidth
+{
+    width: 50%;
+}
+
+.alwaysVertical_Flipped
+{
+    flex-direction: column-reverse;
+}
+
+.alwaysVertical_NotFlipped
+{
+    flex-direction: column;
+}
+
+.alwaysVertical_FullWidth
+{
+    width: 100%;
+}
+
