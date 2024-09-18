@@ -1,0 +1,21 @@
+=== WhatsApp bot ===
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A_TMdPxeB-4?si=U9B7tL0B5S4YzgvR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+=== Drag and Pull ===
+<iframe width="560" height="315" src="https://www.youtube.com/embed/V__s4KA6_-4?si=JaugxpERWEWqR5tM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+=== Hangry Guardian ===
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o2pJGXzi9xI?si=rh-3ebJ8mEcgKupH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+=== What If ===
+<iframe width="560" height="315" src="https://www.youtube.com/embed/asZAn5tdHQ4?si=-kcN6BPc0XcYGZHi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+=== Spacerunner ===
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ww3tBJiOSO4?si=jd0xIvWqCbub_EJQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+=== Auto Subtitling ====
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4k4K56TpdaA?si=ONR1EpUtNTb4cMXP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+=== LEM2 ====
+<iframe width="560" height="315" src="https://www.youtube.com/embed/95Zdikx_kzE?si=bAp5vLhfOGsZp-AU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
