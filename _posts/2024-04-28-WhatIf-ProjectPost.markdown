@@ -2,6 +2,7 @@
 layout: post
 title:  "What If"
 date:   2024-04-28
+permalink: "/projects/polytechnic-games/whatif-post"
 # categories: jekyll update
 
 thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/WhatIf/Title.jpg"

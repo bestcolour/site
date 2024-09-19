@@ -3,6 +3,8 @@ layout: post
 title:  "Whatsapp Bot"
 date:   2023-03-01
 # categories: jekyll update
+permalink: "/projects/tools-and-scripts/whatsappbot-post"
+
 
 thumbnail: "https://raw.githubusercontent.com/bestcolour/site/master/assets/image/WhatsAppBot/help.PNG"
 alt-text: "whatsapp bot help"
@@ -10,6 +12,16 @@ alt-text: "whatsapp bot help"
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/A_TMdPxeB-4?si=U9B7tL0B5S4YzgvR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<br>
+<br>
+<a href="https://github.com/bestcolour/Python-Whatsappbot" target="_blank">
+<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Images/Logos/GithubLogo.jpg" 
+         alt="github icon" 
+         style="width: 50px; height: auto; border: 2px solid #000; border-radius: 10px; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5); margin: 0 auto; display: block;">
+</a>
+
+
+<!-- [![github icon](https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Images/Logos/GithubLogo.jpg)](https://github.com/bestcolour/Python-Whatsappbot) -->
 <br>
 <br>
 ## Project Description
