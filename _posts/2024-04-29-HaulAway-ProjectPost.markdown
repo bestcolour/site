@@ -14,7 +14,7 @@ alt-text: "Haul Away Poster"
 
 <br>
 <br>
-## Game Description
+## Description
 ----
 <br>
 Haul Away is a local co-op game, of up to 4 players, where the players have to work together to manage a boat and complete objectives on the high seas. Objectives can range from delivering cargo, fighting pirates or visiting locations!
@@ -22,39 +22,39 @@ Haul Away is a local co-op game, of up to 4 players, where the players have to w
 <br>
 <br>
 
-## Game Features
-----
+## Features
+***
 <br>
-<ul>
-<li>
- PC
-</li>
-<li>
- Casual Party Game
-</li>
-<li>
- Local Multiplayer
-</li>
-<li>
- Ship Management
-</li>
-<li>
- Cooperative Gameplay
-</li>
 
-
-
-
-</ul>
-
-
+- PC
+- Casual Party Game
+- Local Multiplayer
+- Ship Management
+- Cooperative Gameplay
 
 <br>
 <br>
 ## Project Description
-----
+***
 <br>
-This project was accomplished with 5 other people whom includes <a href="https://enriquecmarcelo.github.io/" target="_blank">Enrique</a> and <a href="https://kaixingnicholas.wixsite.com/gdportfolio" target="_blank">Nicholas</a>.
+
+
+**Language:**
+C#
+
+**Software:**
+Unity Game Engine
+
+**Role:**
+Game Systems & Architecture, Player & Gameplay Mechanics, Bouyancy Physics, UI & UX Design
+
+<br>
+
+***
+
+<br>
+
+This project was accomplished with 5 other people whom includes [Enrique](https://enriquecmarcelo.github.io/) and [Nicholas](https://kaixingnicholas.wixsite.com/gdportfolio).
 
 <br>
 
@@ -67,19 +67,7 @@ From this experience, I have learnt how to prototype quickly when making a game 
 <br>
 <br>
 
-## Roles and Responsibilities
-----
-<br>
-- *Game Systems & Architecture*
-- *Gameplay Mechanics*
-- *Player Controller*
-- *Bouyancy Physics*
-- *UI & UX Design*
-
-
-<br>
-<br>
-## Game Images
+## Images
 ----
 <br>
 
