@@ -48,6 +48,10 @@ A whatsapp bot written in python to help send scheduled messages to a group or p
 
 ## Project Description
 ----
+
+**Programming Language**
+Python
+
 <br>
 This Whatsapp bot is a personal project which I have developed during my time in National Service. It was developed to send reminders on whatsapp through a bot in a timely manner for my family and their friends.
 <br>
