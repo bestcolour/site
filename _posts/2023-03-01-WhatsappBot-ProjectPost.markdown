@@ -14,6 +14,8 @@ alt-text: "whatsapp bot help"
 
 <br>
 <br>
+
+<!-- Github button -->
 <a href="https://github.com/bestcolour/Python-Whatsappbot" target="_blank">
 <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Images/Logos/GithubLogo.jpg" 
          alt="github icon" 
@@ -21,10 +23,10 @@ alt-text: "whatsapp bot help"
 </a>
 
 
-<!-- [![github icon](https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Images/Logos/GithubLogo.jpg)](https://github.com/bestcolour/Python-Whatsappbot) -->
 <br>
 <br>
-## Project Description
+
+## Description
 ----
 <br>
 A whatsapp bot written in python to help send scheduled messages to a group or phone number.
@@ -32,24 +34,23 @@ A whatsapp bot written in python to help send scheduled messages to a group or p
 <br>
 <br>
 
-## Project Features
+## Features
 ----
 <br>
-<ul>
-  <li>Send messages at specific times and date</li>
-  <li>Messages can be repeatedly sent at a specific interval</li>
-  <li>Has a control console for greater control of the bot</li>
-  <li>Able to send to phone numbers</li>
-</ul>
+- Send messages at specific times and date
+- Messages can be repeatedly sent at a specific interval
+- Has a control console for greater control of the bot
+- Able to send to phone numbers
 
 <br>
 <br>
 
 
-## Project Description
+## Reflection
 ----
+<br>
 
-**Programming Language**
+**Language Used:**
 Python
 
 <br>
@@ -67,7 +68,7 @@ All in all it was worth while to make this bot as it seems to be very useful for
 
 <br>
 <br>
-## Project Images
+## Images
 ----
 <br>
 

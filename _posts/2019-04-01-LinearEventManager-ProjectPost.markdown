@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Hangry Guardians"
+title:  "Linear Event Manager"
 date:   2019-04-01
-permalink: "/projects/polytechnic-games/hangryguardian-post"
+permalink: "/projects/polytechnic-games/lineareventmanager-post"
 # categories: jekyll update
 
 thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Tunel%26Ice_edited.jpg"
-alt-text: "HangryGuardian"
+alt-text: "Linear Event Manager"
 ---
 
 
@@ -18,13 +18,9 @@ alt-text: "HangryGuardian"
 <br>
 
 ## Description
-----
+***
 <br>
-Hangry Guardians is a simple resource matching puzzle game about delivering offerings to mythical guardians.
-However, each Guardian has a different preference and you can only deliver the offerings to them within a limited number of moves! Every level has 3 Stars to be achieved, each being progressively challenging to obtain.
-Can you obtain all the Stars?
-
-
+Linear Effect Manager 2 (LEM 2) is the second iteration of <a href={"https://bestcolour.itch.io/linear-event-manager"} target="_blank">LEM 1</a>. LEM 2 is a node editor tool created in Unity and C# that makes blocks of code ,which executes an effect, easy to plan and reuse. This is specially useful for Tutorial events or UI transition events.
 <br>
 <br>
 
@@ -62,7 +58,7 @@ One of the most challenging aspect of this project was to provide information to
 
 <br>
 
-This allows me to slowly introduce the mechanics without overwhelming the player. This led to an idea for [Linear Effect Manager]({{site.baseurl}}projects/polytechnic-games/lineareventmanager-post) which allows me to sequence events in order to make Tutorial making a lot easier.
+This allows me to slowly introduce the mechanics without overwhelming the player. This led to an idea for [Linear Effect Manager]({{site.baseurl}}/projects/polytechnic-games/haulaway-post) which allows me to sequence events in order to make Tutorial making a lot easier.
 
 <br>
 
