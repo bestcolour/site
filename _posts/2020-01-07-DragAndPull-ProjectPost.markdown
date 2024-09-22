@@ -73,11 +73,6 @@ After experiencing some phone games (like Angry Birds), I have learnt that the m
 
 <br>
 <br>
-
-
-
-<br>
-<br>
 ## Images
 ----
 <br>
