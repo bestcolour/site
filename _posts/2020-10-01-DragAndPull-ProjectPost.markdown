@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Linear<br>Event Manager"
+title:  "Drag & Pull"
 date:   2020-10-01
 permalink: "/projects/polytechnic-games/lineareventmanager-post"
 # categories: jekyll update
