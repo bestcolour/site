@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Linear Event Manager"
+title:  "Linear<br>Event Manager"
 date:   2020-10-01
 permalink: "/projects/polytechnic-games/lineareventmanager-post"
 # categories: jekyll update
@@ -10,7 +10,6 @@ alt-text: "Linear Event Manager"
 ---
 
 
-<!-- https://play.google.com/store/apps/details?id=com.ET.HangryGods&hl=en -->
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/95Zdikx_kzE?si=bAp5vLhfOGsZp-AU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
