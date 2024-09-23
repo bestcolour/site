@@ -3,7 +3,7 @@ layout: post
 title:  "Whatsapp Bot"
 date:   2023-03-01
 # categories: jekyll update
-permalink: "/projects/tools-and-scripts/whatsappbot-post"
+permalink: "/projects/coding-projects/whatsappbot-post"
 
 
 thumbnail: "https://raw.githubusercontent.com/bestcolour/site/master/assets/image/WhatsAppBot/help.PNG"

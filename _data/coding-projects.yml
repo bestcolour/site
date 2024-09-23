@@ -1,0 +1,17 @@
+- url: "/projects/coding-projects/lineareventmanager-post"
+  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/LEM/Title.jpg"
+  alt-text: "Linear Event Manager"
+  title: "Linear Event Manager"
+
+
+- url: "/projects/coding-projects/pythonautomation-post"
+  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/PythonAutomation/ExecuteHelp-1.jpg"
+  alt-text: "Python Automation"
+  title: "Python Automation"
+
+
+- url: "/projects/coding-projects/whatsappbot-post"
+  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/master/assets/image/WhatsAppBot/help.PNG"
+  alt-text: "Whatsapp Bot"
+  title: "Whatsapp Bot"
+

@@ -2,7 +2,7 @@
 layout: post
 title:  "Linear<br>Event Manager"
 date:   2020-10-01
-permalink: "/projects/polytechnic-games/lineareventmanager-post"
+permalink: "/projects/coding-projects/lineareventmanager-post"
 # categories: jekyll update
 
 thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/LEM/Title.jpg"

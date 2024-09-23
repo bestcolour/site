@@ -16,7 +16,7 @@ alt-text: "SpaceRunners"
 <br>
 <br>
 
-<!-- Github button -->
+<!-- Itchio button -->
 ## Download or More Info
 ***
 <br>

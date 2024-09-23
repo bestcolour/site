@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Haul Away!"
-date:   2024-04-29
+date:   2021-02-01
 permalink: "/projects/polytechnic-games/haulaway-post"
 # categories: jekyll update
 
@@ -18,6 +18,10 @@ alt-text: "Haul Away Poster"
 ----
 <br>
 Haul Away is a local co-op game, of up to 4 players, where the players have to work together to manage a boat and complete objectives on the high seas. Objectives can range from delivering cargo, fighting pirates or visiting locations!
+
+<br>
+
+It was awarded with a Bronze Medal in the [**Crowbar Awards 2021**](https://campaignbriefasia.com/2021/11/08/singapore-crowbar-awards-releases-finalists/) Category: D22 Digital/Mobile Games 
 
 <br>
 <br>
