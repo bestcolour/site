@@ -16,7 +16,7 @@ alt-text: "drag and pull menu"
 <br>
 <br>
 
-<!-- Github button -->
+<!-- Itch io button -->
 ## Download or More Info
 ***
 <br>
