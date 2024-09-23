@@ -28,9 +28,10 @@ table_col: 3
 <br>
 
 
----
 <br>
 ### Coding Projects
+---
+<br>
 
 <a href="{{site.baseurl}}/projects/coding-projects/">
 <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/WhatsAppBot/help.PNG" alt-text="Coding project" width="100%"/>
@@ -39,9 +40,10 @@ table_col: 3
 
 
 
----
 <br>
 ### Polytechnic Games
+---
+<br>
 
 <a href="{{site.baseurl}}/projects/polytechnic-games/">
 <img src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Screenshot3.jpg" alt-text="Polytechnic Final Year Project" width="100%"/>
