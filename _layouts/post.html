@@ -28,6 +28,8 @@ title-align: "left"
 </style>
 <div class="basic-page-wrapper" style="text-align:{{page.title-align}};">
     <h1>{{page.title}}</h1>
+    <i><h5>{{ page.date | date: "%d %B %Y" }}</h5></i>
+    <br/>
     <div>
       {{content}}
     </div>

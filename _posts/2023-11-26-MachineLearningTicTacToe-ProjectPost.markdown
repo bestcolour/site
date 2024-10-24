@@ -2,7 +2,7 @@
 layout: post
 title:  "Machine Learning<br>Tic Tac Toe"
 date:   2023-11-26
-permalink: "/projects/coding-projects/tictactoe-post"
+permalink: "/projects/coding-projects/MLtictactoe-post"
 # categories: jekyll update
 
 thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Tunel%26Ice_edited.jpg"
@@ -18,12 +18,14 @@ alt-text: "ML TicTacToe"
 ## Download or More Info
 ***
 <br>
-<a href="https://github.com/bestcolour/MachineLearning_TicTacToe_Uni_Y1T1/raw/refs/heads/main/tic_tac_toe.exe" target="_blank">
-<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Images/Logos/ItchiLogo.png" 
-         alt="exe icon" 
-         style="width: 50px; height: auto; border: 2px solid #FFC0CB; border-radius: 10px; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5); margin: 0 auto; display: block;">
-</a>
 
+<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
+    <a href="https://github.com/bestcolour/MachineLearning_TicTacToe_Uni_Y1T1" target="_blank">
+        <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Images/Logos/GithubLogo.jpg" 
+             alt="github icon" 
+             style="width: 50px; height: auto; border: 2px solid #000; border-radius: 10px; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);">
+    </a>
+</div>
 
 
 
@@ -31,7 +33,7 @@ alt-text: "ML TicTacToe"
 ----
 <br>
 
-
+This machine learning Tic Tac Toe game project done in my first year of my university days.
 
 
 
@@ -43,9 +45,11 @@ alt-text: "ML TicTacToe"
 ## Features
 ----
 <br>
-- Casual Gameplay
-- Puzzle with increasingly complex levels
-- 2D
+- Singleplayer
+- Two Player Mode
+- Different levels of AI difficulty
+- Logistic Regression Model
+- Minmax Algorithm
 
 
 
@@ -55,32 +59,54 @@ alt-text: "ML TicTacToe"
 ----
 <br>
 **Language Used:**
-C#
+C
 
 **Software Used:**
-Unity Game Engine
+[raylib](https://www.raylib.com/)
 
 **Role:**
-Gameplay Programmer, UI & UX Design, Tutorial Designer
-
-<br>
-Hangry Guardians is my first 2D mobile game client project I have ever done in my life. I worked together with 7 other people in my Polytechnic class to accomplish this game for the client, GameStartAsia.
+Logistic Regression machine learning AI
 
 <br>
 
-One of the most challenging aspect of this project was to provide information to the player about the rules of the game as there seems to be a lot of things happening on the screen. I designed the tutorial to hide certain UI elements in the early levels of each map.
+As part of my Programming Methodology module in year 1, our group embarked on our journey to develop a tic tac toe game. To make the AI stand out (and to grasp more marks), we decided to include a Machine Learning AI as part of the difficulty levels in the singleplayer mode of this game.
 
 <br>
 
-This allows me to slowly introduce the mechanics without overwhelming the player. This led to an idea for [Linear Effect Manager]({{site.baseurl}}projects/polytechnic-games/lineareventmanager-post) which allows me to sequence events in order to make Tutorial making a lot easier.
+
+The first challenge I had encountered was selecting the correct model to use for the AI. As different models had different prediction rates, I chose the Logistic Regression model to ensure that the AI was sufficiently easy to beat as compared to the Minmax algorithm was impossible to beat.
+
+<br>
+The next issue was handling the data and transforming it into something readable by the learning model.
 
 <br>
 
-Other notable things I have done are the visual effects which give the players feedback whenever they are doing something positive or negative.
-
-
+--insert pic of data set--
 
 <br>
+
+I did some digging around and found the idea of converting the data into an integer array, representing the current board's gamestate. These gamestates could then be assigned to a value to influence the model's next decision as "the next best choice".
+
+<br>
+
+After which, I started to train the model to generate its weights so that the Logistic Model could be a medium leveled opponent for the player.
+
+--insert code of training code ---
+
+<br>
+
+Then, I tested the model's accuracy in choosing "the next best move" and got the results:
+
+--insert code of results ---
+
+
+Finally I concluded the AI by writing its behaviour when it is playing its turn so that the rest of the team could merge this AI more easily into the main game:
+
+--insert code of main_machine_learning_ai ---
+
+
+//reflection
+As this is my first time handling machine learning related AIs. I felt hesitant with doing the 
 <br>
 
 
