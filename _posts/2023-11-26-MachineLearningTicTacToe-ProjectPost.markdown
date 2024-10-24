@@ -151,7 +151,7 @@ Finally I concluded the AI by writing its behaviour when it is playing its turn 
 <div class="code-block">
 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
 
-<textarea>
+<textarea readonly>
 // The file that communicates with the game system on the next move the AI is going to make.
 #include &lt;stdio.h&gt;
 #include "PrepareData/prepare_data.h"
