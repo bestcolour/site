@@ -148,10 +148,19 @@ Finally I concluded the AI by writing its behaviour when it is playing its turn 
 
 <br>
 
-<div class="code-block">
+<!-- <div class="code-block">
 <button class="copy-btn" onclick="copyCode(this)">Copy</button>
 
 <textarea readonly>
+hello world
+</textarea>
+ 
+</div> -->
+
+<div class="code-block">
+    <button class="code-block-copy-btn" onclick="code_block_copyCode(this)">Copy</button>
+    <div class="code-block-feedback"></div>
+    <pre class="code-block-content">
 // The file that communicates with the game system on the next move the AI is going to make.
 #include &lt;stdio.h&gt;
 #include "PrepareData/prepare_data.h"
@@ -289,12 +298,9 @@ void Decide_Next_Move(int gridSize, int currentBoard[gridSize][gridSize], int *x
     bestMoveToMake /= 3;
     *y = bestMoveToMake % gridSize;        // col index = remainder of cell index / gridSize (in this case gridSize = 3)
     *x = (bestMoveToMake - *y) / gridSize; // row index = (cell index - remainder) gridSize
-}
-
-</textarea>
- 
+}    
+</pre>
 </div>
-
 
 
 

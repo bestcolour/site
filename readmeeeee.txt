@@ -21,3 +21,27 @@ To create a new post, create a markdown file with the correct name format eg. "2
 
 
 
+=== Custom html ===
+
+--- Code blocks ---
+To ensure that the code are properly shown, make sure "<" and ">" characters are properly replaced in the code with "&lt;" and "&gt;" respectively.
+
+Eg.
+
+<!-- <div class="code-block">
+<button class="copy-btn" onclick="copyCode(this)">Copy</button>
+
+<textarea readonly>
+hello world
+</textarea>
+ 
+</div> -->
+
+<div class="code-block">
+    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+    <div class="code-block-feedback"></div>
+    <pre class="code-content">
+// The file that communicates with the game system on the next move the AI is going to make.
+#include &lt;stdio.h&gt;
+    </pre>
+</div>

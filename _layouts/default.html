@@ -54,17 +54,6 @@
   </div>
 
   <script>
-    //Set copyright date
-    var currentDate = new Date();
-    var year = currentDate.getFullYear();
-    document.getElementById(
-      "copyright"
-    ).textContent = `©${year} by ${"{{site.name}}"}`;
-
-    //Assign onclick event for menu button for mobile
-    var openNavBar = document.getElementById("nav-mobile-menu-button");
-    openNavBar.addEventListener("click", openNavBar_TransitionStart);
-
     function openNavBar_TransitionStart() {
       //show mobile list panel
       var element = document.getElementById("nav-mobile-list");
@@ -76,11 +65,6 @@
       closeMenuButton.style.opacity = "0.5";
       closeMenuButton.style.zIndex = "1";//Put infront of all the other uis (but not infront of the menu list since its zindex = 2)
     }
-
-
-    //Assign onclick event for close menu button for mobile
-    var closeNavMenuButton = document.getElementById("nav-mobile-close-menu-button");
-    closeNavMenuButton.addEventListener("click", closeNavBar_TransitionStart);
 
     function closeNavBar_TransitionStart() {
       //hide mobile list panel
@@ -99,27 +83,69 @@
       closeMenuButton.style.zIndex = "-10";//Put behind of all the other uis 
     }
 
-    function copyCode(button) {
-    const textarea = button.nextElementSibling; // Get the <textarea> element
+    // function copyCode(button) {
+    //   const textarea = button.nextElementSibling; // Get the <textarea> element
 
-    if (textarea) {
-        textarea.select(); // Select the content of the textarea
+    //   if (textarea) {
+    //     textarea.select(); // Select the content of the textarea
 
-        try {
-            document.execCommand('copy'); // Copy the selected text
-            const message = document.createElement('span');
-            message.textContent = ' copied!';
-            message.className = 'copy-message';
-            button.appendChild(message);
+    //     try {
+    //       document.execCommand('copy'); // Copy the selected text
+    //       const message = document.createElement('span');
+    //       message.textContent = ' copied!';
+    //       message.className = 'copy-message';
+    //       button.appendChild(message);
 
-            setTimeout(() => {
-                message.remove();
-            }, 2000); // Remove message after 2 seconds
-        } catch (err) {
-            console.error('Could not copy code: ', err);
-        }
+    //       setTimeout(() => {
+    //         message.remove();
+    //       }, 2000); // Remove message after 2 seconds
+    //     } catch (err) {
+    //       console.error('Could not copy code: ', err);
+    //     }
+    //   }
+    // }
+
+    function code_block_copyCode(button) {
+    const feedback = button.nextElementSibling; // Select the <pre> element
+    const codeBlock = button.nextElementSibling.nextElementSibling; // Select the <pre> element
+    const range = document.createRange();
+    range.selectNode(codeBlock);
+    window.getSelection().removeAllRanges(); // Clear current selection
+    window.getSelection().addRange(range); // Select the code block
+
+
+    try {
+        // Copy the selected text to the clipboard
+        const successful = document.execCommand('copy');
+        const msg = successful ? 'Code copied to clipboard!' : 'Failed to copy code.';
+        feedback.textContent = msg;
+    } catch (err) {
+        feedback.textContent = 'Oops, unable to copy!';
     }
+
+    window.getSelection().removeAllRanges(); // Deselect the code
+
+    // Clear the feedback message after 3 seconds
+    setTimeout(() => {
+        feedback.textContent = '';
+    }, 3000);
 }
+
+
+    //Set copyright date
+    var currentDate = new Date();
+    var year = currentDate.getFullYear();
+    document.getElementById(
+      "copyright"
+    ).textContent = `©${year} by ${"{{site.name}}"}`;
+
+    //Assign onclick event for menu button for mobile
+    var openNavBar = document.getElementById("nav-mobile-menu-button");
+    openNavBar.addEventListener("click", openNavBar_TransitionStart);
+
+    //Assign onclick event for close menu button for mobile
+    var closeNavMenuButton = document.getElementById("nav-mobile-close-menu-button");
+    closeNavMenuButton.addEventListener("click", closeNavBar_TransitionStart);
 
 
   </script>
