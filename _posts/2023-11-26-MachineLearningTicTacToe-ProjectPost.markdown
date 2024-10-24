@@ -303,3 +303,13 @@ However, this had led me to learn a great deal (althought I know it is only a sm
 As such I am very much grateful to have a team dedicated to making this game together with me. To play or see the game code, click <a href="https://github.com/bestcolour/MachineLearning_TicTacToe_Uni_Y1T1" target="_blank">here</a>
 
 
+## Images
+----
+
+<br>
+<br>
+
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/mainmenu.png"/>
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/difficulty_select.png"/>
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/versus_easy.png"/>
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/versus_impossible.png"/>
