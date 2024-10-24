@@ -1,37 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{site.title}}</title>
-    <link rel="stylesheet" href={{"assets/css/main.css" | relative_url }}>
-  </head>
-  <body>
-    <div>
-      <!-- Mobile version of navbar -->
-      <nav class="nav-mobile">
-        <button id="nav-mobile-menu-button">
-          <!-- THese are the three bars that makes the 'hamburgers' -->
-          <div></div>
-          <div></div>
-          <div></div>
-        </button>
 
-        <div id="nav-mobile-list">
-          <ul>
-            {% for item in site.data.navbar %}
-            <li class="{% if page.url == item.link %} nav-active {% endif %}">
-              <a href="{{site.baseurl}}{{item.link}}"> {{item.title}} </a>
-            </li>
-            {% endfor %}
-          </ul>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{site.title}}</title>
+  <link rel="stylesheet" href={{"assets/css/main.css" | relative_url }}>
+</head>
 
-        <button id="nav-mobile-close-menu-button"></button>
-      </nav>
+<body>
+  <div>
+    <!-- Mobile version of navbar -->
+    <nav class="nav-mobile">
+      <button id="nav-mobile-menu-button">
+        <!-- THese are the three bars that makes the 'hamburgers' -->
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
 
-      <!-- Dekstop version of navbar -->
-      <nav class="col-12 col-s-12 nav-desktop">
+      <div id="nav-mobile-list">
         <ul>
           {% for item in site.data.navbar %}
           <li class="{% if page.url == item.link %} nav-active {% endif %}">
@@ -39,66 +27,102 @@
           </li>
           {% endfor %}
         </ul>
-      </nav>
+      </div>
 
-      <div  id="content-wrapper">{{content}}</div>
+      <button id="nav-mobile-close-menu-button"></button>
+    </nav>
 
-      <!-- Add footerhere -->
-      <footer>
-        <div>
-          <p id="copyright"></p>
-        </div>
-      </footer>
-    </div>
+    <!-- Dekstop version of navbar -->
+    <nav class="col-12 col-s-12 nav-desktop">
+      <ul>
+        {% for item in site.data.navbar %}
+        <li class="{% if page.url == item.link %} nav-active {% endif %}">
+          <a href="{{site.baseurl}}{{item.link}}"> {{item.title}} </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
 
-    <script>
-      //Set copyright date
-      var currentDate = new Date();
-      var year = currentDate.getFullYear();
-      document.getElementById(
-        "copyright"
-      ).textContent = `©${year} by ${"{{site.name}}"}`;
+    <div id="content-wrapper">{{content}}</div>
 
-      //Assign onclick event for menu button for mobile
-      var openNavBar = document.getElementById("nav-mobile-menu-button");
-      openNavBar.addEventListener("click", openNavBar_TransitionStart);
+    <!-- Add footerhere -->
+    <footer>
+      <div>
+        <p id="copyright"></p>
+      </div>
+    </footer>
+  </div>
 
-      function openNavBar_TransitionStart() {
-        //show mobile list panel
-        var element = document.getElementById("nav-mobile-list");
-        element.style.right = "0%"; // new position cause the mobile list is fat and pushes the element to the right
-        element.style.width = "50vw";
+  <script>
+    //Set copyright date
+    var currentDate = new Date();
+    var year = currentDate.getFullYear();
+    document.getElementById(
+      "copyright"
+    ).textContent = `©${year} by ${"{{site.name}}"}`;
 
-        //show the hidden close menu button
-        var closeMenuButton = document.getElementById("nav-mobile-close-menu-button");
-        closeMenuButton.style.opacity = "0.5"; 
-        closeMenuButton.style.zIndex = "1";//Put infront of all the other uis (but not infront of the menu list since its zindex = 2)
-      }
+    //Assign onclick event for menu button for mobile
+    var openNavBar = document.getElementById("nav-mobile-menu-button");
+    openNavBar.addEventListener("click", openNavBar_TransitionStart);
 
+    function openNavBar_TransitionStart() {
+      //show mobile list panel
+      var element = document.getElementById("nav-mobile-list");
+      element.style.right = "0%"; // new position cause the mobile list is fat and pushes the element to the right
+      element.style.width = "50vw";
 
-      //Assign onclick event for close menu button for mobile
-      var closeNavMenuButton = document.getElementById("nav-mobile-close-menu-button");
-      closeNavMenuButton.addEventListener("click", closeNavBar_TransitionStart);
-
-      function closeNavBar_TransitionStart() {
-        //hide mobile list panel
-        var element = document.getElementById("nav-mobile-list");
-        element.style.right = "-50%";
-
-        //hide menu button
-        var closeMenuButton = document.getElementById("nav-mobile-close-menu-button");
-        closeMenuButton.style.opacity = "0";
-
-        closeMenuButton.addEventListener('transitionend',closeNavBar_TransitionEnd,{once:true})
-      }
-      
-      function closeNavBar_TransitionEnd() {
-        var closeMenuButton = document.getElementById("nav-mobile-close-menu-button");
-        closeMenuButton.style.zIndex = "-10";//Put behind of all the other uis 
-      }
+      //show the hidden close menu button
+      var closeMenuButton = document.getElementById("nav-mobile-close-menu-button");
+      closeMenuButton.style.opacity = "0.5";
+      closeMenuButton.style.zIndex = "1";//Put infront of all the other uis (but not infront of the menu list since its zindex = 2)
+    }
 
 
+    //Assign onclick event for close menu button for mobile
+    var closeNavMenuButton = document.getElementById("nav-mobile-close-menu-button");
+    closeNavMenuButton.addEventListener("click", closeNavBar_TransitionStart);
 
-    </script>
-  </body>
+    function closeNavBar_TransitionStart() {
+      //hide mobile list panel
+      var element = document.getElementById("nav-mobile-list");
+      element.style.right = "-50%";
+
+      //hide menu button
+      var closeMenuButton = document.getElementById("nav-mobile-close-menu-button");
+      closeMenuButton.style.opacity = "0";
+
+      closeMenuButton.addEventListener('transitionend', closeNavBar_TransitionEnd, { once: true })
+    }
+
+    function closeNavBar_TransitionEnd() {
+      var closeMenuButton = document.getElementById("nav-mobile-close-menu-button");
+      closeMenuButton.style.zIndex = "-10";//Put behind of all the other uis 
+    }
+
+    function copyCode(button) {
+    const textarea = button.nextElementSibling; // Get the <textarea> element
+
+    if (textarea) {
+        textarea.select(); // Select the content of the textarea
+
+        try {
+            document.execCommand('copy'); // Copy the selected text
+            const message = document.createElement('span');
+            message.textContent = ' copied!';
+            message.className = 'copy-message';
+            button.appendChild(message);
+
+            setTimeout(() => {
+                message.remove();
+            }, 2000); // Remove message after 2 seconds
+        } catch (err) {
+            console.error('Could not copy code: ', err);
+        }
+    }
+}
+
+
+  </script>
+</body>
+
 </html>

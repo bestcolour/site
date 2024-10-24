@@ -19,6 +19,46 @@
   width: 100%;
 }
 
+pre {
+  background-color: rgb(120, 179, 247); /* Light background for better visibility */
+  padding: 10px; /* Some padding */
+  border-radius: 5px; /* Rounded corners */
+  overflow: auto; /* Allow scrolling if content overflows */
+}
+
+pre {
+  margin: 1em 0; /* Add space above and below code blocks */
+}
+
+.code-block {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.code-block textarea{
+  resize: none;
+  height: 50vh;
+  width:100%;
+}
+
+.copy-btn {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.copy-btn:hover {
+  background-color: #0056b3;
+}
+
+
 /* For tablets: */
 @media only screen and (min-width: 600px) {
   .col-s-1 {width: 8.33%;}
