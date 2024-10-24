@@ -25,23 +25,26 @@ To create a new post, create a markdown file with the correct name format eg. "2
 
 --- Code blocks ---
 To ensure that the code are properly shown, make sure "<" and ">" characters are properly replaced in the code with "&lt;" and "&gt;" respectively.
+Another crucial thing to take note of is the order of the elements button, div and pre. They need to be in that order to work
 
 Eg.
-
-<!-- <div class="code-block">
-<button class="copy-btn" onclick="copyCode(this)">Copy</button>
-
-<textarea readonly>
-hello world
-</textarea>
- 
-</div> -->
-
 <div class="code-block">
     <button class="copy-btn" onclick="copyCode(this)">Copy</button>
     <div class="code-block-feedback"></div>
     <pre class="code-content">
 // The file that communicates with the game system on the next move the AI is going to make.
+#include &lt;stdio.h&gt;
+    </pre>
+</div>
+
+
+
+<div class="code-block">
+<i>main_machine_learning_ai.h</i>
+    <button class="code-block-copy-btn" onclick="code_block_copyCode(this)">Copy</button>
+    <div class="code-block-feedback"></div>
+    <pre class="code-block-content">
+    // The file that communicates with the game system on the next move the AI is going to make.
 #include &lt;stdio.h&gt;
     </pre>
 </div>

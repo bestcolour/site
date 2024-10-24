@@ -88,7 +88,7 @@ After some [research](https://vpapaluta06.medium.com/how-i-teached-sklearn-algor
 
 <img width="100%" src="https://miro.medium.com/v2/resize:fit:2000/format:webp/1*rPhPAs9wYVgnnuXQstynsw.png"/>
 
-*Source: https://vpapaluta06.medium.com/how-i-teached-sklearn-algorithm-to-play-tic-tac-toe-2b50aeea19e*
+<a href="https://vpapaluta06.medium.com/how-i-teached-sklearn-algorithm-to-play-tic-tac-toe-2b50aeea19e" target="_blank"><i>Source</i><a>
 
 
 <br>
@@ -141,23 +141,8 @@ After training the model, a test was done to see the accuracy of the trained wei
 ### Connecting to the rest
 Finally I concluded the AI by writing its behaviour when it is playing its turn so that the rest of the team could merge this AI more easily into the main game:
 
-<br>
-<br>
-
-*MachineLearningComponents/main_machine_learning_ai.h*
-
-<br>
-
-<!-- <div class="code-block">
-<button class="copy-btn" onclick="copyCode(this)">Copy</button>
-
-<textarea readonly>
-hello world
-</textarea>
- 
-</div> -->
-
 <div class="code-block">
+<i>main_machine_learning_ai.h</i>
     <button class="code-block-copy-btn" onclick="code_block_copyCode(this)">Copy</button>
     <div class="code-block-feedback"></div>
     <pre class="code-block-content">
@@ -306,10 +291,15 @@ void Decide_Next_Move(int gridSize, int currentBoard[gridSize][gridSize], int *x
 
 <br>
 
-reflection
-As this is my first time handling machine learning related AIs. I felt hesitant with doing the 
-<br>
-
-
+### Conclusion
+As this is my first time handling a machine learning task, the machine learning model may or may not be as accurate as the graph above had predicted.
 
 <br>
+
+However, this had led me to learn a great deal (althought I know it is only a small fraction) of what data scientists go through.
+
+<br>
+
+As such I am very much grateful to have a team dedicated to making this game together with me. To play or see the game code, click <a href="https://github.com/bestcolour/MachineLearning_TicTacToe_Uni_Y1T1" target="_blank">here</a>
+
+
