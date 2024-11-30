@@ -1,16 +1,13 @@
 ---
 layout: post
-title:  "C vs Assembly Project"
+title:  "COA Project <br> C vs Assembly"
 date:   2023-11-10
 permalink: "/projects/coding-projects/CvsAssemblyCOA-post"
 # categories: jekyll update
 
 thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/CvsAssembly_Project/c_vs_ass.png"
-alt-text: "ML TicTacToe"
+alt-text: "C vs Assembly"
 ---
-
-
-
 
 ## Description
 ---
@@ -18,12 +15,8 @@ alt-text: "ML TicTacToe"
 
 This is a small project done in my first year of my university days that I have done to explore assembly and c language. It focuses on the comparison of the execution speed of the Assembly Language and C Language using the game "FizzBuzz".
 
-
-
 <br>
 <br>
-
-
 
 ## Features
 ---
@@ -31,7 +24,6 @@ This is a small project done in my first year of my university days that I have 
 - FizzBuzz
 - Perf for Measuring Execution Speed
 - Raspberry Pi Linux
-
 
 <br>
 
