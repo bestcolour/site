@@ -1,10 +1,10 @@
 ---
 ---
 
-@use "navbar";
-@use "footer";
-@use "post-mainpage";
-@use "post-categorypage";
+@import "navbar";
+@import "footer";
+@import "post-mainpage";
+@import "post-categorypage";
 
 /* === CSS Reset === */
 * {
@@ -28,19 +28,6 @@
   margin-bottom: 10px;
 }
 
-/* Default height is auto */
-.code-block-content {
-  height: auto;
-  max-height: 30vh; /* You can define the maximum height here */
-}
-
-/* Change height to 30vh if max height is exceeded */
-@media (max-height: 30vh) {
-  .code-block-content {
-      height: 30vh;
-  }
-}
-
 .code-block-content {
   background-color: #f5f5f5; /* Light gray background */
   border: 1px solid #ccc;   /* Light border */
@@ -49,7 +36,8 @@
   font-family: monospace;   /* Monospace font for code */
   white-space: pre;         /* Preserve whitespace */
   border-radius: 4px;      /* Slightly rounded corners */
-  // height: auto;
+
+  height: 50vh;
 }
 
 .code-block-feedback {
