@@ -84,30 +84,30 @@
     }
 
     function code_block_copyCode(button) {
-    const feedback = button.nextElementSibling; // Select the <pre> element
-    const codeBlock = button.nextElementSibling.nextElementSibling; // Select the <pre> element
-    const range = document.createRange();
-    range.selectNode(codeBlock);
-    window.getSelection().removeAllRanges(); // Clear current selection
-    window.getSelection().addRange(range); // Select the code block
+      const feedback = button.nextElementSibling; // Select the <pre> element
+      const codeBlock = button.nextElementSibling.nextElementSibling; // Select the <pre> element
+      const range = document.createRange();
+      range.selectNode(codeBlock);
+      window.getSelection().removeAllRanges(); // Clear current selection
+      window.getSelection().addRange(range); // Select the code block
 
 
-    try {
+      try {
         // Copy the selected text to the clipboard
         const successful = document.execCommand('copy');
         const msg = successful ? 'Code copied to clipboard!' : 'Failed to copy code.';
         feedback.textContent = msg;
-    } catch (err) {
+      } catch (err) {
         feedback.textContent = 'Oops, unable to copy!';
-    }
+      }
 
-    window.getSelection().removeAllRanges(); // Deselect the code
+      window.getSelection().removeAllRanges(); // Deselect the code
 
-    // Clear the feedback message after 3 seconds
-    setTimeout(() => {
+      // Clear the feedback message after 3 seconds
+      setTimeout(() => {
         feedback.textContent = '';
-    }, 3000);
-}
+      }, 3000);
+    }
 
 
     //Set copyright date
