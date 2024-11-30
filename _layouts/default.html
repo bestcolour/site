@@ -83,6 +83,28 @@
       closeMenuButton.style.zIndex = "-10";//Put behind of all the other uis 
     }
 
+    // function copyCode(button) {
+    //   const textarea = button.nextElementSibling; // Get the <textarea> element
+
+    //   if (textarea) {
+    //     textarea.select(); // Select the content of the textarea
+
+    //     try {
+    //       document.execCommand('copy'); // Copy the selected text
+    //       const message = document.createElement('span');
+    //       message.textContent = ' copied!';
+    //       message.className = 'copy-message';
+    //       button.appendChild(message);
+
+    //       setTimeout(() => {
+    //         message.remove();
+    //       }, 2000); // Remove message after 2 seconds
+    //     } catch (err) {
+    //       console.error('Could not copy code: ', err);
+    //     }
+    //   }
+    // }
+
     function code_block_copyCode(button) {
     const feedback = button.nextElementSibling; // Select the <pre> element
     const codeBlock = button.nextElementSibling.nextElementSibling; // Select the <pre> element
