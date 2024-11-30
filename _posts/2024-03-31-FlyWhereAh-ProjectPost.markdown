@@ -6,7 +6,7 @@ permalink: "/projects/coding-projects/airportTravelApp-post"
 # categories: jekyll update
 
 thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/AirportTravelApp/FlyWhereAh_2.png"
-alt-text: "Airport Travel App Route"
+alt-text: "Airport Travel Route App"
 ---
 
 <iframe width="100%" height="315" src="https://www.youtube.com/embed/xq7QL9xF-uM?si=5P403xlc8rlqr2zx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
