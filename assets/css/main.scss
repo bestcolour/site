@@ -1,10 +1,10 @@
 ---
 ---
 
-@use "navbar";
-@use "footer";
-@use "post-mainpage";
-@use "post-categorypage";
+@import "navbar";
+@import "footer";
+@import "post-mainpage";
+@import "post-categorypage";
 
 /* === CSS Reset === */
 * {
