@@ -439,19 +439,29 @@ The FizzBuzz tests were done 5 times for both C and Assembly to get the average 
 
 <br>
 
-| First Header  | Second Header |
-| ------------- | ------------- |
-| Content Cell  | Content Cell  |
-| Content Cell  | Content Cell  |
+| === Attempt === | === C Execution Time === | === Assembly Execution Time === |
+| :---: | :---: | :---: |
+| 1 | 8.873111410s | 8.477196305s |
+| 2 | 8.743783220s | 8.640325477s |
+| 3 | 8.606737067s | 8.577943510s |
+| 4 | 8.648580075s | 8.404115161s |
+| 5 | 8.860199536s | 8.760995756s |
 
-<br>
-<br>
-<br>
-
-## Images
-----
 
 <br>
 <br>
 
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/mainmenu.png"/>
+The average execution time for C is 8.7464822616s
+
+<br>
+
+The average execution time for Assembly is 8.5721152418s
+
+<br>
+
+The average difference in execution time is 0.1743670198s
+
+<br>
+
+From the information gathered, we can conclude that on average, Assembly runs faster than C.
+
