@@ -142,7 +142,7 @@ After training the model, a test was done to see the accuracy of the trained wei
 Finally I concluded the AI by writing its behaviour when it is playing its turn so that the rest of the team could merge this AI more easily into the main game:
 
 <div class="code-block">
-<i>main_machine_learning_ai.h</i>
+<i>main_machine_learning_ai.c</i>
     <button class="code-block-copy-btn" onclick="code_block_copyCode(this)">Copy</button>
     <div class="code-block-feedback"></div>
     <pre class="code-block-content">
