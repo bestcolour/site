@@ -5,7 +5,7 @@ date:   2023-11-10
 permalink: "/projects/coding-projects/CvsAssemblyCOA-post"
 # categories: jekyll update
 
-thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/versus_impossible.png"
+thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/CvsAssembly_Project/c_vs_ass.png"
 alt-text: "ML TicTacToe"
 ---
 
@@ -53,7 +53,7 @@ As part of my studies in year 1, we were tasked with the assignment to explore C
 <br>
 <br>
 
-### FizzBuzz
+### FizzBuzz Program
 
 FizzBuzz is essentially a function that has a counter that increments within a loop and prints "Fizz" when the counter is divisible by 3, "Buzz" when the counter is divisble by 5 and "FizzBuzz" when it is divisble by 3 and 5 (aka 15).
 
@@ -61,6 +61,215 @@ FizzBuzz is essentially a function that has a counter that increments within a l
 
 Below are flowcharts that represent this FizzBuzz Test in both Assembly and C.
 
+<br>
+
+
+#### Assembly FizzBuzz Flowchart
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/CvsAssembly_Project/Q2%20Flowchart.png"/>
+
+<br>
+
+#### C FizzBuzz Flowchart
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/CvsAssembly_Project/Q2%20C%20flowchart.jpg"/>
+
+<br>
+<br>
+
+The following are the code for the FizzBuzzes:
+
+<div class="code-block">
+<i>Fizzbuzz.s</i>
+    <button class="code-block-copy-btn" onclick="code_block_copyCode(this)">Copy</button>
+    <div class="code-block-feedback"></div>
+    <pre class="code-block-content">
+
+.data //Data section, declare your variables here
+_fizzMessage: //Message printed when a number is divisible by 3
+    .asciz "Fizz (%lu)\n"
+_buzzMessage:   //Message printed when a number is divisible by 5
+    .asciz "Buzz (%lu)\n"
+
+_fizzBuzzMessage: //Message printed when a number is divisible by 15
+    .asciz "FizzBuzz (%lu)\n"
+
+_currentNumMessage: //Message printed when a number is divisible by 3
+    .asciz "%lu\n"
+
+_maxLoopNumber: //The number the fizzbuzz program will iterate towards
+    .quad   1000000//Set your number value here
+    //.quad 1000000000000000000 // Max value you can set
+
+.text //Code should be declared under here
+.global main
+
+.include "mod.s" //Modulo function 
+.include "exit.s" //Exit function
+
+main:
+
+    // --- Declare register values ---
+    mov     x7, #1      //let x7 be the currentLoopNumber in the for loop, starting from 1
+    ldr     x6, =_maxLoopNumber //Load the max Loop number address into x6
+    ldr     x6, [x6] //Load the value from max loop number address into x6
+
+LOOP:
+    cmp     x7, x6 // Compare x7 and x6
+    //--- if x7 == max loop number ---
+    bgt    Exit //exit program
+    //--- Else ---
+
+    // ___ V Check for FIZZBUZZ V ___
+    mov x0 , x7 //Pass current loop number as Mod dividend argument
+    mov x1 , #15 //Pass 15 as divisor
+    bl Mod //After this line, x0 holds the remainder of x7 /15
+    
+    //--- If remainder == 0 ---
+    cbz x0 , _FizzBuzzPrint //print fizzbuzz
+    // ___ ^ Check for FIZZBUZZ ^ ___
+
+    //--- Else ---
+
+    // ___ V Check for FIZZ V ___
+    mov x0 , x7 //Pass current loop number as Mod dividend argument
+    mov x1 , #3 //Pass 3 as divisor
+    bl Mod //After this line, x0 holds the remainder of x7 / 3
+
+    //--- If remainder == 0 ---
+    cbz x0 , _FizzPrint //print fizz
+
+    // ___ ^ Check for FIZZ ^ ___
+
+    //--- Else ---
+
+    // ___ V Check for BUZZ V ___
+    mov x0 , x7 //Pass current loop number as Mod dividend argument
+    mov x1 , #5 //Pass 5 as divisor
+    bl Mod //After this line, x0 holds the remainder of x7 / 3
+
+    //--- If remainder == 0 ---
+    cbz x0 , _BuzzPrint //print fizz
+
+    // ___ ^ Check for BUZZ ^ ___
+    //--- Else ---
+
+    bl _PrintCurrentNumMessage
+    add     x7, x7, #1 //Increment x7 by 1
+    b       LOOP    // Let code flow to LOOP function
+   
+
+//=== V Print Functions V ===
+_PrintCurrentNumMessage:
+    //Saves the address line of _PrintCurrentNumMessage from x30
+    //Register Dependencies: x0, x1, x6 ,x7
+
+    sub sp, sp, #96 //Reserve 80 bits for x7, x6 and return address line (16 bits + 16 bits + 64 bits respectively) 
+    str x30, [sp] //Store return address onto stack
+    str x7, [sp,#16] //Store value of x7 in stack 16bits from the start of stack
+    str x6, [sp,#32] //Store value of x6 in stack 32bits from the start of stack
+
+    //prints the debug message
+    mov x1 , x7
+    ldr x0 , =_currentNumMessage
+    bl printf
+    
+    
+    ldr x6, [sp,#32]// Restore the value of x6
+    ldr x7, [sp,#16]// Restore the value of x7
+    ldr x30, [sp] //Load x30 to have it's prev address line
+    add sp, sp, #96 //Restore 80 bits for address line
+    ret
+
+
+//=== ^ Print Functions ^ ===
+
+//=== V FizzBuzz Functions V ===
+_FizzBuzzPrint:
+   //Saves the address line of _PrintCurrentNumMessage from x30
+    sub sp, sp, #96 //Reserve 80 bits for x7, x6 and return address line (16 bits + 16 bits + 64 bits respectively) 
+    str x30, [sp] //Store return address onto stack
+    str x7, [sp,#16] //Store value of x7 in stack 16bits from the start of stack
+    str x6, [sp,#32] //Store value of x6 in stack 32bits from the start of stack
+
+    //prints the debug message
+    mov x1 , x7 //Pass value of current loop number as printf argument into x1
+    ldr x0 , =_fizzBuzzMessage //Pass format of fizzbuzz message into x0
+    bl printf //Call printf
+    
+    
+    ldr x6, [sp,#32]// Restore the value of x6
+    ldr x7, [sp,#16]// Restore the value of x7
+    ldr x30, [sp] //Load x30 to have it's prev address line
+    add sp, sp, #96 //Restore 80 bits for address line
+
+
+    add     x7, x7, #1 //Increment x7 by 1
+    b       LOOP    // Let code flow to LOOP function
+
+
+_FizzPrint:
+   //Saves the address line of _FizzPrint from x30
+    sub sp, sp, #96 //Reserve 80 bits for x7, x6 and return address line (16 bits + 16 bits + 64 bits respectively) 
+    str x30, [sp] //Store return address onto stack
+    str x7, [sp,#16] //Store value of x7 in stack 16bits from the start of stack
+    str x6, [sp,#32] //Store value of x6 in stack 32bits from the start of stack
+
+    //prints the debug message
+    mov x1 , x7 //Pass value of current loop number as printf argument into x1
+    ldr x0 , =_fizzMessage //Pass format of fizz message into x0
+    bl printf //Call printf
+    
+    ldr x6, [sp,#32]// Restore the value of x6
+    ldr x7, [sp,#16]// Restore the value of x7
+    ldr x30, [sp] //Load x30 to have it's prev address line
+    add sp, sp, #96 //Restore 80 bits for address line
+
+
+    add     x7, x7, #1 //Increment x7 by 1
+    b       LOOP    // Let code flow to LOOP function
+
+
+
+
+_BuzzPrint:
+   //Saves the address line of _BuzzPrint from x30
+    sub sp, sp, #96 //Reserve 80 bits for x7, x6 and return address line (16 bits + 16 bits + 64 bits respectively) 
+    str x30, [sp] //Store return address onto stack
+    str x7, [sp,#16] //Store value of x7 in stack 16bits from the start of stack
+    str x6, [sp,#32] //Store value of x6 in stack 32bits from the start of stack
+
+    //prints the debug message
+    mov x1 , x7 //Pass value of current loop number as printf argument into x1
+    ldr x0 , =_buzzMessage //Pass format of buzz message into x0
+    bl printf //Call printf
+    
+    
+    ldr x6, [sp,#32]// Restore the value of x6
+    ldr x7, [sp,#16]// Restore the value of x7
+    ldr x30, [sp] //Load x30 to have it's prev address line
+    add sp, sp, #96 //Restore 80 bits for address line
+
+
+    add     x7, x7, #1 //Increment x7 by 1
+    b       LOOP    // Let code flow to LOOP function
+
+//=== ^ FizzBuzz Functions ^ ===
+
+
+
+</pre>
+
+
+</div><div class="code-block">
+<i>Fizzbuzz.c</i>
+    <button class="code-block-copy-btn" onclick="code_block_copyCode(this)">Copy</button>
+    <div class="code-block-feedback"></div>
+    <pre class="code-block-content">
+sudo apt install linux-perf
+</pre>
+</div>
+
+
+<br>
 <br>
 <br>
 
@@ -220,19 +429,24 @@ Your code will run and a report on how long it took will be generated. Below is 
 
 <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/CvsAssembly_Project/Perf/Perf_Example/Perf_Example_1.gif"/>
 
+<br>
+<br>
+<br>
 
+### Results
 
-### Program
-
-#### Assembly FizzBuzz Flowchart
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/CvsAssembly_Project/Q2%20Flowchart.png"/>
+The FizzBuzz tests were done 5 times for both C and Assembly to get the average execution time. The results were as followed:
 
 <br>
 
-#### C FizzBuzz Flowchart
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/CvsAssembly_Project/Q2%20C%20flowchart.jpg"/>
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
 
-
+<br>
+<br>
+<br>
 
 ## Images
 ----
