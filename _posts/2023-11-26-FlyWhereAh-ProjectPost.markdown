@@ -125,21 +125,21 @@ Afterwards, we have to manually calculate the distance, cost and time each route
 
 As such, we were left with this dataset:
 
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/AirportTravelApp/FlyWhereAh_Dataset_2.png"/>
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/AirportTravelApp/FlyWhereAh_Dataset_3.png"/>
 
 <br>
 <br>
 <br>
 
 
-### Data Processing - A Star Route Calculation
+### Data Processing - A Star Algorithm
 
 <br>
 
 The A Star algorithm is able to determine the best path to a destination node based on user determined variables (heuristic and g cost). 
 
 <br>
-
+Advantage:
 Unlike Dijkstra, A star does not explore all possible routes but instead takes the informed route, hence making it generally faster and more efficient than Dijkstra.
 
 <br>
@@ -193,22 +193,7 @@ The reason why h cost is divided by 10 is to ensure that these two variables are
 <br>
 <br>
 
-#### A Star
-
-This [video](https://youtu.be/ySN5Wnu88nE?si=gc8cpXvk7A3_CwYQ) will be of great help to understand how A Star pathfinding works.
-
-<br>
-
-Our A Star Algorithm's open set uses a Priority Queue that uses min heap. The min heap's priority is set according to the f cost of each potential node, ensuring that only the nodes with the lowest f cost is checked first.
-
-<br>
-
-The A Star Algorithm considers a neighbouring node worth exploring if:
-
-- it is unexplored
-- g score of this node is faster than the previous way of getting to this node
-
-<br>
+#### A Star - Data Structure
 
 The A Star Route Algorithm makes use of a graph data structure with weighted edges created with an adjacency list.
 
@@ -244,11 +229,113 @@ class AirportGraph:
 </pre>
 </div>
 
-As for the Airport nodes, they are are used as keys
-Nodes have details such as airport name, IATA code, latitude and longitude
+<br>
+<br>
+As for the Airport nodes, they have details such as airport name, IATA code, latitude and longitude
 
-Values are nested dictionaries where:
-The key is the connecting airports and values is a tuple containing the time and cost of the route
+<div class="code-block">
+    <button class="code-block-copy-btn" onclick="code_block_copyCode(this)">Copy</button>
+    <div class="code-block-feedback"></div>
+    <pre class="code-block-content">
+#Node in the graph
+class Airport:
+    def __init__(self, name, city, country, iata, lat, lon):
+        # data variables, should not be changed after intialization
+        self.name = name
+        self.city = city
+        self.country = country
+        self.iata = iata
+        self.lat = lat
+        self.lon = lon
+</pre>
+</div>
+
+<br>
+<br>
+
+The output data which we want to get is a list of FlightRouteInfo that we can backtrack from the source to the destination and present it on the map.
+<br>
+
+<div class="code-block">
+    <button class="code-block-copy-btn" onclick="code_block_copyCode(this)">Copy</button>
+    <div class="code-block-feedback"></div>
+    <pre class="code-block-content">
+class FlightRouteInfo:
+    def __init__(self, fromAirportName:str,toAirportName:str,fromAirportIata:str,toAirportIata:str,distBetween: float,cost:float,time:float,airlineName:str):
+        # data variables, should not be changed after intialization
+        self.fromAirportName = fromAirportName;
+        self.toAirportName = toAirportName;
+        self.fromAirportIata = fromAirportIata;
+        self.toAirportIata = toAirportIata;
+        self.distBetween = distBetween;
+        self.cost = cost;
+        self.time = time;
+        self.airlineName = airlineName;
+
+</pre>
+</div>
+
+#### A Star - Algorithm
+
+This [video](https://youtu.be/ySN5Wnu88nE?si=gc8cpXvk7A3_CwYQ) will be of great help to understand how A Star algorithm works.
+
+<br>
+
+In short, the A Star algorithm relies on a general sense of direction (h cost) and the travelled amount (g cost) to determine which neighbouring node in the graph to pick next. The neighbouring nodes which will get checked by the algorithm goes into a queue before getting sorted and checked.
+
+<br>
+
+Our A Star Algorithm's open set uses a Priority Queue that uses a Min Heap. The Min Heap's priority is set according to the f cost of each potential node, ensuring that only the nodes with the lowest f cost is checked first.
+
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/AirportTravelApp/AStar_Code_1.png"/>
+
+<br>
+<br>
+
+
+The A Star Algorithm considers a neighbouring node worth exploring if:
+
+- it is unexplored
+- g score of this node is faster than the previous way of getting to this node
+
+<br>
+
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/AirportTravelApp/AStar_Code_2.png"/>
+
+<br>
+<br>
+
+
+To allow for the user to decide how much lesser time vs lesser cost they wish to save, we included a calculate weight function that will affect the algorithm's decision on the next "best" node.
+
+<br>
+
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/AirportTravelApp/AStar_Code_3.png"/>
+
+<br>
+<br>
+
+As a result, when all of these parts come together, the A Star Algorithm becomes a very modifiable search algorithm that searches the best airport route based on the user's interest.
+
+<br>
+<br>
+<br>
+
+### Data Processing - Dijkstra Algorithm
+Although not handled by me, the Dijkstra also plays a huge role in our application by allowing the user to find the shortest air travel route (regardless of cost) from one airport to another.
+
+<br>
+
+Now, the Dijkstra Algorithm determines the shortest path from one node to every other node within a weighted graph. As a Greedy Algorithm, it solves a problem by selecting the best option available at the moment.
+
+<br>
+
+Here are some advantages of using Dijkstra's Algorithm:
+- Dijkstra's algorithm is optimized for graphs that have non-negative edge weights.
+- It is simpler to implement than many other shortest path algorithms.
+- Its best-case time complexity is O((V + E) log V).
+
+<br>
 
 
 ## Images
@@ -258,8 +345,3 @@ The key is the connecting airports and values is a tuple containing the time and
 <br>
 
 <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/mainmenu.png"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/difficulty_select.png"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/versus_easy.png"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/versus_medium.png"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/versus_hard.png"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/versus_impossible.png"/>
