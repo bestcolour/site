@@ -132,14 +132,14 @@ As such, we were left with this dataset:
 <br>
 
 
-### Data Processing - A Star Route Calculation
+### Data Processing - A Star Algorithm
 
 <br>
 
 The A Star algorithm is able to determine the best path to a destination node based on user determined variables (heuristic and g cost). 
 
 <br>
-
+Advantage:
 Unlike Dijkstra, A star does not explore all possible routes but instead takes the informed route, hence making it generally faster and more efficient than Dijkstra.
 
 <br>
@@ -321,8 +321,21 @@ As a result, when all of these parts come together, the A Star Algorithm becomes
 <br>
 <br>
 
-### Dijkstra
+### Data Processing - Dijkstra Algorithm
 Although not handled by me, the Dijkstra also plays a huge role in our application by allowing the user to find the shortest air travel route (regardless of cost) from one airport to another.
+
+<br>
+
+Now, the Dijkstra Algorithm determines the shortest path from one node to every other node within a weighted graph. As a Greedy Algorithm, it solves a problem by selecting the best option available at the moment.
+
+<br>
+
+Here are some advantages of using Dijkstra's Algorithm:
+- Dijkstra's algorithm is optimized for graphs that have non-negative edge weights.
+- It is simpler to implement than many other shortest path algorithms.
+- Its best-case time complexity is O((V + E) log V).
+
+<br>
 
 
 ## Images
