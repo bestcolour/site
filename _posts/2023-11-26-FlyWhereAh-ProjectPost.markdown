@@ -15,20 +15,6 @@ alt-text: "Airport Travel App Route"
 <br>
 
 <!-- Download exe button -->
-## Download or More Info
-***
-<br>
-
-<div style="display: flex; justify-content: center; align-items: center; gap: 10px;">
-    <a href="https://github.com/bestcolour/FlyWhereAh" target="_blank">
-        <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Images/Logos/GithubLogo.jpg" 
-             alt="github icon" 
-             style="width: 50px; height: auto; border: 2px solid #000; border-radius: 10px; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5);">
-    </a>
-</div>
-
-
-
 ## Description
 ---
 <br>
@@ -322,7 +308,7 @@ As a result, when all of these parts come together, the A Star Algorithm becomes
 <br>
 
 ### Data Processing - Dijkstra Algorithm
-Although not handled by me, the Dijkstra also plays a huge role in our application by allowing the user to find the shortest air travel route (regardless of cost) from one airport to another.
+Although not handled by me, the Dijkstra also plays a huge role in our application by allowing the user to find the shortest air travel route distance (regardless of cost or time) from one airport to another.
 
 <br>
 
@@ -337,11 +323,79 @@ Here are some advantages of using Dijkstra's Algorithm:
 
 <br>
 
-
-## Images
-----
+However, it visits all of the nodes hence making it generally slower than A Star.
 
 <br>
 <br>
 
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/mainmenu.png"/>
+#### Dijkstra - Data Structure
+
+For the Dijkstra data structure, a graph with non-negative weights is used to keep track of all of the nodes and the flight routes.
+
+<br>
+
+<div class="code-block">
+    <button class="code-block-copy-btn" onclick="code_block_copyCode(this)">Copy</button>
+    <div class="code-block-feedback"></div>
+    <pre class="code-block-content">
+Flight = namedtuple('Flight', ['destination', 'distance', 'time', 'airline', 'cost']) # Update flight tuple.
+
+class AirportGraph:
+    def __init__(self):
+        self.graph = defaultdict(list)
+
+    def add_flight(self, src, dest, distance, time, airline, cost):
+        self.graph[src].append(Flight(dest, distance, time, airline, cost))
+
+    def get_neighbors(self, airport):
+        return self.graph[airport]
+</pre>
+</div>
+
+<br>
+<br>
+
+The airport node will likewise be stored in a class called Airport:
+
+<br>
+
+<div class="code-block">
+    <button class="code-block-copy-btn" onclick="code_block_copyCode(this)">Copy</button>
+    <div class="code-block-feedback"></div>
+    <pre class="code-block-content">
+class Airport:
+    def __init__(self, name, city, country, iata, lat, lon):
+        self.name = name
+        self.city = city
+        self.country = country
+        self.iata = iata
+        self.lat = lat
+        self.lon = lon
+
+    def __lt__(self, other):
+        # Define the comparison based on the IATA code
+        return self.iata < other.iata
+</pre>
+</div>
+
+<br>
+<br>
+
+#### Dijkstra - Algorithm
+
+To understand more about the Dijkstra Algorithm, watch this [video](https://youtu.be/_lHSawdgXpI?si=Azo0ibI71k748WBA)! 
+
+<br>
+
+The Dijkstra Algorithm chooses the current most shortest neighbour node to check for new routes. It is noted that if there is a better route that has not been visited, it will eventually be visited by the algorithm as Dijkstra visits all nodes.
+
+<br>
+
+In our project, the Dijkstra Algorithm, similarly to the A Star Algorithm, uses a priority queue to always ensure that the lowest tentative distance is always checked first.
+
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/AirportTravelApp/Dijkstra_Code_3.png"/>
+
+<br>
+<br>
+
+After iterating through all nodes, the shortest path from start to end will be found.
