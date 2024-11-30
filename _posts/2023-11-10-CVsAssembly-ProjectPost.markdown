@@ -427,17 +427,12 @@ Your code will run and a report on how long it took will be generated. Below is 
 
 ### Results
 
-The FizzBuzz tests were done 5 times for both C and Assembly to get the average execution time. The results were as followed:
+The FizzBuzz tests were done 5 times for both C and Assembly with the FuzzBuzz counter counting up to 1 million to get the average execution time. The results were as followed:
 
 <br>
 
-| === Attempt === | === C Execution Time === | === Assembly Execution Time === |
-| :---: | :---: | :---: |
-| 1 | 8.873111410s | 8.477196305s |
-| 2 | 8.743783220s | 8.640325477s |
-| 3 | 8.606737067s | 8.577943510s |
-| 4 | 8.648580075s | 8.404115161s |
-| 5 | 8.860199536s | 8.760995756s |
+
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/CvsAssembly_Project/final_results.png"/>
 
 
 <br>
