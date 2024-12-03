@@ -81,11 +81,34 @@ Other notable things I have done are the visual effects which give the players f
 ----
 <br>
 
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/SplashArt.jpg"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Tutorial.jpg"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Star.jpg"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Ice.jpg"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Tunel%26Ice.jpg"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Tunnel.jpg"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Ice%26Wind.jpg"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Wind%26TUnnel.jpg"/>
+
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-container-slide">
+            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/SplashArt.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Tutorial.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Star.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Ice.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Tunel%26Ice.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Tunnel.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Ice%26Wind.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Wind%26TUnnel.jpg"/>
+        </div>
+    </div>
+    <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-next carousel-button" onclick="moveSlide(1)">&#10095;</button>
+</div>

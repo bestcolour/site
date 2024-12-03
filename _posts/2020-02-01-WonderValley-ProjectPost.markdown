@@ -86,10 +86,30 @@ Although this game is difficult to make, it has taught me a lot about the basics
 ----
 <br>
 
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Wondervalley/title.jpeg"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Wondervalley/battle1.jpeg"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Wondervalley/battle2.jpeg"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Wondervalley/battle3.jpeg"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Wondervalley/castle.jpeg"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Wondervalley/enemies.png"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Wondervalley/towers.png"/>
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-container-slide">
+            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Wondervalley/title.jpeg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Wondervalley/battle1.jpeg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Wondervalley/battle2.jpeg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Wondervalley/battle3.jpeg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Wondervalley/castle.jpeg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Wondervalley/enemies.png"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Wondervalley/towers.png"/>
+        </div>
+    </div>
+    <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-next carousel-button" onclick="moveSlide(1)">&#10095;</button>
+</div>

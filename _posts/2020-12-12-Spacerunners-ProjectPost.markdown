@@ -81,7 +81,22 @@ However, it was interesting enough for me to want to learn more multiplayer netw
 ----
 <br>
 
+
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-container-slide">
 <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/SpaceRunners/GodView.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
 <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/SpaceRunners/Lobby.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
 <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/SpaceRunners/Runnerview.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
 <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/SpaceRunners/Runnerview2.jpg"/>
+        </div>
+    </div>
+    <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-next carousel-button" onclick="moveSlide(1)">&#10095;</button>
+</div>
