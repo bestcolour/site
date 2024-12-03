@@ -89,11 +89,36 @@ Thus, I started my second iteration of LEM on September 2020 and completed it mo
 ----
 <br>
 
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-container-slide">
 <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/LEM/ArrowMode.gif"/>
+        </div>
+        <div class="carousel-container-slide">
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/LEM/ArrowMode.gif"/>
+        </div>
+        <div class="carousel-container-slide">
 <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/LEM/BlockColor.gif"/>
+        </div>
+        <div class="carousel-container-slide">
 <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/LEM/CopyPastingEffect.gif"/>
+        </div>
+        <div class="carousel-container-slide">
 <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/LEM/CreatingNewBlock.gif"/>
+        </div>
+        <div class="carousel-container-slide">
 <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/LEM/DeletingBlocks.gif"/>
+        </div>
+        <div class="carousel-container-slide">
 <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/LEM/DeletingEffects.gif"/>
+        </div>
+        <div class="carousel-container-slide">
 <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/LEM/DuplicatingBlocks.gif"/>
+        </div>
+        <div class="carousel-container-slide">
 <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/LEM/HideExecutors.gif"/>
+        </div>
+    </div>
+    <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-next carousel-button" onclick="moveSlide(1)">&#10095;</button>
+</div>
