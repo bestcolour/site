@@ -33,7 +33,7 @@ alt-text: "ML TicTacToe"
 ---
 <br>
 
-This machine learning Tic Tac Toe game project done in my first year of my university days.
+This machine learning Tic Tac Toe game project done in my first year trimester 1 of my university days.
 
 
 

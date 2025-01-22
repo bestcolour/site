@@ -1,3 +1,7 @@
+How to upload to deployment
+1) Merge whatever changes you made on main to gh-pages branch
+2) Make sure you dont bring over any assets images by deleting them in that gh-pages branch
+
 This is a summarised instruction on how the layouts, front matter and yml files work in sync.
 
 === Layouts ===

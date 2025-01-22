@@ -60,7 +60,7 @@ Implementation of A Star Algorithm
 
 ### Introduction
 
-Although I was tasked with implementing the A Star Algorithm, it is crucical to know how the overall project workes. 
+Although I was tasked with implementing the A Star Algorithm, it is crucical to know how the overall project worked. 
 
 <br>
 
