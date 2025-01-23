@@ -99,9 +99,6 @@ Lastly, in order to produce a more comprehensive and reliable dataset, entries t
 <br>
 
 ### <ins>Database Management</ins>
-
-<br>
-
 For managing our data, we utilised Azure MySQL database to store and retrieve our data within our backend Django server. Django also has an ORM  and Django Models to ensure consistency between the database and the backend server, hence making our development easier and human-error resistant.
 
 <br>
@@ -109,8 +106,25 @@ For managing our data, we utilised Azure MySQL database to store and retrieve ou
 
 ### <ins>Machine Learning</ins>
 
-For the Machine Learning aspect, we  made use of the categorical features, 'suburb',  'region', 'council_area', 'property_type', from the database and the numerical features of 'distance_from_cbd', 'longitude', 'latitude', 'year_built', 'land_size', 'postal_code', 'property_count', 'bedroom_no', 'bathroom_no' and 'car_parking_no' to train the model. The categorical features are one-hot encoded into numerical values before normalizing all features' values.  The target feature of the model is the “Price” column of the dataset in which after the model’s training, results in a prediction score of 0.8 (rounded).
+For the Machine Learning aspect, the following categorical features were used to train the model.
 
+<br>
+
+| Suburb | Region |
+| Council Area | Property Type |
+| Distance from CBD | No. bathrooms |
+| No. of Car Park slots | Longitude |
+| Latitude | Year Built |
+| Land Size | Postal Code |
+| Property Count | No. of Bedroom |
+
+<br>
+
+The categorical features are one-hot encoded into numerical values before normalizing all features' values. The target feature of the model is the “Price” column of the dataset in which after the model's training, results in a prediction score of 0.8 (rounded).
+
+<br>
+
+The model used was the XGBRegressor model with fine tuned parameters to predict prices
 
 
 
