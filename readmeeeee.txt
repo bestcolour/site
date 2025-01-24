@@ -57,10 +57,10 @@ Eg.
 <div class="carousel">
     <div class="carousel-container">
         <div class="carousel-container-slide">
-            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/SplashArt.jpg"/>
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/SplashArt.jpg"/>
         </div>
         <div class="carousel-container-slide">
-            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Wind%26TUnnel.jpg"/>
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Wind%26TUnnel.jpg"/>
         </div>
     </div>
     <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>

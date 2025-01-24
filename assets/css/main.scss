@@ -6,6 +6,8 @@
 @import "post-mainpage";
 @import "post-categorypage";
 
+// Placing all the markdown post related css here
+
 /* === CSS Reset === */
 * {
   font-family: Arial, Helvetica, sans-serif;
@@ -48,7 +50,7 @@
 
 .carousel {
   position: relative;
-  max-width: 1000px;
+  // max-width: 1000px;
   margin: auto;
   overflow: hidden;
 }
@@ -56,6 +58,7 @@
 .carousel-container {
   display: flex;
   transition: transform 0.5s ease;
+  align-items: center;      /* Center vertically */
 }
 
 .carousel-container-slide {
@@ -64,8 +67,8 @@
 }
 
 .carousel-container img {
-  // width: 100%;
-  // height: auto;
+  width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -77,7 +80,7 @@
   border: none;
   padding: 15px;
   cursor: pointer;
-  z-index: 100;
+  z-index: 1;
   transform: translateY(-50%);
 }
 
