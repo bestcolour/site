@@ -6,7 +6,7 @@ permalink: "/projects/polytechnic-games/propertyPricePrediction-post"
 # categories: jekyll update
 
 thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/PropertyPricePrediction/ImageCarousell/detailspage1.png"
-alt-text: "Property Price Prediction"
+alt-text: "Property Price Prediction Catalogue"
 ---
 <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/PropertyPricePrediction/ImageCarousell/detailspage1.png"/>
 
