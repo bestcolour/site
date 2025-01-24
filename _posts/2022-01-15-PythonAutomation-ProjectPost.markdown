@@ -61,7 +61,9 @@ This made my life a lot easier as I no longer need to do the manual action of co
 
 <br>
 <br>
+
 ## Images
+
 ----
 <br>
 <div class="carousel">
