@@ -70,19 +70,19 @@ Despite being a simple project, I'm glad I managed to learn something new from i
 <div class="carousel">
     <div class="carousel-container">
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/WhatIf/Title.jpg"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/WhatIf/Title.jpg"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/WhatIf/unknown1.jpg"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/WhatIf/unknown1.jpg"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/WhatIf/unknown2.jpg"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/WhatIf/unknown2.jpg"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/WhatIf/unknown3.jpg"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/WhatIf/unknown3.jpg"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/WhatIf/unknown.jpg"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/WhatIf/unknown.jpg"/>
         </div>
     </div>
     <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>

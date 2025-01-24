@@ -75,19 +75,19 @@ All in all it was worth while to make this bot as it seems to be very useful for
 <div class="carousel">
     <div class="carousel-container" >
         <div class="carousel-container-slide">
-<img width="100%"  src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/WhatsAppBot/help.PNG"/>
+<img   src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/WhatsAppBot/help.PNG"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%"  src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/WhatsAppBot/list.PNG"/>
+<img   src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/WhatsAppBot/list.PNG"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/WhatsAppBot/open-console.PNG"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/WhatsAppBot/open-console.PNG"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/WhatsAppBot/remove.PNG"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/WhatsAppBot/remove.PNG"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/WhatsAppBot/send.PNG"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/WhatsAppBot/send.PNG"/>
         </div>
     </div>
     <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>

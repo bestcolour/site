@@ -317,22 +317,22 @@ As such I am very much grateful to have a team dedicated to making this game tog
 <div class="carousel">
     <div class="carousel-container">
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/mainmenu.png"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/mainmenu.png"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/difficulty_select.png"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/difficulty_select.png"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" height="600vh" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/versus_easy.png"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/versus_easy.png"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/versus_medium.png"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/versus_medium.png"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/versus_hard.png"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/versus_hard.png"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" height="600vh" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/versus_impossible.png"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/versus_impossible.png"/>
         </div>
     </div>
     <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>

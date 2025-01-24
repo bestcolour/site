@@ -85,16 +85,16 @@ However, it was interesting enough for me to want to learn more multiplayer netw
 <div class="carousel">
     <div class="carousel-container">
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/SpaceRunners/GodView.jpg"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/SpaceRunners/GodView.jpg"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/SpaceRunners/Lobby.jpg"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/SpaceRunners/Lobby.jpg"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/SpaceRunners/Runnerview.jpg"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/SpaceRunners/Runnerview.jpg"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/SpaceRunners/Runnerview2.jpg"/>
+<img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/SpaceRunners/Runnerview2.jpg"/>
         </div>
     </div>
     <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>

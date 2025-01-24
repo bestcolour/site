@@ -64,10 +64,27 @@ This made my life a lot easier as I no longer need to do the manual action of co
 ## Images
 ----
 <br>
-
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/PythonAutomation/ExecuteHelp-1.jpg"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/PythonAutomation/ExecuteHelp-2.jpg"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/PythonAutomation/ExecuteHelp-3.jpg"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/PythonAutomation/ExecuteHelp-4.jpg"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/PythonAutomation/ProgramConsole.jpg"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/PythonAutomation/Recordtask.jpg"/>
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/PythonAutomation/ExecuteHelp-1.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/PythonAutomation/ExecuteHelp-2.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/PythonAutomation/ExecuteHelp-3.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/PythonAutomation/ExecuteHelp-4.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/PythonAutomation/ProgramConsole.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/PythonAutomation/Recordtask.jpg"/>
+        </div>
+    </div>
+    <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-next carousel-button" onclick="moveSlide(1)">&#10095;</button>
+</div>

@@ -79,20 +79,21 @@ From this experience, I have learnt how to prototype quickly when making a game 
 <div class="carousel">
     <div class="carousel-container">
         <div class="carousel-container-slide">
-        <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Screenshot1.jpg"/>
+                <img  src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Screenshot1.jpg"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Screenshot2.jpg"/>
+                <img  src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Screenshot2.jpg"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Screenshot3.jpg"/>
+                <img  src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Screenshot3.jpg"/>
         </div>
         <div class="carousel-container-slide">
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Screenshot4.jpg"/>
+                <img  src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Screenshot4.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+                <img  src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Poster.jpg"/>
         </div>
     </div>
     <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>
     <button class="carousel-next carousel-button" onclick="moveSlide(1)">&#10095;</button>
 </div>
-
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Poster.jpg"/>
