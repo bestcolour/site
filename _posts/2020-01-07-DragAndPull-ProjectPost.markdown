@@ -81,25 +81,25 @@ After experiencing some phone games (like Angry Birds), I have learnt that the m
 <div class="carousel">
     <div class="carousel-container">
         <div class="carousel-container-slide">
-            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Drag%26Pull/Menu.JPG"/>
+            <img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Drag%26Pull/Menu.JPG"/>
         </div>
         <div class="carousel-container-slide">
-            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Drag%26Pull/Menu.JPG"/>
+            <img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Drag%26Pull/Menu.JPG"/>
         </div>
         <div class="carousel-container-slide">
-            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Drag%26Pull/Win.jpg"/>
+            <img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Drag%26Pull/Win.jpg"/>
         </div>
         <div class="carousel-container-slide">
-            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Drag%26Pull/unknown.jpg"/>
+            <img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Drag%26Pull/unknown.jpg"/>
         </div>
         <div class="carousel-container-slide">
-            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Drag%26Pull/unknown2.jpg"/>
+            <img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Drag%26Pull/unknown2.jpg"/>
         </div>
         <div class="carousel-container-slide">
-            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Drag%26Pull/unknown3.jpg"/>
+            <img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Drag%26Pull/unknown3.jpg"/>
         </div>
         <div class="carousel-container-slide">
-            <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Drag%26Pull/unknown4.jpg"/>
+            <img  src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Drag%26Pull/unknown4.jpg"/>
         </div>
     </div>
     <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>
