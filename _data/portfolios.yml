@@ -1,3 +1,5 @@
+# This is the file that determines the thumbnails in the "/portfolios/" page
+
 - url: "/portfolios/data/"
   thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/portfolio-page/assets/image/Portfolio/DataRoles/data_analytics.jpg"
   alt-text: "image of data"
