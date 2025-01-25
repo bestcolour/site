@@ -51,6 +51,8 @@ The system will monitor parameters such as temperature, humidity and air quality
 | - User-Centric Design          | ||| | - Notification System                  | 
 | | ||| | | 
 | - Dockerisation & K8s          | ||| | - gRPC                                 | 
+| | ||| | | 
+| - Server-Sent Events           | ||| | - Event Driven Architecture            | 
 
 
 
@@ -63,8 +65,12 @@ The system will monitor parameters such as temperature, humidity and air quality
 **Language Used:**
 Python, HTML, TypeScript
 
+<br>
+
 **Software/Tools Used:**
-Django, Pandas, sklearn, MySQL
+gRPC, K8s, Docker, Apache Kafka, NVIDIA NIM's Meta Llama-3.2b-Instruct, Flask, MongoDB, React, Nodemailer, SMTP, Next.js, Fastify , Tomorrow.io Weather API,
+
+<br>
 
 **Role:**
 Data Sourcing and Cleaning, ML Model Implementation, Model Testing

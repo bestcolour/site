@@ -42,11 +42,17 @@ This project is a property selling/rent web app, accomplished in year 1 trimeste
 **Language Used:**
 Python
 
+<br>
+
 **Software/Tools Used:**
 Django, Pandas, sklearn, MySQL
 
+<br>
+
 **Role:**
 Data Sourcing and Cleaning, ML Model Implementation, Model Testing
+
+<br>
 
 <br>
 <br>
