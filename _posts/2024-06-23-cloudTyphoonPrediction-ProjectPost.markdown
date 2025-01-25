@@ -1,14 +1,24 @@
 ---
 layout: post
-title:  "Property Price Prediction"
-date:   2024-06-23
-permalink: "/projects/polytechnic-games/propertyPricePrediction-post"
+title:  "Cloud Typhoon Prediction"
+date:   2024-11-05
+permalink: "/projects/polytechnic-games/cloudTyphoonPrediction-post"
 # categories: jekyll update
 
 thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/PropertyPricePrediction/ImageCarousell/detailspage1.png"
 alt-text: "Property Price Prediction Catalogue"
 ---
 <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/PropertyPricePrediction/ImageCarousell/detailspage1.png"/>
+
+<br>
+
+<!-- Github button -->
+<a href="https://github.com/DB-OS-Cyber-Sec/cloud" target="_blank">
+<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Images/Logos/GithubLogo.jpg" 
+         alt="github icon" 
+         style="width: 50px; height: auto; border: 2px solid #000; border-radius: 10px; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5); margin: 0 auto; display: block;">
+</a>
+
 
 
 <br>
@@ -17,7 +27,12 @@ alt-text: "Property Price Prediction Catalogue"
 ## Description
 ----
 <br>
-This project is a property selling/rent web app, accomplished in year 1 trimester 3 of my university period, that allows users to list properties that they want to sell or rent with the help of machine learning AI predicting prices.
+The project focuses on the environmental monitoring and disaster prediction domain, which involves processing and analyzing real-time data from distributed sources.
+
+<br>
+
+The system will monitor parameters such as temperature, humidity and air quality to predict with AI the probability of tropical typhoons in the Philippines before advising users via email on measures to take. As an AI model trained on historical data was used to forecast the tropical cyclone as compared to the traditional physics model, predictions were made more effectively and accurately.
+
 
 
 <br>
@@ -28,9 +43,15 @@ This project is a property selling/rent web app, accomplished in year 1 trimeste
 ## Features
 ----
 <br>
-- Database Management (MySQL)
-- Data Cleaning
-- Machine Learning (ML)
+
+| - Microservices Architecture   | ||| | - Real-time & Historical Data Handling | 
+| | ||| | | 
+| - Machine Learning Integration | ||| | - Scalability and Resilience           | 
+| | ||| | | 
+| - User-Centric Design          | ||| | - Notification System                  | 
+| | ||| | | 
+| - Dockerisation & K8s          | ||| | - gRPC                                 | 
+
 
 
 <br>
@@ -40,7 +61,7 @@ This project is a property selling/rent web app, accomplished in year 1 trimeste
 <br>
 
 **Language Used:**
-Python
+Python, HTML, TypeScript
 
 **Software/Tools Used:**
 Django, Pandas, sklearn, MySQL
@@ -112,13 +133,13 @@ For the Machine Learning aspect, the following categorical features were used to
 
 <br>
 
-| Suburb | |||| | Region |
-| Council Area | |||| | Property Type |
-| Distance from CBD | |||| | No. bathrooms |
-| No. of Car Park slots | |||| | Longitude |
-| Latitude | |||| | Year Built |
-| Land Size | |||| | Postal Code |
-| Property Count | |||| | No. of Bedroom |
+| Suburb |  | Region |
+| Council Area |  | Property Type |
+| Distance from CBD |  | No. bathrooms |
+| No. of Car Park slots |  | Longitude |
+| Latitude |  | Year Built |
+| Land Size |  | Postal Code |
+| Property Count |  | No. of Bedroom |
 
 <br>
 
