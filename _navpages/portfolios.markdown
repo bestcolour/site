@@ -9,7 +9,6 @@ date:   2024-04-24
 
 content_before_table: "
 <div> 
-In here I organise my various portfolios for different roles
 <br>
 <br>
 <br>
