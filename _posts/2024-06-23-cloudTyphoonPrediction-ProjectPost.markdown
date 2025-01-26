@@ -127,7 +127,60 @@ We utilised MongoDB to serve as our database in collecting historical typhoon da
 <br>
 <br>
 
-## Images
+### <ins>Producer Consumer Graph</ins>
+<br>
+<div class="carousel-container-slide">
+    <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/producer_consumer.png"/>
+</div>
+
+The main data pipelining occurs in within this part of the project as described with a producer consumer graph. The real-time weather data drawn from Tommorrow.io (as the producer) will be streamed into a Kafka topic before being passed to the AI microservice (as a consumer) via gRPC and to the Next.js web app to be displayed via Server Side Events (SSE).
+
+<br>
+
+The AI microservice will now become the producer and feed the prediction results (which are split into two sets of data, weather forecast and typhoon updates) via gRPC to the Kafka microservice to be streamed for display. 
+
+<br>
+
+If necessary, an email regarding a potential typhoon will be mailed via SMTP to subscribed users.
+
+<br>
+<br>
+
+
+### <ins>Data Displayed</ins>
+
+The final display of data would hence be as shown below, allowign the user to stay informed of potential future typhoon alerts, weather forecasts and historical data.
+
+<br>
+<br>
+
+#### Historical Data
+
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/historicalData1.png"/>
+
+<br>
+<br>
+
+#### Real-Time Data
+
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Map_with_API_call.png"/>
+
+<br>
+<br>
+
+#### Notifications
+
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Email_Notification_1.png"/>
+
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Email_Notification_2.png"/>
+
+<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Email_Notification_3.png"/>
+
+<br>
+<br>
+<br>
+
+## Other Images
 ----
 <div class="carousel">
     <div class="carousel-container">
@@ -139,6 +192,9 @@ We utilised MongoDB to serve as our database in collecting historical typhoon da
         </div>
         <div class="carousel-container-slide">
             <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Map_with_layers.png"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/historicalData1.png"/>
         </div>
         <div class="carousel-container-slide">
             <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Email_Notification_1.png"/>
