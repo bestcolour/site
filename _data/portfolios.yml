@@ -1,37 +1,9 @@
-- url: "/projects/polytechnic-games/haulaway-post"
-  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Poster.jpg"
-  alt-text: "image of github"
-  title: "Haul Away!"
-  image-offset: 50% 0%
+# This is the file that determines the thumbnails in the "/portfolios/" page
 
-
-- url: "https://www.google.co.uk/"
-  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/master/assets/image/github-logo.png"
-  alt-text: "image of github"
-  title: "Go to github"
-
-  
-- url: "https://www.google.co.uk/"
-  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/master/assets/image/github-logo.png"
-  alt-text: "image of github"
-  title: "Go to github"
-
-  
-- url: "https://www.google.co.uk/"
-  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/master/assets/image/github-logo.png"
-  alt-text: "image of github"
-  title: "Go to github"
-
-  
-- url: "https://www.google.co.uk/"
-  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/master/assets/image/github-logo.png"
-  alt-text: "image of github"
-  title: "Go to github"
-
-  
-- url: "https://www.google.co.uk/"
-  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/master/assets/image/github-logo.png"
-  alt-text: "image of github"
-  title: "Go to github"
+- url: "/portfolios/data/"
+  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/portfolio-page/assets/image/Portfolio/DataRoles/data_analytics.jpg"
+  alt-text: "image of data"
+  title: "Data"
+  image-offset: 0% 35%
 
 

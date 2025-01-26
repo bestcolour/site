@@ -69,7 +69,7 @@ Logistic Regression ML AI
 
 <br>
 
-### Introduction
+### <ins>Introduction</ins>
 As part of my Programming Methodology module in year 1, our group embarked on our journey to develop a tic tac toe game.
 
 <br>
@@ -95,7 +95,7 @@ After some [research](https://vpapaluta06.medium.com/how-i-teached-sklearn-algor
 <br>
 <br>
 
-### Data Processing
+### <ins>Data Processing</ins>
 The next issue was handling the data and transforming it into something readable by the learning model.
 
 <br>
@@ -119,7 +119,7 @@ I did some digging around and found the idea of converting the data into an inte
 <br>
 <br>
 
-### Training Model
+### <ins>Training Model</ins>
 After which, I started to train the model to generate its weights so that the Logistic Model could be a medium leveled opponent for the player.
 
 <img width="50%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/trained_model_weights.png"/>
@@ -128,7 +128,7 @@ After which, I started to train the model to generate its weights so that the Lo
 <br>
 <br>
 
-### Testing the model
+### <ins>Testing the model</ins>
 
 After training the model, a test was done to see the accuracy of the trained weights.
 
@@ -138,7 +138,7 @@ After training the model, a test was done to see the accuracy of the trained wei
 <br>
 <br>
 
-### Connecting to the rest
+### <ins>Connecting to the rest</ins>
 Finally I concluded the AI by writing its behaviour when it is playing its turn so that the rest of the team could merge this AI more easily into the main game:
 
 <div class="code-block">
@@ -291,7 +291,7 @@ void Decide_Next_Move(int gridSize, int currentBoard[gridSize][gridSize], int *x
 
 <br>
 
-### Conclusion
+### <ins>Conclusion</ins>
 As this is my first time handling a machine learning task, the machine learning model may or may not be as accurate as the graph above had predicted.
 
 <br>

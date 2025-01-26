@@ -58,7 +58,7 @@ Implementation of A Star Algorithm
 
 <br>
 
-### Introduction
+### <ins>Introduction</ins>
 
 Although I was tasked with implementing the A Star Algorithm, it is crucical to know how the overall project worked. 
 
@@ -74,7 +74,7 @@ We decided to use IATA codes for airports within Asia as it was more convenient 
 <br>
 
 
-### Dataset Preparation
+### <ins>Dataset Preparation</ins>
 
 The first step to take was to search for datasets of Airport Codes. Our data was sourced from airports.dat from [OpenFlights](https://openflights.org/data.php).
 
@@ -118,7 +118,7 @@ As such, we were left with this dataset:
 <br>
 
 
-### Data Processing - A Star Algorithm
+### <ins>Data Processing - A Star Algorithm</ins>
 
 <br>
 
@@ -142,13 +142,13 @@ To adapt this into our project, we have defined our airport travel route variabl
 <br>
 <br>
 
-#### h Cost
+#### <ins>h Cost</ins>
 The Great Circle Distance between two airports is used as the H cost for the algorithm to make sure that there is no overestimation of heuristic value.
 
 <br>
 <br>
 
-#### g Cost
+#### <ins>g Cost</ins>
 A mix of time and cost to travel to the other airport. The user can adjust time and cost weights to get results that has 
 - Less time
 - Less cost
@@ -165,7 +165,7 @@ To account for layover time when the flight is not direct, we increase the time 
 <br>
 
 
-#### f Cost
+#### <ins>f Cost</ins>
 f cost is the sum of g cost and h cost:
 
 <br>
@@ -179,7 +179,7 @@ The reason why h cost is divided by 10 is to ensure that these two variables are
 <br>
 <br>
 
-#### A Star - Data Structure
+#### <ins>A Star - Data Structure</ins>
 
 The A Star Route Algorithm makes use of a graph data structure with weighted edges created with an adjacency list.
 
@@ -261,7 +261,7 @@ class FlightRouteInfo:
 </pre>
 </div>
 
-#### A Star - Algorithm
+#### <ins>A Star - Algorithm</ins>
 
 This [video](https://youtu.be/ySN5Wnu88nE?si=gc8cpXvk7A3_CwYQ) will be of great help to understand how A Star algorithm works.
 
@@ -307,7 +307,7 @@ As a result, when all of these parts come together, the A Star Algorithm becomes
 <br>
 <br>
 
-### Data Processing - Dijkstra Algorithm
+### <ins>Data Processing - Dijkstra Algorithm</ins>
 Although not handled by me, the Dijkstra also plays a huge role in our application by allowing the user to find the shortest air travel route distance (regardless of cost or time) from one airport to another.
 
 <br>
@@ -328,7 +328,7 @@ However, it visits all of the nodes hence making it generally slower than A Star
 <br>
 <br>
 
-#### Dijkstra - Data Structure
+#### <ins>Dijkstra - Data Structure</ins>
 
 For the Dijkstra data structure, a graph with non-negative weights is used to keep track of all of the nodes and the flight routes.
 
@@ -381,7 +381,7 @@ class Airport:
 <br>
 <br>
 
-#### Dijkstra - Algorithm
+#### <ins>Dijkstra - Algorithm</ins>
 
 To understand more about the Dijkstra Algorithm, watch this [video](https://youtu.be/_lHSawdgXpI?si=Azo0ibI71k748WBA)! 
 

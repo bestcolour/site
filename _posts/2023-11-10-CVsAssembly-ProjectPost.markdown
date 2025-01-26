@@ -39,13 +39,13 @@ Coding & Testing of Assembly and C Fizzbuzz
 
 <br>
 
-### Introduction
+### <ins>Introduction</ins>
 As part of my studies in year 1, we were tasked with the assignment to explore Computer Organization and Architecture by making a execution test comparison between Assembly language and C Language. We decided on FizzBuzz as our function to use compare execution speeds.
 
 <br>
 <br>
 
-### FizzBuzz Program
+### <ins>FizzBuzz Program</ins>
 
 FizzBuzz is essentially a function that has a counter that increments within a loop and prints "Fizz" when the counter is divisible by 3, "Buzz" when the counter is divisble by 5 and "FizzBuzz" when it is divisble by 3 and 5 (aka 15).
 
@@ -265,7 +265,7 @@ sudo apt install linux-perf
 <br>
 <br>
 
-### Measuring Execution Time
+### <ins>Measuring Execution Time</ins>
 
 Measuring execution time of the program can be done in a multitude of ways from finding the clock cycles to using tools to record the run time of the program. 
 
@@ -284,13 +284,13 @@ The linux tool used is a profiling instrument called [perf](https://perf.wiki.ke
 <br>
 <br>
 
-#### Perf Setup
+#### <ins>Perf Setup</ins>
 The section below will be a guide on how to set up and use to measure the execution time of a program using perf on your raspberry pi.
 
 <br>
 <br>
 
-##### Installing Perf
+#### <ins>Installing Perf</ins>
 1) Firstly, we need to check if “perf” is installed on your raspberry pi by typing:
 perf –version. You should encounter the error as shown in the image below. In the unlikely event that you already have the correct version of perf installed on your pi, you can skip the installation section.
 
@@ -395,7 +395,7 @@ Also take note that should the system expect a different version of perf other t
 <br>
 
 
-##### Using Perf
+#### <ins>Using Perf</ins>
 
 Using perf is really easy! Let’s say you have already compiled your program called “program“ and it is in your current directory. Simply type the following:
 
@@ -425,7 +425,7 @@ Your code will run and a report on how long it took will be generated. Below is 
 <br>
 <br>
 
-### Results
+### <ins>Results</ins>
 
 The FizzBuzz tests were done 5 times for both C and Assembly with the FuzzBuzz counter counting up to 1 million to get the average execution time. The results were as followed:
 
