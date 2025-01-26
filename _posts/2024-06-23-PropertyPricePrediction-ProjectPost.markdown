@@ -194,7 +194,12 @@ Seeing that the median of property prices is $903,000, having the **Mean Absolut
 
 ### <ins>Prediction On Frontend</ins>
 
- <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/PropertyPricePrediction/ImageCarousell/detailspage2.png"/>
+<img width="75%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/PropertyPricePrediction/ImageCarousell/detailspage1.png"/>
+<img width="75%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/PropertyPricePrediction/ImageCarousell/detailspage2.png"/>
+
+<br>
+
+As such, this is the end result of how the property price would be viewed by the users based on the details of the property.
 
 
 
