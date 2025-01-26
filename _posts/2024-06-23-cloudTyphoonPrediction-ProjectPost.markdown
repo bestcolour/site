@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Cloud Typhoon Prediction"
+title:  "Typhoon Prediction System"
 date:   2024-11-05
 permalink: "/projects/polytechnic-games/cloudTyphoonPrediction-post"
 # categories: jekyll update
@@ -68,7 +68,7 @@ Python, HTML, TypeScript
 <br>
 
 **Software/Tools Used:**
-gRPC, K8s, Docker, Apache Kafka, NVIDIA NIM's Meta Llama-3.2b-Instruct, Flask, MongoDB, React, Nodemailer, SMTP, Next.js, Fastify , Tomorrow.io Weather API,
+gRPC, K8s, Docker, Apache Kafka, NVIDIA NIM's Meta Llama-3.2b-Instruct, Flask, MongoDB, React, Nodemailer, SMTP, Next.js, Fastify, Tomorrow.io Weather API,
 
 <br>
 
@@ -106,7 +106,7 @@ From this project, I have learnt a lot about designing the a flexible and resili
 
 <br>
 
-Our microservice and components are all containerised in Docker and orchestrated by K8s to ensure a more resilient web application when it is placed under many request calls. We made use of Horizontal Pod Autoscaler to ensure that there was sufficient instances of each microservice available to replace any component that may have failed.
+Our microservices and components are all containerised in Docker and orchestrated by K8s to ensure a more resilient web application when it is placed under many request calls. We made use of Horizontal Pod Autoscaler to ensure that there was sufficient instances of each microservice available to replace any component that may have failed.
 
 <br>
 <br>
@@ -124,6 +124,8 @@ Our microservice and components are all containerised in Docker and orchestrated
 We utilised MongoDB to serve as our database in collecting historical typhoon data as well as the subscribers' (for the typhoon) data. There will be a Fastify server responsible for reading and modifying the data.
 
 
+<br>
+<br>
 
 ## Images
 ----
