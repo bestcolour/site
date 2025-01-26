@@ -1,0 +1,11 @@
+# This is the data file that holds what will shown in the data roles (but I didnt actually put 'data roles' as a position to apply for) portfolio page
+
+- url: "/projects/polytechnic-games/propertyPricePrediction-post"
+  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/PropertyPricePrediction/ImageCarousell/detailspage1.png"
+  alt-text: "Property Price Prediction Catalogue"
+  title: "Property Price Prediction"
+  
+- url: "/projects/coding-projects/MLtictactoe-post"
+  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/ML_TicTacToe/versus_impossible.png"
+  alt-text: "ML Tic Tac Toe"
+  title: "ML Tic Tac Toe"
