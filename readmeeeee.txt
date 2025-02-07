@@ -58,9 +58,13 @@ Eg.
     <div class="carousel-container">
         <div class="carousel-container-slide">
             <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/SplashArt.jpg"/>
+            <br>
+            <i>Image description</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Wind%26TUnnel.jpg"/>
+            <br>
+            <i>Image description</i>
         </div>
     </div>
     <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>

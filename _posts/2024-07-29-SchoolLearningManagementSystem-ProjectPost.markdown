@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "School Learning Management System"
-date:   2024-06-23
+date:   2024-07-29
 permalink: "/projects/coding-projects/schoolLearningManagementSystem-post"
 # categories: jekyll update
 
@@ -216,107 +216,174 @@ As such, this is the end result of how the property price would be viewed by the
     <div class="carousel-container">
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Adding%20Content%20to%20Course.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Admin%20Delete%20Course.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Admin%20Delete%20User.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Communication%20Chat.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Communication%20List%20Chat%20Delete.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Communication%20List%20Chat%20Open.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Communication.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Courses.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Delete%20Account.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Edit%20Profile.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Login%20Fail.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Login.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Payment%20Cancellation%202.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Payment%20Cancellation%203.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Payment%20Cancellation.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Payment%20Process.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Payment%20Renewal%202.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Payment%20Renewal%203.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Payment%20Renewal.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Quiz%20Creation.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Quiz%20Display%202.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Quiz%20Display.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Quiz%20Results.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Subscription%20Plan.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Subscription%20Restriction.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Video%20Call.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/View%20Chat%20Clear%20History.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/View%20Chat%20Video%20Call.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/View%20Profile.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Viewing%20Content%20Image.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Viewing%20Content%20PDF.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Viewing%20Content%20Video.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Viewing%20Course.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Viewing%20Lessons.png?raw=true"/>
+            <br>
+            <i>Add Content Page</i>
         </div>
-
     </div>
     <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>
     <button class="carousel-next carousel-button" onclick="moveSlide(1)">&#10095;</button>
