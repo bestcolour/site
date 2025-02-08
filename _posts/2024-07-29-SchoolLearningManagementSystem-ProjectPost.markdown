@@ -19,19 +19,19 @@ alt-text: "Property Price Prediction Catalogue"
 <br>
 This project is a Learning Management System (LMS) application, developed using Python Django, aiming to be a comprehensive platform designed to facilitate efficient and effective online education. It was done in year 1 trimester 3 of my university period and was structured around five key modules: assessment management, content management, communications, payment, and user management.
 
-
 <br>
 <br>
-
-
 
 ## Features
 ----
 <br>
-- Database Management (MySQL)
-- Data Cleaning
-- Machine Learning (ML)
-
+- Assessment Management
+- Content Management
+- Communications
+- Payment (Stripe)
+- User Management
+- Database Management (MongoDB and Azure MySQL)
+- Deployment (Azure Web App)
 
 <br>
 
@@ -45,12 +45,12 @@ Python
 <br>
 
 **Software/Tools Used:**
-Django, Pandas, sklearn, MySQL
+Django, MongoDB, MySQL, Stripe, Azure Web App
 
 <br>
 
 **Role:**
-Data Sourcing and Cleaning, ML Model Implementation, Model Testing
+NoSQL and SQL Database Management + Integration, Web App Deployment
 
 <br>
 
@@ -172,6 +172,11 @@ Data Sourcing and Cleaning, ML Model Implementation, Model Testing
             <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/SchoolLearningManagementSystem/Subscription%20Acknowledgement.png"/>
             <br>
             <i>Payment - Subscription Acknowledgement</i>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/SchoolLearningManagementSystem/Subscription%20History.png"/>
+            <br>
+            <i>Payment - Subscription History</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://github.com/bestcolour/site/blob/master/assets/image/University/SchoolLearningManagementSystem/Payment%20Cancellation.png?raw=true"/>
