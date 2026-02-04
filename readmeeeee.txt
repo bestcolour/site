@@ -1,4 +1,13 @@
-How to upload to deployment
+=== Setup ===
+From now on, use the docker compose yml by running:
+```
+docker compose up
+```
+
+Find the web address the static site is hosted on and start editing!
+
+
+=== How to upload to deployment ===
 1) Merge whatever changes you made on main to gh-pages branch
 2) Make sure you dont bring over any assets images by deleting them in that gh-pages branch
 

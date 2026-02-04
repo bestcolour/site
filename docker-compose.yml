@@ -1,0 +1,18 @@
+services:
+  jekyll:
+    image: jekyll/jekyll:latest
+    # We use a shell command to ensure webrick is installed before serving
+    command: >
+      sh -c "grep -q 'webrick' Gemfile || bundle add webrick 
+      && jekyll serve --livereload --force_polling"
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      - .:/srv/jekyll
+      - jekyll_gems:/usr/local/bundle 
+    environment:
+      - JEKYLL_ENV=development
+
+volumes:
+  jekyll_gems:
