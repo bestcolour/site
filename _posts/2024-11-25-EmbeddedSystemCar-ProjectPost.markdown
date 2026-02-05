@@ -2,13 +2,37 @@
 layout: post
 title:  "Remote Control Car"
 date:   2024-11-25
-permalink: "/projects/coding-projects/cloudTyphoonPrediction-post"
+permalink: "/projects/coding-projects/embeddedSystemRemoteControlCar-post"
 # categories: jekyll update
 
-thumbnail: ""
-alt-text: "Property Price Prediction Catalogue"
+thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/EmbeddedRemoteControlCar/front-view.jpg"
+alt-text: "Car Front View"
 ---
-<img width="100%" src=""/>
+
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/EmbeddedRemoteControlCar/back-view.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/EmbeddedRemoteControlCar/front-view.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/EmbeddedRemoteControlCar/side-view-2.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/EmbeddedRemoteControlCar/side-view.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/EmbeddedRemoteControlCar/top-view.jpg"/>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/EmbeddedRemoteControlCar/track.jpg"/>
+        </div>
+    </div>
+    <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-next carousel-button" onclick="moveSlide(1)">&#10095;</button>
+</div>
 
 <br>
 <br>
@@ -87,54 +111,6 @@ From this project, I have learnt a lot about designing the a flexible and resili
 <br>
 <br>
 
-### <ins>Microservice Containerisation</ins>
-
-<br>
-
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Dockerized_Technologies.png"/>
-
-<br>
-
-Our microservices and components are all containerised in Docker and orchestrated by K8s to ensure a more resilient web application when it is placed under many request calls. We made use of Horizontal Pod Autoscaler to ensure that there was sufficient instances of each microservice available to replace any component that may have failed.
-
-<br>
-<br>
-<br>
-
-
-### <ins>Database Backend Integration</ins>
-<br>
-<div class="carousel-container-slide">
-    <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Mongodb.png"/>
-</div>
-
-<br>
-
-We utilised MongoDB to serve as our database in collecting historical typhoon data as well as the subscribers' (for the typhoon) data. There will be a Fastify server responsible for reading and modifying the data.
-
-
-<br>
-<br>
-
-### <ins>Producer Consumer Graph</ins>
-<br>
-<div class="carousel-container-slide">
-    <img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/producer_consumer.png"/>
-</div>
-
-The main data pipelining occurs in within this part of the project as described with a producer consumer graph. The real-time weather data drawn from Tommorrow.io (as the producer) will be streamed into a Kafka topic before being passed to the AI microservice (as a consumer) via gRPC and to the Next.js web app to be displayed via Server Side Events (SSE).
-
-<br>
-
-The AI microservice will now become the producer and feed the prediction results (which are split into two sets of data, weather forecast and typhoon updates) via gRPC to the Kafka microservice to be streamed for display. 
-
-<br>
-
-If necessary, an email regarding a potential typhoon will be mailed via SMTP to subscribed users.
-
-<br>
-<br>
-
 
 ### <ins>Data Displayed</ins>
 
@@ -143,82 +119,5 @@ The final display of data would hence be as shown below, allowign the user to st
 <br>
 <br>
 
-#### Historical Data
-
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/historicalData1.png"/>
-
-<br>
-<br>
-
-#### Real-Time Data
-
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Map_with_API_call.png"/>
-
-<br>
-<br>
-
-#### Notifications
-
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Email_Notification_1.png"/>
-
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Email_Notification_2.png"/>
-
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Email_Notification_3.png"/>
-
-<br>
-<br>
-<br>
-
 ## Other Images
 ----
-<div class="carousel">
-    <div class="carousel-container">
-        <div class="carousel-container-slide">
-            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Map.png"/>
-        </div>
-        <div class="carousel-container-slide">
-            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Map_with_API_call.png"/>
-        </div>
-        <div class="carousel-container-slide">
-            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Map_with_layers.png"/>
-        </div>
-        <div class="carousel-container-slide">
-            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/historicalData1.png"/>
-        </div>
-        <div class="carousel-container-slide">
-            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Email_Notification_1.png"/>
-        </div>
-        <div class="carousel-container-slide">
-            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Email_Notification_2.png"/>
-        </div>
-        <div class="carousel-container-slide">
-            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Email_Notification_3.png"/>
-        </div>
-        <div class="carousel-container-slide">
-            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Dockerized_Technologies.png"/>
-        </div>
-        <div class="carousel-container-slide">
-            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Mongodb.png"/>
-        </div>
-        <div class="carousel-container-slide">
-            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/SystemArchitecture.jpg"/>
-        </div>
-        <div class="carousel-container-slide">
-            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/producer_consumer.png"/>
-        </div>
-        <div class="carousel-container-slide">
-            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/publisher_subscriber_model.png"/>
-        </div>
-        <div class="carousel-container-slide">
-            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Typhoon_History.png"/>
-        </div>
-        <div class="carousel-container-slide">
-            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Llama_Core_Efficiency.png"/>
-        </div>
-        <div class="carousel-container-slide">
-            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Prompt_Engineering.png"/>
-        </div>
-    </div>
-    <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>
-    <button class="carousel-next carousel-button" onclick="moveSlide(1)">&#10095;</button>
-</div>
