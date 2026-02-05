@@ -2,7 +2,7 @@
 layout: post
 title:  "Typhoon Prediction System"
 date:   2024-11-05
-permalink: "/projects/coding-projects/cloudTyphoonPrediction-post"
+permalink: "/projects/coding-projects/CloudTyphoonPrediction-post"
 # categories: jekyll update
 
 thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Map_with_layers.png"
