@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Remote Control Car"
+title:  "Remote Control Car with Raspberry Picos"
 date:   2024-11-25
 permalink: "/projects/coding-projects/embeddedSystemRemoteControlCar-post"
 # categories: jekyll update
@@ -37,87 +37,67 @@ alt-text: "Car Front View"
 <br>
 <br>
 
-## Description
-----
-<br>
-The project focuses on the environmental monitoring and disaster prediction domain, which involves processing and analyzing real-time data from distributed sources.
+---
 
 <br>
 
-The system will monitor parameters such as temperature, humidity and air quality to predict with AI the probability of tropical typhoons in the Philippines before advising users via email on measures to take. As an AI model trained on historical data was used to forecast the tropical cyclone as compared to the traditional physics model, predictions were made more effectively and accurately.
-
-
-
+## The High-Level Overview
 <br>
-<br>
-
-
-
-## Features
-----
-<br>
-
-| - Microservices Architecture   | ||| | - Real-time & Historical Data Handling | 
-| | ||| | | 
-| - Machine Learning Integration | ||| | - Scalability and Resilience           | 
-| | ||| | | 
-| - User-Centric Design          | ||| | - Notification System                  | 
-| | ||| | | 
-| - Dockerisation & K8s          | ||| | - gRPC                                 | 
-| | ||| | | 
-| - Server-Sent Events           | ||| | - Event Driven Architecture            | 
-
-
+The Goal: To create a remote controllable car that can move in 4 directions and its remote with 2 Raspberry Picos.
 
 <br>
 
-## Reflection
-----
-<br>
-
-**Language Used:**
-Python, HTML, TypeScript
+Responsibilities: Embedded Systems Developer & Tester
 
 <br>
 
-**Software/Tools Used:**
-gRPC, K8s, Docker, Apache Kafka, NVIDIA NIM's Meta Llama-3.2b-Instruct, Flask, MongoDB, React, Nodemailer, SMTP, Next.js, Fastify, Tomorrow.io Weather API,
-
-<br>
-
-**Role:**
-Data Engineering, Database Management, Data Sourcing & Scraping, Backend
+**Key Contributions:**
+- Architected a Finite State Machine (FSM)
+- Fine-tuned Proportional-Integral-Derivative (PID)
+- Developed Ultrasound Sensor Feature
 
 <br>
 <br>
 
-### <ins>Introduction</ins>
-
-This project was done in Year 2 Trimester 1 of our university as a project for Cloud & Distributed Computing module. 
+**Tech Stack:**
 
 <br>
 
-The project aims to utilise cloud technologies and microservices with AI to predict incoming typhoons in the Philippines. Hence, we have developed a web app that uses real-time data from a weather API (Tomorrow.io) that would feed information to a machine learning model (Llama-3.2b-Instruct) to predict the next typhoon that may occur in the future. Email notifications would be sent to any subscribed users based on an event architecture as a proof of concept.
+Language - C
 
 <br>
 
-I played the part in populating the database with historical data (weather variables and typhoon reports) via webscraping and API calls. I was also tasked with setting up data pipelines between microservices (AI Component & Kafka Topic for both before and after AI prediction is done) via gRPC. 
-
-<br>
-
-From this project, I have learnt a lot about designing the a flexible and resilient architecture that is based on microservices and distrubuted computing.
-
-<br>
-<br>
-<br>
-
-
-### <ins>Data Displayed</ins>
-
-The final display of data would hence be as shown below, allowign the user to stay informed of potential future typhoon alerts, weather forecasts and historical data.
+Tools & Packages - CMake, FreeRTOS, Arduino
 
 <br>
 <br>
 
-## Other Images
-----
+---
+
+<br>
+
+4. Key Features & Functionality
+
+Don't just list features; explain the value they provide.
+
+    Feature A: How it works + why it’s useful.
+
+    Feature B: How it works + why it’s useful.
+
+5. Technical Challenges & Solutions
+
+This is the most important section. It proves you can handle adversity.
+
+    The Hurdle: Describe a specific bug, scaling issue, or architectural roadblock.
+
+    The Fix: How did you research it? What logic did you use to solve it?
+
+    The Lesson: What did this teach you about your stack or workflow?
+
+6. Results & Reflections
+
+Numbers speak louder than code.
+
+    Metrics (if applicable): "Reduced load time by 30%" or "Automated a process that took 5 hours weekly."
+
+    Final Thoughts: What would you do differently in Version 2.0? This shows a "growth mindset."
