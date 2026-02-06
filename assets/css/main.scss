@@ -22,68 +22,58 @@
 }
 
 /* ==== CODE BLOCK SECTION ==== */
-
-.code-block {
-  position: relative;
-  margin: 20px 0;
-}
-
-.code-block-copy-btn {
-  margin-bottom: 10px;
-}
-
-.code-block-content {
-  background-color: #f5f5f5; /* Light gray background */
-  border: 1px solid #ccc;   /* Light border */
-  padding: 10px;            /* Padding around the text */
-  overflow-x: auto;         /* Horizontal scrollbar for long lines */
-  font-family: monospace;   /* Monospace font for code */
-  white-space: pre;         /* Preserve whitespace */
-  border-radius: 4px;      /* Slightly rounded corners */
-
-  height: auto;
-  max-height: 30vh;
-}
-
-.code-block-feedback {
-  margin-top: 5px;
-  color: green;             /* Feedback text color */
-}
-
 /* ==== CAROUSEL SECTION ==== */
 .carousel {
   position: relative;
   margin: auto;
   overflow: hidden;
   width: 100%; 
-  /* Maintains the vertical space limit you established */
-  max-height: 70vh; 
+  /* Limits height so the carousel doesn't take up the whole page */
+  max-height: 85vh; 
 }
 
 .carousel-container {
   display: flex;
   transition: transform 0.5s ease;
-  /* CHANGED: Align items to center so shorter slides don't hug the top */
-  align-items: center; 
+  align-items: flex-start; /* Align to top to accommodate varying text lengths */
 }
 
 .carousel-container-slide {
   min-width: 100%;
   box-sizing: border-box;
   display: flex;
+  
+  /* CRITERIA 1: Stack image and text vertically */
+  flex-direction: column; 
+  
   justify-content: center;
   align-items: center;
-  /* ADDED: Ensures the slide wrapper matches the container's height for centering */
   align-self: stretch;
+  padding: 10px 40px; /* Space for side buttons and breathing room */
+  text-align: center;
 }
 
 .carousel-container img {
-  /* Keeps responsiveness and height limits intact */
-  width: 100%;
-  max-height: 70vh; 
+  /* CRITERIA 2: Maintain responsiveness */
+  width: auto;
+  max-width: 100%;
+  /* Reduced height slightly to leave room for text below */
+  max-height: 60vh; 
   height: auto;
   object-fit: contain; 
   display: block;
+  margin-bottom: 10px; /* Spacing between image and text */
+}
+
+/* CRITERIA 3: Support for text with or without <i> tags */
+.carousel-container-slide i, 
+.carousel-container-slide span,
+.carousel-container-slide p {
+  display: block;
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #555;
+  max-width: 80%; /* Prevents text from hitting the edges */
 }
 
 .carousel-button {
@@ -96,16 +86,10 @@
   padding: 15px;
   cursor: pointer;
   z-index: 10;
-  height: auto; 
 }
 
 .carousel-prev { left: 0; }
 .carousel-next { right: 0; }
-
-.carousel-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
 /* ==== MEDIA RESPONSIVE SIZE SECTION ==== */
 
 /* For tablets: */
