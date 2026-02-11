@@ -1,0 +1,130 @@
+---
+permalink: "data/winutil.json"
+layout: none
+---
+{
+    "WPFTweaks":  [
+                      "WPFTweaksRestorePoint",
+                      "WPFTweaksDiskCleanup",
+                      "WPFTweaksWPBT",
+                      "WPFTweaksEndTaskOnTaskbar",
+                      "WPFTweaksDisableExplorerAutoDiscovery",
+                      "WPFTweaksDisplay",
+                      "WPFTweaksActivity",
+                      "WPFTweaksPowershell7Tele",
+                      "WPFTweaksServices",
+                      "WPFTweaksConsumerFeatures",
+                      "WPFTweaksTelemetry",
+                      "WPFTweaksRemoveCopilot",
+                      "WPFTweaksEdgeDebloat",
+                      "WPFTweaksBlockAdobeNet",
+                      "WPFTweaksDeleteTempFiles",
+                      "WPFTweaksDisableBGapps",
+                      "WPFTweaksRemoveOneDrive",
+                      "WPFTweaksRightClickMenu",
+                      "WPFTweaksLocation",
+                      "WPFTweaksDVR"
+                  ],
+    "Install":  [
+                    {
+                        "winget":  "KDE.Krita",
+                        "choco":  "krita"
+                    },
+                    {
+                        "winget":  "Microsoft.VisualStudioCode",
+                        "choco":  "vscode"
+                    },
+                    {
+                        "winget":  "RustDesk.RustDesk",
+                        "choco":  "rustdesk.portable"
+                    },
+                    {
+                        "winget":  "7zip.7zip",
+                        "choco":  "7zip"
+                    },
+                    {
+                        "winget":  "Obsidian.Obsidian",
+                        "choco":  "obsidian"
+                    },
+                    {
+                        "winget":  "LibreWolf.LibreWolf",
+                        "choco":  "librewolf"
+                    },
+                    {
+                        "winget":  "Discord.Discord",
+                        "choco":  "discord"
+                    },
+                    {
+                        "winget":  "OBSProject.OBSStudio",
+                        "choco":  "obs-studio"
+                    },
+                    {
+                        "winget":  "EpicGames.EpicGamesLauncher",
+                        "choco":  "epicgameslauncher"
+                    },
+                    {
+                        "winget":  "Bitwarden.Bitwarden",
+                        "choco":  "bitwarden"
+                    },
+                    {
+                        "winget":  "Valve.Steam",
+                        "choco":  "steam-client"
+                    },
+                    {
+                        "winget":  "Mozilla.Firefox",
+                        "choco":  "firefox"
+                    },
+                    {
+                        "winget":  "Git.Git",
+                        "choco":  "git"
+                    },
+                    {
+                        "winget":  "GitHub.GitHubDesktop",
+                        "choco":  "git;github-desktop"
+                    },
+                    {
+                        "winget":  "HandBrake.HandBrake",
+                        "choco":  "handbrake"
+                    },
+                    {
+                        "winget":  "TheDocumentFoundation.LibreOffice",
+                        "choco":  "libreoffice-fresh"
+                    },
+                    {
+                        "winget":  "Docker.DockerDesktop",
+                        "choco":  "docker-desktop"
+                    },
+                    {
+                        "winget":  "BleachBit.BleachBit",
+                        "choco":  "bleachbit"
+                    },
+                    {
+                        "winget":  "na",
+                        "choco":  "pyenv-win"
+                    }
+                ],
+    "WPFInstall":  [
+                       "WPFInstallkrita",
+                       "WPFInstallvscode",
+                       "WPFInstallrustdesk",
+                       "WPFInstall7zip",
+                       "WPFInstallobsidian",
+                       "WPFInstalllibrewolf",
+                       "WPFInstalldiscord",
+                       "WPFInstallobs",
+                       "WPFInstallepicgames",
+                       "WPFInstallbitwarden",
+                       "WPFInstallsteam",
+                       "WPFInstallfirefox",
+                       "WPFInstallgit",
+                       "WPFInstallgithubdesktop",
+                       "WPFInstallhandbrake",
+                       "WPFInstalllibreoffice",
+                       "WPFInstalldockerdesktop",
+                       "WPFInstallbleachbit",
+                       "WPFInstallpyenvwin"
+                   ],
+    "WPFFeature":  [
+                       "WPFFeaturewsl"
+                   ]
+}

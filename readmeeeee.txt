@@ -1,4 +1,13 @@
-How to upload to deployment
+=== Setup ===
+From now on, use the docker compose yml by running:
+```
+docker compose up
+```
+
+Find the web address the static site is hosted on and start editing!
+http://localhost:4000/site/
+
+=== How to upload to deployment ===
 1) Merge whatever changes you made on main to gh-pages branch
 2) Make sure you dont bring over any assets images by deleting them in that gh-pages branch
 
@@ -58,9 +67,13 @@ Eg.
     <div class="carousel-container">
         <div class="carousel-container-slide">
             <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/SplashArt.jpg"/>
+            <br>
+            <i>Image description</i>
         </div>
         <div class="carousel-container-slide">
             <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Wind%26TUnnel.jpg"/>
+            <br>
+            <i>Image description</i>
         </div>
     </div>
     <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>

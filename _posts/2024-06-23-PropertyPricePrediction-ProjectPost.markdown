@@ -2,7 +2,7 @@
 layout: post
 title:  "Property Price Prediction"
 date:   2024-06-23
-permalink: "/projects/polytechnic-games/propertyPricePrediction-post"
+permalink: "/projects/coding-projects/propertyPricePrediction-post"
 # categories: jekyll update
 
 thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/PropertyPricePrediction/ImageCarousell/detailspage1.png"
