@@ -1,0 +1,43 @@
+---
+permalink: "data/docker/syncthing.yml"
+layout: none
+---
+# FOR LINUX
+# http://localhost:8384/
+services:
+  syncthing:
+  # use the same version as the one on the phone to ensure that it can sync properly
+    image: syncthing/syncthing:1.29.4
+    container_name: syncthing
+    hostname: my-linux
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ./data:/var/syncthing
+    network_mode: host
+    restart: unless-stopped
+
+
+
+
+# FOR WINDOWS
+# http://localhost:8384/#
+services:
+  syncthing:
+  # use the same version as the one on the phone to ensure that it can sync properly
+    image: syncthing/syncthing:1.29.4
+    container_name: syncthing
+    hostname: redlaptop-windows11
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - STGUIADDRESS=0.0.0.0:8384
+    volumes:
+      - ./data:/var/syncthing
+    ports:
+          - 8384:8384 # Web GUI
+          - 22000:22000/tcp # Protocol listening port
+          - 22000:22000/udp # Protocol listening port
+          - 21027:21027/udp # Discovery broadcasts
+    restart: unless-stopped
