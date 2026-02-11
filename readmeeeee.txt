@@ -5,7 +5,7 @@ docker compose up
 ```
 
 Find the web address the static site is hosted on and start editing!
-
+http://localhost:4000/site/
 
 === How to upload to deployment ===
 1) Merge whatever changes you made on main to gh-pages branch
