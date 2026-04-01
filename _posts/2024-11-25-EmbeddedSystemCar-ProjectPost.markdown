@@ -190,21 +190,41 @@ Once the software logic has been implemented into the motor component, it is tim
 When the fine-tuning process was taking place, it can be seen that the controller car is jittering quite a bit when trying to adjust its PID. As such there were a few things that was needed to be fine tuned: 
 
 1) Lower the Deravative Gain (Kd)
+
+<br>
+
 2) Lower the proportional gain (Kp)
+
+<br>
+
 3) Check the time interval of when the PID algorithm is called
+
+
+<br>
+<br>
+
 
 ---
 
 #### Technical Challenges & Solutions - Motor Stability - The Lesson
 
-If a lesson was to be learnt from this entire project, it would be that real life physics does not play nicely with digital code. This came as a shock this was my first time developing an embedded system that moves, reacts and interacts with the real physical world. 
+<br>
+
+If a lesson was to be learnt from this entire project, it would be that real life physics does not play nicely with code. This came as a shock this was my first time developing an embedded system that moves, reacts and interacts with the real physical world. 
 
 <br>
 
-For example, as I was fine-tuning the PID values. I realised that tuning on a wooden surface is completely different from tuning on a croncrete ground. Due to each material's friction and different values were needed to ensure that the car controller was moving at its maximum performance.
+For example, as I was fine-tuning the PID values. I realised that tuning on a wooden surface is completely different from tuning on a croncrete ground. Due to each material's friction, different values were needed to ensure that the car controller was moving at its best performance.
 
 <br>
 
+Moreover, debugging a certain issue like why a motor is not moving became twofold. I would need to check both the code and the hardware wiring to see if there were any mistakes like unplugged wires or loose cables made. 
+
+<br>
+
+All in all, it was a good project to learn from. I realized how difficult working with hardware could be due to the increased effort one must take whenever they test the device.
+
+---
 
 ## Results
 @ToDo: upload a video of the car running correctly for the whole circuit
