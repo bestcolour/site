@@ -193,26 +193,21 @@ When the fine-tuning process was taking place, it can be seen that the controlle
 2) Lower the proportional gain (Kp)
 3) Check the time interval of when the PID algorithm is called
 
+---
+
 #### Technical Challenges & Solutions - Motor Stability - The Lesson
 
-@ToDo
+If a lesson was to be learnt from this entire project, it would be that real life physics does not play nicely with digital code. This came as a shock this was my first time developing an embedded system that moves, reacts and interacts with the real physical world. 
 
+<br>
+
+For example, as I was fine-tuning the PID values. I realised that tuning on a wooden surface is completely different from tuning on a croncrete ground. Due to each material's friction and different values were needed to ensure that the car controller was moving at its maximum performance.
 
 <br>
 
 
-This is the most important section. It proves you can handle adversity.
+## Results
+@ToDo: upload a video of the car running correctly for the whole circuit
 
-    The Hurdle: Describe a specific bug, scaling issue, or architectural roadblock.
 
-    The Fix: How did you research it? What logic did you use to solve it?
-
-    The Lesson: What did this teach you about your stack or workflow?
-
-6. Results & Reflections
-
-Numbers speak louder than code.
-
-    Metrics (if applicable): "Reduced load time by 30%" or "Automated a process that took 5 hours weekly."
-
-    Final Thoughts: What would you do differently in Version 2.0? This shows a "growth mindset."
+<br>
