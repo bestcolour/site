@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Remote Control Car with Raspberry Picos"
+title:  "Remote Control Car<br>with Raspberry Picos"
 date:   2024-11-25
 permalink: "/projects/coding-projects/embeddedSystemRemoteControlCar-post"
 # categories: jekyll update
@@ -206,6 +206,8 @@ When the fine-tuning process was taking place, it can be seen that the controlle
 
 ---
 
+<br>
+
 #### Technical Challenges & Solutions - Motor Stability - The Lesson
 
 <br>
@@ -224,7 +226,11 @@ Moreover, debugging a certain issue like why a motor is not moving became twofol
 
 All in all, it was a good project to learn from. I realized how difficult working with hardware could be due to the increased effort one must take whenever they test the device.
 
+<br>
+
 ---
+
+<br>
 
 ## Results
 @ToDo: upload a video of the car running correctly for the whole circuit
