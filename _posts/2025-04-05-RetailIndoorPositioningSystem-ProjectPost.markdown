@@ -12,16 +12,36 @@ alt-text: ""
 
 <br>
 
+---
+
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/SplashArt.jpg"/>
+            <br>
+            <i>Image description</i>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/HangryGuardians/Wind%26TUnnel.jpg"/>
+            <br>
+            <i>Image description</i>
+        </div>
+    </div>
+    <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-next carousel-button" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+---
+
+<br>
+
 <!-- Github button -->
-<a href="https://github.com/DB-OS-Cyber-Sec/cloud" target="_blank">
+<a href="https://github.com/bestcolour/IoT-Indoor-Positioning-HeatMap" target="_blank">
 <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/Images/Logos/GithubLogo.jpg" 
          alt="github icon" 
          style="width: 50px; height: auto; border: 2px solid #000; border-radius: 10px; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5); margin: 0 auto; display: block;">
 </a>
 
-
-
-<br>
 <br>
 
 ---
@@ -96,7 +116,6 @@ With visual heatmaps, analysis could be done to identify underutilized store are
 7. **Centralized Analytics Dashboard** : Provides authorized personnel with a secure web interface to view spatial insights and store layout data.
 8. **Regulatory Privacy Compliance** : Implements data anonymization and notification protocols to align with GDPR and PDPA standards.
 9. **Scalable Network Architecture** : Employs a star topology centered on an MQTT broker to manage high volumes of device data.
-10. **Hardware Agnostic Design** : Utilizes cost-effective, readily available components like Raspberry Pi and M5StickCPlus for broad accessibility.
 
 
 <br>
