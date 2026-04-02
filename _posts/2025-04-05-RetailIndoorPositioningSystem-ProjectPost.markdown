@@ -152,7 +152,7 @@ With visual heatmaps, analysis could be done to identify underutilized store are
 <br>
 
 #### Technical Challenges & Solutions - Motor Stability - The Lesson
-s
+
 <br>
 
 @todo
