@@ -233,7 +233,6 @@ All in all, it was a good project to learn from. I realized how difficult workin
 <br>
 
 ## Results
-@ToDo: upload a video of the car running correctly for the whole circuit
-
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/HvNTLfVt8W4?si=w-lOjwE5GiIt4ZSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 <br>
