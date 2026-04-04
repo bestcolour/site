@@ -191,11 +191,34 @@ With visual heatmaps, analysis could be done to identify underutilized store are
 
 ## Results
 
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/IndoorPositioningSystem/Heatmap BLE.png"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/IndoorPositioningSystem/Heatmap Hybrid.png"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/IndoorPositioningSystem/Heatmap Wi-Fi.png"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/IndoorPositioningSystem/Mean Latency Comparison.png"/>
-<img width="100%" src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/IndoorPositioningSystem/Positioning Error Comparison.png"/>
+
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/IndoorPositioningSystem/Heatmap BLE.png"/>
+            <br>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/IndoorPositioningSystem/Heatmap Hybrid.png"/>
+            <br>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/IndoorPositioningSystem/Heatmap Wi-Fi.png"/>
+            <br>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/IndoorPositioningSystem/Mean Latency Comparison.png"/>
+            <br>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/IndoorPositioningSystem/Positioning Error Comparison.png"/>
+            <br>
+        </div>
+    </div>
+    <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-next carousel-button" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
 
 
 <br>
