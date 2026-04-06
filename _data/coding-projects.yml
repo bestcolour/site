@@ -1,3 +1,8 @@
+- url: "/projects/coding-projects/dataAnalyticsUltraWidthBandLOSAndNLOS"
+  thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/DataAnalysisUWB_LOS_NLOS/Correlation_Heatmap-Features.png"
+  alt-text: "Correlation Matrix Heatmap"
+  title: "Data Analytics<br>UWB LOS & NLOS"
+
 - url: "/projects/coding-projects/embeddedSystemRemoteControlCar-post"
   thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/EmbeddedRemoteControlCar/front-view.jpg"
   alt-text: "Car Front View"
