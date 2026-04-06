@@ -5,25 +5,26 @@ date:   2025-03-31
 permalink: "/projects/coding-projects/dataAnalyticsUltraWidthBandLOSAndNLOS"
 # categories: jekyll update
 
-thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/EmbeddedRemoteControlCar/front-view.jpg"
-alt-text: "Car Front View"
+thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/DataAnalysisUWB_LOS_NLOS/Correlation_Heatmap-Features.png"
+alt-text: "Correlation Matrix Heatmap"
 ---
-
-<div class="carousel">
-    <div class="carousel-container">
-        <div class="carousel-container-slide">
-            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/EmbeddedRemoteControlCar/back-view.jpg"/>
-        </div>
-    </div>
-    <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>
-    <button class="carousel-next carousel-button" onclick="moveSlide(1)">&#10095;</button>
-</div>
 
 <br>
 <br>
 
 ---
 
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/biwz2rDsr7U?si=RPjfog4ANZnB4Y6c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Project conducted as part of the Computing Science program at UofG and SIT
+
+<br>
+<br>
+
+---
+
+
+<br>
 <br>
 
 ## Description
@@ -118,10 +119,29 @@ The primary technical hurdle is the presence of Non-Line-of-Sight (NLOS) conditi
 
 
 #### Solution
-To mitigate the impact of NLOS conditions, the team developed a classification model leveraging advanced feature engineering. They systematically derived new signal metrics from existing UWB data, specifically the **Threshold Power Level**, which measures the difference between first path and received power levels to estimate signal attenuation. By combining these derived metrics with ensemble models like XGBoost and Random Forest, the solution achieved high classification accuracy (up to 91.67%), effectively identifying when a signal has been obstructed.
+To mitigate the impact of NLOS conditions, our team developed a classification model leveraging advanced feature engineering. They systematically derived new signal metrics from existing UWB data, specifically the **Threshold Power Level**, which measures the difference between first path and received power levels to estimate signal attenuation. By combining these derived metrics with ensemble models like XGBoost and Random Forest, the solution achieved high classification accuracy (up to 91.67%), effectively identifying when a signal has been obstructed.
 
-@TODO: add feature engineering image here
-@TODO: add XGBoost & Random Forest classifier results
+<br>
+<br>
+
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/DataAnalysisUWB_LOS_NLOS/Feature_Engineering.png"/>
+            <i>Newly Derived Feature Engineering Metrics</i>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/DataAnalysisUWB_LOS_NLOS/Random_Forest-Classifier-Results.png"/>
+            <i>Random Forest Classifier Results</i>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/DataAnalysisUWB_LOS_NLOS/XGBoost-Classifier-Results.png"/>
+            <i>XGBoost Classifier Results</i>
+        </div>
+    </div>
+    <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-next carousel-button" onclick="moveSlide(1)">&#10095;</button>
+</div>
 
 
 <br>
@@ -171,9 +191,20 @@ Data set was created using [SNPN-UWB](http://www.log-a-tec.eu/mtc.html) board wi
 #### Solution
 Our team implemented a sliding time window approach (window size = 3) to aggregate the raw CIR columns into averages, smoothing out erratic values. Following this, a variance filtering process was applied using a "knee point" analysis to identify and retain only the most informative data points. This process reduced the 1,016 original samples down to just a few highly relevant features that passed a 0.6 variance threshold, significantly streamlining the dataset without losing critical patterns.
 
-
-@TODO: add CIR_Column_Variance image and CIR_Column_Variance-Sliding_Window as a carousel
-
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/DataAnalysisUWB_LOS_NLOS/CIR_Column_Variance.png"/>
+            <i>CIR Columns Variance</i>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/DataAnalysisUWB_LOS_NLOS/CIR_Column_Variance-Sliding_Window.png"/>
+            <i>CIR Columns Variance With Sliding Window Aggregation</i>
+        </div>
+    </div>
+    <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-next carousel-button" onclick="moveSlide(1)">&#10095;</button>
+</div>
 
 
 <br>
@@ -205,8 +236,22 @@ The feature set exhibited significant multicollinearity, where multiple variable
 #### Solution
 Our team used Correlation Matrix Heatmaps to identify groups of features with strong correlations (thresholds of ±0.7). Next, Principal Component Analysis (PCA) was applied to these specific groups. Rather than just reducing dimensions, PCA was used here to transform the data into an orthogonal feature space, creating new, uncorrelated features that represent the maximum variance of the original data while eliminating the redundancy caused by multicollinearity.
 
-@TODO: Add Correlation_Heatmap_Between_Features
-@TODO: Add Correlation_Heatmap_Between_PCA_Features
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/DataAnalysisUWB_LOS_NLOS/Correlation_Heatmap-Features.png"/>
+            <i>Correlation Matrix Heatmap Between Features</i>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/DataAnalysisUWB_LOS_NLOS/Correlation_Heatmap-PCA_Features.png"/>
+            <i>Correlation Matrix Heatmap Between PCA Features</i>
+        </div>
+    </div>
+    <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-next carousel-button" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+
 
 <br>
 <br>
@@ -219,8 +264,73 @@ Mitigating multicollinearity is a critical step in improving model generalizatio
 <br>
 <br>
 
+---
+
+<br>
+<br>
+
+
 ## Results
-<iframe width="100%" height="315" src="https://www.youtube.com/embed/HvNTLfVt8W4?si=w-lOjwE5GiIt4ZSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+<div class="carousel">
+    <div class="carousel-container">
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/DataAnalysisUWB_LOS_NLOS/Classification%20Results.png"/>
+            <i>Classification Model Results</i>
+        </div>
+        <div class="carousel-container-slide">
+            <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/DataAnalysisUWB_LOS_NLOS/Regression%20Results.png"/>
+            <i>Regression Model Results</i>
+        </div>
+    </div>
+    <button class="carousel-prev carousel-button" onclick="moveSlide(-1)">&#10094;</button>
+    <button class="carousel-next carousel-button" onclick="moveSlide(1)">&#10095;</button>
+</div>
+
+<br>
+<br>
+
+
+The classification and regression models used in this project were evaluated based on their ability to accurately distinguish between Line-of-Sight (LOS) and Non-Line-of-Sight (NLOS) conditions and predict signal ranges. Across both tasks, ensemble methods like **XGBoost and Random Forest consistently outperformed other models** due to their capacity to capture non-linear relationships within the UWB signal data.
+
+<br>
+<br>
+<br>
+
+
+### Classification Model Results
+The primary goal of classification was to categorize UWB Channel Impulse Response (CIR) measurements as either LOS or NLOS.
+
+<br>
+
+**Top Performers:** XGBoost achieved the highest accuracy at 91.67%, with Random Forest closely following at 91.25%. Both models demonstrated balanced precision and recall across both classes.
+
+<br>
+
+**Baselines and Neural Networks:** Logistic Regression, serving as the baseline, achieved a decent accuracy of 85.46%, suggesting some linear relationships in the data. The Multilayer Perceptron (MLP) had moderate performance at 80.99%, potentially limited by model complexity or the need for more fine-tuning.
+
+<br>
+
+**Lowest Performer:** **K-Nearest Neighbour (KNN)** performed the worst with 76.39% accuracy. Its poor performance was attributed to sensitivity to feature scaling and the "curse of dimensionality," where high-dimensional data makes distance metrics less meaningful.
+
+<br>
+<br>
+
+### Regression Model Results
+Regression models were tasked with predicting the continuous "measured range" for localization.
+
+<br>
+
+**Top Performers:** Random Forest and XGBoost were the most effective, producing the lowest Root Mean Squared Errors (RMSE) of 1.45 and 1.46, respectively. They also achieved the highest R² scores (0.6173 for Random Forest and 0.6128 for XGBoost), indicating they could explain over 60% of the variance in the target range.
+
+<br>
+
+**Baselines and Neural Networks:** Ridge Regression (baseline) reached an R² of 0.5220, but it was constrained by its linear nature and inability to model complex signal interactions. The MLP Regressor showed similar moderate results (R² of 0.4646), appearing to suffer from overfitting and a need for a larger dataset to compete with ensemble models.
+
+<br>
+
+**Lowest Performer:** **KNN** again performed the worst in regression, with a significantly higher RMSE of 1.96 and a low R² score of 0.2142. The results suggest that without more extensive feature engineering or scaling, KNN is not well-suited for this specific regression task.
 
 <br>
 
