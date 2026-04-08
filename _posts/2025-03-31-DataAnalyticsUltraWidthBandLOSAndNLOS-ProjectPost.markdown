@@ -65,7 +65,7 @@ Indoor localization (also known as an Indoor Positioning System or IPS) is a tec
 <br>
 
 - Language: Python
-- Tools & Packages: Google Colab
+- Tools & Packages: Google Colab, matplotlib, sklearn, xgboost
 
 <br>
 <br>
