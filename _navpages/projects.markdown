@@ -50,3 +50,12 @@ table_col: 3
 <img src="https://raw.githubusercontent.com/bestcolour/site/master/assets/image/HaulAway/Screenshot3.jpg" alt-text="Polytechnic Final Year Project" width="100%"/>
 </a>
 
+
+<br>
+### Automation Info
+---
+<br>
+
+<a href="{{site.baseurl}}/projects/IT-automation-info/">
+<img src="https://logos-world.net/wp-content/uploads/2021/02/Docker-Logo.png" alt-text="Docker logo image" width="100%"/>
+</a>
