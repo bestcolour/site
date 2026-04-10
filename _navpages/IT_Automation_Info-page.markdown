@@ -87,7 +87,7 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 
 <br>
 
-<a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.03.13.ps1">winutil-26.03.13</a>
+<a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.03.13.ps1">winutil-26.03.13.ps1</a>
 
 <a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.03.13-default.json">winutil-26.03.13-default.json</a>
 
