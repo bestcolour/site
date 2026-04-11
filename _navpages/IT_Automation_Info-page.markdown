@@ -91,7 +91,15 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 
 <a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.03.13-default.json">winutil-26.03.13-default.json</a>
 
-<a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.04.02.ps1">winutil-26.04.02.ps1</a>
+<br>
+
+<a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.04.02.ps1">winutil-26.04.02.ps1</a> (installing with win11 creator debloated iso will apply the Tweaks)
+
+<a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.04.02-base_installs.json">26.04.02-base_installs.json</a>
+
+<a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.04.02-development_installs.json">26.04.02-development_installs.json</a>
+
+<a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.04.02-game_installs.json">26.04.02-game_installs.json</a>
 
 <br>
 
