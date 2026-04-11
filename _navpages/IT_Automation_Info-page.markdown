@@ -89,17 +89,21 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 
 <a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.03.13.ps1">winutil-26.03.13.ps1</a>
 
-<a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.03.13-default.json">winutil-26.03.13-default.json</a>
+- <a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.03.13-default.json">winutil-26.03.13-default.json</a>
 
 <br>
 
 <a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.04.02.ps1">winutil-26.04.02.ps1</a> (installing with win11 creator debloated iso will apply the Tweaks)
+- Windows ISO Version that works with this winutil's win11 creator version
+    - Win11_25H2_EnglishInternational_x64_v2
 
-<a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.04.02-base_installs.json">26.04.02-base_installs.json</a>
+- Winutil Install JSONs
 
-<a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.04.02-development_installs.json">26.04.02-development_installs.json</a>
+    - <a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.04.02-base_installs.json">winutil-26.04.02-base_installs.json</a>
 
-<a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.04.02-game_installs.json">26.04.02-game_installs.json</a>
+    - <a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.04.02-development_installs.json">winutil-26.04.02-development_installs.json</a>
+
+    - <a href="{{site.baseurl}}/projects/IT-automation-info/winutil/26.04.02-game_installs.json">winutil-26.04.02-game_installs.json</a>
 
 <br>
 
