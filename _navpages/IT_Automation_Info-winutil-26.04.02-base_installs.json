@@ -1,0 +1,14 @@
+---
+permalink: "/projects/IT-automation-info/winutil/26.04.02-base_installs.json"
+layout: none
+---
+[
+    "WPFInstall7zip",
+    "WPFInstallbitwarden",
+    "WPFInstallbleachbit",
+    "WPFInstalldockerdesktop",
+    "WPFInstallfirefox",
+    "WPFInstalllibreoffice",
+    "WPFInstalllibrewolf",
+    "WPFInstallobsidian"
+]

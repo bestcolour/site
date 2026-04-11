@@ -1,0 +1,10 @@
+---
+permalink: "/projects/IT-automation-info/winutil/26.04.02-development_installs.json"
+layout: none
+---
+[
+    "WPFInstallgit",
+    "WPFInstallgithubdesktop",
+    "WPFInstallrustdesk",
+    "WPFInstallvscode"
+]
