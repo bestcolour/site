@@ -11,10 +11,42 @@ date:   2026-04-10
 
 This page is meant to just hold the links to different IT Automation or DevOps configuration for my own ease of access.
 
+
 <br>
 <br>
 
+## Content Table
+1) [Docker Compose Resources](#docker-compose)
+
+2) [Winutil Resources](#winutil)
+
+3) [Oracle Cloud Personal Architecture](#oracle-cloud-personal-architecture)
+
+
+<br>
+<br>
+
+
+
+---
+---
+---
+
+<br>
+<br>
+
+
+
 ## Docker Compose
+
+<br>
+
+[Back to content table](#)
+
+<br>
+<br>
+
+
 <a href="{{site.baseurl}}/projects/IT-automation-info/docker/syncthing.yml">syncthing</a>
 
 <a href="{{site.baseurl}}/projects/IT-automation-info/docker/tailscale.yml">tailscale</a>
@@ -33,6 +65,10 @@ This page is meant to just hold the links to different IT Automation or DevOps c
 <br>
 
 ## Winutil
+
+<br>
+
+[Back to content table](#)
 
 <br>
 
@@ -110,3 +146,47 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 <br>
 
 
+---
+---
+---
+
+<br>
+
+
+## Oracle Cloud Personal Architecture
+
+<br>
+
+[Back to content table](#)
+
+<br>
+<br>
+
+Oracle Cloud has [Free Forever Resources](https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm) which, if you do not exceed your usage limits, will literally remain free forever! This is my architecture I have come up with to allow me to utilise free cloud resources for my own projects and uses.
+
+<br>
+<br>
+
+
+<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Oracle%20Cloud%20Resources.drawio.png" alt-text="Coding project" width="100%"/>
+
+
+<br>
+
+The oracle cloud architecture will comprise of mainly 4 VMs (since that is the limit for a Free Forever Resource Tier).
+
+<br>
+
+1) The first VM will exist in the public subnet with a reserved public ip to run NGINX as reverse proxy that acts as as "Traffic Cop" or a Gateway, directing outside requests/connections to applications running within the private subnet. 
+
+<br>
+
+2) The second VM will exist in the public subnet with an ephemeral public ip and run containerised apps (in this case minecraft is used as an example)
+
+<br>
+
+3) The third VM will exist in the private subnet with an private ip and run containerised apps (in this case minecraft is used as an example)
+
+<br>
+
+4) The fourth VM will exist in the private subnet with an private ip and run a headscale control server that allows my own devices to communicate with one another even when they are not in the same local network.
