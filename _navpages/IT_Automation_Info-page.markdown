@@ -11,10 +11,42 @@ date:   2026-04-10
 
 This page is meant to just hold the links to different IT Automation or DevOps configuration for my own ease of access.
 
+
 <br>
 <br>
 
+## Content Table
+1) [Docker Compose Resources](#docker-compose)
+
+2) [Winutil Resources](#winutil)
+
+3) [Oracle Cloud Personal Architecture](#oracle-cloud-personal-architecture)
+
+
+<br>
+<br>
+
+
+
+---
+---
+---
+
+<br>
+<br>
+
+
+
 ## Docker Compose
+
+<br>
+
+[Back to content table](#)
+
+<br>
+<br>
+
+
 <a href="{{site.baseurl}}/projects/IT-automation-info/docker/syncthing.yml">syncthing</a>
 
 <a href="{{site.baseurl}}/projects/IT-automation-info/docker/tailscale.yml">tailscale</a>
@@ -33,6 +65,10 @@ This page is meant to just hold the links to different IT Automation or DevOps c
 <br>
 
 ## Winutil
+
+<br>
+
+[Back to content table](#)
 
 <br>
 
@@ -109,4 +145,22 @@ Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
 
 <br>
 
+
+---
+---
+---
+
+<br>
+
+
+## Oracle Cloud Personal Architecture
+
+<br>
+
+[Back to content table](#)
+
+<br>
+<br>
+
+Oracle Cloud has [Free Forever Resources](https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm) which, if you do not exceed your usage limits, will literally remain free forever! This is my architecture I have come up with to allow me to utilise free cloud resources for my own projects and uses.
 
