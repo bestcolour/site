@@ -14,10 +14,12 @@ This page is meant to just hold the links to different IT Automation or DevOps c
 <br>
 <br>
 
-## Docker
+## Docker Compose
 <a href="{{site.baseurl}}/projects/IT-automation-info/docker/syncthing.yml">syncthing</a>
 
 <a href="{{site.baseurl}}/projects/IT-automation-info/docker/tailscale.yml">tailscale</a>
+
+<a href="{{site.baseurl}}/projects/IT-automation-info/docker/terraform.yml">terraform</a>
 
 
 <br>
