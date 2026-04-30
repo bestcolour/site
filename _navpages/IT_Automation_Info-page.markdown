@@ -181,7 +181,7 @@ The oracle cloud architecture will comprise of mainly 4 VMs (since that is the l
 
 <br>
 
-2) The second VM will exist in the public subnet with an ephemeral public ip and run containerised apps (in this case minecraft is used as an example)
+2) The second VM will exist in the public subnet with an ephemeral public ip and run containerised apps 
 
 <br>
 
@@ -190,3 +190,10 @@ The oracle cloud architecture will comprise of mainly 4 VMs (since that is the l
 <br>
 
 4) The fourth VM will exist in the private subnet with an private ip and run a headscale control server that allows my own devices to communicate with one another even when they are not in the same local network.
+
+<br>
+<br>
+
+**How Cloud Resources are Provisioned and Managed**
+
+<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Oracle%20Cloud%20Secure%20Data%20Management.drawio.png" alt-text="Coding project" width="100%"/>
