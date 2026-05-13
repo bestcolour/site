@@ -78,6 +78,36 @@ The oracle cloud architecture will comprise of mainly 4 VMs, 1 reserved public i
 <br>
 <br>
 
+---
+
+<br>
+
+## Cloud Resources - Workload Resources Strategies to Setup Software on VM Instances
+
+Based on different use cases, there will be different strategies employed to setup the softwares running on these VM Instances.
+
+<br>
+
+<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Oracle%20Cloud%20Workload%20Resource%20Setup.drawio.png" alt-text="Coding project" width="100%"/>
+
+<br>
+
+1) **The first VM (the reverse proxy)**: Since the reverse proxy is often a "setup once and forget it" application, it would be easier to use Oracle's native Cloud Init method to setup the reverse proxy.
+
+<br>
+
+2) **The second VM (the minecraft server):** A dedicated game server may change often due to how much I play games hence it would be wiser to use Ansible to manage the state of the Docker containers.
+
+<br>
+
+3) **The third VM (the side project instance)**: As this instance is for other side projects, it would be better to play it safe to use Ansible and Docker to ensure that the instance is clean so as to allow future me the most flexibility in setting up new projects.
+
+<br>
+
+4) **The fourth VM (the Headscale VPN Control Server):** This control server is also similar the the first VM in the sense that it is often just a "setup once and forget it" application. It will use a similar method to the first VM.
+
+<br>
+<br>
 
 ---
 
@@ -94,11 +124,11 @@ These would be:
 
 <br>
 
-1) KMS Vault
+1) **KMS Vault:** To hold any secrets and a master key used to allow all data held by the workload resources to be encrypted
 
-2) KMS Key
+2) **KMS Key:** The master key used to encrypt/decrypt data encryption keys (basically separate keys that exist within the data storage's location)
 
-3) An Object Storage for storing Terraform State file of the resources mentioned in [the above section](#cloud-resources---provisioning--managing-bootstrap-cloud-resources)
+3) **An Object Storage:** for storing Terraform State file of the resources mentioned in [the above section](#cloud-resources---provisioning--managing-bootstrap-cloud-resources)
 
 
 <br>
