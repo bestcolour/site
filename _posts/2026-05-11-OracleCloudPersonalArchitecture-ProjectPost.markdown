@@ -91,8 +91,13 @@ Before all the resources mentioned above in [the above section](#cloud-resources
 <br>
 
 These would be:
+
+<br>
+
 1) KMS Vault
+
 2) KMS Key
+
 3) An Object Storage for storing Terraform State file of the resources mentioned in [the above section](#cloud-resources---provisioning--managing-bootstrap-cloud-resources)
 
 
@@ -104,9 +109,11 @@ These would be:
 <br>
 <br>
 
-As such, the flow in which one should take can be simplified to:
+**As such, the flow in which one should run terraform can be simplified to:**
 
-<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Oracle%20Cloud%20Secure%20Data%20Management.drawio.png" alt-text="Coding project" width="100%"/>
+<br>
+
+<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Order_of_Setup.png" alt-text="Coding project" width="65%"/>
 
 
 
