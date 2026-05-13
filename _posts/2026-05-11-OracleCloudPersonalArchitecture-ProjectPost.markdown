@@ -65,11 +65,11 @@ The oracle cloud architecture will comprise of mainly 4 VMs, 1 reserved public i
 
 <br>
 
-2) The second VM will exist in the public subnet with an ephemeral public ip and run containerised apps 
+2) The second VM will exist in the public subnet with an ephemeral public ip and run containerised apps (in this case minecraft is used as an example)
 
 <br>
 
-3) The third VM will exist in the private subnet with an private ip and run containerised apps (in this case minecraft is used as an example)
+3) The third VM will exist in the private subnet with an private ip and run containerised apps
 
 <br>
 
