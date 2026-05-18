@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Oracle Cloud<br>Personal Architecture"
+title:  "WIP - Oracle Cloud<br>Personal Architecture"
 date:   2026-05-11
 permalink: "/projects/coding-projects/OracleCloudPersonalArchitecture"
 # categories: jekyll update
