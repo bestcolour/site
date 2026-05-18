@@ -1,0 +1,12 @@
+---
+permalink: "/projects/IT-automation-info/winutil/26.04.02-game_installs.json"
+layout: none
+---
+[
+    "WPFInstallepicgames",
+    "WPFInstallhandbrake",
+    "WPFInstallkrita",
+    "WPFInstallobs",
+    "WPFInstallOverwolf",
+    "WPFInstallsteam"
+]

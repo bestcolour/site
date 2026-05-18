@@ -1,0 +1,40 @@
+---
+permalink: "/projects/IT-automation-info/winutil/26.03.13-default.json"
+layout: none
+---
+[
+    "WPFInstall7zip",
+    "WPFInstallbitwarden",
+    "WPFInstallbleachbit",
+    "WPFInstalldiscord",
+    "WPFInstalldockerdesktop",
+    "WPFInstallepicgames",
+    "WPFInstallfirefox",
+    "WPFInstallgithubdesktop",
+    "WPFInstallhandbrake",
+    "WPFInstallkrita",
+    "WPFInstalllibreoffice",
+    "WPFInstalllibrewolf",
+    "WPFInstallobs",
+    "WPFInstallobsidian",
+    "WPFInstallrustdesk",
+    "WPFInstallsteam",
+    "WPFInstallvscode",
+    "WPFTweaksActivity",
+    "WPFTweaksConsumerFeatures",
+    "WPFTweaksDisableExplorerAutoDiscovery",
+    "WPFTweaksWPBT",
+    "WPFTweaksDVR",
+    "WPFTweaksLocation",
+    "WPFTweaksServices",
+    "WPFTweaksTelemetry",
+    "WPFTweaksDiskCleanup",
+    "WPFTweaksDeleteTempFiles",
+    "WPFTweaksEndTaskOnTaskbar",
+    "WPFTweaksRestorePoint",
+    "WPFTweaksPowershell7Tele",
+    "WPFTweaksDisplay",
+    "WPFTweaksRightClickMenu",
+    "WPFTweaksRemoveOneDrive",
+    "WPFTweaksRemoveCopilot"
+]
