@@ -1,12 +1,12 @@
 ---
 layout: post
-title:  "Retail Indoor Positioning System "
+title: "IoT Retail Indoor<br>Positioning System"
 date:   2025-04-05
 permalink: "/projects/coding-projects/RetailIndoorPositioningSystem-post"
 # categories: jekyll update
 
-thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/TyphoonPrediction/Map_with_layers.png"
-alt-text: ""
+thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/University/IndoorPositioningSystem/MQTT Diagram for BLE-only.png"
+alt-text: "IoT Mindmap"
 ---
 <img width="100%" src=""/>
 
@@ -105,6 +105,7 @@ With visual heatmaps, analysis could be done to identify underutilized store are
 
 **Key Contributions**
 - BLE+WiFi combined hybrid positioning system
+- Implementation of MQTT Broker between broker and streaming devices
 - Heat Map Visualization Dashboard
 - Evaluation Metrics Tests
 
@@ -118,6 +119,7 @@ With visual heatmaps, analysis could be done to identify underutilized store are
 
 - Language: Python, Shell, Arduino IDE
 - Hardware: Raspberry Pis, M5StickCPlus
+- Protocols: MQTT, BLE, WiFi
 
 
 <br>
@@ -143,46 +145,6 @@ With visual heatmaps, analysis could be done to identify underutilized store are
 
 
 <br>
-<br>
-
----
-
-<br>
-
-## Technical Challenges & Solutions
-
-<br>
-<br>
-
-### Technical Challenges & Solutions - @todo
-
-#### Technical Challenges & Solutions - @todo - Issue
-@todo
-
-#### Technical Challenges & Solutions - @todo - The Logic Flow
-@todo
-
-
-#### Technical Challenges & Solutions - @todo - Fine-Tuning in Reality
-@todo
-
-
-<br>
-<br>
-
-
----
-
-<br>
-
-#### Technical Challenges & Solutions - Motor Stability - The Lesson
-
-<br>
-
-@todo
-
-
-
 <br>
 
 ---
