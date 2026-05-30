@@ -43,14 +43,65 @@ Oracle Cloud has [Free Forever Resources](https://docs.oracle.com/en-us/iaas/Con
 <br>
 <br>
 
-All of these must be done without exceeding the free forever tier limits of Oracle Cloud
+All of these must be implemented without exceeding the free forever tier limits of Oracle Cloud.
+
+<br>
+<br>
+
+
+---
+
+<br>
+
+## Cloud Resources - Provisioning & Managing Bootstrap Cloud Resources
+
+Before all the resources mentioned above in [the below section](#cloud-resources---workload-resources-to-be-provisioned--for-what-purposes) can be provisioned, it is crucial that the underlying foundation of the cloud architecture is established first. 
+
+<br>
+<br>
+
+The foundation would include:
+
+<br>
+
+1) **KMS Vault:** To hold any secrets and a master key used to allow all data held by the workload resources to be encrypted
+
+2) **KMS Key:** The master key used to encrypt/decrypt data encryption keys (basically separate keys that exist within the data storage's location)
+
+3) **An Object Storage:** for storing Terraform State file of the resources mentioned in [the above section](#cloud-resources---provisioning--managing-bootstrap-cloud-resources)
+
+
+<br>
+
+<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Oracle%20Cloud%20Secure%20Data%20Management.drawio.png" alt-text="Coding project" width="100%"/>
+
+
+<br>
+<br>
+
+**As such, the flow of how one should setup the Boostrap Cloud Resources with Terraform can be simplified to:**
+
+<br>
+
+<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Order_of_Setup.png" alt-text="Coding project" width="65%"/>
+
+<br>
+<br>
+
+---
 
 <br>
 <br>
 
 ## Cloud Resources - Workload Resources To Be Provisioned & For What Purposes
 
-These are the main cloud resources that will be used for my personal architecture. They will perform work for me as described below:
+<br>
+
+After setting up the Bootstrap Cloud Resources, we can finally get into the main cloud resources that will be used for my personal architecture. They will be called "Workload Resources" and will perform work for me as described below:
+
+<br>
+<br>
+
 
 <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Oracle%20Cloud%20Resources.drawio.png" alt-text="Coding project" width="100%"/>
 
@@ -61,19 +112,19 @@ The oracle cloud architecture will comprise of mainly 4 VMs, 1 reserved public i
 
 <br>
 
-1) The first VM will exist in the public subnet with a reserved public ip to run NGINX as reverse proxy that acts as as "Traffic Cop" or a Gateway, directing outside requests/connections to applications running within the private subnet. This VM will also serve as a bastion host for ssh connections (for Ansible to manage the software state of the computing instances within the private subnet)
+1) **The first VM** will exist in the public subnet with a reserved public ip to run NGINX as reverse proxy that acts as as "Traffic Cop" or a Gateway, directing outside requests/connections to applications running within the private subnet. This VM will also serve as a bastion host for ssh connections (for Ansible to manage the software state of the computing instances within the private subnet)
 
 <br>
 
-2) The second VM will exist in the public subnet with an ephemeral public ip and run containerised apps (in this case minecraft is used as an example)
+2) **The second VM** will exist in the public subnet with an ephemeral public ip and run containerised apps (in this case minecraft is used as an example)
 
 <br>
 
-3) The third VM will exist in the private subnet with an private ip and run containerised apps
+3) **The third VM** will exist in the private subnet with an private ip and run containerised apps
 
 <br>
 
-4) The fourth VM will exist in the private subnet with an private ip and run a headscale control server that allows my own devices to communicate with one another even when they are not in the same local network.
+4) **The fourth VM** will exist in the private subnet with an private ip and run a headscale control server that allows my own devices to communicate with one another even when they are not in the same local network.
 
 <br>
 <br>
@@ -113,40 +164,41 @@ Based on different use cases, there will be different strategies employed to set
 
 <br>
 
-## Cloud Resources - Provisioning & Managing Bootstrap Cloud Resources
+## Cloud Resources - Workload Resources Network Rules
 
-Before all the resources mentioned above in [the above section](#cloud-resources---provisioning--managing-bootstrap-cloud-resources) can be provisioned. It is crucial that the underlying foundation of the cloud architecture is established first. 
+<br>
+
+This section will talk about what resources will be used to handle networking rules within the architecture.
+<br>
+
+<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Oracle%20Cloud%20Networking%20Rules.drawio.png" alt-text="Coding project" width="100%"/>
 
 <br>
 <br>
 
-These would be:
-
-<br>
-
-1) **KMS Vault:** To hold any secrets and a master key used to allow all data held by the workload resources to be encrypted
-
-2) **KMS Key:** The master key used to encrypt/decrypt data encryption keys (basically separate keys that exist within the data storage's location)
-
-3) **An Object Storage:** for storing Terraform State file of the resources mentioned in [the above section](#cloud-resources---provisioning--managing-bootstrap-cloud-resources)
-
-
-<br>
-
-<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Oracle%20Cloud%20Secure%20Data%20Management.drawio.png" alt-text="Coding project" width="100%"/>
-
+Within the Virtual Network Cloud (VCN), networking rules will be divided between Security Lists and Network Security Groups (NSG).
 
 <br>
 <br>
 
-**As such, the flow in which one should run terraform can be simplified to:**
+**Security List - Public & Private**
+
+1) Will expose port 22 for SSH connections between compute resources 
 
 <br>
 
-<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Order_of_Setup.png" alt-text="Coding project" width="65%"/>
+**Network Security Groups - Secure Web Gateway**
 
-
+1) Will expose the necessary ports used by both NGINX & Tinyproxy on the Secure Web Network compute instance for ingress and egress directions from/towards Private Network Security Group
 
 <br>
+
+2) Will expose the Secure Web Network to the public internet
+
 <br>
+
+**Network Security Groups - Dedicated Game Server**
+
+1) Will expose the compute instance to the public internet
+
 
