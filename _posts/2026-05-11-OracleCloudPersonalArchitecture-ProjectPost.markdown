@@ -24,26 +24,27 @@ alt-text: "Cloud Architecture"
 <br>
 <br>
 
-Oracle Cloud has [Free Forever Resources](https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm) which, if you do not exceed your usage limits, will literally remain free forever! This is my architecture I have come up with to allow me to utilise free cloud resources for my own projects and uses.
-
-<br>
-<br>
 
 
 **The Goal:** The primary goal of this project is to create an architecture that fulfills these following needs/requirements:
 
 <br>
 
-1) VPN control server so that my other devices could all communicate with each other as if they were in a local network
+1) Host a Virtual Private Network (VPN) control server so that my other devices could all communicate with each other as if they were in a local network (crucial for self hosting).
 
-2) Hosting of a dedicated game server (like Minecraft for example)
+2) Host a dedicated game server (like Minecraft for example).
 
-3) Running resources of other cloud projects
+3) Have the flexibility to run other cloud resources in the future when new cloud project ideas pop up.
 
 <br>
 <br>
 
 All of these must be implemented without exceeding the free forever tier limits of Oracle Cloud.
+
+<br>
+<br>
+
+Oracle Cloud has [Free Forever Resources](https://docs.oracle.com/en-us/iaas/Content/FreeTier/freetier_topic-Always_Free_Resources.htm) which, if you do not exceed your usage limits, will literally remain free forever! This is my architecture I have come up with to allow me to utilise free cloud resources for my own projects and use cases.
 
 <br>
 <br>
@@ -108,23 +109,23 @@ After setting up the Bootstrap Cloud Resources, we can finally get into the main
 
 <br>
 
-The oracle cloud architecture will comprise of mainly 4 VMs, 1 reserved public ip and 1 ephemeral public ip (since that is the limit for a Free Forever Resource Tier).
+The oracle cloud architecture will comprise of mainly 4 Virtual Machines (VMs), 1 reserved public ip and 1 ephemeral public ip (since that is the limit for a Free Forever Resource Tier).
 
 <br>
 
-1) **The first VM** will exist in the public subnet with a reserved public ip to run NGINX as reverse proxy that acts as as "Traffic Cop" or a Gateway, directing outside requests/connections to applications running within the private subnet. This VM will also serve as a bastion host for ssh connections (for Ansible to manage the software state of the computing instances within the private subnet)
+1) **The first VM** will exist in the public subnet with a reserved public ip to run NGINX as reverse proxy and Tinyproxy as a forward proxy. It will act as as a Secure Web Gateway, directing outside requests/connections to applications running within the private subnet and allowing them to send their responses back to the public. This VM will also serve as a bastion host for ssh connections to the private subnet VMs.
 
 <br>
 
-2) **The second VM** will exist in the public subnet with an ephemeral public ip and run containerised apps (in this case minecraft is used as an example)
+2) **The second VM** will exist in the public subnet with an ephemeral public ip and run a Pterodactyl Panel container, a game server management panel that allows easy hosting of dedicated game servers.
 
 <br>
 
-3) **The third VM** will exist in the private subnet with an private ip and run containerised apps
+3) **The third VM** will exist in the private subnet with an private ip to run other future side projects.
 
 <br>
 
-4) **The fourth VM** will exist in the private subnet with an private ip and run a headscale control server that allows my own devices to communicate with one another even when they are not in the same local network.
+4) **The fourth VM** will exist in the private subnet with an private ip and run a Headscale control server that allows my own devices to communicate with one another even when they are not in the same local network.
 
 <br>
 <br>
@@ -143,11 +144,11 @@ Based on different use cases, there will be different strategies employed to set
 
 <br>
 
-1) **The first VM (the reverse proxy)**: Since the reverse proxy is often a "setup once and forget it" application, it would be easier to use Oracle's native Cloud Init method to setup the reverse proxy.
+1) **The first VM (the secure web gateway)**: Since the reverse and forward proxies are often "setup once and forget it" applications, it would be easier to use Oracle's native Cloud-Init method to setup them up.
 
 <br>
 
-2) **The second VM (the minecraft server):** A dedicated game server may change often due to how much I play games hence it would be wiser to use Ansible to manage the state of the Docker containers.
+2) **The second VM (the game server management panel):** As the Pterodactyl Panel is a management panel with UI, most of the state management of the game servers (eg. hosting new game server, deleting old game server) could be done there. However, to keep the instance's environment clean, Docker will be used to run Pterodactyl. This entire setup process will once again use Cloud-Init.
 
 <br>
 
@@ -155,7 +156,7 @@ Based on different use cases, there will be different strategies employed to set
 
 <br>
 
-4) **The fourth VM (the Headscale VPN Control Server):** This control server is also similar the the first VM in the sense that it is often just a "setup once and forget it" application. It will use a similar method to the first VM.
+4) **The fourth VM (the Headscale VPN Control Server):** This control server is also similar to the first VM as a "setup once and forget it" application. It will use a similar method to the first VM.
 
 <br>
 <br>
@@ -168,7 +169,7 @@ Based on different use cases, there will be different strategies employed to set
 
 <br>
 
-This section will talk about what resources will be used to handle networking rules within the architecture.
+This section will talk about the resources used in handling networking rules within the architecture.
 <br>
 
 <img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Oracle%20Cloud%20Networking%20Rules.drawio.png" alt-text="Coding project" width="100%"/>
