@@ -117,7 +117,7 @@ The oracle cloud architecture will comprise of mainly 4 Virtual Machines (VMs), 
 
 <br>
 
-2) **The second VM** will exist in the public subnet with an ephemeral public ip and run a Pterodactyl Panel container, a game server management panel that allows easy hosting of dedicated game servers.
+2) **The second VM** will exist in the public subnet with an ephemeral public ip and run a Pterodactyl Panel container, a game server management panel that allows easy hosting of dedicated game servers, and Wings a backend performing all of the logic of running game servers.
 
 <br>
 
@@ -148,7 +148,7 @@ Based on different use cases, there will be different strategies employed to set
 
 <br>
 
-2) **The second VM (the game server management panel):** As the Pterodactyl Panel is a management panel with UI, most of the state management of the game servers (eg. hosting new game server, deleting old game server) could be done there. However, to keep the instance's environment clean, Docker will be used to run Pterodactyl. This entire setup process will once again use Cloud-Init.
+2) **The second VM (the game server management panel):** As Pterodactyl Panel is a server management application, the allocation of servers is stateful thus making Ansible a perfect choice for setting it up and maintaining it throughout its lifetime. 
 
 <br>
 
@@ -200,6 +200,6 @@ Within the Virtual Network Cloud (VCN), networking rules will be divided between
 
 **Network Security Groups - Dedicated Game Server**
 
-1) Will expose the compute instance to the public internet
+1) Will expose the compute instance's ports to the public internet via 443 and 80 along with other game-related ports.
 
 
