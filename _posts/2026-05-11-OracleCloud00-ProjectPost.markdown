@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "WIP - Oracle Cloud<br>Personal Architecture"
+title:  "Oracle Cloud - 00<br>State & Secret Management"
 date:   2026-05-11
-permalink: "/projects/coding-projects/OracleCloudPersonalArchitecture"
+permalink: "/projects/coding-projects/OracleCloud00"
 # categories: jekyll update
 
 thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Oracle%20Cloud%20Secure%20Data%20Management.drawio.png"
@@ -18,6 +18,7 @@ alt-text: "Cloud Architecture"
          style="width: 50px; height: auto; border: 2px solid #000; border-radius: 10px; box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5); margin: 0 auto; display: block;">
 </a>
 
+<br>
 
 ---
 
