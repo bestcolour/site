@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Oracle Cloud - 00<br>State & Secret Management"
+title:  "Oracle Cloud - 00<br>Bootstrap"
 date:   2026-05-11
 permalink: "/projects/coding-projects/OracleCloud00"
 # categories: jekyll update
 
-thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Oracle%20Cloud%20Secure%20Data%20Management.drawio.png"
+thumbnail: "https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/00-Bootstrap-Architecture.png"
 alt-text: "Cloud Architecture"
 ---
 
@@ -38,11 +38,11 @@ alt-text: "Cloud Architecture"
 
 <br>
 
-1) Host a Virtual Private Network (VPN) control server so that my other devices could all communicate with each other as if they were in a local network (crucial for self hosting).
+1) Allow the Terraform State file of future Terraform projetcs to be synchronised on an Oracle Cloud Object Storage, thus allowing different devices to perform Terraform operations to the Infrastructure without having to manually synchronise the Terraform State files on those devices.
 
-2) Host a dedicated game server (like Minecraft for example).
+<br>
 
-3) Have the flexibility to run other cloud resources in the future when new cloud project ideas pop up.
+2) Setup a Key Management System Vault and Master Key to allow future Oracle Cloud Infrastructure (like Object Storage or Boot Volume) to have its data be encrypted and Secrets to be stored.
 
 <br>
 <br>
@@ -64,7 +64,7 @@ Oracle Cloud has [Free Forever Resources](https://docs.oracle.com/en-us/iaas/Con
 
 ## Cloud Resources - Provisioning & Managing Bootstrap Cloud Resources
 
-Before all the resources mentioned above in [the below section](#cloud-resources---workload-resources-to-be-provisioned--for-what-purposes) can be provisioned, it is crucial that the underlying foundation of the cloud architecture is established first. 
+Before cloud resources for future projects can be provisioned, it is crucial that the underlying foundation of the cloud architecture is established first. 
 
 <br>
 <br>
@@ -82,7 +82,7 @@ The foundation would include:
 
 <br>
 
-<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Oracle%20Cloud%20Secure%20Data%20Management.drawio.png" alt-text="Coding project" width="100%"/>
+<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/00-Bootstrap-Architecture.png" alt-text="Coding project" width="100%"/>
 
 
 <br>
@@ -92,48 +92,7 @@ The foundation would include:
 
 <br>
 
-<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Order_of_Setup.png" alt-text="Coding project" width="65%"/>
-
-<br>
-<br>
-
----
-
-<br>
-<br>
-
-## Cloud Resources - Workload Resources To Be Provisioned & For What Purposes
-
-<br>
-
-After setting up the Bootstrap Cloud Resources, we can finally get into the main cloud resources that will be used for my personal architecture. They will be called "Workload Resources" and will perform work for me as described below:
-
-<br>
-<br>
-
-
-<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Oracle%20Cloud%20Resources.drawio.png" alt-text="Coding project" width="100%"/>
-
-
-<br>
-
-The oracle cloud architecture will comprise of mainly 4 Virtual Machines (VMs), 1 reserved public ip and 1 ephemeral public ip (since that is the limit for a Free Forever Resource Tier).
-
-<br>
-
-1) **The first VM** will exist in the public subnet with a reserved public ip to run NGINX as reverse proxy and Tinyproxy as a forward proxy. It will act as as a Secure Web Gateway, directing outside requests/connections to applications running within the private subnet and allowing them to send their responses back to the public. This VM will also serve as a bastion host for ssh connections to the private subnet VMs.
-
-<br>
-
-2) **The second VM** will exist in the public subnet with an ephemeral public ip and run a Pterodactyl Panel container, a game server management panel that allows easy hosting of dedicated game servers, and Wings a backend performing all of the logic of running game servers.
-
-<br>
-
-3) **The third VM** will exist in the private subnet with an private ip to run other future side projects.
-
-<br>
-
-4) **The fourth VM** will exist in the private subnet with an private ip and run a Headscale control server that allows my own devices to communicate with one another even when they are not in the same local network.
+<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/00-Bootstrap-Sequence.png" alt-text="Coding project" width="65%"/>
 
 <br>
 <br>
@@ -142,72 +101,11 @@ The oracle cloud architecture will comprise of mainly 4 Virtual Machines (VMs), 
 
 <br>
 
-## Cloud Resources - Workload Resources Strategies to Setup Software on VM Instances
-
-Based on different use cases, there will be different strategies employed to setup the softwares running on these VM Instances.
+## Cloud Resources - Setup Process
 
 <br>
 
-<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Oracle%20Cloud%20Workload%20Resource%20Setup.drawio.png" alt-text="Coding project" width="100%"/>
-
-<br>
-
-1) **The first VM (the secure web gateway)**: Since the reverse and forward proxies are often "setup once and forget it" applications, it would be easier to use Oracle's native Cloud-Init method to setup them up.
-
-<br>
-
-2) **The second VM (the game server management panel):** As Pterodactyl Panel is a server management application, the allocation of servers is stateful thus making Ansible a perfect choice for setting it up and maintaining it throughout its lifetime. 
-
-<br>
-
-3) **The third VM (the side project instance)**: As this instance is for other side projects, it would be better to play it safe to use Ansible and Docker to ensure that the instance is clean so as to allow future me the most flexibility in setting up new projects.
-
-<br>
-
-4) **The fourth VM (the Headscale VPN Control Server):** This control server is also similar to the first VM as a "setup once and forget it" application. It will use a similar method to the first VM.
-
-<br>
-<br>
+To setup, follow the guide in from the project repo's [readme](https://github.com/bestcolour/oracle-cloud-infrastructure/tree/main#62-projects---00-bootstrap).
 
 ---
-
-<br>
-
-## Cloud Resources - Workload Resources Network Rules
-
-<br>
-
-This section will talk about the resources used in handling networking rules within the architecture.
-<br>
-
-<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/Current%20Architecture-Oracle%20Cloud%20Networking%20Rules.drawio.png" alt-text="Coding project" width="100%"/>
-
-<br>
-<br>
-
-Within the Virtual Network Cloud (VCN), networking rules will be divided between Security Lists and Network Security Groups (NSG).
-
-<br>
-<br>
-
-**Security List - Public & Private**
-
-1) Will expose port 22 for SSH connections between compute resources 
-
-<br>
-
-**Network Security Groups - Secure Web Gateway**
-
-1) Will expose the necessary ports used by both NGINX & Tinyproxy on the Secure Web Network compute instance for ingress and egress directions from/towards Private Network Security Group
-
-<br>
-
-2) Will expose the Secure Web Network to the public internet
-
-<br>
-
-**Network Security Groups - Dedicated Game Server**
-
-1) Will expose the compute instance's ports to the public internet via 443 and 80 along with other game-related ports.
-
 
