@@ -159,6 +159,9 @@ Within the Virtual Network Cloud (VCN), networking rules will be divided between
 
 2) Will expose the Secure Web Network to the public internet
 
+<br>
+<br>
+
 ---
 
 <br>
