@@ -172,3 +172,7 @@ Within the Virtual Network Cloud (VCN), networking rules will be divided between
 <br>
 
 To setup, follow the guide in from the project repo's [readme](https://github.com/bestcolour/oracle-cloud-infrastructure/tree/main#63-projects---01-headscale).
+
+<br>
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/SzAMgq_vxeE?si=MQYIDZYle4O6Pxj9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
