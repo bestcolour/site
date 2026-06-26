@@ -125,6 +125,14 @@ The oracle cloud architecture will comprise of mainly 1 Virtual Machine (VMs), 1
 
 
 <br>
+
+**Below is an Activity Diagram to describe the entire setup process.**
+
+<img src="https://raw.githubusercontent.com/bestcolour/site/refs/heads/master/assets/image/IT_Automation-Oracle_Cloud/02-Pterodactyl-Setup_Sequence_Diagram.drawio.png" alt-text="Coding project" width="60%"/>
+
+
+
+<br>
 <br>
 
 ---
@@ -166,3 +174,19 @@ Within the Virtual Network Cloud (VCN), networking rules will be divided between
 <br>
 
 To setup, follow the guide in from the project repo's [readme](https://github.com/bestcolour/oracle-cloud-infrastructure/tree/main#64-projects---02-pterodactyl).
+
+<br>
+
+### Cloud Resources - Setup Process - Part 1
+
+<br>
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/RkPPkJyflnk?si=eal4kuGFv3Ip5cLf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<br>
+<br>
+
+
+### Cloud Resources - Setup Process - Part 2
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/61BS7QEAbBQ?si=jz8ipYkcHUZxViRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
